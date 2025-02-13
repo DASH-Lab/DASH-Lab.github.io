@@ -28,7 +28,7 @@ permalink: /Publications/
 <div style="margin-top:2vw;">
     <p style="font-family: times, serif; font-size:30pt; font-style:italic">
         <center>    
-<!--              How: Change the number after the Conference Name to indicate # of paper accepted -->
+<!--              How: Change the number after the Conference Name to indicate # of paper accepted  -->
             <sup>Since 2018:</sup>   
             <img  loading="lazy" alt="CIKM"     src="https://img.shields.io/badge/CIKM-16-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="WWW"      src="https://img.shields.io/badge/WWW-6-brightgreen?style=social"       height="20"  >&nbsp;            
@@ -48,6 +48,7 @@ permalink: /Publications/
             <img  loading="lazy" alt="PAKDD"     src="https://img.shields.io/badge/PAKDD-4-brightgreen?style=social"      height="20">&nbsp;
 	    <img  loading="lazy" alt="ACCV"     src="https://img.shields.io/badge/ACCV-4-brightgreen?style=social"      height="20">&nbsp; 
 	    <img  loading="lazy" alt="SAC"     src="https://img.shields.io/badge/SAC-7-brightgreen?style=social"      height="20">&nbsp; 
+	     <img  loading="lazy" alt="EuroS&P"     src="https://img.shields.io/badge/EuroS&P-1-brightgreen?style=social"     height="20">
             <img  loading="lazy" alt="SCIE"     src="https://img.shields.io/badge/SCIE-23-brightgreen?style=social"     height="20">
         </center>
     </p>
@@ -58,7 +59,33 @@ permalink: /Publications/
 <h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
 
+<div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>SoK: Systematization and Benchmarking of Deepfake Detectors in a Unified Framework</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>  Binh M. Le, Jiwon Kim,<i><b>Simon S. Woo*</b> </i>, Shahroz Tariq, Alsharif Abuadbba, and Kristen Moore< </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://eurosp2025.ieee-security.org/">10th IEEE European Symposium on Security and Privacy, Venice, July, 2025 </a> </b> </small> </p>
+                    </tr>
 
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"><small>This paper extensively reviews and analyzes state-of-the-art deepfake detectors, evaluating them against several critical criteria. These criteria categorize detectors into 4 high-level groups and 13 fine-grained sub-groups, aligned with a unified conceptual framework we propose. This classification offers practical insights into the factors affecting detector efficacy. We evaluate the generalizability of 16 leading detectors across comprehensive attack scenarios, including black-box, white-box, and gray-box settings. Our systematized analysis and experiments provide a deeper understanding of deepfake detectors and their generalizability, paving the way for future research and the development of more proactive defenses against deepfakes.</small> </p>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+             <img  loading="lazy" src="euro_sp_25.png" style="max-height: 180px;max-width: 480px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            </div>
+         </div>
+    <hr>
 <div style="display: flex;flex-direction: row;justify-content: space-between;">
         <div style="margin-left: 25px;margin-right: 10px;">
             <table>

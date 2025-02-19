@@ -89,7 +89,7 @@ permalink: /Publications/
             <table>
                 <thead>
                     <tr>
-                        <a><b>Towards Safe Synthetic Image Generation On theWeb: A Multimodal Robust NSFWDefense and Million Scale Dataset</b></a>
+                        <a><b>Towards Safe Synthetic Image Generation On theWeb: A Multimodal Robust NSFW Defense and Million Scale Dataset</b></a>
                     </tr>
                 </thead>
                 <tbody>

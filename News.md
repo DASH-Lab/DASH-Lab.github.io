@@ -27,21 +27,22 @@ permalink: /News/
 	<!-- ###### REMEMBER TO RESIZE THE IMAGE TO ITS RATIO, DON'T LEAVE AS IT IS #######-->
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_graduation.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" style="" width="250px" src="/img/2025_graduation.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/2025_graduation.jpg" />
 			    </a>
 			    <p>Geonho, Sangyong, Seungyeon, and Jiwon, congratulations on your Master's graduation in February 2025! </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_graduation_professor.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" style="" width="250px" src="/img/2025_graduation_professor.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="240" height="180" style="border-radius: 8px;" src="/img/2025_graduation_professor.jpg" />
 			    </a>
 			    <p>Feb 2025. Together with Professor Simon S. Woo.</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_graduation_members2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" style="" width="250px"v src="/img/2025_graduation_members2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="390" height="150" style="border-radius: 8px;" src="/img/2025_graduation_members2.jpg" />
 			    </a>
 			    <p>Feb 2025. DASH lab members and professors celebrate the master's graduation together. </p>
+			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/award2.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" style="" width="250px" src="/img/award2.jpg" />

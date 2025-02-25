@@ -54,7 +54,7 @@ permalink: /Members/
     <!-- <b style="display: inline-block;">I am extremely fortunate to work with the following highly motivated students, and very grateful for their research efforts!</b><br>
      <i style="position: absolute; right:0;">— Simon S. Woo</i><br> -->
     </div>
-    <h5>Ph.D. Students (The DASH Brain)</h5> 
+    <h5>Ph.D. Students </h5> 
     <div class="row">
           <div class="col s12">
             <table style="width: 100%">
@@ -112,7 +112,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/SeungHooHong.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;SeungHoo Hong
+                          &nbsp;&nbsp;&nbsp;&nbsp;Seunghoo Hong
                       </div>
                   </td>
                   <td>Artificial Intelligence</td>
@@ -167,7 +167,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/ParkSangHyeok.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;SangHyeok Park
+                          &nbsp;&nbsp;&nbsp;&nbsp;Sanghyeok Park
                       </div>
                   </td>
                   <td>Semiconductor Display Engineering</td>
@@ -178,7 +178,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/Sangyong.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lee SangYong
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sangyong Lee 
                       </div>
                   </td>
                   <td> Arificial Intelligence </td>
@@ -211,7 +211,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/songeonho.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Son GeonHo
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Geonho Son 
                       </div>
                   </td>
                   <td> Arificial Intelligence </td>
@@ -229,24 +229,13 @@ permalink: /Members/
                   <td>Machine Learning, AI Privacy, Representation Learning   </td>
                   <td>khoa.tr @ g dot skku dot edu </td>
                 </tr>
-                                  <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/ghost.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;Ghost Phantom Deepfake
-                      </div>
-                  </td>
-                  <td>Computer Science and Engineering</td>
-                  <td>Deepfake   </td>
-                  <td> </td>
-                </tr>
               </tbody>
             </table>
           </div>
     </div>
 </div>
 <div class="section">
-    <h5>Masters (The Sorcerers)</h5> 
+    <h5>Masters</h5> 
     <div class="row">
           <div class="col s12">
             <table style="width: 100%">
@@ -268,17 +257,6 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/mickey.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Mickey
-                      </div>
-                     </td>
-                  <td>Magic</td>
-                  <td>Top Secret AI Project</td>    
-                     <td><i></i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
                           <img  loading="lazy" src="/img/BeomSang Cho.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beomsang Cho
                       </div>
@@ -291,7 +269,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/MoonBoHyun2.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moon BoHyun
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bohyun Moon 
                       </div>
                   </td>
                   <td> Arificial Intelligence </td>
@@ -302,7 +280,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kang SeungJune
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seungjune Kang 
                       </div>
                   </td>
                   <td> Arificial Intelligence </td>
@@ -390,7 +368,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;SangJun Chung
+                          &nbsp;&nbsp;&nbsp;&nbsp;Sangjun Chung
                       </div>
                      </td>
                   <td>Artificial Intelligence</td>
@@ -423,8 +401,8 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <img  loading="lazy" src="/img/chanhid.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;Park Chan
-                      </div>
+                          &nbsp;&nbsp;&nbsp;&nbsp;Chan Park 
+                      </div> 
                      </td>
                   <td>Artificial Intelligence</td>
                   <td>Multi-modal, Deepfake Detection, Weakly Supervised Learning</td>    
@@ -445,7 +423,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;Noh Yong-cheol 
+                          &nbsp;&nbsp;&nbsp;&nbsp;Yongcheol Noh 
                       </div>
                      </td>
                   <td>Computer Science & Engineering</td>
@@ -478,7 +456,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;SeungWon Jeong  
+                          &nbsp;&nbsp;&nbsp;&nbsp;Seungwon Jeong  
                       </div>
                      </td>
                   <td>Artificial Intelligence</td>
@@ -491,7 +469,7 @@ permalink: /Members/
     </div>
 </div>
 <div class="section">
-    <h5>Undergraduate Students (The Sorcerer's Apprentice)</h5> 
+    <h5>Undergraduate Students</h5> 
     <div class="row">
           <div class="col s12">
             <table style="width: 100%">

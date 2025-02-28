@@ -80,7 +80,7 @@ permalink: /Publications/
                 </table>
             </div>
             <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
-             <img  loading="lazy" src="euro_sp_25.png" style="max-height: 180px;max-width: 480px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+             <img  loading="lazy" src="/img/2025_EuroS&P.png" style="max-height: 260px;max-width: 360px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
             </div>
          </div>
     <hr>
@@ -324,6 +324,39 @@ permalink: /Publications/
              <img  loading="lazy" src="/img/Moon_SCD_2025.png" style="max-height: 500px;max-width: 360px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
             </div>
          </div>
+    <hr>
+
+<div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>MIRACLE: Malware Image Recognition & Classification by Layered Extraction</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Inzamamul Alam, Md. Samiullah*, S M
+Asaduzzaman, Upama Kabir, A.M. Aahad and <i><b>Simon S. Woo*</b> </i> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>Data Mining and Knowledge Discovery</b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) SCIE Q1 IF = 5.3 (5-year Journal Impact Factor) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"><small>We propose a novel approach, Malware Image Recognition & Classification by Layered Extraction (MIRACLE), by implementing our own spatial convolutional neural network (Sp-CNN) with sufficient regularization and data augmentation to identify and classify malware in images effectively and efficiently. Our proposed method is developed based on analyzing malware binary structure, which is segmented as headers and section, symbolic information lies on section segment. Our Sp-CNN can extract that symbolic information from the top of the hidden layer constructively. We have evaluated our model with as MalImg, Microfsoft-Big, Malevis and Android Malware dataset. We achieved accuracy of 99.87% for MalImg, 99.81% for  Microsoft-Big, and 99.22% for Malevis in our test dataset, respectively. Our proposed method surpasses Google's InceptionV3, ResNet50, EfficientNetB1, VGG16, VGG19, and other state-of-the-art (SOTA) methods in terms of performance.</small> </p>
+                    </tr>                             
+                </tbody>
+            </table>
+            </div>
+            <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+             <img  loading="lazy" src="DMKD_Figure_1.png" style="max-height: 500px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            </div>
+         </div>
     <hr>     
 
 
@@ -444,45 +477,8 @@ permalink: /Publications/
              <img  loading="lazy" src="/img/membership_attack.png" style="max-height: 239px;max-width: 360px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
             </div>
          </div>
-    <hr>     
-
-
- 
+    <hr>      
 <!-- ###### REMEMBER TO RESIZE THE IMAGE TO ITS RATIO, DON'T LEAVE AS IT IS #######-->
- 
-<div style="display: flex;flex-direction: row;justify-content: space-between;">
-        <div style="margin-left: 25px;margin-right: 10px;">
-            <table>
-                <thead>
-                    <tr>
-                        <a><b>MIRACLE: Malware Image Recognition & Classification by Layered Extraction</b></a>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Inzamamul Alam, Md. Samiullah*, S M
-Asaduzzaman, Upama Kabir, A.M. Aahad and <i><b>Simon S. Woo*</b> </i> </small> </p>
-                    </tr>
-                    <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>Data Mining and Knowledge Discovery</b> </small> </p>
-                    </tr>
-                    <tr>
-                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
-                               <font color='blue'>(Accepted) SCIE Q1 IF = 5.3 (5-year Journal Impact Factor) </font>
-                                </b> </small> </p>
-                    </tr>
-                    <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"><small>We propose a novel approach, Malware Image Recognition & Classification by Layered Extraction (MIRACLE), by implementing our own spatial convolutional neural network (Sp-CNN) with sufficient regularization and data augmentation to identify and classify malware in images effectively and efficiently. Our proposed method is developed based on analyzing malware binary structure, which is segmented as headers and section, symbolic information lies on section segment. Our Sp-CNN can extract that symbolic information from the top of the hidden layer constructively. We have evaluated our model with as MalImg, Microfsoft-Big, Malevis and Android Malware dataset. We achieved accuracy of 99.87% for MalImg, 99.81% for  Microsoft-Big, and 99.22% for Malevis in our test dataset, respectively. Our proposed method surpasses Google's InceptionV3, ResNet50, EfficientNetB1, VGG16, VGG19, and other state-of-the-art (SOTA) methods in terms of performance.</small> </p>
-                    </tr>                             
-                </tbody>
-            </table>
-            </div>
-            <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
-             <img  loading="lazy" src="DMKD_Figure_1.png" style="max-height: 500px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
-            </div>
-         </div>
-    <hr>    
-
 <div style="display: flex;flex-direction: row;justify-content: space-between;">
         <div style="margin-left: 25px;margin-right: 10px;">
             <table>

@@ -268,39 +268,6 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/MoonBoHyun2.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bohyun Moon 
-                      </div>
-                  </td>
-                  <td> Arificial Intelligence </td>
-                  <td> Computer Vision, Deepfakes, Video Representation Learning </td>
-                  <td><i>bhmoon98 @ g dot skku dot edu</i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seungjune Kang 
-                      </div>
-                  </td>
-                  <td> Arificial Intelligence </td>
-                  <td> Computer Vision, Video Anomaly, Deepfakes </td>
-                  <td><i>seungjune05 @ g dot skku dot edu</i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 김현준
-                      </div>
-                     </td>
-                  <td>데이터사이언스</td>
-                  <td>Top Secret AI Project</td>    
-                     <td><i></i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
                           <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 문학준
                       </div>
@@ -462,6 +429,28 @@ permalink: /Members/
                   <td>Artificial Intelligence</td>
                   <td>Time Series Anomaly Detection & Forecasting, Speech Recognition & Synthesis </td>    
                      <td><i>bbiqaa123 @ g dot skku dot edu</i></td>
+                </tr>
+                <tr>
+                  <td align="center">
+                      <div style="display:flex;flex-direction:column">
+                        <img  loading="lazy" src="/img/MoonBoHyun2.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bohyun Moon 
+                      </div>
+                  </td>
+                  <td> Arificial Intelligence </td>
+                  <td> Computer Vision, Deepfakes, Video Representation Learning </td>
+                  <td><i>bhmoon98 @ g dot skku dot edu</i></td>
+                </tr>
+                <tr>
+                  <td align="center">
+                      <div style="display:flex;flex-direction:column">
+                        <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seungjune Kang 
+                      </div>
+                  </td>
+                  <td> Arificial Intelligence </td>
+                  <td> Computer Vision, Video Anomaly, Deepfakes </td>
+                  <td><i>seungjune05 @ g dot skku dot edu</i></td>
                 </tr>   
               </tbody>
             </table>
@@ -621,6 +610,11 @@ permalink: /Members/
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td>김현준 (MS) 2025 </td>
+                  <td>AI, LLM, Machine Unlearning</td>
+                  <td> NAVER </td>
+                 </tr>
                  <tr>
                   <td>Minha Kim (MS) 2024 </td>
                   <td>Time Series, Reinforcement Learning</td>

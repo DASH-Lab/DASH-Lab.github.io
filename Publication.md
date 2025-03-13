@@ -55,7 +55,7 @@ permalink: /Publications/
 
 
 
-    
+
 <h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
 <div style="display: flex;flex-direction: row;justify-content: space-between;">
@@ -76,6 +76,9 @@ permalink: /Publications/
                     <tr>
                         <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"><small>This paper extensively reviews and analyzes state-of-the-art deepfake detectors, evaluating them against several critical criteria. These criteria categorize detectors into 4 high-level groups and 13 fine-grained sub-groups, aligned with a unified conceptual framework we propose. This classification offers practical insights into the factors affecting detector efficacy. We evaluate the generalizability of 16 leading detectors across comprehensive attack scenarios, including black-box, white-box, and gray-box settings. Our systematized analysis and experiments provide a deeper understanding of deepfake detectors and their generalizability, paving the way for future research and the development of more proactive defenses against deepfakes.</small> </p>
                     </tr>
+		<tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> <small><a href="https://arxiv.org/pdf/2401.04364"> <img  alt="paper" src="paper_grey.svg" style="right: 15px; position:relative; top:5px; width: 18px; height: 18px;"> </a>  &nbsp;&nbsp;   <a href="https://www.abc.net.au/listen/programs/radionational-breakfast/csiro-deepfake-research-ahead-of-federal-election/105044852"> [News] </a></small> </p>
+                </tr> 
                 </tbody>
                 </table>
             </div>

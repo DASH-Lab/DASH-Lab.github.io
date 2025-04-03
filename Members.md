@@ -32,7 +32,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <a href="#" target = "_blank">
-                              <img  loading="lazy" src="/img/dummy_male.png" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
+                              <img  loading="lazy" src="/img/Dashlab_logo.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           </a>
                       </div>
@@ -90,7 +90,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/dummy_female.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;Eun-Ju Park
+                          &nbsp;&nbsp;&nbsp;&nbsp;Eunju Park
                       </div>
                   </td>
                   <td>Computer Science & Engineering</td>
@@ -269,11 +269,11 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 문학준
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hakjun Moon
                       </div>
                      </td>
-                  <td>CSE</td>
-                  <td>Vision</td>    
+                  <td>Computer Science & Engineering</td>
+                  <td>Computer Vision</td>    
                      <td><i></i></td>
                 </tr>
                 <tr>
@@ -480,11 +480,11 @@ permalink: /Members/
                   <tr>
                     <td align="center">
                         <div style="display:flex;flex-direction:column">
-                            <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                            <img  loading="lazy" src="/img/Dashlab_logo.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                             &nbsp;&nbsp;&nbsp;&nbsp;  
                         </div>
                       </td>
-                    <td>Computer Science & Engineering, Data Science</td>
+                    <td>A person who can code and has a passion for AI research</td>
                     <td> Computer Vision, Anomaly Detection, NLP and AI security </td>    
                       <td><i>undergraduate @ g dot skku dot edu</i></td>
                   </tr> 
@@ -517,13 +517,13 @@ permalink: /Members/
                   <tr>
                   <td>변규백 ('23)</td>
                   <td>Applied Data Science (데이터사이언스)</td>
-                  <td>Samsung Elec</td>
+                  <td>Samsung Elec.</td>
                   <td>Self-Supervised Learning</td>
                 </tr>
                 <tr>
                   <td>인정현 ('23)</td>
                   <td>Applied Data Science (데이터사이언스)</td>
-                  <td>LG에너지 솔루션</td>
+                  <td>LG에너지솔루션</td>
                   <td>Anomaly Detection</td>
                 </tr>
                 <tr>
@@ -535,7 +535,7 @@ permalink: /Members/
                 <tr>
                   <td>하민성 ('22)</td>
                   <td>Applied Data Science (데이터사이언스)</td>
-                  <td>Samsung Elec</td>
+                  <td>Samsung Elec.</td>
                   <td>Anomaly Detection</td>
                 </tr>
                 <tr>
@@ -587,7 +587,7 @@ permalink: /Members/
                 <tr>
                  <td>이지은</td>
                   <td>Applied Data Science (데이터사이언스)</td>
-                  <td> 롯대 </td>
+                  <td> Lotte </td>
                   <td>면세점 웹로그 데이터를 활용한 개인화 추천 시스템 연구
                  </td>
                 </tr>
@@ -629,11 +629,6 @@ permalink: /Members/
                   <td><a href="https://tae-mo.github.io/" target = "_blank"> Taejune Kim </a> (MS) 2024 </td>
                   <td> Anomaly Detection, Computer Vision </td>
                   <td> Robotics Lab, Hyundai Motor Company </td>
-                 </tr>
-                 <tr>
-                  <td> Cho Beomsang </td>
-                  <td>Computer Vision</td>
-                  <td> TBU </td>
                  </tr>
                  <tr>
                   <td><a href="https://kishor-bhaumik.github.io/" target = "_blank">Kishor Kumar Bhaumik</a> (MS) 2023</td>
@@ -688,7 +683,7 @@ permalink: /Members/
                 <tr>
                       <td>Minha Kim (MS) 2022</td>
                       <td>Deepfakes and Continual Learning</td>
-                      <td>Naver 클로바</td>
+                      <td>Naver Clova</td>
                 </tr>
                 <tr>
                   <td>이상원 (MS) 2021</td>

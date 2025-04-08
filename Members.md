@@ -225,7 +225,7 @@ permalink: /Members/
                           &nbsp;&nbsp;&nbsp;&nbsp;Tran Van Khoa
                       </div>
                   </td>
-                  <td>Computer Science and Engineering</td>
+                  <td>Computer Science & Engineering</td>
                   <td>Machine Learning, AI Privacy, Representation Learning   </td>
                   <td>khoa.tr @ g dot skku dot edu </td>
                 </tr>
@@ -573,7 +573,7 @@ permalink: /Members/
                 <tr>
                   <td>박성호</td>
                   <td>Applied Data Science (데이터사이언스)</td>
-                  <td> 롯데 Food </td>
+                  <td> LOTTE Food </td>
                   <td>머신러닝 기반 식용 작물별 생산량 예측 연구 및 변수별 생산량에 끼치는 영향력 파악 연구 진행
                  </td>
                 </tr>
@@ -587,7 +587,7 @@ permalink: /Members/
                 <tr>
                  <td>이지은</td>
                   <td>Applied Data Science (데이터사이언스)</td>
-                  <td> Lotte </td>
+                  <td> LOTTE </td>
                   <td>면세점 웹로그 데이터를 활용한 개인화 추천 시스템 연구
                  </td>
                 </tr>

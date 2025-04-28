@@ -63,6 +63,35 @@ permalink: /Publications/
             <table>
                 <thead>
                     <tr>
+                        <a><b>Self-Disclosure of Mental Health via Deepfakes: Testing the Effects of Self-Deepfakes on Affective Resistance and Intentions to Seek Mental Health Support</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> Jiyoung Lee, Christopher Michael Dobmeier, <i><b> Minji Heo and Simon S. Woo</b> </i> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://eurosp2025.ieee-security.org/">The International Conference for Computational Social Science 2025 </a> (Accepted) Impact Score = 2.44 </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"><small>Theoretically, the current study revisits traditional video self-modeling approaches, which leverage the self-referencing effect to enhance engagement, within the context of deepfake technology by integrating the self-referencing effect and the uncanny valley effect. This study reveals that the synthesized nature of self-representations in deepfakes introduces artificiality that triggers discomfort, thereby increasing resistance to mental health self-disclosure messages. This discomfort underscores a significant limitation of deepfake technology in sensitive contexts, as individuals—especially those with higher baseline levels of mental health who find greater relevance to the topic—may be reluctant to engage with messages that present uncanny or distorted self-representations. Our findings emphasize the importance of future research to systematically investigate the boundaries of self-referencing in AI-driven synthetic media, focusing on how the degree of resemblance influences perceptions of personal relevance, evokes emotional resistance, and varies across individual differences. Furthermore, as deepfake technology finds its way into the healthcare sector, practitioners must remain mindful that while it offers innovative possibilities, it may also stir emotional resistance.</small> </p>
+                    </tr>
+		<tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                </tr> 
+                </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+             <img  loading="lazy" src="/img/self_disclosure.png" style="max-height: 260px;max-width: 360px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            </div>
+         </div>
+    <hr>
+<div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
                         <a><b>SoK: Systematization and Benchmarking of Deepfake Detectors in a Unified Framework</b></a>
                     </tr>
                 </thead>

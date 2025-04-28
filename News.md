@@ -26,6 +26,12 @@ permalink: /News/
 	<div align="center" style="background: rgba(255, 255, 255, 0.315);padding:0; margin: auto; height: 620px; width: 800px; border-radius: 8px;" class="flickity carousel" data-flickity='{ "autoPlay": true }'>
 	<!-- ###### REMEMBER TO RESIZE THE IMAGE TO ITS RATIO, DON'T LEAVE AS IT IS #######-->
 			<div class="gallery-cell" style="margin: auto; padding:0">
+			    <a href="/img/prof_selfie.jpg" target="_blank">
+			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/prof_selfie.jpg" />
+			    </a>
+			    <p>Visiting Prof. Luisa Verdoliva and Prof. Davide Cozzolino at University Federico II of Naples, March, 2025 </p>
+			</div>
+			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_graduation.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/2025_graduation.jpg" />
 			    </a>

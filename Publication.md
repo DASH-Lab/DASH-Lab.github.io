@@ -88,7 +88,7 @@ permalink: /Publications/
                 </table>
             </div>
             <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
-             <img  loading="lazy" src="/img/self_disclosure.png" style="max-height: 196px;max-width: 461px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+             <img  loading="lazy" src="/img/self_disclosure.png" style="max-height: 196px;width: auto; margin-bottom: 10px; height: auto;aspect-ratio: auto; object-fit: contain;">
             </div>
          </div>
     <hr>

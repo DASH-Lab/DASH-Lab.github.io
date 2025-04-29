@@ -75,7 +75,7 @@ permalink: /Publications/
                     </tr>
                     <tr>
                     <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
-                               <font color='blue'>(Accepted) Impact Score = 2.44</font>
+                               <font color='blue'>(Accepted) </font>
                                 </b> </small> </p>
                     </tr>
                     <tr>

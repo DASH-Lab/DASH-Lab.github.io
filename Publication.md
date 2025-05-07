@@ -63,6 +63,40 @@ permalink: /Publications/
             <table>
                 <thead>
                     <tr>
+                        <a><b>Toward a robust approach to multivariate time series anomaly detection</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> Jungwook Shon and <i><b>Simon S. Woo*</b> </i> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b> <a href="https://www.spiedigitallibrary.org/journals/journal-of-micro-nanopatterning-materials-and-metrology"> </a> Journal of Micro/Nanopatterning, Materials, and Metrology (JM3)</b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b> 
+                               <font color='blue'> IF = 1.5 (Accepted) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"><small>Anomaly detection in semiconductor manufacturing is critical for maintaining yield and reducing costs, especially in high-volume production environments where inspections are resource-intensive. This study presents a robust, unsupervised deep learning framework for multivariate anomaly detection that addresses limitations of existing Fault Detection and Classification (FDC) systems. The proposed approach leverages a Transformer-based model enhanced with Aggregated z-normalization to mitigate distribution drift, and employs Peaks-Over-Threshold (POT) for adaptive thresholding. The framework achieved an F1 score of 0.9827 and a precision of 0.9866 on semiconductor datasets, with minimal false alarms validated through extensive ablation studies. The solution is designed for scalability and adaptability in industrial settings, with future work focused on improving detection of single-spike anomalies and borderline cases to enhance operational reliability.</small> </p>
+                    </tr>
+		<tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                </tr> 
+                </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+             <img  loading="lazy" src="/img/SPIE_jw.png" style="max-height: 196px;width: auto; margin-bottom: 10px; height: auto;aspect-ratio: auto; object-fit: contain;">
+            </div>
+         </div>
+<hr>
+<div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
                         <a><b>Self-Disclosure of Mental Health via Deepfakes: Testing the Effects of Self-Deepfakes on Affective Resistance and Intentions to Seek Mental Health Support</b></a>
                     </tr>
                 </thead>

@@ -71,7 +71,7 @@ permalink: /Publications/
                         <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> Jungwook Shon and <i><b>Simon S. Woo*</b> </i> </small> </p>
                     </tr>
                     <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b> <a href="https://www.spiedigitallibrary.org/journals/journal-of-micro-nanopatterning-materials-and-metrology"> </a> Journal of Micro/Nanopatterning, Materials, and Metrology (JM3)</b> </small> </p>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b> <a href="https://www.spiedigitallibrary.org/journals/journal-of-micro-nanopatterning-materials-and-metrology"> Journal of Micro/Nanopatterning, Materials, and Metrology (JM3) </a> </b> </small> </p>
                     </tr>
                     <tr>
                     <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b> 

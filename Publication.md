@@ -75,7 +75,7 @@ permalink: /Publications/
                     </tr>
                     <tr>
                     <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b> 
-                               <font color='blue'> IF = 1.5 (Accepted) </font>
+                               <font color='blue'> SCIE IF = 1.5 (Accepted) </font>
                                 </b> </small> </p>
                     </tr>
                     <tr>

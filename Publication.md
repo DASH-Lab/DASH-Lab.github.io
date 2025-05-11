@@ -73,7 +73,6 @@ permalink: /Publications/
                     <tr>
                         <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://2025.ijcai.org">The 34th International Joint Conference on Artificial Intelligence (IJCAI) - Sister Conference Track, Montreal, 2025 </a></b> </small> </p>
                     </tr>
-					
                     <tr>
                         <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>We introduce the Spherical Embedding Expansion (SEE) method. SEE aims to uncover the latent semantic variations in training data. Especially, our method augments the embedding space with synthetic representations based on Max-Mahalanobis distribution (MMD) centers, which maximize the dispersion of these synthetic features without increasing computational costs.We evaluated the efficacy of SEE on four renowned standard benchmarks for the image retrieval task. The results demonstrate that SEE consistently enhances the performance of conventional methods when integrated with them, setting a new benchmark for deep metric learning performance across all settings.</small> </p>
                     </tr>

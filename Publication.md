@@ -86,7 +86,7 @@ permalink: /Publications/
                                 videos. HiDF is a meticulously curated dataset that includes diverse subjects that have undergone rigorous quality checks. A comparison of the quality between HiDF and existing deepfake datasets demonstrates that HiDF is human-indistinguishable. Hence, it can be a valuable benchmark dataset for deepfake detection tasks. </small> </p>
                     </tr>
 		    <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p> <small>   <a  href="https://github.com/DSAIL-SKKU/HiDF"> <img  alt="github" src="github.svg" style="right: 15px; position:relative; top:5px; width: 18px; height: 18px;">  </a> </small> </p>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> <small>   <a  href="https://github.com/DSAIL-SKKU/HiDF"> <img  alt="github" src="github.svg" style="right: 15px; position:relative; top:5px; width: 18px; height: 18px;">  </a> </small> </p>
                     </tr> 
                 </tbody>
             </table>

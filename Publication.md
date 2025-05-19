@@ -58,6 +58,44 @@ permalink: /Publications/
 
 <h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>HiDF: A Human-Indistinguishable Deepfake Dataset</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Chaewon Kang, Seoyoon Jeong, Jonghyun Lee, Daejin Choi <i><b>Simon S. Woo</b> </i> and Jinyoung Han </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://kdd2025.kdd.org/"> ADM KDD 2025, Toronto, ON, Canada </a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Scienve 최우수학회 IF=4 (Datasets and Benchmarks Track) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>The rapid development and prevalence of generative AI have made it easy for people to create high-quality deepfake images and videos,
+                                but their abuses have also increased exponentially. To mitigate potential social disruption, it is crucial to quickly detect the authenticity of each deepfake content hidden in a sea of information.
+                                While researchers have worked on developing deep learning-based methods, the deepfake datasets utilized in these studies are far from the real world in terms of their qualities; most popular deepfake
+                                datasets are human-distinguishable. To address this problem, we present a novel deepfake dataset, HiDF, a high-quality and humanindistinguishable deepfake dataset consisting of 62 K images and 8 K
+                                videos. HiDF is a meticulously curated dataset that includes diverse subjects that have undergone rigorous quality checks. A comparison of the quality between HiDF and existing deepfake datasets demonstrates that HiDF is human-indistinguishable. Hence, it can be a valuable benchmark dataset for deepfake detection tasks. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/KDD2025_HiDF.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+	<hr>
 	<div style="display: flex;flex-direction: row;justify-content: space-between;">
         <div style="margin-left: 25px;margin-right: 10px;">
             <table>

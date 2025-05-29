@@ -618,7 +618,7 @@ permalink: /Members/
                  <tr>
                   <td>Minha Kim (MS) 2024 </td>
                   <td>Time Series, Reinforcement Learning</td>
-                  <td> TBU </td>
+                  <td> Applied Materials </td>
                  </tr>
                  <tr>
                   <td>Girim Ban (MS) 2024 </td>

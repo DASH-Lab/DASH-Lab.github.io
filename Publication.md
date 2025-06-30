@@ -91,6 +91,7 @@ permalink: /Publications/
             <img  loading="lazy" src="/img/DIA-ICCV2025.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
+    <hr>
     <div style="display: flex;flex-direction: row;justify-content: space-between;">
         <div style="margin-left: 25px;margin-right: 10px;">
             <table>
@@ -124,6 +125,7 @@ permalink: /Publications/
             <img  loading="lazy" src="/img/SSDV.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
+    <hr>
     <div style="display: flex;flex-direction: row;justify-content: space-between;">
         <div style="margin-left: 25px;margin-right: 10px;">
             <table>
@@ -157,6 +159,7 @@ permalink: /Publications/
             <img  loading="lazy" src="/img/ProposedModel-01.jpg" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
+    <hr>
     <div style="display: flex;flex-direction: row;justify-content: space-between;">
         <div style="margin-left: 25px;margin-right: 10px;">
             <table>

@@ -63,6 +63,105 @@ permalink: /Publications/
             <table>
                 <thead>
                     <tr>
+                        <a><b>DIA: The Adversarial Exposure of Deterministic Inversion in Diffusion Models</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Seunghoo Hong†, Geonho Son†, Juhun Lee and <i><b>Simon S. Woo*</b> </i> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://iccv.thecvf.com/"> International Conference on Computer Vision 2025 (ICCV), Honolulu, Hawaii, United States </a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=4 </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Diffusion models have shown to be strong representation learners, showcasing state-of-the-art performance across multiple domains. Aside from accelerated sampling, DDIM also enables the inversion of real images back to their latent codes. A direct inheriting application of this inversion operation is real image editing, where the inversion yields latent trajectories to be utilized during the synthesis of the edited image. Unfortunately, this practical tool has enabled malicious users to freely synthesize misinformative or deepfake contents with greater ease, which promotes the spread of unethical and abusive, as well as privacy-, and copyright-infringing contents. While defensive algorithms such as AdvDM and Photoguard have been shown to disrupt the diffusion process on these images, the misalignment between their objectives and the iterative denoising trajectory at test time results in weak disruptive performance. In this work, we present the DDIM Inversion Attack (DIA) that attacks the integrated DDIM trajectory path. Our results support the effective disruption, surpassing previous defensive methods across various editing methods. We believe that our frameworks and results can provide practical defense methods against the malicious use of AI for both the industry and the research community. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/DIA-ICCV2025.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>Translation of Text Embedding via Delta Vector to Suppress Strongly Entangled Content in Text-to-Image Diffusion Models</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Seunghoo Hong†, Eunseo Koh†,Tae-Young Kim†, Jae-Pil Heo* and <i><b>Simon S. Woo*</b> </i> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://iccv.thecvf.com/"> International Conference on Computer Vision 2025 (ICCV), Honolulu, Hawaii, United States </a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=4 </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Text-to-Image (T2I) diffusion models have made significant progress in generating diverse high-quality images from textual prompts. However, these models still face challenges in suppressing content that is strongly entangled with specific words. For example, when generating an image of "Charlie Chaplin", a "mustache" consistently appears even if explicitly instructed not to include it, as the concept of "mustache" is strongly entangled with "Charlie Chaplin". To address this issue, we propose a novel approach to directly suppress such entangled content within the text embedding space of diffusion models. Our method introduces a delta vector that modifies the text embedding to weaken the influence of undesired content in the generated image, and we further demonstrate that this delta vector can be easily obtained through a zero-shot approach. Furthermore, we propose a Selective Suppression with Delta Vector (SSDV) method to adapt the delta vector into the cross-attention mechanism, enabling more effective suppression of unwanted content in regions where it would otherwise be generated. Additionally, we enabled more precise suppression in personalized T2I models by optimizing the delta vector, which previous baselines were unable to achieve. Extensive experimental results demonstrate that our approach significantly outperforms existing methods, both in terms of quantitative and qualitative metrics. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/SSDV.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>SpecGuard: Spectral Projection-based Advanced InvisibleWatermarking</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> Inzamamul Alam, Md Tanvir Islam, Khan Muhammad and <i><b>Simon S. Woo*</b> </i> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://iccv.thecvf.com/"> International Conference on Computer Vision 2025 (ICCV), Honolulu, Hawaii, United States </a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=4 </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Watermarking embeds imperceptible patterns into images for authenticity verification. However, existing methods often lack robustness against various transformations primar ily including distortions, image regeneration, and adver sarial perturbation, creating real-world challenges. In this work, we introduce SpecGuard, a novel watermarking ap proach for robust and invisible image watermarking. Un like prior approaches, we embed the message inside hid den convolution layers by converting from the spatial do main to the frequency domain using spectral projection of a higher frequency band that is decomposed by wavelet pro jection. Spectral projection employs Fast Fourier Trans form approximation to transform spatial data into the fre quency domain efficiently. In the encoding phase, a strength factor enhances resilience against diverse attacks, includ ing adversarial, geometric, and regeneration-based distor tions, ensuring the preservation of copyrighted information. Meanwhile, the decoder leverages Parseval’s theorem to ef fectively learn and extract the watermark pattern, enabling accurate retrieval under challenging transformations. We evaluate the proposed SpecGuard based on the embedded watermark’s invisibility, capacity, and robustness. Compre hensive experiments demonstrate the proposed SpecGuard outperforms the state-of-the-art models. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/ProposedModel-01.jpg" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
                         <a><b>HiDF: A Human-Indistinguishable Deepfake Dataset</b></a>
                     </tr>
                 </thead>

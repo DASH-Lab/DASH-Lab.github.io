@@ -63,6 +63,74 @@ permalink: /Publications/
             <table>
                 <thead>
                     <tr>
+                        <a><b>Learning Interpersonal Similarities in Multiple Fingers via Fingerprint Landmark-Aware Recognition Network</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Jiwon Kim <i><b>Simon S. Woo*</b> </i>and Youjin Shin* </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://ijcb2025.ieee-biometrics.org/"> IJCB 2025 (International Joint Conference on Biometrics) Osaka, Japan, September, 2025</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) Research Impact Score 1.90 </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>In fingerprint biometric systems, fingerprint recognition traditionally focuses on identifying individuals based on the distinct fingerprints of different fingers, which is finger-specific identity recognition (FsIR). However, real-world applications often require recognizing the same individual using fingerprints from different fingers, which is finger-agnostic identity recognition (FaIR). The FaIR task has proven challenging due to the prevailing assumption in the biometric field that there is no correlation between an individual’s different fingerprints. To address this issue, we propose a novel system, IP-Fing, which can learn the interpersonal similarity across the fingers. By using a pre-trained localization encoder to capture interpersonal fingerprint landmarks and the ArcFace marginal logit function, our IP-Fing recognition system can match a fingerprint query to all fingerprints of the same person while distinguishing them from others. We assess our method using comprehensive tests on two fingerprint datasets: our private fingerprint dataset, KORFing, which only has one sample per finger available, and the public fingerprint dataset, CASIA-v5, which has a few missing fingerprint samples for the task of finger-agnostic identity recognition (FaIR). IP-Fing achieves the best AUC with an average of 95.3074 across the two datasets, showing that our method is more effective in applying FaIR than conventional methods. Furthermore, IP-Fing demonstrates superior AUC with an average of 98.4631 across two datasets in the task of traditional finger-specific identity recognition (FsIR). </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/IJCB_jiwon.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>From Prediction to Explanation: Multimodal, Explainable, and Interactive Deepfake Detection Framework for Non-Expert Users</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Shahroz Tariq, PRIYANKA SINGH,  <i><b>Simon S. Woo</b> </i>Irena Irmalasari, Saakshi Gupta and Dev Gupta </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://acmmm2025.org/"> MM '25: Proceedings of the 33nd ACM International Conference on Multimedia, Dublin, Ireland</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=4 </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>The proliferation of deepfake technologies poses urgent challenges and serious risks to digital integrity, particularly within critical sectors such as forensics, journalism, and the legal system. While existing detection systems have made significant progress in classification accuracy, they typically function as black-box models—offering limited transparency and minimal support for human reasoning. This lack of interpretability hinders their usability in real-world decision-making contexts, especially for non-expert users. In this paper, we present DF-P2E (Deepfake: Prediction to Explanation), a novel multimodal framework that integrates visual, semantic, and narrative layers of explanation to make deepfake detection interpretable and accessible. The framework consists of three modular components: (1) a deepfake classifier with Grad-CAM-based saliency visualisation, (2) a visual captioning module that generates natural language summaries of manipulated regions, and (3) a narrative refinement module that uses a fine-tuned Large Language Model (LLM) to produce context-aware, user-sensitive explanations. We instantiate and evaluate the framework on the DF40 benchmark, the most diverse deepfake dataset to date. Experiments demonstrate that our system achieves competitive detection performance while providing high-quality explanations aligned with Grad-CAM activations. Human evaluation with non-expert participants confirms the perceived usefulness, understandability, and trustworthiness of the generated narratives. By unifying prediction and explanation in a coherent, human-aligned pipeline, this work offers a scalable approach to interpretable deepfake detection—advancing the broader vision of trustworthy and transparent AI systems in adversarial media environments. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/Sharoz.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
                         <a><b>PromptFlare: Prompt-Generalized Defense via Cross-Attention Decoy in Diffusion-Based Inpainting</b></a>
                     </tr>
                 </thead>

@@ -68,7 +68,7 @@ permalink: /Publications/
                 </thead>
                 <tbody>
                     <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Jiwon Kim <i><b>Simon S. Woo*</b> </i>and Youjin Shin* </small> </p>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Jiwon Kim, <i><b>Simon S. Woo*</b> </i>and Youjin Shin* </small> </p>
                     </tr>
                     <tr>
                         <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://ijcb2025.ieee-biometrics.org/"> IJCB 2025 (International Joint Conference on Biometrics) Osaka, Japan, September, 2025</a></b> </small> </p>

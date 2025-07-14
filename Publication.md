@@ -102,7 +102,7 @@ permalink: /Publications/
                 </thead>
                 <tbody>
                     <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Shahroz Tariq, PRIYANKA SINGH,  <i><b>Simon S. Woo</b> </i>Irena Irmalasari, Saakshi Gupta and Dev Gupta </small> </p>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Shahroz Tariq, PRIYANKA SINGH,  <i><b>Simon S. Woo</b> </i>, Irena Irmalasari, Saakshi Gupta and Dev Gupta </small> </p>
                     </tr>
                     <tr>
                         <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://acmmm2025.org/"> MM '25: Proceedings of the 33nd ACM International Conference on Multimedia, Dublin, Ireland</a></b> </small> </p>

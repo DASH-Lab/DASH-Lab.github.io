@@ -229,6 +229,17 @@ permalink: /Members/
                   <td>Machine Learning, AI Privacy, Representation Learning   </td>
                   <td>khoa.tr @ g dot skku dot edu </td>
                 </tr>
+                <tr>
+                  <td align="center">
+                      <div style="display:flex;flex-direction:column">
+                          <img  loading="lazy" src="/img/razaibtariq.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;Razaib Tariq
+                      </div>
+                     </td>
+                  <td>Computer Science & Engineering</td>
+                  <td>Deepfake Detection</td>    
+                     <td><i>razaibtariq @ g dot skku dot edu</i></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -275,17 +286,6 @@ permalink: /Members/
                   <td>Computer Science & Engineering</td>
                   <td>Computer Vision</td>    
                      <td><i></i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/razaibtariq.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;Razaib Tariq
-                      </div>
-                     </td>
-                  <td>Computer Science & Engineering</td>
-                  <td>Deepfake Detection</td>    
-                     <td><i>razaibtariq @ g dot skku dot edu</i></td>
                 </tr>
                 <tr>
                   <td align="center">
@@ -610,6 +610,26 @@ permalink: /Members/
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td>Binh M. Le  (Ph.D) 2025 </td>
+                  <td>Adversarial Robustness and Representation Learning</td>
+                  <td> TBD </td>
+                 </tr>
+                <tr>
+                  <td>Minji Heo  (MS) 2025 </td>
+                  <td>Computer Vision</td>
+                  <td> TBD </td>
+                 </tr>
+                <tr>
+                  <td>Minsun Jeon (MS) 2025 </td>
+                  <td>Computer Vision & Multi-modal</td>
+                  <td> TBD </td>
+                 </tr>
+                <tr>
+                  <td>Inho Jung (MS) 2025 </td>
+                  <td>Representation Learning & XAI</td>
+                  <td> TBD </td>
+                 </tr>
                 <tr>
                   <td>김현준 (MS) 2025 </td>
                   <td>AI, LLM, Machine Unlearning</td>

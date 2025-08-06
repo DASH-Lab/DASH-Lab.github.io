@@ -67,18 +67,6 @@ permalink: /News/
 			    </a>
 			    <p>Nov 2024. Won the Best Paper Award at CISC-W 2024 </p>
 			</div>
-			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/Tenure2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" style="" src="/img/Tenure2.jpg" />
-			    </a>
-			    <p>Professor Simon, Tenure Celebrations @ <strong>DASH Lab</strong> (Sept, 2024) </p>
-			</div>
-			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/Tenure4.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="430" style="border-radius: 8px;" src="/img/Tenure4.jpg" />
-			    </a>
-			    <p>Professor Simon, Tenure Celebrations @ <strong>DASH Lab</strong> (Sept, 2024) </p>
-			</div>
 		  	<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/Tenure3.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="430" style="border-radius: 8px;" src="/img/Tenure3.jpg" />
@@ -272,12 +260,6 @@ permalink: /News/
 			    <p>Taejun's graduation (Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/taejun_grad_02.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/taejun_grad_02.jpg" />
-			    </a>
-			    <p>Taejun's graduation (Feb 2024)</p>
-			</div>
-			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/taejun_grad_03.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="300" height="400" style="border-radius: 8px;" src="/img/taejun_grad_03.jpg" />
 			    </a>
@@ -304,10 +286,6 @@ permalink: /News/
 				<p>Diner at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/asvspoof_07.jpg"/>
-				<p>DASH group at ASVSpoof workshop (Japan - Nov 2023)</p>			
-			</div>
-			<div class="gallery-cell" style="margin: auto; padding:0">
 				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/asvspoof_08.jpg"/>
 				<p>DASH group at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
@@ -316,19 +294,7 @@ permalink: /News/
 				<p>Deliver Speech at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=280 height=360   style=" border-radius: 8px;" src="/img/son_inc.jpg"/>
-				<p> </p>			
-			</div>
-			<div class="gallery-cell" style="margin: auto; padding:0">
 				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/univ_glasgow_01.jpg"/>
-				<p>Visiting and meeting at University of Glasgow (Oct 2023)</p>			
-			</div>
-			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/univ_glasgow_02.jpg"/>
-				<p>Visiting and meeting at University of Glasgow (Oct 2023)</p>				
-			</div>
-			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=300 height=380    style=" border-radius: 8px;" src="/img/univ_glasgow_03.jpg"/>
 				<p>Visiting and meeting at University of Glasgow (Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">

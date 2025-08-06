@@ -63,6 +63,40 @@ permalink: /Publications/
             <table>
                 <thead>
                     <tr>
+                        <a><b>FakeChain: Exposing Shallow Cues in Multi-Step Deepfake Detection</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Minji Heo and <i><b>Simon S. Woo*</b> </i></small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The 34th ACM International Conference on Information and Knowledge Management (CIKM), Seoul, Korea</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=3 (Full Research Papers) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Multi-step or hybrid deepfakes, generated through successively applying different deepfake creation methods such as face-swapping, GAN-based generation, and Diffusion refinement, can pose an emerging challenge for detection models trained on single-step forgeries. While prior studies focus on isolated manipulations, little is known about model behavior under such compositional manipulation pipelines. In this work, we introduce FakeChain, a large-scale benchmark comprising 1-, 2-, and 3-Step manipulated face images synthesized using five state-of-the-art generators, including face-swap, GAN, and Diffusion models. Using this dataset, we analyze detection performance and spectral properties across manipulation depths, generator combinations, and quality settings. Our findings reveal that detection performance highly depends on the final manipulation step, with F1-score dropping by up to 58.83% when it differs from training. Detectors rely on shallow cues from the last stage, limiting generalization across multi-step forgeries. We also observe architectural differences in robustness to compression, with attention-based models being more sensitive than CNN-based ones. These insights highlight the need for detection models that account for manipulation history and benchmarks such as FakeChain that reflect the evolving nature of deepfake synthesis pipelines. We share some sample of our code here. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/_site/Publications/2025_CIKM_minji.PNG" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
                         <a><b>Learning Interpersonal Similarities in Multiple Fingers via Fingerprint Landmark-Aware Recognition Network</b></a>
                     </tr>
                 </thead>

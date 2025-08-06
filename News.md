@@ -26,6 +26,18 @@ permalink: /News/
 	<div align="center" style="background: rgba(255, 255, 255, 0.315);padding:0; margin: auto; height: 620px; width: 800px; border-radius: 8px;" class="flickity carousel" data-flickity='{ "autoPlay": true }'>
 	<!-- ###### REMEMBER TO RESIZE THE IMAGE TO ITS RATIO, DON'T LEAVE AS IT IS #######-->
 			<div class="gallery-cell" style="margin: auto; padding:0">
+			    <a href="/img/2025_summer_grad.jpg" target="_blank">
+			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/2025_summer_grad.jpg" />
+			    </a>
+			    <p>Summer 2025 Graduates, DASH Lab Researchers and Professor Simon S. Woo</p>
+			</div>
+			<div class="gallery-cell" style="margin: auto; padding:0">
+			    <a href="/img/2025_summer_grad2.jpg" target="_blank">
+			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/2025_summer_grad2.jpg" />
+			    </a>
+			    <p>Congratulations to the Summer 2025 graduates: Minji, Minseon, Inho, Razaib, and Binh. Wishing you all the best in your future endeavors!</p>
+			</div>
+			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/prof_selfie.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/prof_selfie.jpg" />
 			    </a>

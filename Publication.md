@@ -88,7 +88,144 @@ permalink: /Publications/
             </table>
         </div>
         <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
-            <img  loading="lazy" src="/_site/Publications/2025_CIKM_minji.PNG" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/img/2025_CIKM_minji.PNG" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>Seeing Through the Blur: Unlocking Defocus Maps for Deepfake Detection</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Minsun Jeon and <i><b>Simon S. Woo*</b> </i></small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The 34th ACM International Conference on Information and Knowledge Management (CIKM), Seoul, Korea</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=3 (Full Research Papers) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>The rapid advancement of generative AI has enabled the mass production of photorealistic synthetic images, blurring the boundary between authentic and fabricated visual content. This challenge is particularly evident in deepfake scenarios involving facial manipulation, but also extends to broader AI-generated content (AIGC) cases that feature fully synthesized scenes. As such content becomes increasingly difficult to distinguish from reality, the integrity of visual media is undergoing threat. To address this issue, we propose a physically interpretable deepfake detection framework and demonstrate that defocus blur can serve as an effective forensic signal. Defocus blur is a depth-dependent optical phenomenon that naturally occurs in camera-captured images due to lens focus and scene geometry. In contrast, synthetic images often lack realistic depth-of-field (DoF) characteristics, resulting in globally sharp or physically inconsistent blur patterns. To capture these discrepancies, we construct a defocus blur map and use it as a discriminative feature for detecting manipulated content. Our approach is supported by three in-depth feature analyses, and experimental results confirm that defocus blur provides a reliable and interpretable cue for identifying synthetic images. We aim for our defocus-based detection pipeline and interpretability tools to contribute meaningfully to ongoing research in media forensics. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/DoF_G.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>MU-OT: Effective and Unified Machine Unlearning with Optimal Transport for Feature Realignment</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Sangjun Chung and <i><b>Simon S. Woo*</b> </i></small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The 34th ACM International Conference on Information and Knowledge Management (CIKM), Seoul, Korea</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=2 (Short Research Papers) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Machine unlearning has emerged as a significant research topic in response to the increasing demands for data privacy and compliance with privacy regulations. The main challenge is to eliminate the influence of a specific subset of training data from a pretrained model while preserving the model’s performance on the retain set without retraining it from scratch. In this paper, we propose a novel efficient unlearning framework based on Optimal Transport, which can effectively work on class and instance-wise unlearning tasks. By analyzing and comparing the feature spaces of the original and retrained models, we formulate the unlearning problem as a distribution alignment task between the forget set and the retain set. We guide the feature distribution of the forget set, which initially forms distinct, structured patterns, to align with that of the retain set. In addition, we introduce a class-aware cost function for optimal transport that encourages inter-class transport, thereby enhancing the forgetting process. Extensive experiments on three public benchmark datasets demonstrate its superior effectiveness compared to previous SOTA methods. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/2025_CIKM_sangjun.jpg" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>FASE: Feature-Aligned Scene Encoding for Open-Vocabulary Object Detection in Remote Sensing</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Hyeonsu Hwang and <i><b>Simon S. Woo*</b> </i></small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The 34th ACM International Conference on Information and Knowledge Management (CIKM), Seoul, Korea</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=2 (Short Research Papers) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Open-vocabulary object detection (OVD) in remote sensing (RS) has shown remarkable generalization capabilities across diverse RS imagery through alignment between image and text embeddings. Such methods have further improved detection performance by incorporating additional scene-level context from both visual and textual domains. However, existing methods approximate scene context by simply averaging the text embeddings of the image’s object labels, which is insufficient to capture the rich linguistic context present in RS scenes. To address this limitation, we propose a novel Feature-Aligned Scene Encoding (FASE), which constructs comprehensive scene representations through high-quality captions generated by a specialized vision-language model. These caption embeddings are then aligned with visual features through a Feature Alignment Module (FAM) that employs dual-branch fusion with gating and cross-attention mechanisms. By utilizing enhanced scene encoding only during training, our method internalizes rich contextual knowledge while maintaining inference efficiency. Experiments on multiple benchmarks demonstrate significant improvements over state-of-the-art methods, validating the effectiveness of our approach for OVD in RS.</small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/2025_CIKM_Hyeonsu.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>Beyond Masking: Landmark-based Representation Learning and Knowledge-Distillation for Audio-Visual Deepfake Detection
+</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Chan Park, Muhammad Shahid Muneer and <i><b>Simon S. Woo*</b> </i></small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The 34th ACM International Conference on Information and Knowledge Management (CIKM), Seoul, Korea</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=2 (Short Research Papers) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Audio-visual deepfake detection methods demonstrate strong performance on academic datasets but fail significantly when applied to real-world deepfake content. To address the shortcomings of previous approaches, we introduce a landmark-guided knowledge-distillation framework, featuring two core innovations that enable the effective detection of real-world deepfakes. First, we propose Landmark-based Distillation (LBD), motivated by I-JEPA's representation learning approach. LBD utilizes KL-divergence to align facial landmark predictions from visual and audio encoders, enforcing focus on geometric facial features rather than spurious background information. Second, we introduce Multimodal Temporal Information Alignment (MTIA), which employs contrastive learning to enhance temporal consistency between audio and visual representations. We conduct extensive experiments on academic datasets and web-based deepfakes collected from diverse social media platforms, serving as real-world examples. Our proposed landmark-guided distillation framework achieves computational efficiency while improving multimodal video deepfake detection performance across a diverse range of deepfakes compared to existing methods.</small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/2025_CIKM_Chan.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
 <hr>

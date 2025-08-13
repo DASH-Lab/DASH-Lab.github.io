@@ -5,19 +5,6 @@ permalink: /News/
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
-<!--<b> - There are universities focusing on <u>teaching</u> and others for <u>research</u>. The object of our lab is to do "<u>research</u>" (not one-to-one teaching or tutoring)</b> <br> <br>
-<b> (대학도 교육 중심 대학이 있고, 연구 중심 대학이 있습니다. 저희 연구실은 "연구"를 하는 곳이고, 연구를 하고자 하는 학생만 지원 바랍니다. The sooner you get out from 학원식, 주입식, 정답맞추기 교육 mentality, the better for you...There are many ways to solve the same problem.)</b> <br> <br>
--->
-<b> 우리연구실은 <u>연구</u>를 하는곳입니다. 연구를 하실분만 오시면 됩니다!</b>
-<hr>
-<b> - 우리 연구실은 단순 성균관대 졸업장이 아니라, 좋은 연구를 하고, 좋은 논문을 쓰고 싶은 highly motivated한 석사/박사, 포닥분들 모집, who want to make a difference in the field and future!</b>
-
-<br>
-&rarr;<a href="https://swb.skku.edu/security2020/index.do" target="_blank">CS 석/박사지원 융합보안대학원</a> <br>
-&rarr;<a href="https://ai.skku.edu" target="_blank">인공지능학과 석/박사지원</a> <br>
-&rarr;<a href="https://skb.skku.edu/skkuaai/index.do" target="_blank">인공지능융합학과 석/박사지원</a> <br>
-&rarr;학석연계 email me<br> 
-
 
 
 <br>
@@ -466,6 +453,18 @@ permalink: /News/
 
 <div class="section">
 <div class="row">
+August 2025. One applied research paper, two full papers and three short papers are accepted at <b> CIKM 2025 (BK IF=3)</b>
+<br>
+Jan 2025. Three full papers are accepted at <b> ICCV 2025 (BK IF=4)</b>
+<br>
+July 2025. Three full papers are accepted at <b> MM 2025 (BK IF=4)</b>
+<br>
+Jan 2025. Three full papers are accepted at <b> ICCV 2025 (BK IF=4)</b>
+<br>
+Jan 2025. One full paper is accepted at <b> Euro S&P 2025 (Acceptance rate: 8%)</b>
+<br>
+Jan 2025. One full paper is accepted at <b> Euro S&P 2025 (Acceptance rate: 8%)</b>
+<br>
 Jan 2025.  Three short papers are accepted at <b> TheWebConf 2025 (BK IF=3) Congrats, All!</b>
 <br>
 Nov 2024. Won the <b> Best Paper Award at CISC-W </b> 2024

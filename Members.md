@@ -612,7 +612,7 @@ permalink: /Members/
               <tbody>
                 <tr>
                   <td>Binh M. Le  (Ph.D) 2025 </td>
-                  <td>Adversarial Robustness and Representation Learning</td>
+                  <td>Adversarial Robustness & Representation Learning</td>
                   <td> TBD </td>
                  </tr>
                 <tr>
@@ -632,27 +632,27 @@ permalink: /Members/
                  </tr>
                 <tr>
                   <td>김현준 (MS) 2025 </td>
-                  <td>AI, LLM, Machine Unlearning</td>
+                  <td>AI, LLM & Machine Unlearning</td>
                   <td> NAVER </td>
                  </tr>
                  <tr>
                   <td>Minha Kim (MS) 2024 </td>
-                  <td>Time Series, Reinforcement Learning</td>
+                  <td>Time Series & Reinforcement Learning</td>
                   <td> Applied Materials </td>
                  </tr>
                  <tr>
                   <td>Girim Ban (MS) 2024 </td>
-                  <td> Big Data, E-Commerce, Data Science </td>
+                  <td> Big Data, E-Commerce & Data Science </td>
                   <td> Data Scientist at Toss </td>
                  </tr>
                   <tr>
                   <td><a href="https://tae-mo.github.io/" target = "_blank"> Taejune Kim </a> (MS) 2024 </td>
-                  <td> Anomaly Detection, Computer Vision </td>
+                  <td> Anomaly Detection & Computer Vision </td>
                   <td> Robotics Lab, Hyundai Motor Company </td>
                  </tr>
                  <tr>
                   <td><a href="https://kishor-bhaumik.github.io/" target = "_blank">Kishor Kumar Bhaumik</a> (MS) 2023</td>
-                  <td>Image Manipulation Detection, Time Series</td>
+                  <td>Image Manipulation Detection & Time Series</td>
                   <td>UC Riverside, PhD program (w/ Dean's Distinguished Award + RA)</td>
                   </tr>
                   <tr>
@@ -667,22 +667,22 @@ permalink: /Members/
                  </tr>
                   <tr>
                   <td>Jinbeom Kim (MS) 2023</td>
-                  <td>Object detection and Knowledge Distillation</td>
+                  <td>Object detection & Knowledge Distillation</td>
                   <td>LIG 넥스원</td>
                  </tr>
                   <tr>
                   <td><a href = "https://sites.google.com/view/sangyuplee/" target = "_blank">Sangyup Lee</a> (Ph.D.) 2023</td>
-                  <td>Time-Series Anomaly Detection & Forecasting, Deepfakes Detection, Multi-media Forensics</td>
+                  <td>Time-Series Anomaly Detection & Forecasting, Deepfakes Detection & Multi-media Forensics</td>
                   <td>Hyundai Mobis</td>
                  </tr>
                  <tr>
                   <td>Keeyoung Kim (Ph.D.) 2022</td>
-                  <td>Computer Vision and Anomaly Detection</td>
+                  <td>Computer Vision & Anomaly Detection</td>
                   <td>Ingenio AI (Start-Up)</td>
                  </tr>
                  <tr>
                   <td><a href = "https://sites.google.com/view/adslab0/members?authuser=0" target = "_blank">Youjin Shin</a> (Ph.D.) 2022</td>
-                  <td>Tensor methods for Anomaly Detection and Deep learning, and Deepfakes</td>
+                  <td>Tensor methods for Anomaly Detection and Deep learning & Deepfakes</td>
                   <td>Tenured Track Assistant Professor, Department of Data Science, The Catholic University of Korea, Seoul</td>
                  </tr>
                  <tr>
@@ -692,7 +692,7 @@ permalink: /Members/
                  </tr>
                  <tr>
                   <td>Hanbin Lee (MS) 2022</td>
-                  <td>Object Detection, Knowledge distillation</td>
+                  <td>Object Detection & Knowledge distillation</td>
                   <td>Naver Z</td>
                  </tr>
                 <tr>
@@ -702,7 +702,7 @@ permalink: /Members/
                 </tr>
                 <tr>
                       <td>Minha Kim (MS) 2022</td>
-                      <td>Deepfakes and Continual Learning</td>
+                      <td>Deepfakes & Continual Learning</td>
                       <td>Naver Clova</td>
                 </tr>
                 <tr>
@@ -712,7 +712,7 @@ permalink: /Members/
                 </tr>
                 <tr>
                       <td>Sowon Jeon (MS) 2021</td>
-                      <td>Privacy, AI Security</td>
+                      <td>Privacy & AI Security</td>
                       <td>KPMG Korea</td>
                 </tr>
                 <tr>
@@ -722,7 +722,7 @@ permalink: /Members/
                 </tr>
                 <tr>
                       <td>Hasam Khalid (MS) 2021</td>
-                      <td>Deepfakes and Speech Applications</td>
+                      <td>Deepfakes & Speech Applications</td>
                       <td>Veev.inc</td>
                 </tr>
                 <tr>
@@ -732,7 +732,7 @@ permalink: /Members/
                 </tr>
                 <tr>
                     <td>Junyaup Kim (MS) 2021</td>
-                    <td>Fake Image Detection, Speech Applications</td>
+                    <td>Fake Image Detection & Speech Applications</td>
                     <td>IBM Korea</td>
                 </tr>
                 <tr>

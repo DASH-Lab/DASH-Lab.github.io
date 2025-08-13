@@ -131,6 +131,40 @@ permalink: /Publications/
             <table>
                 <thead>
                     <tr>
+                        <a><b>Anomaly Detection for Advanced Driver Assistance System with NCDE-based Normalizing Flow</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Kangjun Lee, Minha Kim, Youngho Jun and <i><b>Simon S. Woo*</b> </i></small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The 34th ACM International Conference on Information and Knowledge Management (CIKM), Seoul, Korea</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=3 (Applied Research Papers) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>For electric vehicles, the Adaptive Cruise Control (ACC) in Advanced Driver Assistance Systems (ADAS) is designed to assist braking based on driving conditions and user patterns. However, the driving data collected during development are limited and lack diversity, leading to late or aggressive braking. Moreover, it is necessary to effectively identify anomalies in braking patterns, which is critical for self-driving autonomous vehicles. We propose Graph Neural Controlled Differential Equation Normalizing Flow (GDFlow), which leverages Normalizing Flow (NF) with Neural Controlled Differential Equations (NCDE) to learn the distribution of normal driving patterns. Our approach captures spatio-temporal information from sensor data and accurately models continuous changes in driving patterns. Additionally, we introduce a quantilebased maximum likelihood objective to improve the likelihood estimate of normal data at the margin of the distribution. We validate GDFlow using real-world electric vehicle driving data that we collected from Hyundai IONIQ5 and GV80EV. Our model achieves state-of-the-art (SOTA) performance compared to nine baselines across four dataset configurations of different vehicle types and drivers. Furthermore, our model outperforms the latest anomaly detection methods across four time series benchmark datasets. Our approach demonstrates superior efficiency in inference time compared to existing methods. We plan to deploy GDFlow in the Hyundai Genesis GV90 by March 2026. </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/2025CIKM_kangjun_minha.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
                         <a><b>MU-OT: Effective and Unified Machine Unlearning with Optimal Transport for Feature Realignment</b></a>
                     </tr>
                 </thead>

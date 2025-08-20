@@ -14,7 +14,7 @@ permalink: /News/
 	<!-- ###### REMEMBER TO RESIZE THE IMAGE TO ITS RATIO, DON'T LEAVE AS IT IS #######-->
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_summer_grad.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="570" height="230" style="border-radius: 8px;" src="/img/2025_summer_grad.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="184" height="220" style="border-radius: 8px;" src="/img/2025_summer_grad.jpg" />
 			    </a>
 			    <p>Summer 2025 Graduates, DASH Lab Researchers and Professor Simon S. Woo</p>
 			</div>

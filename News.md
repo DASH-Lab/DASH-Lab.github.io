@@ -455,13 +455,9 @@ permalink: /News/
 <div class="row">
 August 2025. One applied research paper, two full papers and three short papers are accepted at <b> CIKM 2025 (BK IF=3)</b>
 <br>
-Jan 2025. Three full papers are accepted at <b> ICCV 2025 (BK IF=4)</b>
-<br>
 July 2025. Three full papers are accepted at <b> MM 2025 (BK IF=4)</b>
 <br>
 Jan 2025. Three full papers are accepted at <b> ICCV 2025 (BK IF=4)</b>
-<br>
-Jan 2025. One full paper is accepted at <b> Euro S&P 2025 (Acceptance rate: 8%)</b>
 <br>
 Jan 2025. One full paper is accepted at <b> Euro S&P 2025 (Acceptance rate: 8%)</b>
 <br>

@@ -611,7 +611,7 @@ permalink: /Members/
               </thead>
               <tbody>
                 <tr>
-                  <td><a href="https://sites.google.com/view/binhminhle/home" target ="_blank"> Binh M. Le  (Ph.D.) 2025 </td>
+                  <td><a href="https://sites.google.com/view/binhminhle/home" target ="_blank"> Binh M. Le</a> (Ph.D.) 2025 </td>
                   <td>Adversarial Robustness & Representation Learning</td>
                   <td> TBD </td>
                  </tr>

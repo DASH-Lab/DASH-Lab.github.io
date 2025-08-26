@@ -290,39 +290,6 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/InhoJung.jpg " alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inho Jung
-                      </div>
-                  </td>
-                  <td> Computer Science & Engineering </td>
-                  <td> Representation Learning, XAI </td>
-                  <td><i>inhovation97 @ g dot skku dot edu</i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/MinsunJeon.jpg " alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minsun Jeon 
-                      </div>
-                  </td>
-                  <td> Computer Science & Engineering </td>
-                  <td> Computer Vision & Multi-modal </td>
-                  <td><i>minsun9602 @ g dot skku dot edu</i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/dummy_female.png " alt="" height="auto" width="128" style="border-radius:50%"><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minji Heo 
-                      </div>
-                  </td>
-                  <td> Artificial Intelligence </td>
-                  <td> Computer Vision </td>
-                  <td><i>minji.h0224 @ g dot skku dot edu</i></td>
-                </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
                         <img  loading="lazy" src="/img/YurimJang.jpg " alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yurim Jang 
                       </div>

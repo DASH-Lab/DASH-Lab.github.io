@@ -54,6 +54,41 @@ permalink: /Publications/
     </p>
 
 
+<h4 style="margin-top:40px"><b>2026</b></h4>
+<hr>
+    <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div style="margin-left: 25px;margin-right: 10px;">
+            <table>
+                <thead>
+                    <tr>
+                        <a><b>AEON: Adaptive Embedding Optimized Noise for Robust Watermarking in Diffusion Models</b></a>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Muhammad Shahid Muneer and <i><b>Simon S. Woo*</b> </i></small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The IEEE/CVF Winter Conference on Applications of Computer Vision 2026, JW Marriott Starpass in Tucson, Arizona</a></b> </small> </p>
+                    </tr>
+                    <tr>
+                    <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=1 (Application Track) </font>
+                                </b> </small> </p>
+                    </tr>
+                    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>The widespread use of synthetic image generation models and the challenges associated with authenticity preservation have fueled the demand for robust watermarking methods to safeguard authenticity and protect the copyright of synthetic images. Existing watermarking methods embed. Invisible signatures in synthetic images often compromise image quality and remain susceptible to multiple watermark removal attacks, including reconstruction and forgery methods. To overcome this issue, we propose a novel watermarking approach, AEON, which seamlessly integrates the watermark into the latent diffusion process and ensures the watermark aligns with scene semantics in the final image. Unlike existing invisible in-diffusion watermarking and traditional hash-based methods, our approach adapts the neural synthesized hash-based watermark to the semantics of the generated image during the intermediate diffusion process instead of embedding traditional hashes with the initial noise. This facilitates visual coherence in the generated image while enhancing adversarial robustness and resilience against single or multiple adversarial and traditional watermark removal attacks. Our proposed approach a) modulates the noise sampling in each diffusion denoising iteration through a learnable watermark embedding, b) optimizes consistency, reconstruction, and similarity loss, enforcing local and global alignment between the watermark structure and the underlying image content, and c) generates a strong watermark by allowing late embedding of the watermark in the diffusion process. Empirical results demonstrate the effectiveness of the proposed approach in retaining quality and its robustness against cumulative adversarial attacks.  </small> </p>
+                    </tr>
+		    <tr>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;margin-left: 20px;"> </p>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
+            <img  loading="lazy" src="/img/2026_WACV_Shahid_AEON.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+        </div>
+    </div>
 
 
 <h4 style="margin-top:40px"><b>2025</b></h4>

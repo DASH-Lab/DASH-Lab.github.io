@@ -86,7 +86,7 @@ permalink: /Publications/
             </table>
         </div>
         <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
-            <img  loading="lazy" src="/img/2026_WACV_Shahid_AEON.png" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/img/2026_WACV_Shahid_AEON.jpg" style="max-height: 190px;max-width: 433px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
 

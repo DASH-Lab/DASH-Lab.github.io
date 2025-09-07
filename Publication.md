@@ -69,7 +69,7 @@ permalink: /Publications/
                         <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small>Muhammad Shahid Muneer and <i><b>Simon S. Woo*</b> </i></small> </p>
                     </tr>
                     <tr>
-                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The IEEE/CVF Winter Conference on Applications of Computer Vision 2026, JW Marriott Starpass in Tucson, Arizona</a></b> </small> </p>
+                        <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b><a href="https://cikm2025.org/"> The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), JW Marriott Starpass in Tucson, Arizona, 2026</a></b> </small> </p>
                     </tr>
                     <tr>
                     <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>

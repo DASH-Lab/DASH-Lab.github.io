@@ -3,6 +3,22 @@ layout: page
 title: Publications
 permalink: /Publications/
 ---
+ <style>
+        .year-header {
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+        .year-header:hover {
+            text-decoration: underline;
+        }
+        .publications {
+            display: none;
+            margin-left: 20px;
+        }
+    </style>
 
 <h1 class="page-title">Publications</h1>
 <center>
@@ -53,9 +69,11 @@ permalink: /Publications/
         </center>
     </p>
 
-
-<h4 style="margin-top:40px"><b>2026</b></h4>
+<div>
+<div class="year-header" onclick="toggleYear('2026')">
+<!-- <h4 style="margin-top:40px"><b>2026</b></h4> -->
 <hr>
+<div id="2018" class="publications">
     <div style="display: flex;flex-direction: row;justify-content: space-between;">
         <div style="margin-left: 25px;margin-right: 10px;">
             <table>
@@ -89,8 +107,8 @@ permalink: /Publications/
             <img  loading="lazy" src="/img/2026_WACV_Shahid_AEON.jpg" style="max-height: 330px;max-width: 493px;margin-bottom: 10px;height: auto;aspect-ratio: auto;">
         </div>
     </div>
-
-
+</div>
+</div>
 <h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
     <div style="display: flex;flex-direction: row;justify-content: space-between;">

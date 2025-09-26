@@ -651,7 +651,7 @@ permalink: /Members/
                   <tr>
                   <td><a href = "https://sites.google.com/view/sangyuplee/" target = "_blank">Sangyup Lee</a> (Ph.D.) 2023</td>
                   <td>Time-Series Anomaly Detection & Forecasting, Deepfakes Detection & Multi-media Forensics</td>
-                  <td>Hyundai Mobis</td>
+                  <td>Principal Research Engineer, Hyundai Mobis</td>
                  </tr>
                  <tr>
                   <td>Keeyoung Kim (Ph.D.) 2022</td>

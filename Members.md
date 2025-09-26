@@ -248,7 +248,7 @@ permalink: /Members/
                       </div>
                      </td>
                   <td>Computer Science & Engineering</td>
-                  <td>Deepfake Detection</td>    
+                  <td>Deepfake Generation, Deepfake Detection, PINNs</td>    
                      <td><i><tuannv99 at g dot skku dot edu</i></td>
                 </tr>
               </tbody>

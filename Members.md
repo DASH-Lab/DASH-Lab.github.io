@@ -240,6 +240,17 @@ permalink: /Members/
                   <td>Deepfake Detection</td>    
                      <td><i>razaibtariq @ g dot skku dot edu</i></td>
                 </tr>
+                <tr>
+                  <td align="center">
+                      <div style="display:flex;flex-direction:column">
+                          <img  loading="lazy" src="/img/tuannguyen.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;Tuan V. Nguyen
+                      </div>
+                     </td>
+                  <td>Computer Science & Engineering</td>
+                  <td>Deepfake Detection</td>    
+                     <td><i><tuannv99 at g dot skku dot edu</i></td>
+                </tr>
               </tbody>
             </table>
           </div>

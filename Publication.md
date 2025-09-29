@@ -79,8 +79,8 @@ permalink: /Publications/
     <p style="font-family: times, serif; font-size:30pt; font-style:italic">
         <center>    
 <!--              How: Change the number after the Conference Name to indicate # of paper accepted  -->
-            <h2 style="margin-bottom: 20px;"><strong>Since 2018</strong></h2>
-            <br><br><h4><strong>Main Track:</strong></h4>
+            <h3 style="margin-bottom: 20px;"><strong>Since 2018</strong></h3>
+            <br><br><h5><strong>Main Track:</strong></h5>
             <img  loading="lazy" alt="CIKM Main"     src="https://img.shields.io/badge/CIKM%20Main-8-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="WWW Main"      src="https://img.shields.io/badge/WWW%20Main-18-brightgreen?style=social"       height="20"  >&nbsp;
             <img  loading="lazy" alt="AAAI Main"     src="https://img.shields.io/badge/AAAI%20Main-2-brightgreen?style=social"      height="20">&nbsp;
@@ -98,10 +98,10 @@ permalink: /Publications/
             <img  loading="lazy" alt="SAC Main"     src="https://img.shields.io/badge/SAC%20Main-3-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="ICPR Main"     src="https://img.shields.io/badge/ICPR%20Main-1-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="IJCNN Main"     src="https://img.shields.io/badge/IJCNN%20Main-2-brightgreen?style=social"      height="20">&nbsp;
-            <br><br><h4><strong>Short Papers:</strong></h4>
+            <br><br><h5><strong>Short Papers:</strong></h5>
             <img  loading="lazy" alt="CIKM Short"     src="https://img.shields.io/badge/CIKM%20Short-2-orange?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="WWW Short"      src="https://img.shields.io/badge/WWW%20Short-4-orange?style=social"       height="20"  >&nbsp;
-            <br><br><h4><strong>Demo/Poster Track:</strong></h4>
+            <br><br><h5><strong>Demo/Poster Track:</strong></h5>
             <img  loading="lazy" alt="CIKM Demo"     src="https://img.shields.io/badge/CIKM%20Demo-12-blue?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="IJCAI Demo"    src="https://img.shields.io/badge/IJCAI%20Demo-3-blue?style=social"     height="20">&nbsp;
             <img  loading="lazy" alt="CHI Demo"      src="https://img.shields.io/badge/CHI%20Demo-15-blue?style=social"       height="20">&nbsp;
@@ -109,9 +109,9 @@ permalink: /Publications/
             <img  loading="lazy" alt="ASIACCS Poster"  src="https://img.shields.io/badge/ASIACCS%20Poster-1-blue?style=social"     height="20">&nbsp;
             <img  loading="lazy" alt="IJCNN Poster"     src="https://img.shields.io/badge/IJCNN%20Poster-1-blue?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="CHI Poster"      src="https://img.shields.io/badge/CHI%20Poster-1-blue?style=social"       height="20">&nbsp;
-            <br><br><h4><strong>Datasets/Benchmarks Track:</strong></h4>
+            <br><br><h5><strong>Datasets/Benchmarks Track:</strong></h5>
             <img  loading="lazy" alt="NeurIPS Dataset"  src="https://img.shields.io/badge/NeurIPS%20Dataset-3-purple?style=social"   height="20">&nbsp;
-            <br><br><h4><strong>Workshop Track:</strong></h4>
+            <br><br><h5><strong>Workshop Track:</strong></h5>
             <img  loading="lazy" alt="CIKM Workshop"     src="https://img.shields.io/badge/CIKM%20Workshop-3-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="CVPR Workshop"     src="https://img.shields.io/badge/CVPR%20Workshop-5-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="CHI Workshop"      src="https://img.shields.io/badge/CHI%20Workshop-6-yellow?style=social"       height="20">&nbsp;
@@ -122,9 +122,9 @@ permalink: /Publications/
             <img  loading="lazy" alt="AAAI Workshop"     src="https://img.shields.io/badge/AAAI%20Workshop-1-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="IJCAI Workshop"    src="https://img.shields.io/badge/IJCAI%20Workshop-1-yellow?style=social"     height="20">&nbsp;
             <img  loading="lazy" alt="ICCV Workshop"     src="https://img.shields.io/badge/ICCV%20Workshop-1-yellow?style=social"      height="20">&nbsp;
-            <br><br><h4><strong>Korean Conferences:</strong></h4>
+            <br><br><h5><strong>Korean Conferences:</strong></h5>
             <img  loading="lazy" alt="Korean Conferences"     src="https://img.shields.io/badge/Korean%20Conferences-7-gray?style=social"      height="20">&nbsp;
-            <br><br><h4><strong>Journal Publications:</strong></h4>
+            <br><br><h5><strong>Journal Publications:</strong></h5>
             <img  loading="lazy" alt="SCIE"     src="https://img.shields.io/badge/SCIE%20Journals-23-red?style=social"     height="20">
         </center>
     </p>

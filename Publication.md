@@ -79,7 +79,7 @@ permalink: /Publications/
     <p style="font-family: times, serif; font-size:30pt; font-style:italic">
         <center>    
 <!--              How: Change the number after the Conference Name to indicate # of paper accepted  -->
-            <sup>Since 2018:</sup>
+            <h3 style="margin-bottom: 20px;"><strong>Since 2018</strong></h3>
             <br><strong>Main Track:</strong><br>
             <img  loading="lazy" alt="CIKM Main"     src="https://img.shields.io/badge/CIKM%20Main-8-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="WWW Main"      src="https://img.shields.io/badge/WWW%20Main-18-brightgreen?style=social"       height="20"  >&nbsp;
@@ -3224,6 +3224,10 @@ Tallinn, Estonia, March, 2023</b></a></small> </p>
             </div>
          </div>
     <hr>
+</div>
+
+<!-- 2022 Publications -->
+<div class="year-section" id="year-2022">
     <h4 style="margin-top:40px"><b>2022</b></h4>
     <hr>    
         <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;">
@@ -4220,7 +4224,10 @@ SEX-92, synthesized LibriSpeech and NOISEX-92, and a Publicly Recorded dataset),
         </div>
     </div>
     <hr>
+</div>
 
+<!-- 2021 Publications -->
+<div class="year-section" id="year-2021">
     <h4 style="margin-top:20px"><b>2021</b></h4>
     <hr>    
     <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;">
@@ -5156,9 +5163,10 @@ SEX-92, synthesized LibriSpeech and NOISEX-92, and a Publicly Recorded dataset),
         </div>
     </div>
     <hr>
+</div>
 
-
-
+<!-- 2020 Publications -->
+<div class="year-section" id="year-2020">
     <h4 style="margin-top:40px"><b>2020</b></h4>
     <hr>
 
@@ -6164,6 +6172,10 @@ SEX-92, synthesized LibriSpeech and NOISEX-92, and a Publicly Recorded dataset),
         </div>
     </div>
     <hr>
+</div>
+
+<!-- 2019 Publications -->
+<div class="year-section" id="year-2019">
     <h4 style="margin-top:40px"><b>2019</b></h4>
     <hr>
     <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;">
@@ -6758,7 +6770,10 @@ SEX-92, synthesized LibriSpeech and NOISEX-92, and a Publicly Recorded dataset),
         </div>
     </div>
     <hr>
+</div>
 
+<!-- 2018 Publications -->
+<div class="year-section" id="year-2018">
     <h4 style="margin-top:40px"><b>2018</b></h4>
     <hr>
 
@@ -7480,8 +7495,10 @@ SEX-92, synthesized LibriSpeech and NOISEX-92, and a Publicly Recorded dataset),
         </div>
     </div>
     <hr>
+</div>
 
-
+<!-- 2017 & Earlier Publications -->
+<div class="year-section" id="year-older">
     <h4 style="margin-top:40px"><b>2017</b></h4>
     <hr>
 
@@ -8675,4 +8692,66 @@ Mike Cheng, Simon S. Woo, Kar-Ming Cheung, Sam Dolinar, and Jon Hamkins, "Improv
 <p> Simon S. Woo and Jay Gao, "CFDP Performance Over Weather-Dependent Ka-Band Channel", AIAA SpaceOps 2006, Rome, Italy (pdf) </p>
     </div>
 </div> -->
+</div>
+
+<script>
+let currentYear = '2025';
+const years = ['2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018', 'older'];
+
+function showYear(year) {
+    // Hide all year sections
+    const sections = document.querySelectorAll('.year-section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+
+    // Show the selected year section
+    const selectedSection = document.getElementById('year-' + year);
+    if (selectedSection) {
+        selectedSection.classList.add('active');
+    }
+
+    // Update button states
+    const buttons = document.querySelectorAll('.year-btn');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    const activeButton = document.querySelector(`[data-year="${year}"]`);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
+
+    currentYear = year;
+    updateNavigationButtons();
+}
+
+function previousYear() {
+    const currentIndex = years.indexOf(currentYear);
+    if (currentIndex > 0) {
+        showYear(years[currentIndex - 1]);
+    }
+}
+
+function nextYear() {
+    const currentIndex = years.indexOf(currentYear);
+    if (currentIndex < years.length - 1) {
+        showYear(years[currentIndex + 1]);
+    }
+}
+
+function updateNavigationButtons() {
+    const currentIndex = years.indexOf(currentYear);
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === years.length - 1;
+}
+
+// Initialize the page
+document.addEventListener('DOMContentLoaded', function() {
+    showYear('2025');
+});
+</script>
 

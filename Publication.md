@@ -79,8 +79,8 @@ permalink: /Publications/
     <p style="font-family: times, serif; font-size:30pt; font-style:italic">
         <center>    
 <!--              How: Change the number after the Conference Name to indicate # of paper accepted  -->
-            <h3 style="margin-bottom: 20px;"><strong>Since 2018</strong></h3>
-            <br><strong>Main Track:</strong><br>
+            <h1 style="margin-bottom: 20px;"><strong>Since 2018</strong></h1>
+            <br><br><strong>Main Track:</strong><br>
             <img  loading="lazy" alt="CIKM Main"     src="https://img.shields.io/badge/CIKM%20Main-8-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="WWW Main"      src="https://img.shields.io/badge/WWW%20Main-18-brightgreen?style=social"       height="20"  >&nbsp;
             <img  loading="lazy" alt="AAAI Main"     src="https://img.shields.io/badge/AAAI%20Main-2-brightgreen?style=social"      height="20">&nbsp;
@@ -98,10 +98,10 @@ permalink: /Publications/
             <img  loading="lazy" alt="SAC Main"     src="https://img.shields.io/badge/SAC%20Main-3-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="ICPR Main"     src="https://img.shields.io/badge/ICPR%20Main-1-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="IJCNN Main"     src="https://img.shields.io/badge/IJCNN%20Main-2-brightgreen?style=social"      height="20">&nbsp;
-            <br><strong>Short Papers:</strong><br>
+            <br><br><strong>Short Papers:</strong><br>
             <img  loading="lazy" alt="CIKM Short"     src="https://img.shields.io/badge/CIKM%20Short-2-orange?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="WWW Short"      src="https://img.shields.io/badge/WWW%20Short-4-orange?style=social"       height="20"  >&nbsp;
-            <br><strong>Demo/Poster Track:</strong><br>
+            <br><br><strong>Demo/Poster Track:</strong><br>
             <img  loading="lazy" alt="CIKM Demo"     src="https://img.shields.io/badge/CIKM%20Demo-12-blue?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="IJCAI Demo"    src="https://img.shields.io/badge/IJCAI%20Demo-3-blue?style=social"     height="20">&nbsp;
             <img  loading="lazy" alt="CHI Demo"      src="https://img.shields.io/badge/CHI%20Demo-15-blue?style=social"       height="20">&nbsp;
@@ -109,9 +109,9 @@ permalink: /Publications/
             <img  loading="lazy" alt="ASIACCS Poster"  src="https://img.shields.io/badge/ASIACCS%20Poster-1-blue?style=social"     height="20">&nbsp;
             <img  loading="lazy" alt="IJCNN Poster"     src="https://img.shields.io/badge/IJCNN%20Poster-1-blue?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="CHI Poster"      src="https://img.shields.io/badge/CHI%20Poster-1-blue?style=social"       height="20">&nbsp;
-            <br><strong>Datasets/Benchmarks Track:</strong><br>
+            <br><br><strong>Datasets/Benchmarks Track:</strong><br>
             <img  loading="lazy" alt="NeurIPS Dataset"  src="https://img.shields.io/badge/NeurIPS%20Dataset-3-purple?style=social"   height="20">&nbsp;
-            <br><strong>Workshop Track:</strong><br>
+            <br><br><strong>Workshop Track:</strong><br>
             <img  loading="lazy" alt="CIKM Workshop"     src="https://img.shields.io/badge/CIKM%20Workshop-3-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="CVPR Workshop"     src="https://img.shields.io/badge/CVPR%20Workshop-5-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="CHI Workshop"      src="https://img.shields.io/badge/CHI%20Workshop-6-yellow?style=social"       height="20">&nbsp;
@@ -122,7 +122,9 @@ permalink: /Publications/
             <img  loading="lazy" alt="AAAI Workshop"     src="https://img.shields.io/badge/AAAI%20Workshop-1-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="IJCAI Workshop"    src="https://img.shields.io/badge/IJCAI%20Workshop-1-yellow?style=social"     height="20">&nbsp;
             <img  loading="lazy" alt="ICCV Workshop"     src="https://img.shields.io/badge/ICCV%20Workshop-1-yellow?style=social"      height="20">&nbsp;
-            <br><strong>Journal Publications:</strong><br>
+            <br><br><strong>Korean Conferences:</strong><br>
+            <img  loading="lazy" alt="Korean Conferences"     src="https://img.shields.io/badge/Korean%20Conferences-7-gray?style=social"      height="20">&nbsp;
+            <br><br><strong>Journal Publications:</strong><br>
             <img  loading="lazy" alt="SCIE"     src="https://img.shields.io/badge/SCIE%20Journals-23-red?style=social"     height="20">
         </center>
     </p>
@@ -146,8 +148,8 @@ permalink: /Publications/
 
 <!-- 2025 Publications -->
 <div class="year-section active" id="year-2025">
+<h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
-<div id="2018" class="publications">
     <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;flex-wrap: nowrap;align-items: flex-start;">
         <div style="margin-left: 25px;margin-right: 10px;flex: 1;min-width: 0;">
             <table>
@@ -181,9 +183,6 @@ permalink: /Publications/
             <img  loading="lazy" src="/img/2026_WACV_Shahid_AEON.jpg" style="max-height: 330px;max-width: 493px;margin-bottom: 10px;height: auto;aspect-ratio: auto;">
         </div>
     </div>
-</div>
-</div>
-<h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
     <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;">
         <div style="margin-left: 25px;margin-right: 10px;flex: 1;min-width: 0;">
@@ -8693,22 +8692,31 @@ Mike Cheng, Simon S. Woo, Kar-Ming Cheung, Sam Dolinar, and Jon Hamkins, "Improv
     </div>
 </div> -->
 </div>
+</div> <!-- Close publications-content -->
 
 <script>
 let currentYear = '2025';
 const years = ['2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018', 'older'];
 
 function showYear(year) {
+    console.log('showYear called with:', year);
+
     // Hide all year sections
     const sections = document.querySelectorAll('.year-section');
+    console.log('Found sections:', sections.length);
     sections.forEach(section => {
         section.classList.remove('active');
+        console.log('Hiding section:', section.id);
     });
 
     // Show the selected year section
     const selectedSection = document.getElementById('year-' + year);
+    console.log('Selected section:', selectedSection);
     if (selectedSection) {
         selectedSection.classList.add('active');
+        console.log('Showing section:', selectedSection.id);
+    } else {
+        console.log('Section not found: year-' + year);
     }
 
     // Update button states

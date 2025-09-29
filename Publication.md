@@ -18,6 +18,40 @@ permalink: /Publications/
             display: none;
             margin-left: 20px;
         }
+        .year-section {
+            display: none;
+        }
+        .year-section.active {
+            display: block;
+        }
+        .pagination {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+        }
+        .pagination button {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            color: #007bff;
+            padding: 8px 16px;
+            margin: 0 4px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .pagination button:hover {
+            background-color: #e9ecef;
+        }
+        .pagination button.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .pagination button:disabled {
+            background-color: #e9ecef;
+            color: #6c757d;
+            cursor: not-allowed;
+        }
     </style>
 
 <h1 class="page-title">Publications</h1>
@@ -46,32 +80,50 @@ permalink: /Publications/
         <center>    
 <!--              How: Change the number after the Conference Name to indicate # of paper accepted  -->
             <sup>Since 2018:</sup>   
-            <img  loading="lazy" alt="CIKM"     src="https://img.shields.io/badge/CIKM-16-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="WWW"      src="https://img.shields.io/badge/WWW-6-brightgreen?style=social"       height="20"  >&nbsp;            
-            <img  loading="lazy" alt="AAAI"     src="https://img.shields.io/badge/AAAI-4-brightgreen?style=social"      height="20">&nbsp;      
-            <img  loading="lazy" alt="KDD"      src="https://img.shields.io/badge/KDD-4-brightgreen?style=social"       height="20">&nbsp;
+            <img  loading="lazy" alt="CIKM"     src="https://img.shields.io/badge/CIKM-24-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="WWW"      src="https://img.shields.io/badge/WWW-11-brightgreen?style=social"       height="20"  >&nbsp;            
+            <img  loading="lazy" alt="AAAI"     src="https://img.shields.io/badge/AAAI-5-brightgreen?style=social"      height="20">&nbsp;      
+            <img  loading="lazy" alt="KDD"      src="https://img.shields.io/badge/KDD-5-brightgreen?style=social"       height="20">&nbsp;
             <img  loading="lazy" alt="NeurIPSDataset"  src="https://img.shields.io/badge/NeurIPSDataset-2-brightgreen?style=social"   height="20">&nbsp;
-	    <img  loading="lazy" alt="IJCAI"    src="https://img.shields.io/badge/IJCAI-4-brightgreen?style=social"     height="20">&nbsp;	
-	    <img  loading="lazy" alt="CVPR"     src="https://img.shields.io/badge/CVPR-1-brightgreen?style=social"      height="20">&nbsp;
-	    <img  loading="lazy" alt="ICCV"     src="https://img.shields.io/badge/ICCV-1-brightgreen?style=social"      height="20">&nbsp;       
+	    <img  loading="lazy" alt="IJCAI"    src="https://img.shields.io/badge/IJCAI-5-brightgreen?style=social"     height="20">&nbsp;	
+	    <img  loading="lazy" alt="CVPR"     src="https://img.shields.io/badge/CVPR-3-brightgreen?style=social"      height="20">&nbsp;
+	    <img  loading="lazy" alt="ICCV"     src="https://img.shields.io/badge/ICCV-4-brightgreen?style=social"      height="20">&nbsp;       
             <img  loading="lazy" alt="ICML"     src="https://img.shields.io/badge/ICML-1-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="ACMMM"    src="https://img.shields.io/badge/ACMMM-1-brightgreen?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="CHI"      src="https://img.shields.io/badge/CHI-1-brightgreen?style=social"       height="20">&nbsp;
+            <img  loading="lazy" alt="ACMMM"    src="https://img.shields.io/badge/ACMMM-4-brightgreen?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="CHI"      src="https://img.shields.io/badge/CHI-2-brightgreen?style=social"       height="20">&nbsp;
             <img  loading="lazy" alt="ACSAC"    src="https://img.shields.io/badge/ACSAC-1-brightgreen?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="RAID"     src="https://img.shields.io/badge/RAID-1-brightgreen?style=social"      height="20">&nbsp;            
+            <img  loading="lazy" alt="RAID"     src="https://img.shields.io/badge/RAID-2-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="ECCV"     src="https://img.shields.io/badge/ECCV-2-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="WACV"     src="https://img.shields.io/badge/WACV-3-brightgreen?style=social"      height="20">&nbsp; 
+            <img  loading="lazy" alt="WACV"     src="https://img.shields.io/badge/WACV-2-brightgreen?style=social"      height="20">&nbsp; 
             <img  loading="lazy" alt="PAKDD"     src="https://img.shields.io/badge/PAKDD-4-brightgreen?style=social"      height="20">&nbsp;
-	    <img  loading="lazy" alt="ACCV"     src="https://img.shields.io/badge/ACCV-4-brightgreen?style=social"      height="20">&nbsp; 
+	    <img  loading="lazy" alt="ACCV"     src="https://img.shields.io/badge/ACCV-2-brightgreen?style=social"      height="20">&nbsp; 
 	    <img  loading="lazy" alt="SAC"     src="https://img.shields.io/badge/SAC-7-brightgreen?style=social"      height="20">&nbsp; 
 	     <img  loading="lazy" alt="EuroS&P"     src="https://img.shields.io/badge/EuroS&P-1-brightgreen?style=social"     height="20">
+                        <img  loading="lazy" alt="ICPR"     src="https://img.shields.io/badge/ICPR-4-brightgreen?style=social"      height="20">&nbsp;
+                        <img  loading="lazy" alt="ASIACCS"     src="https://img.shields.io/badge/ASIACCS-1-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="SCIE"     src="https://img.shields.io/badge/SCIE-23-brightgreen?style=social"     height="20">
         </center>
     </p>
 
-<div>
-<div class="year-header" onclick="toggleYear('2026')">
-<!-- <h4 style="margin-top:40px"><b>2026</b></h4> -->
+<!-- Year Navigation -->
+<div class="pagination">
+    <button onclick="previousYear()" id="prevBtn">◄ Previous</button>
+    <button onclick="showYear('2025')" class="year-btn active" data-year="2025">2025</button>
+    <button onclick="showYear('2024')" class="year-btn" data-year="2024">2024</button>
+    <button onclick="showYear('2023')" class="year-btn" data-year="2023">2023</button>
+    <button onclick="showYear('2022')" class="year-btn" data-year="2022">2022</button>
+    <button onclick="showYear('2021')" class="year-btn" data-year="2021">2021</button>
+    <button onclick="showYear('2020')" class="year-btn" data-year="2020">2020</button>
+    <button onclick="showYear('2019')" class="year-btn" data-year="2019">2019</button>
+    <button onclick="showYear('2018')" class="year-btn" data-year="2018">2018</button>
+    <button onclick="showYear('older')" class="year-btn" data-year="older">2017 & Earlier</button>
+    <button onclick="nextYear()" id="nextBtn">Next ►</button>
+</div>
+
+<div id="publications-content">
+
+<!-- 2025 Publications -->
+<div class="year-section active" id="year-2025">
 <hr>
 <div id="2018" class="publications">
     <div style="display: flex;flex-direction: row;justify-content: space-between;">
@@ -141,7 +193,7 @@ permalink: /Publications/
             </table>
         </div>
         <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
-            <img  loading="lazy" src="/img/nips2025_sangyong.jpg" style="max-height: 550px;max-width: 550px; margin-bottom: 0px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/img/nips2025_sangyong.jpg" style="max-height: 330px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
 <hr>
@@ -175,7 +227,7 @@ permalink: /Publications/
             </table>
         </div>
         <div class="col-lg-3" style="vertical-align: middle;display:flex;flex-direction:row;justify-content:center">
-            <img  loading="lazy" src="/img/neurips-25-Razaib.png" style="max-height: 550px;max-width: 550px; margin-bottom: 0px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/img/neurips-25-Razaib.png" style="max-height: 330px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
 <hr>
@@ -1093,11 +1145,12 @@ Asaduzzaman, Upama Kabir, A.M. Aahad and <i><b>Simon S. Woo*</b> </i> </small> <
              <img  loading="lazy" src="DMKD_Figure_1.png" style="max-height: 500px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
             </div>
          </div>
-    <hr>     
+    <hr>
+</div>
+<!-- End of 2025 Publications -->
 
-
-
-
+<!-- 2024 Publications -->
+<div class="year-section" id="year-2024">
 <h4 style="margin-top:40px"><b>2024</b></h4>
 <hr>
  
@@ -2320,6 +2373,11 @@ for web and cloud applications.
             </div>
          </div>
 	<hr>
+</div>
+<!-- End of 2024 Publications -->
+
+<!-- 2023 Publications -->
+<div class="year-section" id="year-2023">
     <h4 style="margin-top:40px"><b>2023</b></h4>
     <hr>  
     <div style="display: flex;flex-direction: row;justify-content: space-between;">
@@ -8595,3 +8653,81 @@ Mike Cheng, Simon S. Woo, Kar-Ming Cheung, Sam Dolinar, and Jon Hamkins, "Improv
 <p> Simon S. Woo and Jay Gao, "CFDP Performance Over Weather-Dependent Ka-Band Channel", AIAA SpaceOps 2006, Rome, Italy (pdf) </p>
     </div>
 </div> -->
+
+<!-- Year-based Pagination Navigation -->
+<div style="text-align: center; margin: 40px 0; padding: 20px; background-color: #f8f9fa; border-radius: 8px;">
+    <button onclick="showYear(\"2025\")" class="year-btn active" style="background-color: #007bff; color: white; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2025</button>
+    <button onclick="showYear(\"2024\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2024</button>
+    <button onclick="showYear(\"2023\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2023</button>
+    <button onclick="showYear(\"2022\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2022</button>
+    <button onclick="showYear(\"2021\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2021</button>
+    <button onclick="showYear(\"2020\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2020</button>
+    <button onclick="showYear(\"2019\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2019</button>
+    <button onclick="showYear(\"2018\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2018</button>
+    <button onclick="showYear(\"older\")" class="year-btn" style="background-color: #ffffff; color: #007bff; border: 2px solid #007bff; padding: 10px 18px; margin: 0 5px; cursor: pointer; border-radius: 6px; font-weight: bold;">2017 & Earlier</button>
+</div>
+
+<script>
+function showYear(year) {
+    const yearRanges = {
+        "2025": ["2025"],
+        "2024": ["2024"],
+        "2023": ["2023"],
+        "2022": ["2022"],
+        "2021": ["2021"],
+        "2020": ["2020"],
+        "2019": ["2019"],
+        "2018": ["2018"],
+        "older": ["2017", "2016", "2015", "2014", "2011", "2010", "2009", "2008", "2007", "2006"]
+    };
+
+    const allH4s = document.querySelectorAll("h4");
+    allH4s.forEach(h4 => {
+        if (h4.innerHTML.includes("<b>20")) {
+            let currentElement = h4;
+            while (currentElement && currentElement.nextElementSibling) {
+                currentElement = currentElement.nextElementSibling;
+                if (currentElement.tagName === "H4" && currentElement.innerHTML.includes("<b>20")) {
+                    break;
+                }
+                currentElement.style.display = "none";
+            }
+            h4.style.display = "none";
+        }
+    });
+
+    const yearsToShow = yearRanges[year] || [];
+    yearsToShow.forEach(targetYear => {
+        allH4s.forEach(h4 => {
+            if (h4.innerHTML.includes(`<b>${targetYear}</b>`)) {
+                h4.style.display = "block";
+                let currentElement = h4;
+                while (currentElement && currentElement.nextElementSibling) {
+                    currentElement = currentElement.nextElementSibling;
+                    if (currentElement.tagName === "H4" && currentElement.innerHTML.includes("<b>20")) {
+                        break;
+                    }
+                    currentElement.style.display = "block";
+                }
+            }
+        });
+    });
+
+    document.querySelectorAll(".year-btn").forEach(btn => {
+        btn.style.backgroundColor = "#ffffff";
+        btn.style.color = "#007bff";
+    });
+
+    const activeBtn = event ? event.target : document.querySelector(`[onclick="showYear(\"${year}\")"]`);
+    if (activeBtn) {
+        activeBtn.style.backgroundColor = "#007bff";
+        activeBtn.style.color = "white";
+    }
+
+    window.scrollTo({top: 0, behavior: "smooth"});
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    showYear("2025");
+});
+</script>

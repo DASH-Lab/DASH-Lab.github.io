@@ -132,8 +132,8 @@ permalink: /Publications/
 <!-- Year Navigation -->
 <div class="pagination">
     <button onclick="previousYear()" id="prevBtn">◄ Previous</button>
+    <button onclick="showYear('2026')" class="year-btn" data-year="2026">2026</button>
     <button onclick="showYear('2025')" class="year-btn active" data-year="2025">2025</button>
-    <button onclick="showYear('2025')" class="year-btn" data-year="2026">2026</button>
     <button onclick="showYear('2024')" class="year-btn" data-year="2024">2024</button>
     <button onclick="showYear('2023')" class="year-btn" data-year="2023">2023</button>
     <button onclick="showYear('2022')" class="year-btn" data-year="2022">2022</button>

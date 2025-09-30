@@ -1169,7 +1169,7 @@ Asaduzzaman, Upama Kabir, A.M. Aahad and <i><b>Simon S. Woo*</b> </i> </small> <
             </table>
             </div>
             <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-             <img  loading="lazy" src="/Publications/DMKD_Figure_1.png" style="max-height: 500px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+             <img  loading="lazy" src="/Publications/DMKD_Figure_1.png" style="max-height: 234px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
             </div>
          </div>
     <hr>
@@ -1403,7 +1403,7 @@ in cloud-edge systems.
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/ICTC 2024.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/ICTC 2024.png"  style="max-height: 463px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>		
  <hr>
@@ -1436,7 +1436,7 @@ in cloud-edge systems.
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/nature-2024.webp"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/nature-2024.webp"  style="max-height: 191px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>		
  <hr>
@@ -1468,7 +1468,7 @@ in cloud-edge systems.
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/kari.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/kari.png"  style="max-height: 227px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>		
  <hr>
@@ -1501,7 +1501,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/ssmt.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/ssmt.png"  style="max-height: 201px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>		
  <hr>
@@ -1533,7 +1533,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/mixad.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/mixad.png"  style="max-height: 264px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>		
  <hr>
@@ -1566,7 +1566,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/cikm-inzi-2024.jpg"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/cikm-inzi-2024.jpg"  style="max-height: 299px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>		
  <hr>
@@ -1598,7 +1598,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/CIKM2024-choi.jpg"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/CIKM2024-choi.jpg"  style="max-height: 209px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>	
  <hr>
@@ -1631,7 +1631,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/CIKM2024-ban.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/CIKM2024-ban.png"  style="max-height: 160px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>
     <hr>
@@ -1658,7 +1658,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/CIKM2024-Back.jpg"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/CIKM2024-Back.jpg"  style="max-height: 151px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>
     <hr>
@@ -1690,7 +1690,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/eccv.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/eccv.png"  style="max-height: 149px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>
  <hr>  
@@ -1722,7 +1722,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/prletters.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/prletters.png"  style="max-height: 255px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>
  <hr>
@@ -1748,7 +1748,7 @@ most optimal representation of the temporal pattern across all the tasks. We exp
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/ICIP_workshop.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/ICIP_workshop.png"  style="max-height: 241px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>
 <hr>
@@ -1872,7 +1872,7 @@ and speeding the optimization up to three times faster.</small> </p>
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/kangjun_ijcai24.png"  style="max-height: 195px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/kangjun_ijcai24.png"  style="max-height: 160px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div>
     </div>
 	<hr>
@@ -1929,7 +1929,7 @@ and speeding the optimization up to three times faster.</small> </p>
             </table>
         </div>
         <div style="flex: 0 0 auto;margin-left: 15px;display: flex;align-items: flex-start;justify-content: center;max-width: 493px;">
-            <img  loading="lazy" src="/Publications/Moire_CVPR_Workshop.png"  style="max-height: 275px;max-width: 560px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
+            <img  loading="lazy" src="/Publications/Moire_CVPR_Workshop.png"  style="max-height: 241px;max-width: 493px; margin-bottom: 10px; height: auto;aspect-ratio: auto;">
         </div> 
     </div>
 	<hr>

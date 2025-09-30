@@ -146,11 +146,10 @@ permalink: /Publications/
 
 <div id="publications-content">
 
-<!-- 2025 Publications -->
-<div class="year-section active" id="year-2025">
-<h4 style="margin-top:40px"><b>2025</b></h4>
+<div class="year-section active" id="year-2026">
+<h4 style="margin-top:40px"><b>2026</b></h4>
 <hr>
-    <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;flex-wrap: nowrap;align-items: flex-start;">
+<div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;flex-wrap: nowrap;align-items: flex-start;">
         <div style="margin-left: 25px;margin-right: 10px;flex: 1;min-width: 0;">
             <table>
                 <thead>
@@ -183,7 +182,13 @@ permalink: /Publications/
             <img  loading="lazy" src="/img/2026_WACV_Shahid_AEON.jpg" style="max-height: 330px;max-width: 493px;margin-bottom: 10px;height: auto;aspect-ratio: auto;">
         </div>
     </div>
+</div>
+
+<!-- 2025 Publications -->
+<div class="year-section active" id="year-2025">
+<h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
+    
     <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;">
         <div style="margin-left: 25px;margin-right: 10px;flex: 1;min-width: 0;">
             <table>

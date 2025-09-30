@@ -167,7 +167,7 @@ permalink: /Publications/
                     </tr>
                     <tr>
                     <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
-                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=1 (Application Track) Acceptance rate 6.9% in 1<sub>st</sub> Round </font>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=1 (Application Track) Acceptance rate 6.9% in 1<sup>st</sup> Round </font>
                                 </b> </small> </p>
                     </tr>
                     <tr>

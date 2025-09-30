@@ -132,6 +132,7 @@ permalink: /Publications/
 <!-- Year Navigation -->
 <div class="pagination">
     <button onclick="previousYear()" id="prevBtn">◄ Previous</button>
+    <button onclick="showYear('2026')" class="year-btn" data-year="2026">2026</button>
     <button onclick="showYear('2025')" class="year-btn active" data-year="2025">2025</button>
     <button onclick="showYear('2024')" class="year-btn" data-year="2024">2024</button>
     <button onclick="showYear('2023')" class="year-btn" data-year="2023">2023</button>
@@ -146,11 +147,10 @@ permalink: /Publications/
 
 <div id="publications-content">
 
-<!-- 2025 Publications -->
-<div class="year-section active" id="year-2025">
-<h4 style="margin-top:40px"><b>2025</b></h4>
+<div class="year-section active" id="year-2026">
+<h4 style="margin-top:40px"><b>2026</b></h4>
 <hr>
-    <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;flex-wrap: nowrap;align-items: flex-start;">
+<div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;flex-wrap: nowrap;align-items: flex-start;">
         <div style="margin-left: 25px;margin-right: 10px;flex: 1;min-width: 0;">
             <table>
                 <thead>
@@ -167,7 +167,7 @@ permalink: /Publications/
                     </tr>
                     <tr>
                     <p style="margin-top: 0px;margin-bottom: 0px;text-align: justify;"> <small> <b>
-                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=1 (Application Track) </font>
+                               <font color='blue'>(Accepted) BK Computer Science 최우수학회 IF=1 (Application Track) Acceptance rate 6.9% in 1<sup>st</sup> Round </font>
                                 </b> </small> </p>
                     </tr>
                     <tr>
@@ -183,7 +183,13 @@ permalink: /Publications/
             <img  loading="lazy" src="/img/2026_WACV_Shahid_AEON.jpg" style="max-height: 330px;max-width: 493px;margin-bottom: 10px;height: auto;aspect-ratio: auto;">
         </div>
     </div>
+</div>
+
+<!-- 2025 Publications -->
+<div class="year-section active" id="year-2025">
+<h4 style="margin-top:40px"><b>2025</b></h4>
 <hr>
+    
     <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;">
         <div style="margin-left: 25px;margin-right: 10px;flex: 1;min-width: 0;">
             <table>

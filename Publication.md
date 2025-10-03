@@ -81,51 +81,62 @@ permalink: /Publications/
 <!--              How: Change the number after the Conference Name to indicate # of paper accepted  -->
             <h3 style="margin-bottom: 20px;"><strong>Since 2018</strong></h3>
             <br><br><h5><strong>Main Track:</strong></h5>
-            <img  loading="lazy" alt="CIKM Main"     src="https://img.shields.io/badge/CIKM%20Main-8-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="WWW Main"      src="https://img.shields.io/badge/WWW%20Main-18-brightgreen?style=social"       height="20"  >&nbsp;
-            <img  loading="lazy" alt="AAAI Main"     src="https://img.shields.io/badge/AAAI%20Main-2-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="KDD Main"      src="https://img.shields.io/badge/KDD%20Main-5-brightgreen?style=social"       height="20">&nbsp;
             <img  loading="lazy" alt="NeurIPS Main"  src="https://img.shields.io/badge/NeurIPS%20Main-1-brightgreen?style=social"   height="20">&nbsp;
-	    <img  loading="lazy" alt="IJCAI Main"    src="https://img.shields.io/badge/IJCAI%20Main-1-brightgreen?style=social"     height="20">&nbsp;
-	    <img  loading="lazy" alt="CVPR Main"     src="https://img.shields.io/badge/CVPR%20Main-1-brightgreen?style=social"      height="20">&nbsp;
-	    <img  loading="lazy" alt="ICCV Main"     src="https://img.shields.io/badge/ICCV%20Main-1-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="ICML Main"     src="https://img.shields.io/badge/ICML%20Main-2-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="ACMMM Main"    src="https://img.shields.io/badge/ACMMM%20Main-1-brightgreen?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="CHI Main"      src="https://img.shields.io/badge/CHI%20Main-16-brightgreen?style=social"       height="20">&nbsp;
+            <img  loading="lazy" alt="ICML Main"     src="https://img.shields.io/badge/ICML%20Main-1-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="CVPR Main"     src="https://img.shields.io/badge/CVPR%20Main-1-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="ICCV Main"     src="https://img.shields.io/badge/ICCV%20Main-4-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="ECCV Main"     src="https://img.shields.io/badge/ECCV%20Main-2-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="AAAI Main"     src="https://img.shields.io/badge/AAAI%20Main-4-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="IJCAI Main"    src="https://img.shields.io/badge/IJCAI%20Main-2-brightgreen?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="KDD Main"      src="https://img.shields.io/badge/KDD%20Main-1-brightgreen?style=social"       height="20">&nbsp;
+            <img  loading="lazy" alt="SIGKDD Main"     src="https://img.shields.io/badge/SIGKDD%20Main-1-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="WWW Main"      src="https://img.shields.io/badge/WWW%20Main-7-brightgreen?style=social"       height="20"  >&nbsp;
+            <img  loading="lazy" alt="CIKM Main"     src="https://img.shields.io/badge/CIKM%20Main-16-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="CHI Main"      src="https://img.shields.io/badge/CHI%20Main-2-brightgreen?style=social"       height="20">&nbsp;
+            <img  loading="lazy" alt="ACMMM Main"    src="https://img.shields.io/badge/ACMMM%20Main-4-brightgreen?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="ACCV Main"     src="https://img.shields.io/badge/ACCV%20Main-3-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="ICPR Main"     src="https://img.shields.io/badge/ICPR%20Main-4-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="PAKDD Main"     src="https://img.shields.io/badge/PAKDD%20Main-4-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="ECML-PKDD Main"     src="https://img.shields.io/badge/ECML--PKDD%20Main-2-brightgreen?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="ASIACCS Main"  src="https://img.shields.io/badge/ASIACCS%20Main-2-brightgreen?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="ECCV Main"     src="https://img.shields.io/badge/ECCV%20Main-1-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="ACCV Main"     src="https://img.shields.io/badge/ACCV%20Main-1-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="SAC Main"     src="https://img.shields.io/badge/SAC%20Main-3-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="ICPR Main"     src="https://img.shields.io/badge/ICPR%20Main-1-brightgreen?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="IJCNN Main"     src="https://img.shields.io/badge/IJCNN%20Main-2-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="ACSAC Main"     src="https://img.shields.io/badge/ACSAC%20Main-1-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="RAID Main"     src="https://img.shields.io/badge/RAID%20Main-2-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="SOUPS Main"     src="https://img.shields.io/badge/SOUPS%20Main-1-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="IJCNN Main"     src="https://img.shields.io/badge/IJCNN%20Main-1-brightgreen?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="SAC Main"     src="https://img.shields.io/badge/SAC%20Main-13-brightgreen?style=social"      height="20">&nbsp;
             <br><br><h5><strong>Short Papers:</strong></h5>
-            <img  loading="lazy" alt="CIKM Short"     src="https://img.shields.io/badge/CIKM%20Short-2-orange?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="KDD Short"      src="https://img.shields.io/badge/KDD%20Short-1-orange?style=social"       height="20">&nbsp;
             <img  loading="lazy" alt="WWW Short"      src="https://img.shields.io/badge/WWW%20Short-4-orange?style=social"       height="20"  >&nbsp;
+            <img  loading="lazy" alt="CIKM Short"     src="https://img.shields.io/badge/CIKM%20Short-5-orange?style=social"      height="20">&nbsp;
             <br><br><h5><strong>Demo/Poster Track:</strong></h5>
-            <img  loading="lazy" alt="CIKM Demo"     src="https://img.shields.io/badge/CIKM%20Demo-12-blue?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="IJCAI Demo"    src="https://img.shields.io/badge/IJCAI%20Demo-3-blue?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="CHI Demo"      src="https://img.shields.io/badge/CHI%20Demo-15-blue?style=social"       height="20">&nbsp;
-            <img  loading="lazy" alt="ACSAC Poster"    src="https://img.shields.io/badge/ACSAC%20Poster-1-blue?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="ASIACCS Poster"  src="https://img.shields.io/badge/ASIACCS%20Poster-1-blue?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="IJCNN Poster"     src="https://img.shields.io/badge/IJCNN%20Poster-1-blue?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="CHI Poster"      src="https://img.shields.io/badge/CHI%20Poster-1-blue?style=social"       height="20">&nbsp;
+            <img  loading="lazy" alt="CCS Poster"  src="https://img.shields.io/badge/CCS%20Poster-3-blue?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="IJCAI Demo"    src="https://img.shields.io/badge/IJCAI%20Demo-2-blue?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="CIKM Demo"     src="https://img.shields.io/badge/CIKM%20Demo-1-blue?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="WACV Demo"    src="https://img.shields.io/badge/WACV%20Demo-2-blue?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="ACSAC Poster"    src="https://img.shields.io/badge/ACSAC%20Poster-2-blue?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="ASIACCS Poster"  src="https://img.shields.io/badge/ASIACCS%20Poster-2-blue?style=social"     height="20">&nbsp;
             <br><br><h5><strong>Datasets/Benchmarks Track:</strong></h5>
             <img  loading="lazy" alt="NeurIPS Dataset"  src="https://img.shields.io/badge/NeurIPS%20Dataset-3-purple?style=social"   height="20">&nbsp;
+            <img  loading="lazy" alt="KDD Dataset"  src="https://img.shields.io/badge/KDD%20Dataset-1-purple?style=social"   height="20">&nbsp;
+            <br><br><h5><strong>SoK Track:</strong></h5>
+            <img  loading="lazy" alt="EuroS&P SoK"  src="https://img.shields.io/badge/EuroS%26P%20SoK-1-purple?style=social"   height="20">&nbsp;
             <br><br><h5><strong>Workshop Track:</strong></h5>
-            <img  loading="lazy" alt="CIKM Workshop"     src="https://img.shields.io/badge/CIKM%20Workshop-3-yellow?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="CVPR Workshop"     src="https://img.shields.io/badge/CVPR%20Workshop-5-yellow?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="CHI Workshop"      src="https://img.shields.io/badge/CHI%20Workshop-6-yellow?style=social"       height="20">&nbsp;
-            <img  loading="lazy" alt="ASIACCS Workshop"  src="https://img.shields.io/badge/ASIACCS%20Workshop-3-yellow?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="RAID Workshop"     src="https://img.shields.io/badge/RAID%20Workshop-1-yellow?style=social"      height="20">&nbsp;
-            <img  loading="lazy" alt="KDD Workshop"      src="https://img.shields.io/badge/KDD%20Workshop-3-yellow?style=social"       height="20">&nbsp;
-            <img  loading="lazy" alt="WWW Workshop"      src="https://img.shields.io/badge/WWW%20Workshop-2-yellow?style=social"       height="20"  >&nbsp;
+            <img  loading="lazy" alt="CVPR Workshop"     src="https://img.shields.io/badge/CVPR%20Workshop-7-yellow?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="ICCV Workshop"     src="https://img.shields.io/badge/ICCV%20Workshop-1-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="AAAI Workshop"     src="https://img.shields.io/badge/AAAI%20Workshop-1-yellow?style=social"      height="20">&nbsp;
             <img  loading="lazy" alt="IJCAI Workshop"    src="https://img.shields.io/badge/IJCAI%20Workshop-1-yellow?style=social"     height="20">&nbsp;
-            <img  loading="lazy" alt="ICCV Workshop"     src="https://img.shields.io/badge/ICCV%20Workshop-1-yellow?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="KDD Workshop"      src="https://img.shields.io/badge/KDD%20Workshop-1-yellow?style=social"       height="20">&nbsp;
+            <img  loading="lazy" alt="WWW Workshop"      src="https://img.shields.io/badge/WWW%20Workshop-2-yellow?style=social"       height="20"  >&nbsp;
+            <img  loading="lazy" alt="CIKM Workshop"     src="https://img.shields.io/badge/CIKM%20Workshop-3-yellow?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="CHI Workshop"  src="https://img.shields.io/badge/CHI%20Workshop-2-yellow?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="ACMMM Workshop"    src="https://img.shields.io/badge/ACMMM%20Workshop-2-yellow?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="RecSys Workshop"    src="https://img.shields.io/badge/RecSys%20Workshop-1-yellow?style=social"     height="20">&nbsp;
+            <img  loading="lazy" alt="RAID Workshop"     src="https://img.shields.io/badge/RAID%20Workshop-2-yellow?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="WDC Workshop"  src="https://img.shields.io/badge/WDC%20Workshop-7-yellow?style=social"     height="20">&nbsp;
             <br><br><h5><strong>Korean Conferences:</strong></h5>
-            <img  loading="lazy" alt="Korean Conferences"     src="https://img.shields.io/badge/Korean%20Conferences-7-gray?style=social"      height="20">&nbsp;
+            <img  loading="lazy" alt="Korean Conferences"     src="https://img.shields.io/badge/Korean%20Conferences-17-gray?style=social"      height="20">&nbsp;
             <br><br><h5><strong>Journal Publications:</strong></h5>
-            <img  loading="lazy" alt="SCIE"     src="https://img.shields.io/badge/SCIE%20Journals-23-red?style=social"     height="20">
+            <img  loading="lazy" alt="SCIE"     src="https://img.shields.io/badge/SCIE%20Journals-30-red?style=social"     height="20">
         </center>
     </p>
 
@@ -188,8 +199,7 @@ permalink: /Publications/
 <!-- 2025 Publications -->
 <div class="year-section active" id="year-2025">
 <h4 style="margin-top:40px"><b>2025</b></h4>
-<hr>
-    
+<hr>   
     <div style="display: flex;flex-direction: row;justify-content: space-between;flex-wrap: nowrap;align-items: flex-start;">
         <div style="margin-left: 25px;margin-right: 10px;flex: 1;min-width: 0;">
             <table>

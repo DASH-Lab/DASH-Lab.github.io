@@ -31,6 +31,19 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
+                          <a href="https://sites.google.com/view/binhminhle/home" target = "_blank">
+                              <img  loading="lazy" src="/img/BinhMLe.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Binh M. Le
+                          </a>
+                      </div>
+                     </td>
+                  <td>Computer Science & Engineering</td>
+                  <td>Adversarial Robustness, Representation Learning</td>
+                  <td><i>bmle @ g dot skku dot edu</i></td>
+                </tr>
+                <tr>
+                  <td align="center">
+                      <div style="display:flex;flex-direction:column">
                           <a href="#" target = "_blank">
                               <img  loading="lazy" src="/img/Dashlab_logo.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -72,20 +85,7 @@ permalink: /Members/
                     <th align="center">Contact</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                          <a href="https://sites.google.com/view/binhminhle/home" target = "_blank">
-                              <img  loading="lazy" src="/img/BinhMLe.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Binh M. Le
-                          </a>
-                      </div>
-                     </td>
-                  <td>Computer Science & Engineering</td>
-                  <td>Adversarial Robustness, Representation Learning</td>
-                  <td><i>bmle @ g dot skku dot edu</i></td>
-                </tr>
+              <tbody>                
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">

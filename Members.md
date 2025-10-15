@@ -258,9 +258,9 @@ permalink: /Members/
                           &nbsp;&nbsp;&nbsp;&nbsp;Hyunjune Kim
                       </div>
                      </td>
-                  <td>Artificial Intelligence</td>
-                  <td>Machine Unlearning</td>    
-                     <td><i>TBU</i></td>
+                  <td>Computer Science & Engineering</td>
+                  <td>Machine Unlearning, Deepfake detection, LLM</td>    
+                     <td><i>hyunjune.kim @ g dot skku dot edu</i></td>
                 </tr>
               </tbody>
             </table>

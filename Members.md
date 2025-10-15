@@ -251,6 +251,17 @@ permalink: /Members/
                   <td>Deepfake Generation, Deepfake Detection, PINNs</td>    
                      <td><i>tuannv99 at g dot skku dot edu</i></td>
                 </tr>
+                <tr>
+                  <td align="center">
+                      <div style="display:flex;flex-direction:column">
+                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;Hyunjune Kim
+                      </div>
+                     </td>
+                  <td>Artificial Intelligence</td>
+                  <td>Machine Unlearning</td>    
+                     <td><i>TBU</i></td>
+                </tr>
               </tbody>
             </table>
           </div>

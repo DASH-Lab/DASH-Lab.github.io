@@ -1,0 +1,26 @@
+{% assign years = site.data.publications | keys | sort | reverse %}
+{% for year in years %}
+<div class="section">
+  <h5>{{ year }}</h5>
+  <div class="row">
+    <div class="col s12">
+      <ul>
+        {% for p in site.data.publications[year] %}
+          <li style="margin-bottom:10px;">
+            {% if p.thumb %}
+              <img loading="lazy" src="{{ p.thumb }}" alt="thumb" style="height:48px;width:auto;vertical-align:middle;margin-right:8px;border-radius:4px;"/>
+            {% endif %}
+            <span style="vertical-align:middle;">
+              <b>{{ p.title }}</b>
+              {% if p.venue %} — <i>{{ p.venue }}</i>{% endif %}
+              {% if p.authors %}<br/>{{ p.authors }}{% endif %}
+              {% if p.pdf %} [<a href="{{ p.pdf }}" target="_blank">pdf</a>]{% endif %}
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endfor %}
+

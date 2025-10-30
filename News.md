@@ -19,19 +19,19 @@ permalink: /News/
 			    <p>Summer 2025 Graduates, DASH Lab Researchers and Professor Simon S. Woo</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/2025_summer_grad2.jpg" target="_blank">
+			    <a href="/img/dash_gallery/2025_summer_grad2.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="400" height="300" style="border-radius: 8px;" src="/img/dash_gallery/2025_summer_grad2.jpg" />
 			    </a>
 			    <p>Congratulations to the Summer 2025 graduates: Minji, Minseon, Inho, Razaib, and Binh. Wishing you all the best in your future endeavors!</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/prof_selfie.jpg" target="_blank">
+			    <a href="/img/dash_gallery/prof_selfie.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell"  style="border-radius:8px; max-width:320px; height:auto;" src="/img/dash_gallery/prof_selfie.jpg" />
 			    </a>
 			    <p>Visiting Prof. Luisa Verdoliva and Prof. Davide Cozzolino at University Federico II of Naples, March, 2025 </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/2025_graduation.jpg" target="_blank">
+			    <a href="/img/dash_gallery/2025_graduation.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/dash_gallery/2025_graduation.jpg" />
 			    </a>
 			    <p>Geonho, Sangyong, Seungyeon, and Jiwon, congratulations on your Master's graduation in February 2025! </p>
@@ -67,13 +67,13 @@ permalink: /News/
 			    <p>Professor Simon, Tenure Celebrations @ <strong>DASH Lab</strong> (Sept, 2024) </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/minha-1.jpg" target="_blank">
+			    <a href="/img/dash_gallery/minha-1.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="430" style="border-radius: 8px;" src="/img/dash_gallery/minha-1.jpg" />
 			    </a>
 			    <p>Minha's Graduation (Aug, 2024) </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/minha-2.jpg" target="_blank">
+			    <a href="/img/dash_gallery/minha-2.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="315" style="border-radius: 8px;" src="/img/dash_gallery/minha-2.jpg" />
 			    </a>
 			    <p>Minha's Graduation (Aug, 2024)</p>
@@ -85,7 +85,7 @@ permalink: /News/
 			    <p>Minha's Graduation (Aug, 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			    <a href="/img/ijcai-5.jpg" target="_blank">
+			    <a href="/img/dash_gallery/ijcai-5.jpg" target="_blank">
 			        <img loading="lazy" class="carousel-cell" border="0" width="450" height="430" style="border-radius: 8px;" src="/img/dash_gallery/ijcai-5.jpg" />
 			    </a>
 			    <p>IJCAI Web Chair Certificate(South Korea, Jeju, August,2024)</p>

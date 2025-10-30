@@ -1,0 +1,40 @@
+<h5>{{ include.title }}</h5>
+<div class="row">
+  <div class="col s12">
+    <table style="width: 100%">
+      <colgroup>
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 30%;">
+        <col span="1" style="width: 30%;">
+        <col span="1" style="width: 25%;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th align="center">Name</th>
+          <th align="center">Major</th>
+          <th align="center">Research Interests</th>
+          <th align="center">Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for m in include.items %}
+        <tr>
+          <td align="center">
+            <div style="display:flex;flex-direction:column">
+              {% if m.link %}<a href="{{ m.link }}" target = "_blank">{% endif %}
+              <img  loading="lazy" src="{{ m.image }}" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
+              {{ m.name }}
+              {% if m.link %}</a>{% endif %}
+            </div>
+          </td>
+          <td>{{ m.major }}</td>
+          <td>{{ m.interests }}</td>
+          <td><i>{{ m.contact }}</i></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+

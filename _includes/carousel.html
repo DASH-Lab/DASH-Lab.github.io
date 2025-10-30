@@ -1,0 +1,13 @@
+<div align="center" class="flickity carousel" data-flickity='{ "autoPlay": true }' style="{{ include.style }}">
+  {% assign items = include.items %}
+  {% for it in items %}
+    <div class="gallery-cell" style="margin: auto; padding:0">
+      {% if it.href %}<a href="{{ it.href }}" target="_blank">{% endif %}
+      <img loading="lazy" class="carousel-cell" style="border-radius: 8px;{% if it.max_width %} max-width: {{ it.max_width }}; height:auto;{% endif %}"
+           src="{{ it.src }}" {% if it.width %}width="{{ it.width }}"{% endif %} {% if it.height %}height="{{ it.height }}"{% endif %} />
+      {% if it.href %}</a>{% endif %}
+      {% if it.caption %}<p>{{ it.caption }}</p>{% endif %}
+    </div>
+  {% endfor %}
+</div>
+

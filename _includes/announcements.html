@@ -1,0 +1,8 @@
+<div align="center" style="margin: auto; height: 120px; width: 90%; border-radius: 8px;" class="flickity carousel" data-flickity='{ "autoPlay": true }'>
+  {% for line in site.data.announcements %}
+    <div class="gallery-cell">
+      <p><b>{{ line }}</b></p>
+    </div>
+  {% endfor %}
+</div>
+

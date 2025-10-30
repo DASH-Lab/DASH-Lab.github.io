@@ -36,19 +36,19 @@ permalink: /Projects/
 
 <b>
 <span style="font-size:20px"> 1. (과기정통부/IITP: 2023-2025, 진행중)  악의적 변조 콘텐츠 대응을 위한 딥페이크 탐지 고도화, 생성억제, 유포 방지 플랫폼 개발 (연구책임자)
-<center><img src="/img/dfArch.png" alt="" width="800" /></center>
+<center><img src="/img/projects/1/dfArch.png" alt="" width="800" /></center>
 </span> 
 <br>
 
 <b>
 <span style="font-size:20px"> 2. (과기정통부: 2022-2026, 진행중) 개인정보보호 관련 정책 변화를 유연하게 반영하여
 준수하는 AI 플랫폼 연구 및 개발 (연구책임자)
-<center><img src="/img/dPrivacy.png " alt="" width="800" /></center>
+<center><img src="/img/projects/2/dPrivacy.png " alt="" width="800" /></center>
 </span>
 <br>
 
         
-<span style="font-size:20px"> 3. (한국연구재단 개인기초연구(과기정통부): 2020-2022, 완료)  인공지능 기반의 딥페이크(Deep Fake) 멀티미디어 탐지 연구 (연구책임자)  <center><img src="/img/IU2.JPG" alt="" width="800" /></center> 
+<span style="font-size:20px"> 3. (한국연구재단 개인기초연구(과기정통부): 2020-2022, 완료)  인공지능 기반의 딥페이크(Deep Fake) 멀티미디어 탐지 연구 (연구책임자)  <center><img src="/img/projects/3/IU2.JPG" alt="" width="800" /></center> 
 </span>
 <br>
        
@@ -72,8 +72,8 @@ permalink: /Projects/
 
 <div class="section">
     <h4> <b>AI를 활용한 인물 복원기술 </b></h4>
-◼  <a style="font-size:20px" href="../Heroface_restoration/" target="_blank">(보훈부-자생의료재단) AI 기술을 활용한 6.25 전쟁영웅 사진 복원 사업  </a> (<a href="../Heroface_restoration/"  target="_blank">Click</a>)<br>    
-<center><img src="/img/pat.png" alt="" width="800" /></center> 
+◼  <a style="font-size:20px" href="/img/projects/heroface_restoration/" target="_blank">(보훈부-자생의료재단) AI 기술을 활용한 6.25 전쟁영웅 사진 복원 사업  </a> (<a href="/heroface_restoration/"  target="_blank">Click</a>)<br>    
+<center><img src="/img/projects/heroface-restoration/pat.png" alt="" width="800" /></center> 
     
 <div class="section">
     <h5>Time Series Data</h5>

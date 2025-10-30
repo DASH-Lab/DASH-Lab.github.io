@@ -25,7 +25,7 @@ permalink: /Dataset/
 <h1 class="page-title">FakeAVCeleb Dataset</h1>
   <p>In FakeAVCeleb, we propose a novel Audio-Video Deepfake dataset (FakeAVCeleb) that contains not only deepfake videos but also respective synthesized lip-synced fake audios. Our FakeAVCeleb is generated using recent most popular deepfake generation methods. To generate a more realistic dataset, we selected real YouTube videos of celebrities having four racial backgrounds (Caucasian, Black, East Asian, and South Asian) to counter the racial bias issue. <p><br>
   
- <p align=center><img  loading="lazy" border=0  src="/img/teaser.png" width="1080"></p> 
+ <p align=center><img  loading="lazy" border=0  src="/img/datasets/FakeAVCeleb/fakeceleb_nips2021.png" width="1080"></p> 
 
 
 <h1 class="page-title">VFP290K dataset</h1>
@@ -33,7 +33,7 @@ permalink: /Dataset/
 
 We ranked first in the first round of the anomalous behavior recognition track of AI Grand Challenge 2020, South Korea, using our VFP290K dataset, which can further extend to other applications, such as intelligent CCTV or monitoring systems, as well. <p><br>
   
- <p align=center><img  loading="lazy" border=0  src="/img/VFP.JPG"  width="1080"></p> 
+ <p align=center><img  loading="lazy" border=0  src="/img/datasets/VFP290k/VFP.JPG"  width="1080"></p> 
 
 
 
@@ -56,24 +56,24 @@ We ranked first in the first round of the anomalous behavior recognition track o
 <table>
   <tr>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/AGC_detection.jpg"></p>
+      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/datasets/VFP290k/AGC_detection.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/AGC_detection3.jpg"></p>
+      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/datasets/VFP290k/AGC_detection3.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/AGC_detection4.jpg"></p>
+      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/datasets/VFP290k/AGC_detection4.jpg"></p>
     </td>
   </tr>
   <tr>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/AGC_detection1.jpg"></p>
+      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/datasets/VFP290k/AGC_detection1.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/AGC_detection2.jpg"></p>
+      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/datasets/VFP290k/AGC_detection2.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/AGC_detection5.jpg"></p>
+      <p align=center><img  loading="lazy" border=0 width=240 height=135 src="/img/datasets/VFP290k/AGC_detection5.jpg"></p>
     </td>
   </tr>
 </table>
@@ -83,24 +83,24 @@ We ranked first in the first round of the anomalous behavior recognition track o
 <table>
   <tr>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0  src="/img/AGC_classification.jpg"></p>
+      <p align=center><img  loading="lazy" border=0  src="/img/datasets/VFP290k/AGC_classification.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0  src="/img/AGC_classification1.jpg"></p>
+      <p align=center><img  loading="lazy" border=0  src="/img/datasets/VFP290k/AGC_classification1.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0  src="/img/AGC_classification2.jpg"></p>
+      <p align=center><img  loading="lazy" border=0  src="/img/datasets/VFP290k/AGC_classification2.jpg"></p>
     </td>
   </tr>
   <tr>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0  src="/img/AGC_classification3.jpg"></p>
+      <p align=center><img  loading="lazy" border=0  src="/img/datasets/VFP290k/AGC_classification3.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0  src="/img/AGC_classification4.jpg"></p>
+      <p align=center><img  loading="lazy" border=0  src="/img/datasets/VFP290k/AGC_classification4.jpg"></p>
     </td>
     <td width="33%" valign=top>
-      <p align=center><img  loading="lazy" border=0  src="/img/AGC_classification5.jpg"></p>
+      <p align=center><img  loading="lazy" border=0  src="/img/datasets/VFP290k/AGC_classification5.jpg"></p>
     </td>
   </tr>
 </table>

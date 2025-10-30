@@ -14,7 +14,7 @@ permalink: /Professor/
         <tr>
             <td></td>
             <td></td>
-            <td valign="top"><img src="/img/SimonWoo_new.jpg" alt="Simon Woo"/> </td>
+            <td valign="top"><img src="/img/member_images/SimonWoo_new.jpg" alt="Simon Woo"/> </td>
             <td></td>
             <td valign="top">
         ◼ SKKU Fellowship Professor, 2022 (<a href="https://cs.skku.edu/ko/edures/education/view/7054">News</a>)<br>

@@ -14,425 +14,425 @@ permalink: /News/
 	<!-- ###### REMEMBER TO RESIZE THE IMAGE TO ITS RATIO, DON'T LEAVE AS IT IS #######-->
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_summer_grad.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="500" height="350" style="border-radius: 8px;" src="/img/2025_summer_grad.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="500" height="350" style="border-radius: 8px;" src="/img/dash_gallery/2025_summer_grad.jpg" />
 			    </a>
 			    <p>Summer 2025 Graduates, DASH Lab Researchers and Professor Simon S. Woo</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_summer_grad2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="400" height="300" style="border-radius: 8px;" src="/img/2025_summer_grad2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="400" height="300" style="border-radius: 8px;" src="/img/dash_gallery/2025_summer_grad2.jpg" />
 			    </a>
 			    <p>Congratulations to the Summer 2025 graduates: Minji, Minseon, Inho, Razaib, and Binh. Wishing you all the best in your future endeavors!</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/prof_selfie.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell"  style="border-radius:8px; max-width:320px; height:auto;" src="/img/prof_selfie.jpg" />
+			        <img loading="lazy" class="carousel-cell"  style="border-radius:8px; max-width:320px; height:auto;" src="/img/dash_gallery/prof_selfie.jpg" />
 			    </a>
 			    <p>Visiting Prof. Luisa Verdoliva and Prof. Davide Cozzolino at University Federico II of Naples, March, 2025 </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_graduation.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/2025_graduation.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="320" height="400" style="border-radius: 8px;" src="/img/dash_gallery/2025_graduation.jpg" />
 			    </a>
 			    <p>Geonho, Sangyong, Seungyeon, and Jiwon, congratulations on your Master's graduation in February 2025! </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_graduation_professor.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="480" height="360" style="border-radius: 8px;" src="/img/2025_graduation_professor.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="480" height="360" style="border-radius: 8px;" src="/img/dash_gallery/2025_graduation_professor.jpg" />
 			    </a>
 			    <p>Feb 2025. Together with Professor Simon S. Woo.</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/2025_graduation_members2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="470" height="180" style="border-radius: 8px;" src="/img/2025_graduation_members2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="470" height="180" style="border-radius: 8px;" src="/img/dash_gallery/2025_graduation_members2.jpg" />
 			    </a>
 			    <p>Feb 2025. DASH lab members and professors celebrate the master's graduation together. </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/award2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" style="" width="250px" src="/img/award2.jpg" />
+			        <img loading="lazy" class="carousel-cell" style="" width="250px" src="/img/dash_gallery/award2.jpg" />
 			    </a>
 			    <p>Nov 2024. Won the Best Paper Award at CISC-W 2024 </p>
 			</div>
 		  	<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/Tenure3.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="430" style="border-radius: 8px;" src="/img/Tenure3.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="430" style="border-radius: 8px;" src="/img/dash_gallery/Tenure3.jpg" />
 			    </a>
 			    <p>Professor Simon, Tenure Celebrations @ <strong>DASH Lab</strong> (Sept, 2024) </p>
 			</div>
   			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/Tenure1.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="300" height="430" style="border-radius: 8px;" src="/img/Tenure1.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="300" height="430" style="border-radius: 8px;" src="/img/dash_gallery/Tenure1.jpg" />
 			    </a>
 			    <p>Professor Simon, Tenure Celebrations @ <strong>DASH Lab</strong> (Sept, 2024) </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/minha-1.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="430" style="border-radius: 8px;" src="/img/minha-1.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="430" style="border-radius: 8px;" src="/img/dash_gallery/minha-1.jpg" />
 			    </a>
 			    <p>Minha's Graduation (Aug, 2024) </p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/minha-2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="315" style="border-radius: 8px;" src="/img/minha-2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="315" style="border-radius: 8px;" src="/img/dash_gallery/minha-2.jpg" />
 			    </a>
 			    <p>Minha's Graduation (Aug, 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/minha-3.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="430" style="border-radius: 8px;" src="/img/minha-3.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="430" style="border-radius: 8px;" src="/img/dash_gallery/minha-3.jpg" />
 			    </a>
 			    <p>Minha's Graduation (Aug, 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ijcai-5.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="450" height="430" style="border-radius: 8px;" src="/img/ijcai-5.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="450" height="430" style="border-radius: 8px;" src="/img/dash_gallery/ijcai-5.jpg" />
 			    </a>
 			    <p>IJCAI Web Chair Certificate(South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ijcai-3.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="450" height="435" style="border-radius: 8px;" src="/img/ijcai-3.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="450" height="435" style="border-radius: 8px;" src="/img/dash_gallery/ijcai-3.jpg" />
 			    </a>
 			    <p>SKKU@IJCAI (South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ijcai-4.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="450" height="435" style="border-radius: 8px;" src="/img/ijcai-4.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="450" height="435" style="border-radius: 8px;" src="/img/dash_gallery/ijcai-4.jpg" />
 			    </a>
 			    <p>SKKU@IJCAI (South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ijcai-2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="500" height="435" style="border-radius: 8px;" src="/img/ijcai-2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="500" height="435" style="border-radius: 8px;" src="/img/dash_gallery/ijcai-2.jpg" />
 			    </a>
 			    <p>SKKU@IJCAI (South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/skku-lab2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="435" style="border-radius: 8px;" src="/img/skku-lab2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="550" height="435" style="border-radius: 8px;" src="/img/dash_gallery/skku-lab2.jpg" />
 			    </a>
 			    <p>SKKU@IJCAI (South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ijcai-1.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="400" height="435" style="border-radius: 8px;" src="/img/ijcai-1.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="400" height="435" style="border-radius: 8px;" src="/img/dash_gallery/ijcai-1.jpg" />
 			    </a>
 			    <p>SKKU@IJCAI (South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/web-demo.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="600" height="435" style="border-radius: 8px;" src="/img/web-demo.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="600" height="435" style="border-radius: 8px;" src="/img/dash_gallery/web-demo.jpg" />
 			    </a>
 			    <p>SKKU@IJCAI (South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/skku-lab1.png" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="380" height="435" style="border-radius: 8px;" src="/img/skku-lab1.png" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="380" height="435" style="border-radius: 8px;" src="/img/dash_gallery/skku-lab1.png" />
 			    </a>
 			    <p>SKKU@IJCAI (South Korea, Jeju, August,2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_8.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_8.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_8.jpg" />
 			    </a>
 			    <p>Successful Organization of The 3rd Workshop by <strong>DASH Lab</strong> on the security implications of Deepfakes and Cheapfakes (WDC '24) @ AsiaCCS 2024</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_7.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_7.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_7.jpg" />
 			    </a>
 			    <p>WDC 2024 @ AsiaCCS2024 Organized by <strong>DASH Lab</strong></p>
 			</div>
    			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_6.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_6.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_6.jpg" />
 			    </a>
 			    <p>WDC 2024 @ AsiaCCS2024 Organized by <strong>DASH Lab</strong></p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_5.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_5.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_5.jpg" />
 			    </a>
 			    <p>WDC 2024 @ AsiaCCS2024 Organized by <strong>DASH Lab</strong></p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_4.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_4.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_4.jpg" />
 			    </a>
 			    <p>WDC 2024 @ AsiaCCS2024 Organized by <strong>DASH Lab</strong></p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_3.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_3.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_3.jpg" />
 			    </a>
 			    <p>WDC 2024 @ AsiaCCS2024 Organized by <strong>DASH Lab</strong></p>
 			</div>
    			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_2.jpg" />
 			    </a>
 			    <p>WDC 2024 @ AsiaCCS2024 Organized by <strong>DASH Lab</strong></p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/ACM2024_1.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/ACM2024_1.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/ACM2024_1.jpg" />
 			    </a>
 			    <p>WDC 2024 @ AsiaCCS2024 Organized by <strong>DASH Lab</strong></p>
 			</div>		
   			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/cvpr24_poster.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="280" height="350" style="border-radius: 8px;" src="/img/cvpr24_poster_binh.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="280" height="350" style="border-radius: 8px;" src="/img/dash_gallery/cvpr24_poster_binh.jpg" />
 			    </a>
 			    <p>Lab's poster @ CVPR (Seattle, June 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/PAKDD 2024 Award 0.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="360" style="border-radius: 8px;" src="/img/PAKDD 2024 Award 0.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="360" style="border-radius: 8px;" src="/img/dash_gallery/PAKDD 2024 Award 0.jpg" />
 			    </a>
 			    <p>Best Paper Running-up Award @PAKDD (Taiwan, May 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/PAKDD 2024 Award.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="290" style="border-radius: 8px;" src="/img/PAKDD 2024 Award.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="290" style="border-radius: 8px;" src="/img/dash_gallery/PAKDD 2024 Award.jpg" />
 			    </a>
 			    <p>Binh & Simon @PAKDD (Taiwan, May 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/PAKDD 2024_travelaward.png" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="460" height="310" style="border-radius: 8px;" src="/img/PAKDD 2024_travelaward.png" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="460" height="310" style="border-radius: 8px;" src="/img/dash_gallery/PAKDD 2024_travelaward.png" />
 			    </a>
 			    <p>Student Travel Award Acceptance @PAKDD (Taiwan, May 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/skku@aaai_1.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/skku@aaai_1.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/skku@aaai_1.jpg" />
 			    </a>
 			    <p>Lab's poster @AAAI (Canada, Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/skku@aaai_2.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0"  width="280" height="350" style="border-radius: 8px;" src="/img/skku@aaai_2.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0"  width="280" height="350" style="border-radius: 8px;" src="/img/dash_gallery/skku@aaai_2.jpg" />
 			    </a>
 			    <p>Lab's poster @AAAI (Canada, Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/skku@aaai_3.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/skku@aaai_3.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/skku@aaai_3.jpg" />
 			    </a>
 			    <p>Lab's poster @AAAI (Canada, Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/dash@aaai24.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash@aaai24.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/dash@aaai24.jpg" />
 			    </a>
 			    <p>DASH group @AAAI (Canada, Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/skkugroup.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0"  width="280" height="350" style="border-radius: 8px;" src="/img/skkugroup.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0"  width="280" height="350" style="border-radius: 8px;" src="/img/dash_gallery/skkugroup.jpg" />
 			    </a>
 			    <p>SKKU@AAAI (Canada, Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/taejun_grad.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/taejun_grad.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/taejun_grad.jpg" />
 			    </a>
 			    <p>Taejun's graduation (Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/taejun_grad_01.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/taejun_grad_01.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="430" height="330" style="border-radius: 8px;" src="/img/dash_gallery/taejun_grad_01.jpg" />
 			    </a>
 			    <p>Taejun's graduation (Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
 			    <a href="/img/taejun_grad_03.jpg" target="_blank">
-			        <img loading="lazy" class="carousel-cell" border="0" width="300" height="400" style="border-radius: 8px;" src="/img/taejun_grad_03.jpg" />
+			        <img loading="lazy" class="carousel-cell" border="0" width="300" height="400" style="border-radius: 8px;" src="/img/dash_gallery/taejun_grad_03.jpg" />
 			    </a>
 			    <p>Taejun's graduation (Feb 2024)</p>
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/asvspoof23_02.jpeg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/asvspoof23_02.jpeg"/>
 				<p>DASH group at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=280 height=360   style=" border-radius: 8px;" src="/img/asvspoof_03.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=280 height=360   style=" border-radius: 8px;" src="/img/dash_gallery/asvspoof_03.jpg"/>
 				<p>DASH group at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=280 height=360   style=" border-radius: 8px;" src="/img/asvspoof_04.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=280 height=360   style=" border-radius: 8px;" src="/img/dash_gallery/asvspoof_04.jpg"/>
 				<p>DASH group at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=280 height=360   style=" border-radius: 8px;" src="/img/asvspoof_05.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=280 height=360   style=" border-radius: 8px;" src="/img/dash_gallery/asvspoof_05.jpg"/>
 				<p>DASH group at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/asvspoof_06.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/asvspoof_06.jpg"/>
 				<p>Diner at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/asvspoof_08.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/asvspoof_08.jpg"/>
 				<p>DASH group at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/asvspoof_01.jpeg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/asvspoof_01.jpeg"/>
 				<p>Deliver Speech at ASVSpoof workshop (Japan - Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/univ_glasgow_01.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/univ_glasgow_01.jpg"/>
 				<p>Visiting and meeting at University of Glasgow (Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/univ_glasgow_04.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/univ_glasgow_04.jpg"/>
 				<p>Visiting and meeting at University of Glasgow (Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/univ_glasgow_05.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/univ_glasgow_05.jpg"/>
 				<p>Visiting and meeting at University of Glasgow (Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/univ_glasgow_06.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/univ_glasgow_06.jpg"/>
 				<p>Visiting and meeting at University of Glasgow (Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/ai_workshop_01.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/ai_workshop_01.jpg"/>
 				<p>AI workshop (Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/ai_workshop_02.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/ai_workshop_02.jpg"/>
 				<p>AI workshop (Nov 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-			<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390   style=" border-radius: 8px;" src="/img/cikm23_01.jpg"/>
+			<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390   style=" border-radius: 8px;" src="/img/dash_gallery/cikm23_01.jpg"/>
 				<p>DASH lab group @CIKM23 (UK - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390   style=" border-radius: 8px;" src="/img/cikm23_02.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390   style=" border-radius: 8px;" src="/img/dash_gallery/cikm23_02.jpg"/>
 				<p>Group dinner at Birmingham (UK - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=300 height=390  style=" border-radius: 8px;" src="/img/sangyong_cikm23.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=300 height=390  style=" border-radius: 8px;" src="/img/dash_gallery/sangyong_cikm23.jpg"/>
 				<p>Lab's poster @CIKM23 (UK - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=440 height=370   style=" border-radius: 8px;" src="/img/cikm23_03.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=440 height=370   style=" border-radius: 8px;" src="/img/dash_gallery/cikm23_03.jpg"/>
 				<p>ANSD Workshop @CIKM23 (UK - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=440 height=355   style=" border-radius: 8px;" src="/img/cikm23_04.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=440 height=355   style=" border-radius: 8px;" src="/img/dash_gallery/cikm23_04.jpg"/>
 				<p>With Hassam Khalid (MS alumni) at Oxford University</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=440 height=355   style=" border-radius: 8px;" src="/img/cikm23_05.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=440 height=355   style=" border-radius: 8px;" src="/img/dash_gallery/cikm23_05.jpg"/>
 				<p>Session @CIKM23 (UK - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390   style=" border-radius: 8px;" src="/img/icip23_dr_chan.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390   style=" border-radius: 8px;" src="/img/dash_gallery/icip23_dr_chan.jpg"/>
 				<p>Visiting Dr. Chan at University of Malaya (Malaysia - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390  style=" border-radius: 8px;" src="/img/icip23_UM.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0  width=300 height=390  style=" border-radius: 8px;" src="/img/dash_gallery/icip23_UM.jpg"/>
 				<p>Visiting research group at University of Malaya (Malaysia - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=540 height=360  style=" border-radius: 8px;" src="/img/icip23_sessionchair.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=540 height=360  style=" border-radius: 8px;" src="/img/dash_gallery/icip23_sessionchair.jpg"/>
 				<p>With Session Chair @ICIP23 (Malaysia - Oct 2023)</p>			
 			</div>			
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/poster_iccv23.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/poster_iccv23.jpg"/>
 				<p>Lab's poster @ICCV23 (France - Oct 2023)</p>			
 			</div>
    			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dr_sonvu_iccv23.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/dr_sonvu_iccv23.jpg"/>
 				<p>With Dr. Son (CY Cergy Paris University) @ICCV23 (France - Oct 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/david08.jpeg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/david08.jpeg"/>
 				<p>Having David Crandall (Indiana University) Visiting our lab (Aug 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=420 height=420  style=" border-radius: 8px;" src="/img/grad_2023.jpeg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=420 height=420  style=" border-radius: 8px;" src="/img/dash_gallery/grad_2023.jpeg"/>
 				<p>Jeongho & Sam's graduation (Feb 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/lab_dinner2023.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/lab_dinner2023.jpg"/>
 				<p>Lab dinner (Feb 2023)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=290   style=" border-radius: 8px;" src="/img/lab_mem2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=290   style=" border-radius: 8px;" src="/img/dash_gallery/lab_mem2022.jpg"/>
 				<p>Lab members (2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=280 height=420  style=" border-radius: 8px;" src="/img/grad_student_22.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=280 height=420  style=" border-radius: 8px;" src="/img/dash_gallery/grad_student_22.jpg"/>
 				<p>Ph.D. students (2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=300 height=420  style=" border-radius: 8px;" src="/img/grad_student_1_22.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=300 height=420  style=" border-radius: 8px;" src="/img/dash_gallery/grad_student_1_22.jpg"/>
 				<p>Ph.D. students (2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/prof_meet.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/prof_meet.jpg"/>
 				<p></p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/agc_2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/agc_2022.jpg"/>
 				<p>AGC 2022</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/agc_1_2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/agc_1_2022.jpg"/>
 				<p>AGC 2022</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/cikm_dinner.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/cikm_dinner.jpg"/>
 				<p>DASH Lab group @CIKM22 (USA - Oct 2022) </p>			
 			</div><div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=380 height=360  style=" border-radius: 8px;" src="/img/minha_cikm2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=380 height=360  style=" border-radius: 8px;" src="/img/dash_gallery/minha_cikm2022.jpg"/>
 				<p>Lab's presentation @CIKM22 (USA - Oct 2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=300 height=360  style=" border-radius: 8px;" src="/img/jho_cikm_2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=300 height=360  style=" border-radius: 8px;" src="/img/dash_gallery/jho_cikm_2022.jpg"/>
 				<p>Lab's poster @CIKM22 (USA - Oct 2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/jho_1_cikm2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/jho_1_cikm2022.jpg"/>
 				<p>Lab's presentation @CIKM22 (USA - Oct 2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/binh_cikm2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/binh_cikm2022.jpg"/>
 				<p>Lab's presentation @CIKM22 (USA - Oct 2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/seabyoel_cikm2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/seabyoel_cikm2022.jpg"/>
 				<p>Lab's presentation @CIKM22 (USA - Oct 2022)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/prof_at_skku.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/prof_at_skku.jpg"/>
 				<p> </p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/lab_dinner_2022.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/dash_gallery/lab_dinner_2022.jpg"/>
 				<p>Lab dinner</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/21-1.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330   style=" border-radius: 8px;" src="/img/dash_gallery/21-1.jpg"/>
 				<p>Lab members (2021)</p>			
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/family.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/dash_gallery/family.jpg"/>
 				<p>Annual retreat (2021)</p>	
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/group lunch.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/dash_gallery/group lunch.jpg"/>
 				<p>Annual retreat (2021)</p>	
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/group lunch3.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/dash_gallery/group lunch3.jpg"/>
 				<p>Annual retreat (2021)</p>	
 			</div>
 			<div class="gallery-cell" style="margin: auto; padding:0">
-				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/graduation.jpg"/>
+				<img  loading="lazy" class="carousel-cell" border=0 width=430 height=330  style=" border-radius: 8px;" src="/img/dash_gallery/graduation.jpg"/>
 				<p>MS students (2021)</p>	
 			</div>
 	</div>
@@ -441,12 +441,12 @@ permalink: /News/
 
 <!-- <div class="section">
     <div class="row">
-        <img border=0 width=400 height=300 src="/img/21-1.jpg">
-        <img border=0 width=400 height=300 src="/img/family.jpg">
-        <img border=0 width=400 height=300 src="/img/group lunch.jpg">
-        <img border=0 width=400 height=300 src="/img/group lunch2.jpg">
-        <img border=0 width=400 height=300 src="/img/group lunch3.jpg">
-        <img border=0 width=400 height=300 src="/img/graduation.jpg">
+        <img border=0 width=400 height=300 src="/img/dash_gallery/21-1.jpg">
+        <img border=0 width=400 height=300 src="/img/dash_gallery/family.jpg">
+        <img border=0 width=400 height=300 src="/img/dash_gallery/group lunch.jpg">
+        <img border=0 width=400 height=300 src="/img/dash_gallery/group lunch2.jpg">
+        <img border=0 width=400 height=300 src="/img/dash_gallery/group lunch3.jpg">
+        <img border=0 width=400 height=300 src="/img/dash_gallery/graduation.jpg">
     </div>
 </div> -->
 

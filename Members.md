@@ -32,7 +32,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <a href="https://sites.google.com/view/binhminhle/home" target = "_blank">
-                              <img  loading="lazy" src="/img/BinhMLe.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
+                              <img  loading="lazy" src="/img/member_images/BinhMLe.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Binh M. Le
                           </a>
                       </div>
@@ -45,7 +45,7 @@ permalink: /Members/
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
                           <a href="#" target = "_blank">
-                              <img  loading="lazy" src="/img/Dashlab_logo.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
+                              <img  loading="lazy" src="/img/member_images/Dashlab_logo.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           </a>
                       </div>
@@ -89,7 +89,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/dummy_female.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/dummy_female.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Eunju Park
                       </div>
                   </td>
@@ -100,7 +100,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/JuhunLee.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/JuhunLee.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Juhun Lee
                       </div>
                   </td>
@@ -111,7 +111,7 @@ permalink: /Members/
                  <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/SeungHooHong.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/SeungHooHong.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Seunghoo Hong
                       </div>
                   </td>
@@ -122,7 +122,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/KangjunLee.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/KangjunLee.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kangjun Lee
                       </div>
                   </td>
@@ -133,7 +133,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;이현근
                       </div>
                   </td>
@@ -144,7 +144,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/inzi.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/inzi.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp; Inzamamul Alam
                       </div>
                   </td>
@@ -155,7 +155,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/shahid.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/shahid.png" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           <a href="https://scholar.google.com/citations?user=aOz3PaoAAAAJ&hl=en">M. Shahid Muneer</a>
                       </div>
                   </td>
@@ -166,7 +166,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/ParkSangHyeok.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/ParkSangHyeok.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Sanghyeok Park
                       </div>
                   </td>
@@ -177,7 +177,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/Sangyong.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                        <img  loading="lazy" src="/img/member_images/Sangyong.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sangyong Lee 
                       </div>
                   </td>
@@ -188,7 +188,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/dummy_female.png " alt="" height="auto" width="128" style="border-radius:50%"><br>
+                        <img  loading="lazy" src="/img/member_images/dummy_female.png " alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jiwon Kim
                       </div>
                   </td>
@@ -199,7 +199,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/dummy_female.png " alt="" height="auto" width="128" style="border-radius:50%"><br>
+                        <img  loading="lazy" src="/img/member_images/dummy_female.png " alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seungyeon Back 
                       </div>
                   </td>
@@ -210,7 +210,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/songeonho.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                        <img  loading="lazy" src="/img/member_images/songeonho.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Geonho Son 
                       </div>
                   </td>
@@ -221,7 +221,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/Khoa Tran.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
+                        <img  loading="lazy" src="/img/member_images/Khoa Tran.jpg" alt="" height="auto" width="128" style="border-radius:45%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Tran Van Khoa
                       </div>
                   </td>
@@ -232,7 +232,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/razaibtariq.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/razaibtariq.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Razaib Tariq
                       </div>
                      </td>
@@ -243,7 +243,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/tuannguyen.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/tuannguyen.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Tuan V. Nguyen
                       </div>
                      </td>
@@ -254,7 +254,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Hyunjune Kim
                       </div>
                      </td>
@@ -290,7 +290,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/BeomSang Cho.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/BeomSang Cho.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beomsang Cho
                       </div>
                      </td>
@@ -301,7 +301,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hakjun Moon
                       </div>
                      </td>
@@ -312,7 +312,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/YurimJang.jpg " alt="" height="auto" width="128" style="border-radius:50%"><br>
+                        <img  loading="lazy" src="/img/member_images/YurimJang.jpg " alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yurim Jang 
                       </div>
                   </td>
@@ -323,7 +323,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Sangjun Chung
                       </div>
                      </td>
@@ -334,7 +334,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Hohyun Na
                       </div>
                      </td>
@@ -345,7 +345,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Hyeongjun Choi
                       </div>
                      </td>
@@ -356,7 +356,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/chanhid.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/chanhid.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Chan Park 
                       </div> 
                      </td>
@@ -367,7 +367,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Hyeonsu Hwang 
                       </div>
                      </td>
@@ -378,7 +378,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Yongcheol Noh 
                       </div>
                      </td>
@@ -389,7 +389,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/SonJungWook.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/SonJungWook.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Jungwook Shon 
                       </div>
                      </td>
@@ -400,7 +400,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;JongU Park 
                       </div>
                      </td>
@@ -411,7 +411,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                          <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                          <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;Seungwon Jeong  
                       </div>
                      </td>
@@ -422,7 +422,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/MoonBoHyun2.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                        <img  loading="lazy" src="/img/member_images/MoonBoHyun2.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bohyun Moon 
                       </div>
                   </td>
@@ -433,7 +433,7 @@ permalink: /Members/
                 <tr>
                   <td align="center">
                       <div style="display:flex;flex-direction:column">
-                        <img  loading="lazy" src="/img/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                        <img  loading="lazy" src="/img/member_images/dummy_male.png" alt="" height="auto" width="128" style="border-radius:50%"><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seungjune Kang 
                       </div>
                   </td>
@@ -469,7 +469,7 @@ permalink: /Members/
                   <tr>
                     <td align="center">
                         <div style="display:flex;flex-direction:column">
-                            <img  loading="lazy" src="/img/Dashlab_logo.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
+                            <img  loading="lazy" src="/img/member_images/Dashlab_logo.jpg" alt="" height="auto" width="128" style="border-radius:50%"><br>
                             &nbsp;&nbsp;&nbsp;&nbsp;  
                         </div>
                       </td>

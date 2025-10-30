@@ -14,7 +14,7 @@
         ],
         "year": 2026,
         "links": {},
-        "img": "/img/2026_WACV_Shahid_AEON.jpg",
+        "img": "/Publications/2026_WACV_Shahid_AEON.jpg",
         "abstract": "The widespread use of synthetic image generation models and the challenges associated with authenticity preservation have fueled the demand for robust watermarking methods to safeguard authenticity and protect the copyright of synthetic images. Existing watermarking methods embed. Invisible signatures in synthetic images often compromise image quality and remain susceptible to multiple watermark removal attacks, including reconstruction and forgery methods. To overcome this issue, we propose a novel watermarking approach, AEON, which seamlessly integrates the watermark into the latent diffusion process and ensures the watermark aligns with scene semantics in the final image. Unlike existing invisible in-diffusion watermarking and traditional hash-based methods, our approach adapts the neural synthesized hash-based watermark to the semantics of the generated image during the intermediate diffusion process instead of embedding traditional hashes with the initial noise. This facilitates visual coherence in the generated image while enhancing adversarial robustness and resilience against single or multiple adversarial and traditional watermark removal attacks. Our proposed approach a) modulates the noise sampling in each diffusion denoising iteration through a learnable watermark embedding, b) optimizes consistency, reconstruction, and similarity loss, enforcing local and global alignment between the watermark structure and the underlying image content, and c) generates a strong watermark by allowing late embedding of the watermark in the diffusion process. Empirical results demonstrate the effectiveness of the proposed approach in retaining quality and its robustness against cumulative adversarial attacks."
     },
     {
@@ -33,7 +33,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/nips2025_sangyong.jpg",
+        "img": "/Publications/nips2025_sangyong.jpg",
         "abstract": "With increasing regulations on private data usage in AI systems, machine unlearning has emerged as a critical solution for selectively removing sensitive information from trained models while preserving their overall utility. While many existing unlearning methods rely on the retain data to mitigate the performance decline caused by forgetting, such data may not always be available (retain-free) in real-world scenarios. To address this challenge posed by retain-free unlearning, we introduce RUAGO, utilizing adversarial soft labels to mitigate over-unlearning and a generative model pretrained on out-of-distribution (OOD) data to effectively distill the original model’s knowledge. We introduce a progressive sampling strategy to incrementally increase synthetic data complexity, coupled with an inversion-based alignment step that ensures the synthetic data closely matches the original training distribution. Our extensive experiments on multiple benchmark datasets and architectures demonstrate that our approach consistently outperforms existing retain-free methods and achieves comparable or superior performance relative to retain-based approaches, demonstrating its effectiveness and practicality in real-world, data-constrained environments."
     },
     {
@@ -53,7 +53,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/neurips-25-Razaib.png",
+        "img": "/Publications/neurips-25-Razaib.png",
         "abstract": "Deepfake detection remains a pressing challenge, particularly in real-world settings where smartphone-captured media from digital screens often introduces Moiré artifacts that can distort detection outcomes. This study systematically evaluates state-of-the-art (SOTA) deepfake detectors on Moiré-affected videos an issue that has received little attention. We collected a dataset of 12,832 videos, spanning 35.64 hours, from Celeb-DF, DFD, DFDC, UADFV, and FF++ datasets, capturing footage under diverse real-world conditions, including varying screens, smartphones, lighting setups, and camera angles. To further examine the influence of Moiré patterns on deepfake detection, we conducted additional experiments using our DeepMoiréFake, referred to as (DMF) dataset, and two synthetic Moiré generation techniques. Across 15 top-performing detectors, our results show that Moiré artifacts degrade performance by as much as 25.4%, while synthetically generated Moiré patterns lead to a 21.4% drop in accuracy. Surprisingly, demoiréing methods, intended as a mitigation approach, instead worsened the problem, reducing accuracy by up to 16%. These findings underscore the urgent need for detection models that can robustly handle Moiré distortions alongside other real-world challenges, such as compression, sharpening, and blurring. By introducing the DMF dataset, we aim to drive future research toward closing the gap between controlled experiments and practical deepfake detection."
     },
     {
@@ -71,7 +71,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/2025_CIKM_minji.PNG",
+        "img": "/Publications/2025_CIKM_minji.PNG",
         "abstract": "Multi-step or hybrid deepfakes, generated through successively applying different deepfake creation methods such as face-swapping, GAN-based generation, and Diffusion refinement, can pose an emerging challenge for detection models trained on single-step forgeries. While prior studies focus on isolated manipulations, little is known about model behavior under such compositional manipulation pipelines. In this work, we introduce FakeChain, a large-scale benchmark comprising 1-, 2-, and 3-Step manipulated face images synthesized using five state-of-the-art generators, including face-swap, GAN, and Diffusion models. Using this dataset, we analyze detection performance and spectral properties across manipulation depths, generator combinations, and quality settings. Our findings reveal that detection performance highly depends on the final manipulation step, with F1-score dropping by up to 58.83% when it differs from training. Detectors rely on shallow cues from the last stage, limiting generalization across multi-step forgeries. We also observe architectural differences in robustness to compression, with attention-based models being more sensitive than CNN-based ones. These insights highlight the need for detection models that account for manipulation history and benchmarks such as FakeChain that reflect the evolving nature of deepfake synthesis pipelines. We share some sample of our code here."
     },
     {
@@ -89,7 +89,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/DoF_G.png",
+        "img": "/Publications/DoF_G.png",
         "abstract": "The rapid advancement of generative AI has enabled the mass production of photorealistic synthetic images, blurring the boundary between authentic and fabricated visual content. This challenge is particularly evident in deepfake scenarios involving facial manipulation, but also extends to broader AI-generated content (AIGC) cases that feature fully synthesized scenes. As such content becomes increasingly difficult to distinguish from reality, the integrity of visual media is undergoing threat. To address this issue, we propose a physically interpretable deepfake detection framework and demonstrate that defocus blur can serve as an effective forensic signal. Defocus blur is a depth-dependent optical phenomenon that naturally occurs in camera-captured images due to lens focus and scene geometry. In contrast, synthetic images often lack realistic depth-of-field (DoF) characteristics, resulting in globally sharp or physically inconsistent blur patterns. To capture these discrepancies, we construct a defocus blur map and use it as a discriminative feature for detecting manipulated content. Our approach is supported by three in-depth feature analyses, and experimental results confirm that defocus blur provides a reliable and interpretable cue for identifying synthetic images. We aim for our defocus-based detection pipeline and interpretability tools to contribute meaningfully to ongoing research in media forensics."
     },
     {
@@ -109,7 +109,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/2025CIKM_kangjun_minha.png",
+        "img": "/Publications/2025CIKM_kangjun_minha.png",
         "abstract": "For electric vehicles, the Adaptive Cruise Control (ACC) in Advanced Driver Assistance Systems (ADAS) is designed to assist braking based on driving conditions and user patterns. However, the driving data collected during development are limited and lack diversity, leading to late or aggressive braking. Moreover, it is necessary to effectively identify anomalies in braking patterns, which is critical for self-driving autonomous vehicles. We propose Graph Neural Controlled Differential Equation Normalizing Flow (GDFlow), which leverages Normalizing Flow (NF) with Neural Controlled Differential Equations (NCDE) to learn the distribution of normal driving patterns. Our approach captures spatio-temporal information from sensor data and accurately models continuous changes in driving patterns. Additionally, we introduce a quantilebased maximum likelihood objective to improve the likelihood estimate of normal data at the margin of the distribution. We validate GDFlow using real-world electric vehicle driving data that we collected from Hyundai IONIQ5 and GV80EV. Our model achieves state-of-the-art (SOTA) performance compared to nine baselines across four dataset configurations of different vehicle types and drivers. Furthermore, our model outperforms the latest anomaly detection methods across four time series benchmark datasets. Our approach demonstrates superior efficiency in inference time compared to existing methods. We plan to deploy GDFlow in the Hyundai Genesis GV90 by March 2026."
     },
     {
@@ -127,7 +127,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/2025_CIKM_sangjun.jpg",
+        "img": "/Publications/2025_CIKM_sangjun.jpg",
         "abstract": "Machine unlearning has emerged as a significant research topic in response to the increasing demands for data privacy and compliance with privacy regulations. The main challenge is to eliminate the influence of a specific subset of training data from a pretrained model while preserving the model’s performance on the retain set without retraining it from scratch. In this paper, we propose a novel efficient unlearning framework based on Optimal Transport, which can effectively work on class and instance-wise unlearning tasks. By analyzing and comparing the feature spaces of the original and retrained models, we formulate the unlearning problem as a distribution alignment task between the forget set and the retain set. We guide the feature distribution of the forget set, which initially forms distinct, structured patterns, to align with that of the retain set. In addition, we introduce a class-aware cost function for optimal transport that encourages inter-class transport, thereby enhancing the forgetting process. Extensive experiments on three public benchmark datasets demonstrate its superior effectiveness compared to previous SOTA methods."
     },
     {
@@ -145,7 +145,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/2025_CIKM_Hyeonsu.png",
+        "img": "/Publications/2025_CIKM_Hyeonsu.png",
         "abstract": "Open-vocabulary object detection (OVD) in remote sensing (RS) has shown remarkable generalization capabilities across diverse RS imagery through alignment between image and text embeddings. Such methods have further improved detection performance by incorporating additional scene-level context from both visual and textual domains. However, existing methods approximate scene context by simply averaging the text embeddings of the image’s object labels, which is insufficient to capture the rich linguistic context present in RS scenes. To address this limitation, we propose a novel Feature-Aligned Scene Encoding (FASE), which constructs comprehensive scene representations through high-quality captions generated by a specialized vision-language model. These caption embeddings are then aligned with visual features through a Feature Alignment Module (FAM) that employs dual-branch fusion with gating and cross-attention mechanisms. By utilizing enhanced scene encoding only during training, our method internalizes rich contextual knowledge while maintaining inference efficiency. Experiments on multiple benchmarks demonstrate significant improvements over state-of-the-art methods, validating the effectiveness of our approach for OVD in RS."
     },
     {
@@ -164,7 +164,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/2025_CIKM_Chan.png",
+        "img": "/Publications/2025_CIKM_Chan.png",
         "abstract": "Audio-visual deepfake detection methods demonstrate strong performance on academic datasets but fail significantly when applied to real-world deepfake content. To address the shortcomings of previous approaches, we introduce a landmark-guided knowledge-distillation framework, featuring two core innovations that enable the effective detection of real-world deepfakes. First, we propose Landmark-based Distillation (LBD), motivated by I-JEPA's representation learning approach. LBD utilizes KL-divergence to align facial landmark predictions from visual and audio encoders, enforcing focus on geometric facial features rather than spurious background information. Second, we introduce Multimodal Temporal Information Alignment (MTIA), which employs contrastive learning to enhance temporal consistency between audio and visual representations. We conduct extensive experiments on academic datasets and web-based deepfakes collected from diverse social media platforms, serving as real-world examples. Our proposed landmark-guided distillation framework achieves computational efficiency while improving multimodal video deepfake detection performance across a diverse range of deepfakes compared to existing methods."
     },
     {
@@ -183,7 +183,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/IJCB_jiwon.png",
+        "img": "/Publications/IJCB_jiwon.png",
         "abstract": "In fingerprint biometric systems, fingerprint recognition traditionally focuses on identifying individuals based on the distinct fingerprints of different fingers, which is finger-specific identity recognition (FsIR). However, real-world applications often require recognizing the same individual using fingerprints from different fingers, which is finger-agnostic identity recognition (FaIR). The FaIR task has proven challenging due to the prevailing assumption in the biometric field that there is no correlation between an individual’s different fingerprints. To address this issue, we propose a novel system, IP-Fing, which can learn the interpersonal similarity across the fingers. By using a pre-trained localization encoder to capture interpersonal fingerprint landmarks and the ArcFace marginal logit function, our IP-Fing recognition system can match a fingerprint query to all fingerprints of the same person while distinguishing them from others. We assess our method using comprehensive tests on two fingerprint datasets: our private fingerprint dataset, KORFing, which only has one sample per finger available, and the public fingerprint dataset, CASIA-v5, which has a few missing fingerprint samples for the task of finger-agnostic identity recognition (FaIR). IP-Fing achieves the best AUC with an average of 95.3074 across the two datasets, showing that our method is more effective in applying FaIR than conventional methods. Furthermore, IP-Fing demonstrates superior AUC with an average of 98.4631 across two datasets in the task of traditional finger-specific identity recognition (FsIR)."
     },
     {
@@ -205,7 +205,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/Sharoz.png",
+        "img": "/Publications/Sharoz.png",
         "abstract": "The proliferation of deepfake technologies poses urgent challenges and serious risks to digital integrity, particularly within critical sectors such as forensics, journalism, and the legal system. While existing detection systems have made significant progress in classification accuracy, they typically function as black-box models—offering limited transparency and minimal support for human reasoning. This lack of interpretability hinders their usability in real-world decision-making contexts, especially for non-expert users. In this paper, we present DF-P2E (Deepfake: Prediction to Explanation), a novel multimodal framework that integrates visual, semantic, and narrative layers of explanation to make deepfake detection interpretable and accessible. The framework consists of three modular components: (1) a deepfake classifier with Grad-CAM-based saliency visualisation, (2) a visual captioning module that generates natural language summaries of manipulated regions, and (3) a narrative refinement module that uses a fine-tuned Large Language Model (LLM) to produce context-aware, user-sensitive explanations. We instantiate and evaluate the framework on the DF40 benchmark, the most diverse deepfake dataset to date. Experiments demonstrate that our system achieves competitive detection performance while providing high-quality explanations aligned with Grad-CAM activations. Human evaluation with non-expert participants confirms the perceived usefulness, understandability, and trustworthiness of the generated narratives. By unifying prediction and explanation in a coherent, human-aligned pipeline, this work offers a scalable approach to interpretable deepfake detection—advancing the broader vision of trustworthy and transparent AI systems in adversarial media environments."
     },
     {
@@ -224,7 +224,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/figure2.png",
+        "img": "/Publications/figure2.png",
         "abstract": "The success of diffusion models has enabled effortless, high-quality image modifications that precisely align with users' intentions, thereby raising concerns about their potential misuse by malicious actors. Previous studies have attempted to mitigate such misuse through adversarial attacks. However, these approaches heavily rely on image-level inconsistencies, which pose fundamental limitations in addressing the influence of textual prompts. In this paper, we propose PromptFlare, a novel adversarial protection method designed to protect images from malicious modifications facilitated by diffusion-based inpainting models. Our approach leverages the cross-attention mechanism to exploit the intrinsic properties of prompt embeddings. Specifically, we identify and target shared token of prompts that are invariant and semantically uninformative, injecting adversarial noise to suppress the sampling process. Extensive experiments on the EditBench dataset demonstrate that our method achieves state-of-the-art performance across various CLIP-based and traditional metrics while significantly reducing computational overhead and GPU memory usage. These findings highlight PromptFlare as a robust and efficient protection against unauthorized image manipulations."
     },
     {
@@ -243,7 +243,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/high-level-dig.jpg",
+        "img": "/Publications/high-level-dig.jpg",
         "abstract": "The increasing realism of content generated by GANs and diffusion models has made deepfake detection significantly more challenging. Existing approaches often focus solely on spatial or frequency-domain features, limiting their generalization to unseen manipulations. We propose the Spectral Cross-Attentional Network (SpecXNet), a dual-domain architecture for robust deepfake detection. The core \\textbf{Dual-Domain Feature Coupler (DDFC)} decomposes features into a local spatial branch for capturing texture-level anomalies and a global spectral branch that employs Fast Fourier Transform to model periodic inconsistencies. This dual-domain formulation allows SpecXNet to jointly exploit localized detail and global structural coherence, which are critical for distinguishing authentic from manipulated images. We also introduce the \\textbf{Dual Fourier Attention (DFA)} module, which dynamically fuses spatial and spectral features in a content-aware manner. Built atop a modified XceptionNet backbone, we embed the DDFC and DFA modules within a separable convolution block. Extensive experiments on multiple deepfake benchmarks show that SpecXNet achieves state-of-the-art accuracy, particularly under cross-dataset and unseen manipulation scenarios, while maintaining real-time feasibility. Our results highlight the effectiveness of unified spatial-spectral learning for robust and generalizable deepfake detection."
     },
     {
@@ -264,7 +264,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3709022.3736541"
         },
-        "img": "/img/WDC25.png",
+        "img": "/Publications/WDC25.png",
         "abstract": "AI-generated images are increasingly prevalent on the web, raising concerns about the real-world applicability of detection methods. While current detectors perform well on benchmark datasets, they suffer significant performance degradation on real-world datasets. Misalignment within benchmark datasets, caused by discrepancies in how data from different classes are encoded or transformed, leads models to learn shortcuts. These shortcuts make detectors overly reliant on factors such as image compression, causing biased predictions of real-world images that inevitably undergo compression. In this work, we reveal the misalignment in widely used benchmark datasets and demonstrate that aligning datasets improves model robustness and generalizability. Additionally, we propose leveraging pre-trained visual encoders to further enhance performance in real-world scenarios. Our approach achieves significant performance gains, highlighting the importance of dataset alignment for real-world AI-generated image detection."
     },
     {
@@ -286,7 +286,7 @@
         "links": {
             "conf": "https://doi.org/10.48550/arxiv.2510.00778"
         },
-        "img": "/img/DIA-ICCV2025.png",
+        "img": "/Publications/DIA-ICCV2025.png",
         "abstract": "Diffusion models have shown to be strong representation learners, showcasing state-of-the-art performance across multiple domains. Aside from accelerated sampling, DDIM also enables the inversion of real images back to their latent codes. A direct inheriting application of this inversion operation is real image editing, where the inversion yields latent trajectories to be utilized during the synthesis of the edited image. Unfortunately, this practical tool has enabled malicious users to freely synthesize misinformative or deepfake contents with greater ease, which promotes the spread of unethical and abusive, as well as privacy-, and copyright-infringing contents. While defensive algorithms such as AdvDM and Photoguard have been shown to disrupt the diffusion process on these images, the misalignment between their objectives and the iterative denoising trajectory at test time results in weak disruptive performance.In this work, we present the DDIM Inversion Attack (DIA) that attacks the integrated DDIM trajectory path. Our results support the effective disruption, surpassing previous defensive methods across various editing methods. We believe that our frameworks and results can provide practical defense methods against the malicious use of AI for both the industry and the research community."
     },
     {
@@ -307,7 +307,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/SSDV.png",
+        "img": "/Publications/SSDV.png",
         "abstract": "Text-to-Image (T2I) diffusion models have made significant progress in generating diverse high-quality images from textual prompts. However, these models still face challenges in suppressing content that is strongly entangled with specific words. For example, when generating an image of \"Charlie Chaplin\", a \"mustache\" consistently appears even if explicitly instructed not to include it, as the concept of \"mustache\" is strongly entangled with \"Charlie Chaplin\". To address this issue, we propose a novel approach to directly suppress such entangled content within the text embedding space of diffusion models. Our method introduces a delta vector that modifies the text embedding to weaken the influence of undesired content in the generated image, and we further demonstrate that this delta vector can be easily obtained through a zero-shot approach. Furthermore, we propose a Selective Suppression with Delta Vector (SSDV) method to adapt the delta vector into the cross-attention mechanism, enabling more effective suppression of unwanted content in regions where it would otherwise be generated. Additionally, we enabled more precise suppression in personalized T2I models by optimizing the delta vector, which previous baselines were unable to achieve. Extensive experimental results demonstrate that our approach significantly outperforms existing methods, both in terms of quantitative and qualitative metrics."
     },
     {
@@ -327,7 +327,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/ProposedModel-01.jpg",
+        "img": "/Publications/ProposedModel-01.jpg",
         "abstract": "Watermarking embeds imperceptible patterns into images for authenticity verification. However, existing methods often lack robustness against various transformations primar ily including distortions, image regeneration, and adver sarial perturbation, creating real-world challenges. In this work, we introduce SpecGuard, a novel watermarking ap proach for robust and invisible image watermarking. Un like prior approaches, we embed the message inside hid den convolution layers by converting from the spatial do main to the frequency domain using spectral projection of a higher frequency band that is decomposed by wavelet pro jection. Spectral projection employs Fast Fourier Trans form approximation to transform spatial data into the fre quency domain efficiently. In the encoding phase, a strength factor enhances resilience against diverse attacks, includ ing adversarial, geometric, and regeneration-based distor tions, ensuring the preservation of copyrighted information. Meanwhile, the decoder leverages Parseval’s theorem to ef fectively learn and extract the watermark pattern, enabling accurate retrieval under challenging transformations. We evaluate the proposed SpecGuard based on the embedded watermark’s invisibility, capacity, and robustness. Compre hensive experiments demonstrate the proposed SpecGuard outperforms the state-of-the-art models."
     },
     {
@@ -351,7 +351,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3711896.3737399"
         },
-        "img": "/img/KDD2025_HiDF.png",
+        "img": "/Publications/KDD2025_HiDF.png",
         "abstract": "The rapid development and prevalence of generative AI have made it easy for people to create high-quality deepfake images and videos, but their abuses have also increased exponentially. To mitigate potential social disruption, it is crucial to quickly detect the authenticity of each deepfake content hidden in a sea of information. While researchers have worked on developing deep learning-based methods, the deepfake datasets utilized in these studies are far from the real world in terms of their qualities; most popular deepfake datasets are human-distinguishable. To address this problem, we present a novel deepfake dataset, HiDF, a high-quality and humanindistinguishable deepfake dataset consisting of 62 K images and 8 K videos. HiDF is a meticulously curated dataset that includes diverse subjects that have undergone rigorous quality checks. A comparison of the quality between HiDF and existing deepfake datasets demonstrates that HiDF is human-indistinguishable. Hence, it can be a valuable benchmark dataset for deepfake detection tasks."
     },
     {
@@ -391,7 +391,7 @@
         "links": {
             "conf": "https://doi.org/10.1117/12.3050401"
         },
-        "img": "/img/SPIE_jw.png",
+        "img": "/Publications/SPIE_jw.png",
         "abstract": "Anomaly detection in semiconductor manufacturing is critical for maintaining yield and reducing costs, especially in high-volume production environments where inspections are resource-intensive. This study presents a robust, unsupervised deep learning framework for multivariate anomaly detection that addresses limitations of existing Fault Detection and Classification (FDC) systems. The proposed approach leverages a Transformer-based model enhanced with Aggregated z-normalization to mitigate distribution drift, and employs Peaks-Over-Threshold (POT) for adaptive thresholding. The framework achieved an F1 score of 0.9827 and a precision of 0.9866 on semiconductor datasets, with minimal false alarms validated through extensive ablation studies. The solution is designed for scalability and adaptability in industrial settings, with future work focused on improving detection of single-spike anomalies and borderline cases to enhance operational reliability."
     },
     {
@@ -411,7 +411,7 @@
         ],
         "year": 2025,
         "links": {},
-        "img": "/img/self_disclosure.png",
+        "img": "/Publications/self_disclosure.png",
         "abstract": "Theoretically, the current study revisits traditional video self-modeling approaches, which leverage the self-referencing effect to enhance engagement, within the context of deepfake technology by integrating the self-referencing effect and the uncanny valley effect. This study reveals that the synthesized nature of self-representations in deepfakes introduces artificiality that triggers discomfort, thereby increasing resistance to mental health self-disclosure messages. This discomfort underscores a significant limitation of deepfake technology in sensitive contexts, as individuals—especially those with higher baseline levels of mental health who find greater relevance to the topic—may be reluctant to engage with messages that present uncanny or distorted self-representations. Our findings emphasize the importance of future research to systematically investigate the boundaries of self-referencing in AI-driven synthetic media, focusing on how the degree of resemblance influences perceptions of personal relevance, evokes emotional resistance, and varies across individual differences. Furthermore, as deepfake technology finds its way into the healthcare sector, practitioners must remain mindful that while it offers innovative possibilities, it may also stir emotional resistance."
     },
     {
@@ -435,7 +435,7 @@
         "links": {
             "conf": "https://doi.org/10.1109/eurosp63326.2025.00055"
         },
-        "img": "/img/2025_EuroS&P.png",
+        "img": "/Publications/2025_EuroS&P.png",
         "abstract": "This paper extensively reviews and analyzes state-of-the-art deepfake detectors, evaluating them against several critical criteria. These criteria categorize detectors into 4 high-level groups and 13 fine-grained sub-groups, aligned with a unified conceptual framework we propose. This classification offers practical insights into the factors affecting detector efficacy. We evaluate the generalizability of 16 leading detectors across comprehensive attack scenarios, including black-box, white-box, and gray-box settings. Our systematized analysis and experiments provide a deeper understanding of deepfake detectors and their generalizability, paving the way for future research and the development of more proactive defenses against deepfakes."
     },
     {
@@ -455,7 +455,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3701716.3715526"
         },
-        "img": "/img/WWW2025_shahid.jpg",
+        "img": "/Publications/WWW2025_shahid.jpg",
         "abstract": "Defensive mechanisms such as NSFW and post-hoc security filters are implemented in T2I models to mitigate the misuse of T2I models and develop a safe online ecosystem for web users. However, recent work unveiled how these methods can easily fail to prevent misuse. In particular, careful adversarial attacks on text and image modalities can easily outplay defensive measures. Moreover, there is no robust millionscale multimodal NSFW dataset with both prompt and image pairs with adversarial examples. In this work, we propose a large-scale prompt and image dataset, generated using open-source diffusion models. Also, we develop a multimodal classification model to distinguish safe and NSFW text and images, which has robustness against adversarial attacks, and directly alleviates the current challenges. Our extensive experimental results show that our model shows good performance against existing SOTA NSFW detection methods in terms of accuracy and recall, and drastically reduced the Attack Success Rate (ASR) in multimodal adversarial attack scenarios."
     },
     {
@@ -475,7 +475,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3701716.3715598"
         },
-        "img": "/img/WWW2025_khoa.png",
+        "img": "/Publications/WWW2025_khoa.png",
         "abstract": "Our study presents fairness Conjectures for a well-trained model, based on the variance-bias trade-off characteristic, and considers their relevance to robustness. Our Conjectures are supported by experiments conducted on the two most widely used model architectures—ResNet and ViT—demonstrating the correlation between fairness and robustness: the higher fairness-gap is, the more the model is sensitive and vulnerable. In addition, our experiments demonstrate the vulnerability of current state-of-the-art approximated unlearning algorithms to adversarial attacks, where their unlearned models suffer a significant drop in accuracy compared  to the exact-unlearned models.We claim that our fairness-gap measurement and robustness metric should be used to evaluate the unlearning algorithm. Furthermore, we demonstrate that unlearning in the intermediate and last layers is sufficient and cost-effective for time and memory complexity."
     },
     {
@@ -496,7 +496,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3701716.3715519"
         },
-        "img": "/img/WWW2025_inzi.png",
+        "img": "/Publications/WWW2025_inzi.png",
         "abstract": "This paper introduces a novel Saliency-Aware Diffusion Reconstruction (SADRE) framework for watermark elimination on the web, combining adaptive noise injection, region-specific perturbations, and advanced diffusion-based reconstruction. SADRE disrupts embedded watermarks by injecting targeted noise into latent representations guided by saliency masks although preserving essential image features. A reverse diffusion process ensures high-fidelity image restoration, leveraging adaptive noise levels determined by watermark strength. Our framework is theoretically grounded with stability guarantees and achieves robust watermark removal across diverse scenarios. Empirical evaluations on state-of-the-art (SOTA) watermarking techniques demonstrate SADRE’s superiority in balancing watermark disruption and image quality, achieving the best performance in PSNR, SSIM, Wasserstein Distance, and Bit Recovery Accuracy. By bridging the gap between theoretical robustness and practical effectiveness, SADRE sets a new benchmark for watermark elimination, offering a flexible and reliable solution for real-world web contents."
     },
     {
@@ -518,7 +518,7 @@
         "links": {
             "conf": "https://doi.org/10.3390/wevj16010037"
         },
-        "img": "/img/Jun_WEVJ_2025.png",
+        "img": "/Publications/Jun_WEVJ_2025.png",
         "abstract": "The smart regenerative braking system for EV can reduce unnecessary brake operation by assisting in braking of the vehicle according to the driving situation, road slope, and driver’s preference. This system maintains the distance between the ego and front vehicles without controlling the brake pedal. Since the strength of regenerative braking is generally determined based on calibration data determined during the vehicle development process, some driver could suffer inconvenience when the regenerative braking is activated differently from their driving habits. In order to solve this problem, various deep learning-based algorithms are developed to provide driving stability by learning the driving data. Among those artificial intelligence algorithms, anomaly detection algorithms can successfully separate the deceleration data in abnormal driving situations, and the resulting refined deceleration data can be used to train the regression model to achieve better driving stability. This study evaluates the performance of a personalized driving assistance system by applying driver characteristic data, obtained through an anomaly detection algorithm, to vehicle control."
     },
     {
@@ -538,7 +538,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3672608.3707733"
         },
-        "img": "/img/SAC_hyeongjun.jpg",
+        "img": "/Publications/SAC_hyeongjun.jpg",
         "abstract": "In this work, we train popular deep neural networks using face data generated by various generative models and thoroughly analyze their generalizability. Our results reveal significant differences in model performance based on the forgery method used to generate the training data. Notably, we identify specific scenarios that significantly enhance model generalization, contradicting previous research finding that models trained on DM-generated data would achieve higher generalization performance than those trained on GAN-generated data. These findings emphasize the crucial role of training data selection in enhancing the generalization capabilities of deepfake detectors. By strategically selecting and combining datasets, we can develop more robust detection systems, laying a foundation for future research in creating reliable and universal deepfake detection methods"
     },
     {
@@ -561,7 +561,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3672608.3707934"
         },
-        "img": "/img/Park_SCD_2025.png",
+        "img": "/Publications/Park_SCD_2025.png",
         "abstract": "In this work, we propose X3A, an efficient multimodal video deepfake detection model exploiting two powerful unimodal models with probabilistic score-level fusion. X3A leverages the advantage of using raw visual and audio inputs without relying on hand-crafted features. We conducted the extensive experiments on multiple different multimodal deepfake benchmark datasets and achieved superior performance on multimodal deepfake detection, successively detecting entirely and partially manipulated scenarios. Our X3A model demonstrates an accuracy of 0.9960 AUC of 0.9999 on the most challenging AVDeepfake1M benchmark, surpassing all existing models."
     },
     {
@@ -582,7 +582,7 @@
         "links": {
             "conf": "https://doi.org/10.1145/3672608.3707795"
         },
-        "img": "/img/Moon_SCD_2025.png",
+        "img": "/Publications/Moon_SCD_2025.png",
         "abstract": "We introduce a novel GAN-based face age transformation framework utilizing Hierarchical Encoding and Contrastive Learning (HECL). Specifically, we incorporate a multi-level encoder that extracts and analyzes age-related features at different levels of detail, such as facial texture, structure, and skin tone.\n We also combined a contrastive learning approach in the discriminator to finetune the differentiation between age groups. These modifications enhance identity preservation and provide better control over aging through strategic loss functions, addressing shortcomings in existing models, which often struggle with modifying subtle face and hair texture, color, or volume during age progression. HECL outperforms SOTA models in realism and versatility, generating high-quality face images. We demonstrate superior identity preservation performance in metrics, also receiving better qualitative approval from human evaluators."
     },
     {
@@ -624,7 +624,7 @@
         ],
         "year": 2024,
         "links": {},
-        "img": "/img/minsun_saftey_2.png",
+        "img": "/Publications/minsun_saftey_2.png",
         "abstract": "With the growing need to simultaneously address privacy protection and data utilization, synthetic data, a powerful anonymization technique, is gaining attention. This paper examines the types of synthetic data, key generation methods for different target subjects, and various application cases. Through this exploration, we aim to provide a more detailed understanding of synthetic data's advantages and potential applications, as well as insights into future research directions for expanding its use."
     },
     {
@@ -642,7 +642,7 @@
         ],
         "year": 2024,
         "links": {},
-        "img": "/img/minsun_Safety.png",
+        "img": "/Publications/minsun_Safety.png",
         "abstract": "Deepfake content is being created automatically in large quantities, but it must still be reported manually by victims, making rapid responses difficult. Despite the prevalence of sexually exploitative deepfake, no existing approach has combined Not Safe For Work (NSFW) detection with deepfake detection. To address this issue, this study proposes a novel integrated process that first implements NSFW detection to assess urgency and identify sexual components before proceeding to deepfake detection. To verify the effectiveness of this process, we generated eight FaceSwap images. In addition, we utilized these images to evaluate the performance of the NSFW and deepfake detection models, achieving an accuracy of 87.5% and 100%, respectively. The results demonstrated the viability of a sequential detection approach. This research highlights the importance of combining NSFW and deepfake detection for more efficient and urgent content moderation, providing a practical tool for law enforcement and victim support organizations. In our findings, this research presents a paradigm that enables rapid responses to address the harms caused by deepfake content effectively and promotes a more proactive approach to content moderation."
     },
     {
@@ -663,7 +663,7 @@
         "links": {
             "conf": "https://doi.org/10.1007/978-3-031-87496-3_9"
         },
-        "img": "/img/membership_attack.png",
+        "img": "/Publications/membership_attack.png",
         "abstract": "The recent advancements in artificial intelligence drive the widespread adoption of Machine-Learning-as-a-Service platforms, which offer valuable services. However, these pervasive utilities in the cloud environment unavoidably encounter security and privacy issues. In particular, a membership inference attack (MIA) poses a threat by recognizing the presence of a data sample in a training set for the target model. Although prior MIA approaches underline privacy risks repeatedly by demonstrating experimental results with standard benchmark datasets such as MNIST and CIFAR, the effectiveness of such techniques on a real-world dataset remains questionable. We are the first to perform an in-depth empirical study on black-box-based MIAs that hold realistic assumptions, including six metric-based and three classifier-based MIAs with the high-dimensional image dataset that consists of identification (ID) cards and driving licenses. Additionally, we introduce the Siamese-based MIA that shows similar or better performance than the state-of-the-art approaches and suggest training a shadow model with autoencoder-based reconstructed images. Our major findings show that the performance of MIA techniques against too many features may be degraded; the MIA configuration or a sample's properties can impact the accuracy of membership inference on members and non-members."
     },
     {
@@ -687,7 +687,7 @@
         "links": {
             "conf": "https://doi.org/10.1007/978-981-96-0917-8_20"
         },
-        "img": "/img/ACCV-2024-2.png",
+        "img": "/Publications/ACCV-2024-2.png",
         "abstract": "We introduce a new large-scale dataset “LoLI-Street” (Low-Light Images of Streets) with 33k paired low-light and well-exposed images from street scenes in developed cities, covering 19k object classes for object detection, including Person, Bicycle, Car, Bus, Motorcycle, and Traffic Light, etc. LoLI-Street dataset also features 1,000 real low-light test images, providing a benchmark for evaluating models under real-world conditions. Furthermore, we propose a transformer and diffusion-based LLIE model named “TriFuse”. Leveraging the LoLI-Street dataset, we train and evaluate our TriFuse and other SOTA models to benchmark our dataset. Comparing various models, the feasibility of our dataset for generalization is evident in testing across different mainstream datasets by significantly enhancing low-quality images and object detection for practical applications in autonomous driving and surveillance systems. The benchmark dataset and the evaluation code will be released to ensure reproducibility."
     },
     {
@@ -708,7 +708,7 @@
         "links": {
             "conf": "https://doi.org/10.1007/978-981-96-0963-5_7"
         },
-        "img": "/img/ACCV-2024-1.png",
+        "img": "/Publications/ACCV-2024-1.png",
         "abstract": "Deep neural networks, particularly in vision tasks, are notably susceptible to adversarial perturbations. To overcome this chal lenge, developing a robust classifier is crucial. In light of the recent advancements in the robustness of classifiers, we delve deep into the intricacies of adversarial training and Jacobian regularization, two pivotal defenses. Our work is the first carefully analyzes and characterizes these two schools of approaches, both theoretically and empirically, to demonstrate how each approach impacts the robust learning of a classifier. Next, we propose our novel Optimal Transport with Jacobian regularization  method, dubbed OTJR, bridging the input Jacobian regularization with the a output representation alignment by leveraging the optimal transport theory. In particular, we employ the Sliced Wasserstein distance that can efficiently push the adversarial samples’ representations closer to those of clean samples, regardless of the number of classes within the dataset. The SW distance provides the adversarial samples’ movement directions, which are much more informative and powerful for the Jacobian regularization. Our empirical evaluations set a new standard in the domain, with our method achieving commendable accuracies of 52.57% on CIFAR-10 and 28.36% on CIFAR-100 datasets under the AutoAttack. Further validating our model’s practicality, we conducted real-world tests by subjecting internet-sourced images to online adversarial attacks. These demonstrations highlight our model’s capability to counteract sophisticated adversarial perturbations, affirming its significance and applicability in real-world scenarios."
     },
     {

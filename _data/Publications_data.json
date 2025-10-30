@@ -500,28 +500,6 @@
         "abstract": "This paper introduces a novel Saliency-Aware Diffusion Reconstruction (SADRE) framework for watermark elimination on the web, combining adaptive noise injection, region-specific perturbations, and advanced diffusion-based reconstruction. SADRE disrupts embedded watermarks by injecting targeted noise into latent representations guided by saliency masks although preserving essential image features. A reverse diffusion process ensures high-fidelity image restoration, leveraging adaptive noise levels determined by watermark strength. Our framework is theoretically grounded with stability guarantees and achieves robust watermark removal across diverse scenarios. Empirical evaluations on state-of-the-art (SOTA) watermarking techniques demonstrate SADRE’s superiority in balancing watermark disruption and image quality, achieving the best performance in PSNR, SSIM, Wasserstein Distance, and Bit Recovery Accuracy. By bridging the gap between theoretical robustness and practical effectiveness, SADRE sets a new benchmark for watermark elimination, offering a flexible and reliable solution for real-world web contents."
     },
     {
-        "title": "Development of Deep Learning-Based Algorithm for Extracting Abnormal Deceleration Patterns",
-        "authors": [
-            "Youngho Jun",
-            "Minha Kim",
-            "Kangjun Lee",
-            "Simon S. Woo"
-        ],
-        "venue_full": "World Electric Vehicle Journal",
-        "venue": "WEVJ",
-        "track": "Etc.",
-        "Factor": [
-            "SCIE IF =",
-            2.6
-        ],
-        "year": 2025,
-        "links": {
-            "conf": "https://doi.org/10.3390/wevj16010037"
-        },
-        "img": "/Publications/Jun_WEVJ_2025.png",
-        "abstract": "The smart regenerative braking system for EV can reduce unnecessary brake operation by assisting in braking of the vehicle according to the driving situation, road slope, and driver’s preference. This system maintains the distance between the ego and front vehicles without controlling the brake pedal. Since the strength of regenerative braking is generally determined based on calibration data determined during the vehicle development process, some driver could suffer inconvenience when the regenerative braking is activated differently from their driving habits. In order to solve this problem, various deep learning-based algorithms are developed to provide driving stability by learning the driving data. Among those artificial intelligence algorithms, anomaly detection algorithms can successfully separate the deceleration data in abnormal driving situations, and the resulting refined deceleration data can be used to train the regression model to achieve better driving stability. This study evaluates the performance of a personalized driving assistance system by applying driver characteristic data, obtained through an anomaly detection algorithm, to vehicle control."
-    },
-    {
         "title": "GAN or DM? In-depth Analysis and Evaluation of AI-generated Face Data for Generalizable Deepfake Detection",
         "authors": [
             "Hyeongjun Choi",
@@ -584,6 +562,28 @@
         },
         "img": "/Publications/Moon_SCD_2025.png",
         "abstract": "We introduce a novel GAN-based face age transformation framework utilizing Hierarchical Encoding and Contrastive Learning (HECL). Specifically, we incorporate a multi-level encoder that extracts and analyzes age-related features at different levels of detail, such as facial texture, structure, and skin tone.\n We also combined a contrastive learning approach in the discriminator to finetune the differentiation between age groups. These modifications enhance identity preservation and provide better control over aging through strategic loss functions, addressing shortcomings in existing models, which often struggle with modifying subtle face and hair texture, color, or volume during age progression. HECL outperforms SOTA models in realism and versatility, generating high-quality face images. We demonstrate superior identity preservation performance in metrics, also receiving better qualitative approval from human evaluators."
+    },
+    {
+        "title": "Development of Deep Learning-Based Algorithm for Extracting Abnormal Deceleration Patterns",
+        "authors": [
+            "Youngho Jun",
+            "Minha Kim",
+            "Kangjun Lee",
+            "Simon S. Woo"
+        ],
+        "venue_full": "World Electric Vehicle Journal",
+        "venue": "WEVJ",
+        "track": "Etc.",
+        "Factor": [
+            "SCIE IF =",
+            2.6
+        ],
+        "year": 2025,
+        "links": {
+            "conf": "https://doi.org/10.3390/wevj16010037"
+        },
+        "img": "/Publications/Jun_WEVJ_2025.png",
+        "abstract": "The smart regenerative braking system for EV can reduce unnecessary brake operation by assisting in braking of the vehicle according to the driving situation, road slope, and driver’s preference. This system maintains the distance between the ego and front vehicles without controlling the brake pedal. Since the strength of regenerative braking is generally determined based on calibration data determined during the vehicle development process, some driver could suffer inconvenience when the regenerative braking is activated differently from their driving habits. In order to solve this problem, various deep learning-based algorithms are developed to provide driving stability by learning the driving data. Among those artificial intelligence algorithms, anomaly detection algorithms can successfully separate the deceleration data in abnormal driving situations, and the resulting refined deceleration data can be used to train the regression model to achieve better driving stability. This study evaluates the performance of a personalized driving assistance system by applying driver characteristic data, obtained through an anomaly detection algorithm, to vehicle control."
     },
     {
         "title": "MIRACLE: Malware image recognition and classification by layered extraction",

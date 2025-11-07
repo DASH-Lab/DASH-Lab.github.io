@@ -72,6 +72,28 @@ permalink: /Publications/
             color: #6c757d;
             cursor: not-allowed;
         }
+
+        /* abstract 토글용 */
+        .abstract-toggle {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.85em;
+            color: #007bff;
+        }
+        .abstract-toggle img {
+            height: 16px;
+            width: 16px;
+        }
+        .abstract-content {
+            display: none;
+            margin-top: 4px;
+        }
+        .abstract-content.open {
+            display: block;
+        }
+
     </style>
 
 <h1 class="page-title">Publications</h1>
@@ -175,7 +197,24 @@ Bedge Generation (자동 생성)
                 <tr>
                   <td>
                     <p style="margin:0;text-align:justify;"><small>
-                      {% if p.authors %}{{ p.authors | join: ", " }}{% endif %}
+                      {% if p.authors %}
+                        {% assign author_count = p.authors | size %}
+                        {% if author_count == 1 %}
+                          {{ p.authors[0] }}
+                        {% elsif author_count == 2 %}
+                          {{ p.authors[0] }} and {{ p.authors[1] }}
+                        {% else %}
+                          {% for a in p.authors %}
+                            {% if forloop.first %}
+                              {{ a }},
+                            {% elsif forloop.last %}
+                              and {{ a }}
+                            {% else %}
+                              {{ a }},
+                            {% endif %}
+                          {% endfor %}
+                        {% endif %}
+                      {% endif %}
                     </small></p>
                   </td>
                 </tr>
@@ -202,14 +241,23 @@ Bedge Generation (자동 생성)
                 {% if p.abstract %}
                 <tr>
                   <td>
-                    <p style="margin:0;text-align:justify;"><small>{{ p.abstract }}</small></p>
+                    <!-- thumbs.png 버튼 -->
+                    <span class="abstract-toggle">
+                      <img src="/Publications/paper.svg" alt="Toggle abstract">
+                      <small>Show abstract</small>
+                    </span>
+                    <!-- 실제 abstract (처음엔 숨김) -->
+                    <div class="abstract-content">
+                      <p style="margin:0;margin-top:4px;text-align:justify;">
+                        <small>{{ p.abstract }}</small>
+                      </p>
+                    </div>
                   </td>
                 </tr>
                 {% endif %}
               </tbody>
             </table>
           </div>
-
           {% if p.img %}
           <div style="flex:0 0 auto;margin-left:15px;display:flex;align-items:flex-start;justify-content:center;max-width:493px;">
             <img loading="lazy" src="{{ p.img }}" style="max-height:330px;max-width:493px;margin-bottom:10px;height:auto;aspect-ratio:auto;">
@@ -242,7 +290,24 @@ Bedge Generation (자동 생성)
                 <tr>
                   <td>
                     <p style="margin:0;text-align:justify;"><small>
-                      {% if p.authors %}{{ p.authors | join: ", " }}{% endif %}
+                      {% if p.authors %}
+                        {% assign author_count = p.authors | size %}
+                        {% if author_count == 1 %}
+                          {{ p.authors[0] }}
+                        {% elsif author_count == 2 %}
+                          {{ p.authors[0] }} and {{ p.authors[1] }}
+                        {% else %}
+                          {% for a in p.authors %}
+                            {% if forloop.first %}
+                              {{ a }},
+                            {% elsif forloop.last %}
+                              and {{ a }}
+                            {% else %}
+                              {{ a }},
+                            {% endif %}
+                          {% endfor %}
+                        {% endif %}
+                      {% endif %}
                     </small></p>
                   </td>
                 </tr>
@@ -266,10 +331,20 @@ Bedge Generation (자동 생성)
                   </td>
                 </tr>
                 {% endif %}
-                {% if p.abstract %}
+                {% if p.abstract and p.abstract != "" and p.abstract != null %}
                 <tr>
                   <td>
-                    <p style="margin:0;text-align:justify;"><small>{{ p.abstract }}</small></p>
+                    <!-- thumbs.png 버튼 -->
+                    <span class="abstract-toggle">
+                      <img src="/Publications/paper.svg" alt="Toggle abstract">
+                      <small>Show abstract</small>
+                    </span>
+                    <!-- 실제 abstract (처음엔 숨김) -->
+                    <div class="abstract-content">
+                      <p style="margin:0;margin-top:4px;text-align:justify;">
+                        <small>{{ p.abstract }}</small>
+                      </p>
+                    </div>
                   </td>
                 </tr>
                 {% endif %}
@@ -485,18 +560,55 @@ function countForTrack(items, track) {
 }
 
 // 정렬: count desc > 알파벳
-function sortCounts(dict) {
+function sortCounts(dict,track) {
   const arr = Object.entries(dict);
   if (arr.length <= 1) return arr;
-  return arr.sort((a, b) => {
-    if (b[1] === a[1]) return a[0].localeCompare(b[0]);
-    return b[1] - a[1];
-  });
 
+  // --- Main 트랙: BK factor 기준 + 알파벳 정렬 ---
+  if (track === "main") {
+    const bkMap = {}; // bkMap[venueLabel] = 최대 BK 값(Factor[1])
+
+    (window.PUBS || []).forEach(p => {
+      if (inferTrack(p) !== "main") return;
+
+      const label = venueLabel(p);
+      if (!Object.prototype.hasOwnProperty.call(dict, label)) return;
+
+      const F = p.Factor || p.factor || null;
+      if (!Array.isArray(F) || F.length < 2) return;
+
+      const f1 = Number(F[1]);
+      if (!Number.isFinite(f1)) return;
+
+      if (!(label in bkMap) || f1 > bkMap[label]) {
+        bkMap[label] = f1;
+      }
+    });
+
+    return arr.sort((a, b) => {
+      const [labelA] = a;
+      const [labelB] = b;
+
+      const bkA = bkMap[labelA] || 0;
+      const bkB = bkMap[labelB] || 0;
+
+      // 1️⃣ BK 내림차순
+      if (bkB !== bkA) return bkB - bkA;
+      // 2️⃣ 같은 BK 안에서는 학회명 알파벳순
+      return labelA.localeCompare(labelB);
+    });
+  }
+
+  // --- 나머지 트랙들(Dataset, Short, Journal, Etc): 알파벳만 ---
+  return arr.sort((a, b) => {
+    const [labelA] = a;
+    const [labelB] = b;
+    return labelA.localeCompare(labelB);
+  });
 }
 function badgeListFor(track, suffix, color) {
   const dict = countForTrack(window.PUBS, track);
-  return sortCounts(dict)
+  return sortCounts(dict,track)
     .map(([label, n]) => makeShield(label + suffix, n, color))
     .join("&nbsp;");
 }
@@ -512,8 +624,8 @@ function renderDatasetSection(mountId) {
   const dictShort   = countForTrack(window.PUBS, "short");
 
   // 2) 트랙별 정렬 후 라벨에 접미사 부여
-  const entriesDataset = sortCounts(dictDataset).map(([label, n]) => [label + " Dataset", n]);
-  const entriesShort   = sortCounts(dictShort).map(([label, n])   => [label + " Short",   n]);
+  const entriesDataset = sortCounts(dictDataset,"dataset").map(([label, n]) => [label + " Dataset", n]);
+  const entriesShort   = sortCounts(dictShort,"short").map(([label, n])   => [label + " Short",   n]);
 
   // 3) 병합 후 전역 정렬: count desc, tie-breaker α
   const merged = [...entriesDataset, ...entriesShort].sort((a, b) => {
@@ -537,14 +649,14 @@ function renderBadges(track, mountId) {
 
   if (track === "main") {
     // 메인: venue별 배지
-    html = sortCounts(dict)
+    html = sortCounts(dict,"main")
       .map(([label, n]) => makeShield(label + " Main", n, color))
       .join("&nbsp;");
 
   } else if (track === "dataset") {
     // 참고: 실제 화면은 renderDatasetSection에서 처리하지만,
     // 혹시 호출되더라도 안전하게 동작하도록 기본 렌더 유지
-    html = sortCounts(dict)
+    html = sortCounts(dict,"dataset")
       .map(([label, n]) => makeShield(label + " Dataset", n, color))
       .join("&nbsp;");
 
@@ -576,12 +688,26 @@ function renderDomesticWorkshopsBadges(mountId) {
 
   el.innerHTML = html;
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   renderBadges("main", "badges-main");
   renderDatasetSection("badges-dataset");
   renderBadges("journal", "badges-journal");
   renderDomesticWorkshopsBadges("badges-etc");
+
+  // -------------------------
+  // thumbs 버튼 클릭 → abstract 토글
+  // -------------------------
+  document.querySelectorAll(".abstract-toggle").forEach(btn => {
+    const content = btn.nextElementSibling;  // 바로 뒤 div.abstract-content
+    if (!content) return;
+
+    btn.addEventListener("click", () => {
+      content.classList.toggle("open");
+    });
+  });
 });
+
 </script>
 
 

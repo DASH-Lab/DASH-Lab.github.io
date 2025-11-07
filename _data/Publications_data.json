@@ -7,7 +7,7 @@
         ],
         "venue_full": "The IEEE/CVF Winter Conference on Applications of Computer Vision",
         "venue": "WACV",
-        "track": "Main",
+        "track": "Etc.",
         "Factor": [
             "",
             0
@@ -1389,7 +1389,7 @@
         ],
         "venue_full": "2024 IEEE/CVF Winter Conference on Applications of Computer Vision",
         "venue": "WACV",
-        "track": "Main",
+        "track": "Etc.",
         "Factor": [
             "",
             0
@@ -1973,7 +1973,7 @@
         ],
         "venue_full": "IEEE/CVF Winter Conference on Applications of Computer Vision",
         "venue": "WACV",
-        "track": "Main",
+        "track": "Etc.",
         "Factor": [
             "",
             0
@@ -2345,7 +2345,7 @@
         ],
         "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
         "venue": "KDD",
-        "track": "Short",
+        "track": "Main",
         "Factor": [
             "BK Computer Science IF=",
             4

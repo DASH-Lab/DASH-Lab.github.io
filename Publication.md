@@ -560,17 +560,15 @@ function countForTrack(items, track) {
 }
 
 // 정렬: count desc > 알파벳
-function sortCounts(dict,track) {
+function sortCounts(dict, track) {
   const arr = Object.entries(dict);
   if (arr.length <= 1) return arr;
 
-  // --- Main 트랙: BK factor 기준 + 알파벳 정렬 ---
-  if (track === "main") {
+  // --- Main / Short / Dataset: BK factor 기준 + 알파벳 정렬 ---
+  if (track === "main" || track === "short" || track === "dataset") {
     const bkMap = {}; // bkMap[venueLabel] = 최대 BK 값(Factor[1])
 
     (window.PUBS || []).forEach(p => {
-      if (inferTrack(p) !== "main") return;
-
       const label = venueLabel(p);
       if (!Object.prototype.hasOwnProperty.call(dict, label)) return;
 
@@ -592,20 +590,21 @@ function sortCounts(dict,track) {
       const bkA = bkMap[labelA] || 0;
       const bkB = bkMap[labelB] || 0;
 
-      // 1️⃣ BK 내림차순
+      // 1) BK 내림차순
       if (bkB !== bkA) return bkB - bkA;
-      // 2️⃣ 같은 BK 안에서는 학회명 알파벳순
+      // 2) 같은 BK 안에서는 학회명 알파벳순
       return labelA.localeCompare(labelB);
     });
   }
 
-  // --- 나머지 트랙들(Dataset, Short, Journal, Etc): 알파벳만 ---
+  // --- 나머지 트랙들(journal, etc): 알파벳만 ---
   return arr.sort((a, b) => {
     const [labelA] = a;
     const [labelB] = b;
     return labelA.localeCompare(labelB);
   });
 }
+
 function badgeListFor(track, suffix, color) {
   const dict = countForTrack(window.PUBS, track);
   return sortCounts(dict,track)
@@ -624,19 +623,24 @@ function renderDatasetSection(mountId) {
   const dictShort   = countForTrack(window.PUBS, "short");
 
   // 2) 트랙별 정렬 후 라벨에 접미사 부여
-  const entriesDataset = sortCounts(dictDataset,"dataset").map(([label, n]) => [label + " Dataset", n]);
-  const entriesShort   = sortCounts(dictShort,"short").map(([label, n])   => [label + " Short",   n]);
+  //    → 여기서 sortCounts가 BK 기준 정렬을 이미 해줌
+  const entriesDataset = sortCounts(dictDataset, "dataset")
+    .map(([label, n]) => [label + " Dataset", n]);
 
-  // 3) 병합 후 전역 정렬: count desc, tie-breaker α
-  const merged = [...entriesDataset, ...entriesShort].sort((a, b) => {
-    if (b[1] === a[1]) return a[0].localeCompare(b[0]);
-    return b[1] - a[1];
-  });
+  const entriesShort   = sortCounts(dictShort, "short")
+    .map(([label, n]) => [label + " Short", n]);
+
+  // 3) 병합: Dataset 먼저, 그다음 Short
+  //    (각 그룹 내부는 BK 기준으로 정렬된 상태)
+  const merged = [...entriesDataset, ...entriesShort];
 
   // 4) 렌더
-  const html = merged.map(([label, n]) => makeShield(label, n, color)).join("&nbsp;");
+  const html = merged
+    .map(([label, n]) => makeShield(label, n, color))
+    .join("&nbsp;");
   el.innerHTML = html;
 }
+
 
 function renderBadges(track, mountId) {
   const el = document.getElementById(mountId);

@@ -121,7 +121,9 @@ permalink: /Publications/
 Bedge Generation (자동 생성)
 {% endcomment %}
 
+
 {% assign pubs = site.data.Publications_data %}
+{% comment %}
 <script>
   // Jekyll 데이터 -> 클라이언트로 전달
   window.PUBS = {{ pubs | jsonify }};
@@ -153,7 +155,7 @@ Bedge Generation (자동 생성)
 
         </center>
   </p>
-
+{% endcomment %}
 
 
 {% comment %} 2018+ 버튼/섹션용 {% endcomment %}
@@ -477,7 +479,7 @@ const TRACK_LABEL = {
   journal: "SCIE Journal",
   etc: "Etc.",
 };
-
+/* 
 function inferTrack(p) {
   const tRaw = (p.track || "").trim();
   const t = tRaw.toLowerCase(); // "SCIE Journal" → "scie journal"
@@ -512,7 +514,7 @@ function factorValid(p) {
   const f0 = String(F[0] ?? "").trim();
   const f1 = Number(F[1]);
   return f0 !== "" && Number.isFinite(f1) && f1 > 0;
-}
+} 
 
 // venue 정규화
 function venueLabel(p) {
@@ -692,12 +694,12 @@ function renderDomesticWorkshopsBadges(mountId) {
 
   el.innerHTML = html;
 }
-
+*/
 document.addEventListener("DOMContentLoaded", () => {
-  renderBadges("main", "badges-main");
-  renderDatasetSection("badges-dataset");
-  renderBadges("journal", "badges-journal");
-  renderDomesticWorkshopsBadges("badges-etc");
+  //renderBadges("main", "badges-main");
+  //renderDatasetSection("badges-dataset");
+  //renderBadges("journal", "badges-journal");
+  //renderDomesticWorkshopsBadges("badges-etc");
 
   // -------------------------
   // thumbs 버튼 클릭 → abstract 토글

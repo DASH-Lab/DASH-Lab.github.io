@@ -231,6 +231,27 @@ Bedge Generation (자동 생성)
                     </b></small></p>
                   </td>
                 </tr>
+                {% assign three_tracks = "Main,Short,Dataset" | split: "," %}
+                {% if p.track and p.track != "Etc." %}
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;">
+                      <small>
+                        <b>
+                          <span style="color:#003B8E;">
+                            {% assign special = "Main,Short,Dataset" | split: "," %}
+                            {% if special contains p.track %}
+                              {{ p.track }} Track
+                            {% else %}
+                              {{ p.track }}
+                            {% endif %}
+                          </span>
+                        </b>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+                {% endif %}
                 {% if p.Factor and p.Factor[0] and p.Factor[0] != "" and p.Factor[1] and p.Factor[1] != 0 %}
                 <tr>
                   <td>

@@ -5,14 +5,11 @@ permalink: /Members/
 ---
 <h1 class="page-title">{{ page.title | escape }}</h1>
 <div class="section">
-    <div style="text-align: center; position: relative;">
-    <b style="display: inline-block;">I am extremely fortunate to work with the following highly motivated students, and very grateful for their research efforts!</b><br>
-     <i style="position: absolute; right:0;">— Simon S. Woo</i><br>
-    </div>
-    <h5>Research Professor/Post-Doc Researcher</h5> 
-    <div class="row">
-          <div class="col s12">
-            <table style="width: 100%">
+    <div class="card" style="padding: 30px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+        <h5 style="color: #1976d2; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #1976d2; padding-bottom: 10px;">Research Professor/Post-Doc Researcher</h5>
+        <div class="row">
+              <div class="col s12">
+                <table style="width: 100%">
                 <colgroup>
                    <col span="1" style="width: 15%;">
                    <col span="1" style="width: 30%;">
@@ -41,36 +38,23 @@ permalink: /Members/
                   <td>Adversarial Robustness, Representation Learning</td>
                   <td><i>bmle @ g dot skku dot edu</i></td>
                 </tr>
-                <tr>
-                  <td align="center">
-                      <div style="display:flex;flex-direction:column">
-                          <a href="#" target = "_blank">
-                              <img  loading="lazy" src="/img/member_images/Dashlab_logo.jpg" alt="Photo" height="auto" width="128" style="border-radius:45%" ><br>
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          </a>
-                      </div>
-                     </td>
-                  <td>Computer Science & Engineering</td>
-                  <td>Adversarial Robustness, Representation Learning</td>
-                  <td><i>postdoc@g.skku.edu</i></td>
-                </tr>
               </tbody>
             </table>
           </div>
+        </div>
     </div>
 </div>
 
-
-
 <div class="section">
-    <div style="text-align: center; position: relative;">
-    <!-- <b style="display: inline-block;">I am extremely fortunate to work with the following highly motivated students, and very grateful for their research efforts!</b><br>
-     <i style="position: absolute; right:0;">— Simon S. Woo</i><br> -->
-    </div>
-    <h5>Ph.D. Students </h5> 
-    <div class="row">
-          <div class="col s12">
-            <table style="width: 100%">
+    <div class="card" style="padding: 30px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+        <!-- <div style="text-align: center; position: relative;">
+        <b style="display: inline-block;">I am extremely fortunate to work with the following highly motivated students, and very grateful for their research efforts!</b><br>
+         <i style="position: absolute; right:0;">— Simon S. Woo</i><br>
+        </div> -->
+        <h5 style="color: #1976d2; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #1976d2; padding-bottom: 10px;">Ph.D. Students</h5>
+        <div class="row">
+              <div class="col s12">
+                <table style="width: 100%">
                 <colgroup>
                    <col span="1" style="width: 15%;">
                    <col span="1" style="width: 30%;">
@@ -265,13 +249,16 @@ permalink: /Members/
               </tbody>
             </table>
           </div>
+        </div>
     </div>
 </div>
+
 <div class="section">
-    <h5>Masters</h5> 
-    <div class="row">
-          <div class="col s12">
-            <table style="width: 100%">
+    <div class="card" style="padding: 30px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+        <h5 style="color: #1976d2; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #1976d2; padding-bottom: 10px;">Masters</h5>
+        <div class="row">
+              <div class="col s12">
+                <table style="width: 100%">
                 <colgroup>
                    <col span="1" style="width: 15%;">
                    <col span="1" style="width: 30%;">
@@ -444,13 +431,16 @@ permalink: /Members/
               </tbody>
             </table>
           </div>
+        </div>
     </div>
 </div>
+
 <div class="section">
-    <h5>Undergraduate Students</h5> 
-    <div class="row">
-          <div class="col s12">
-            <table style="width: 100%">
+    <div class="card" style="padding: 30px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+        <h5 style="color: #1976d2; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #1976d2; padding-bottom: 10px;">Undergraduate Students</h5>
+        <div class="row">
+              <div class="col s12">
+                <table style="width: 100%">
                 <colgroup>
                     <col span="1" style="width: 15%;">
                     <col span="1" style="width: 30%;">
@@ -481,17 +471,19 @@ permalink: /Members/
             </table>
           </div>
         </div>
-  </div>
+    </div>
+</div>
 
 <div class="section">
-    <h5>Master Thesis/Capstone Project Supervision</h5> 
-    <div class="row">
-          <div class="col s12">
-            <table>
+    <div class="card" style="padding: 30px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+        <h5 style="color: #1976d2; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #1976d2; padding-bottom: 10px;">Master Thesis/Capstone Project Supervision</h5>
+        <div class="row">
+              <div class="col s12">
+                <table style="table-layout: fixed; width: 100%;">
               <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Major</th>
+                    <th style="word-wrap: break-word;">Major</th>
                     <th>Current Employment</th>
                     <th>Topic</th>
                 </tr>
@@ -499,83 +491,83 @@ permalink: /Members/
               <tbody>
                 <tr>
                   <td>경윤영</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>Samsung Display AI팀</td>
                   <td>Anomaly Detection</td>
                 </tr>
                   <tr>
                   <td>변규백 ('23)</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>Samsung Elec.</td>
                   <td>Self-Supervised Learning</td>
                 </tr>
                 <tr>
                   <td>인정현 ('23)</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>LG에너지솔루션</td>
                   <td>Anomaly Detection</td>
                 </tr>
                 <tr>
                   <td>김근수 ('22)</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>Hyndai Kefico --> Applied Materials</td>
                   <td>Model Compression</td>
                 </tr>
                 <tr>
                   <td>하민성 ('22)</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>Samsung Elec.</td>
                   <td>Anomaly Detection</td>
                 </tr>
                 <tr>
                   <td>주기형 ('21)</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>현대자동차 연구소</td>
                   <td>강화학습</td>
                 </tr>
                 <tr>
                   <td>Seunghwa Song</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>Citi Bank</td>
                   <td>Optimizing NBA Basketball Point-Spread Betting Using Machine Learning Techniques</td>
                 </tr>
                 <tr>
                   <td>SoonYoung Kwon</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>Tiger Team</td>
                   <td>Deep Learning based Phishing Website Detection using Source Code</td>
                 </tr>
                 <tr>
                   <td>서수량</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td>서울대학교 병원</td>
-                  <td>전자의무기록 임상 노트와 ClinicalBERT로 Transfer Learning을 이용한 장기재원 여부 예측 
+                  <td>전자의무기록 임상 노트와 ClinicalBERT로 Transfer Learning을 이용한 장기재원 여부 예측
                  </td>
                 </tr>
                  <tr>
                   <td>윤대영</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td> 배달의 민족 </td>
                   <td>Inverse Reinforcement Learning based Novelty Detection
                  </td>
                 </tr>
                 <tr>
                   <td>박성호</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td> LOTTE Food </td>
                   <td>머신러닝 기반 식용 작물별 생산량 예측 연구 및 변수별 생산량에 끼치는 영향력 파악 연구 진행
                  </td>
                 </tr>
                 <tr>
                  <td>천세영</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td> NC Soft </td>
                   <td>텐서 분해를 이용한 에어비앤비 추천시스템 연구
                  </td>
                 </tr>
                 <tr>
                  <td>이지은</td>
-                  <td>Applied Data Science (데이터사이언스)</td>
+                  <td style="word-wrap: break-word;">Applied Data Science<br>(데이터사이언스)</td>
                   <td> LOTTE </td>
                   <td>면세점 웹로그 데이터를 활용한 개인화 추천 시스템 연구
                  </td>
@@ -583,14 +575,16 @@ permalink: /Members/
               </tbody>
             </table>
           </div>
+        </div>
     </div>
 </div>
 
 <div class="section">
-    <h5>Alumni</h5> 
-    <div class="row">
-          <div class="col s12">
-            <table>
+    <div class="card" style="padding: 30px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);">
+        <h5 style="color: #1976d2; margin-top: 0; margin-bottom: 20px; border-bottom: 2px solid #1976d2; padding-bottom: 10px;">Alumni</h5>
+        <div class="row">
+              <div class="col s12">
+                <table>
               <thead>
                 <tr>
                     <th>Name</th>
@@ -742,5 +736,6 @@ permalink: /Members/
               </tbody>
             </table>
           </div>
+        </div>
     </div>
 </div>

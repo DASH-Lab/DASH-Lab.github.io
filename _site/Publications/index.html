@@ -349,6 +349,292 @@
               <thead>
                 <tr>
                   <th style="text-align:left;">
+                    <b>Exploring Gemini 2.5 for Explainable Deepfake Detection under Black-Box Constraints</b>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;"><small>
+                      
+                        
+                        
+                          
+                            
+                              Hyunjune Kim,
+                            
+                          
+                            
+                              Hyeongjun Choi,
+                            
+                          
+                            
+                              and Simon S. Woo
+                            
+                          
+                        
+                      
+                    </small></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;"><small><b>
+                      <a href="https://xai.kaist.ac.kr/Workshop/hcai2025/" target="_blank">
+                      CIKM Workshop on Human-Centric AI: From Explainability and Trustworthiness to Actionable Ethics
+                      
+                      , 2026
+                      </a>
+                    </b></small></p>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;">
+                      <small>
+                        <b>
+                          <span style="color:#003B8E;">
+                            
+                            
+                              Workshop
+                            
+                          </span>
+                        </b>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+                
+                
+                
+                <tr>
+                  <td>
+                    <!-- thumbs.png 버튼 -->
+                    <span class="abstract-toggle">
+                      <img src="/Publications/paper.svg" alt="Toggle abstract" />
+                      <small>Show abstract</small>
+                    </span>
+                    <!-- 실제 abstract (처음엔 숨김) -->
+                    <div class="abstract-content">
+                      <p style="margin:0;margin-top:4px;text-align:justify;">
+                        <small>The rapid advancement of deepfake generation poses significant challenges for reliable media verification. Effective detection increasingly demands methods that are both accurate and interpretable, motivating the use of multimodal large language models (MLLMs) for transparency and human-aligned explainability. While prior work has primarily focused on open-source MLLMs, we investigate, for the first time, the potential of a closed-source model, Google Gemini 2.5, for deepfake detection and explanation. We systematically evaluate Gemini via zero-shot testing and adapter-based black-box fine-tuning using Google Vertex AI. On a simple binary dataset (FaceForensics++), zero-shot performance is low and fine-tuning yields only modest gains. Remarkably, on a vision-language benchmark (DD-VQA), even straightforward black-box fine-tuning enables Gemini to outperform existing state-of-the-art models, highlighting the dataset-dependent impact of fine-tuning on closed-source models. Our study empirically demonstrates the feasibility of explainable deepfake detection using closed-source MLLMs, revealing both their promise and current limitations.</small>
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          
+          <div style="flex:0 0 auto;margin-left:15px;display:flex;align-items:flex-start;justify-content:center;max-width:493px;">
+            <img loading="lazy" src="/Publications/CIKM-W2026_HyunjuneKim.png" style="max-height:330px;max-width:493px;margin-bottom:10px;height:auto;aspect-ratio:auto;" />
+          </div>
+          
+        </div>
+        <hr />
+      
+        <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;flex-wrap:nowrap;">
+          <div style="margin-left:25px;margin-right:10px;flex:1;min-width:0;">
+            <table>
+              <thead>
+                <tr>
+                  <th style="text-align:left;">
+                    <b>From Rules to LLM-Enhanced Templates: A Hybrid ALPG Code Generation System</b>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;"><small>
+                      
+                        
+                        
+                          
+                            
+                              Sanghyeok Park,
+                            
+                          
+                            
+                              Sungjea Hwang,
+                            
+                          
+                            
+                              and Simon S. Woo
+                            
+                          
+                        
+                      
+                    </small></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;"><small><b>
+                      
+                      International Conference on Software Engineering in Practice
+                      (ICSE-SEIP)
+                      , 2026
+                      
+                    </b></small></p>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;">
+                      <small>
+                        <b>
+                          <span style="color:#003B8E;">
+                            
+                            
+                              Main Track
+                            
+                          </span>
+                        </b>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;">
+                      <small><b><span style="color:#1E90FF;">BK Computer Science IF=4</span></b></small>
+                    </p>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <!-- thumbs.png 버튼 -->
+                    <span class="abstract-toggle">
+                      <img src="/Publications/paper.svg" alt="Toggle abstract" />
+                      <small>Show abstract</small>
+                    </span>
+                    <!-- 실제 abstract (처음엔 숨김) -->
+                    <div class="abstract-content">
+                      <p style="margin:0;margin-top:4px;text-align:justify;">
+                        <small>The semiconductor industry operates as a multidisciplinary environment where engineers face development challenges due to varying coding proficiency. ALPG (Algorithmic Pattern Generator), used in semiconductor test equipment, requires nanosecond-level timing precision and signal control, yet existing LLMs fail to generate proper ALPG code due to the absence of public datasets. To address these challenges, we first developed RuleLang, a rule-based system achieving 76.3% coverage across 271 ALPG test patterns, but revealing limitations in handling new combinations. We then propose a hybrid system where LLMs generate JSON templates that are parsed by rule-based parsers into executable ALPG code. By constraining LLM outputs to schema-validated JSON, the system mitigates probabilistic uncertainty and prevents unsafe direct code generation. Evaluation on 271 real-world ALPG test patterns from Samsung’s 8th-generation V-NAND Flash memory achieved 84.2% accuracy, including a 23.4%p gain on new sequence test patterns, demonstrating significant improvements over manual and rule-based development.</small>
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          
+          <div style="flex:0 0 auto;margin-left:15px;display:flex;align-items:flex-start;justify-content:center;max-width:493px;">
+            <img loading="lazy" src="/Publications/ICSE-SEIP2026_SangHyeokPark.png" style="max-height:330px;max-width:493px;margin-bottom:10px;height:auto;aspect-ratio:auto;" />
+          </div>
+          
+        </div>
+        <hr />
+      
+        <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;flex-wrap:nowrap;">
+          <div style="margin-left:25px;margin-right:10px;flex:1;min-width:0;">
+            <table>
+              <thead>
+                <tr>
+                  <th style="text-align:left;">
+                    <b>CelebCaption: A Benchmark Dataset for Identity-Sensitive Unlearning in Image Captioning</b>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;"><small>
+                      
+                        
+                        
+                          Hakjun Moon and Simon S. Woo
+                        
+                      
+                    </small></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;"><small><b>
+                      
+                      ACM International Conference on Web Search and Data Mining
+                      (WSDM)
+                      , 2026
+                      
+                    </b></small></p>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;">
+                      <small>
+                        <b>
+                          <span style="color:#003B8E;">
+                            
+                            
+                              Short Track
+                            
+                          </span>
+                        </b>
+                      </small>
+                    </p>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <p style="margin:0;text-align:justify;">
+                      <small><b><span style="color:#1E90FF;">BK Computer Science IF=2</span></b></small>
+                    </p>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <!-- thumbs.png 버튼 -->
+                    <span class="abstract-toggle">
+                      <img src="/Publications/paper.svg" alt="Toggle abstract" />
+                      <small>Show abstract</small>
+                    </span>
+                    <!-- 실제 abstract (처음엔 숨김) -->
+                    <div class="abstract-content">
+                      <p style="margin:0;margin-top:4px;text-align:justify;">
+                        <small>Machine unlearning seeks to remove the influence of selected training examples without retraining the model from scratch. Recent work has extended this goal to vision–language models, yet existing datasets are not suited for judging whether a sample’s influence has truly been erased from learned image–text pairs. Current algorithms often intend to introduce false information into sentences generated after unlearning, which compromises utility. We first establish three criteria that an image-caption unlearning method should meet: Specificity Reduction, Identity Removal, and Performance Preservation. Guided by these criteria, we present CelebCaption, an image–text dataset of 15,000 photographs covering 150 well-known individuals, each linked to four captions that vary in detail (detailed vs. summary) and in the presence of the subject’s name. This design enables controlled, quantitative assessment of the proposed unlearning objectives. We benchmark several representative unlearning algorithms on CelebCaption, using both caption quality scores and MIA accuracy as a quantitative unlearning metric, and observe that current methods fail to achieve their privacy objectives. Our unlearning criteria and dataset provide a focused, reproducible testbed for advancing privacy-aware image captioning. Our CelebCaption dataset is publicly available at https://github.com/Gloriel621/CelebCaption</small>
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          
+          <div style="flex:0 0 auto;margin-left:15px;display:flex;align-items:flex-start;justify-content:center;max-width:493px;">
+            <img loading="lazy" src="/Publications/WSDM2026_HakjunMoon.png" style="max-height:330px;max-width:493px;margin-bottom:10px;height:auto;aspect-ratio:auto;" />
+          </div>
+          
+        </div>
+        <hr />
+      
+        <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;flex-wrap:nowrap;">
+          <div style="margin-left:25px;margin-right:10px;flex:1;min-width:0;">
+            <table>
+              <thead>
+                <tr>
+                  <th style="text-align:left;">
                     <b>Machine Pareidolia: Protecting Facial Images with Emotional Editing</b>
                   </th>
                 </tr>
@@ -7097,7 +7383,7 @@ for web and cloud applications.</small>
                   <td>
                     <p style="margin:0;text-align:justify;"><small><b>
                       
-                       CIKM Workshop on Large Language Models’ Interpretation and Trustworthiness
+                      ACM CIKM Workshop on Large Language Models’ Interpretation and Trustworthiness
                       (LLIMT)
                       , 2023
                       

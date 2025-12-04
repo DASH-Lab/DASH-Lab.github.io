@@ -4,8 +4,8 @@ const herofaceProjectInfo = {
     title: "AI 기술을 활용한 6.25 전쟁영웅 사진 복원 사업",
     researchers: "우 사이먼 교수, 박은일 교수, 손건호(M.S.), 백승연(M.S.), 정다혜(Ph.D.), 문학준(M.S.), 이강준(M.S.), 김정호(M.S.)",
     description: "6.25전쟁 73주년을 맞아 대한민국의 자유를 지키기 위해 6.25 전쟁에 참전했던 용사들의 헌신을 기리며 국가보훈부와 성균관대 인공지능학과가 협업하여 참전 영웅들의 젊은 시절이 담긴 빛바랜 흑백사진을 인공지능 기술로 복원하였습니다. 노이즈 제거 (DDNM), 고해상도 복원 (GFP-GAN), iColoriT (컬러 복원), PaddleSeg (배경 합성) 등 최신 복원 기술을 사용 후 전문가의 고증을 받아 저화질 사진을 고품질의 이미지로 만들었습니다. 해당 사진들은 6.25 전쟁 73주년 전시 및 유가족에게 전달되었습니다.",
-    mainImage: "img/projects/heroface-restoration/heroface_restoration_main.jpg",
-    mainImageCaption: "Jul 2025: Three full papers accepted at MM 2025 (BK IF=4)"
+    mainImage: "img/projects/heroface-restoration/heroface_restoration_main.jpg"
+    // Removed mainImageCaption to hide the "Jul 2025" text
 };
 
 const herofaceMethods = [

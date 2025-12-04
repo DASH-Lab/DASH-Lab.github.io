@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASH LAB - Members</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Shared Resources -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/common.js"></script>
+    
+    <!-- Members Scripts -->
+    <script src="js/membersdata.js"></script>
+    <script src="js/members.js" defer></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    
+    <!-- Navbar injected by common.js -->
+
+    <div class="container mx-auto px-4 pt-8 max-w-6xl flex-grow">
+
+        <!-- Research Professor -->
+        <div class="member-section-card">
+            <h5 class="member-header">Research Professors/Post-Doc Researcher</h5>
+            <div id="research-professors-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- JS Injects Here -->
+            </div>
+        </div>
+
+        <!-- Ph.D. Students -->
+        <div class="member-section-card">
+            <h5 class="member-header">Ph.D. Students</h5>
+            <div id="phd-students-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- JS Injects Here -->
+            </div>
+        </div>
+
+        <!-- Master's Students -->
+        <div class="member-section-card">
+            <h5 class="member-header">Masters Students</h5>
+            <div id="ms-students-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- JS Injects Here -->
+            </div>
+        </div>
+
+        <!-- Undergraduate Students (Static Call to Action) -->
+        <div class="member-section-card">
+            <h5 class="member-header">Undergraduate Students</h5>
+            <div class="member-card max-w-lg mx-auto">
+                <img loading="lazy" src="" onerror="this.src=getImg('img/dash_logo/Dashlab_logo.jpg')" alt="DASH Lab Logo" class="member-photo w-24 h-24 mx-auto border-gray-300">
+                <strong class="text-lg text-gray-800">Interested in joining?</strong>
+                <p class="text-sm text-gray-600 my-2">A person who can code and has a passion for AI research.</p>
+                <p class="text-xs font-semibold text-gray-700">Research Focus: Computer Vision, Anomaly Detection, NLP and AI security</p>
+                <p class="text-xs text-gray-700 mt-2">Contact: undergraduate@g.skku.edu</p>
+            </div>
+        </div>
+
+        <!-- Master Thesis Supervision -->
+        <div class="member-section-card alumni-table">
+            <h5 class="member-header">Master Thesis/Capstone Project Supervision</h5>
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th data-label="Name">Name</th>
+                        <th data-label="Major" class="w-1/4">Major</th>
+                        <th data-label="Employment" class="w-1/4">Current Employment</th>
+                        <th data-label="Topic" class="w-2/5">Topic</th>
+                    </tr>
+                </thead>
+                <tbody id="master-supervision-table-body">
+                    <!-- JS Injects Here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Alumni -->
+        <div class="member-section-card alumni-table">
+            <h5 class="member-header">Alumni</h5>
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th data-label="Name">Name</th>
+                        <th data-label="Major">Major</th>
+                        <th data-label="Employment">Current employment</th>
+                    </tr>
+                </thead>
+                <tbody id="alumni-table-body">
+                    <!-- JS Injects Here -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+    <!-- Footer injected by common.js -->
+    
+</body>
+</html>

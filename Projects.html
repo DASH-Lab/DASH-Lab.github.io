@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASH LAB - Projects</title>
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Shared Resources -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/common.js"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <!-- ADDED pb-12 (padding-bottom: 3rem) to the main content container -->
+    <div class="container mx-auto px-4 pt-8 pb-12 max-w-6xl flex-grow">
+        
+        <!-- Previous & Ongoing Project Associates -->
+        <!-- REMOVED max-w-2xl mx-auto to make this section full width -->
+        <div class="project-associate-card mb-10 p-5">
+            <h5 class="text-lg font-bold text-blue-700 pb-2 border-b-2 border-blue-700 mb-4 text-center">
+                Previous & Ongoing Project Associates
+            </h5>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-gray-700 text-sm md:text-base">
+                <div>• 과학기술정보통신부 (과기부)</div>
+                <div>• 한국연구재단 (NRF)</div>
+                <div>• 항공우주연구원</div>
+                <div>• 경찰청</div>
+                <div>• 국립과학수사연구소</div>
+                <div>• 국가보안기술연구소</div>
+                <div>• ETRI</div>
+                <div>• IITP</div>
+            </div>
+        </div>
+
+
+        <!-- Computer Vision (Deepfake) Section -->
+        <div class="section">
+            <div class="project-card">
+                <h4 class="project-header">🎭 Computer Vision (Deepfake 딥페이크 탐지 및 생성 억제)</h4>
+
+                <div class="leading-relaxed text-gray-700 text-base space-y-4">
+                    <p>• 본 <b>DASH Lab</b> 연구실에서는 <b>2017</b>년부터 자체적으로 딥페이크 연구를 시작하여, <b>NeurIPS, AAAI, ICML, WWW, CIKM</b> 등 최고의 학술대회에 연구결과를 발표하고 있습니다.</p>
+
+                    <p>• 2021년 세계 최초로 멀티모달 딥페이크 벤치마크 데이터 셋인 <b class="text-blue-700">FakeAVCeleb</b> (<a href="https://sites.google.com/view/fakeavcelebdash-lab/" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Click</a>) 데이터 셋을 제작하여 현재 50개국 이상 1,000여명(<a href="https://sites.google.com/view/fakeavcelebdash-lab/dataset-request-usage?authuser=0" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Click</a>)의 국제 연구자들에게 연구용으로 배포하였습니다。</p>
+
+                    <p>• 현재 딥페이크 탐지 관련 세계적으로 연구성과를 인정받고 있습니다. 관련 연구 성과는 여기서 찾아보실 수 있습니다. (<a href="https://github.com/DASH-Lab/deepfakeResearch" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Click</a>)</p>
+
+                    <p>• 2021년부터 딥페이크 관련 국제 워크숍(WDC) Workshop on the security implications of Deepfakes and Cheapfakes (<a href="https://sites.google.com/view/wdc-2024/" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Click</a>)을 주관 및 개최하여, 딥페이크 연구 관련 성과를 해외 연구자들과 같이 공유, 토의, 논의하여 딥페이크를 근절할 수 있도록 국제적인 협력과 노력 중입니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Individual Projects List - Using a responsive grid -->
+        <!-- The individual project grid itself now spans the full container width -->
+        <div class="section space-y-4">
+            
+            <!-- Group 1: Project 1 & Project 2 (Side by side, maintaining image prominence) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="sub-project-card">
+                    <h6 class="text-blue-700 font-bold mb-1 text-base">📌 Project 1. 악의적 변조 콘텐츠 대응을 위한 딥페이크 탐지 고도화, 생성억제, 유포 방지 플랫폼 개발</h6>
+                    <p class="text-gray-500 mb-3 text-sm"><strong>과기정통부/IITP: 2023-2025, 진행중</strong> (연구책임자)</p>
+                    <div class="text-center">
+                        <img loading="lazy" src="" onerror="this.src=getImg('/img/projects/1/dfArch.png')" alt="Deepfake Architecture" class="max-w-full h-auto rounded-lg shadow-md mx-auto" />
+                    </div>
+                </div>
+
+                <div class="sub-project-card">
+                    <h6 class="text-blue-700 font-bold mb-1 text-base">📌 Project 2. 개인정보보호 관련 정책 변화를 유연하게 반영하여 준수하는 AI 플랫폼 연구 및 개발</h6>
+                    <p class="text-gray-500 mb-3 text-sm"><strong>과기정통부: 2022-2026, 진행중</strong> (연구책임자)</p>
+                    <div class="text-center">
+                        <img loading="lazy" src="" onerror="this.src=getImg('/img/projects/2/dPrivacy.png')" alt="Differential Privacy Architecture" class="max-w-full h-auto rounded-lg shadow-md mx-auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Full width card (maintaining image prominence) -->
+            <div class="grid grid-cols-1 gap-4">
+                <div class="sub-project-card">
+                    <h6 class="text-blue-700 font-bold mb-1 text-base">📌 Project 3. 인공지능 기반의 딥페이크(Deep Fake) 멀티미디어 탐지 연구</h6>
+                    <p class="text-gray-500 mb-3 text-sm"><strong>한국연구재단 개인기초연구(과기정통부): 2020-2022, 완료</strong> (연구책임자)</p>
+                    <div class="text-center">
+                        <img loading="lazy" src="" onerror="this.src=getImg('/img/projects/3/IU2.JPG')" alt="Deepfake Multimedia Detection" class="max-w-full h-auto rounded-lg shadow-md mx-auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 3: Projects 4, 5, 6, 7 (4x4 type grid / 2x2 grid on desktop) -->
+            <!-- Adjusted this section to align with the main content area size, max-w-2xl mx-auto removed -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Project 4 card (text only) -->
+                <div class="sub-project-card">
+                    <h6 class="text-blue-700 font-bold mb-1 text-base">📌 Project 4. 딥페이크 기술을 활용한 온라인 불법행위 대응방안 연구용역</h6>
+                    <p class="text-gray-500 text-sm m-0"><strong>경찰청: 2020, 완료</strong> (연구책임자)</p>
+                </div>
+                
+                <!-- Project 5 card (text only) -->
+                <div class="sub-project-card">
+                    <h6 class="text-blue-700 font-bold mb-1 text-base">📌 Project 5. 지능형 동영상 합성(딥페이크) 검출을 위한 연구 용역</h6>
+                    <p class="text-gray-500 text-sm m-0"><strong>행안부/국립과학수사연구원: 2020, 완료</strong> (연구책임자)</p>
+                </div>
+                
+                <!-- Project 6 card (text only) -->
+                <div class="sub-project-card">
+                    <h6 class="text-blue-700 font-bold mb-1 text-base">📌 Project 6. 기술이전. 딥페이크 탐지 및 칩페이크 탐지 모델 연구 및 고도화</h6>
+                    <p class="text-gray-500 text-sm m-0"><strong>삼성SDS: 2022, 완료</strong> (연구책임자)</p>
+                </div>
+                
+                <!-- Project 7 card (text only) -->
+                <div class="sub-project-card">
+                    <h6 class="text-blue-700 font-bold mb-1 text-base">📌 Project 7. Deepfake Dataset and Detection Research</h6>
+                    <p class="text-gray-500 text-sm m-0"><strong>호주 CSIRO Data61: 2022-현재, No Funding</strong> (연구책임자)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI 인물 복원기술 Section (Added mt-10 for space) -->
+        <div class="section mt-10">
+            <div class="project-card">
+                <h4 class="project-header">🖼️ AI를 활용한 인물 복원기술</h4>
+                <p class="text-lg leading-relaxed text-gray-700 mb-3">
+                    • <a class="text-blue-700 font-bold hover:text-blue-900 underline"  href="Heroface_Restoration"><strong>(보훈부-자생의료재단) AI 기술을 활용한 6.25 전쟁영웅 사진 복원 사업</strong></a> (<a href="Heroface_Restoration" class="text-blue-600 hover:text-blue-800 underline">Click</a>)
+                </p>
+                <div class="text-center">
+                    <img loading="lazy" src="" onerror="this.src=getImg('/img/projects/heroface-restoration/pat.png')" alt="Hero Face Restoration Example" class="max-w-full h-auto rounded-lg shadow-lg mx-auto mt-4" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Time Series Data Section -->
+        <div class="section">
+            <div class="project-card">
+                <h4 class="project-header">📊 Time Series Data</h4>
+                <div class="leading-relaxed text-gray-700 text-base space-y-2">
+                    <p>• <strong>(항공우주연구원)</strong> AI 기반 위성상태데이터 고장탐지 구현 및 검증방안 연구</p>
+                    <p>• <strong>(현대케피코)</strong> EV smart regenerative braking system to train driving patterns</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer is injected here by common.js -->
+</body>
+</html>

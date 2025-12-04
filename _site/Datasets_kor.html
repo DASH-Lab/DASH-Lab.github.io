@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASH LAB - Datasets</title>
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Shared Resources -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/common.js"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <div class="container mx-auto px-4 pt-8 max-w-6xl flex-grow">
+        
+        <!-- Language Link -->
+        <p class="text-right mb-5">
+<a href="Datasets" class="text-blue-700 font-bold hover:underline">English →</a>
+        </p>
+
+        <!-- COCO Spliced Datasets -->
+        <div class="section">
+            <div class="dash-card-dataset">
+                <h3 class="dash-header-dataset">📦 COCO Spliced Datasets</h3>
+                <p class="leading-relaxed text-gray-700 mb-4">우리는 <a href="https://cocodataset.org/#home" target="_blank" class="text-blue-600 hover:text-blue-800">COCO dataset</a> to generate 데이터셋을 활용하여 조작된 데이터셋을 생성했습니다. 이 데이터셋에서 제공된 레이블 (정답 마스크)이 포함되어 있어, 먼저 마스크를 적용해 원본 이미지에서 원하는 부분을 식별했습니다. 그런 다음 이 특정 영역을 다른 이미지에 적용하여 조작했습니다. 각 이미지에는 약 8~10개의 조작용 객체가 사용되었으며, 그 결과 약 90만 개의 조작된 이미지가 생성되었습니다.</p>
+
+                <p class="text-center mt-5">
+                    <img loading="lazy" src="" onerror="this.src=getImg('/img/Publications/Screen Shot 2023-12-11 at 2.15.08 PM.png')" alt="COCO Spliced Example" class="max-w-full h-auto rounded-lg shadow-lg mx-auto" />
+                </p>
+            </div>
+        </div>
+
+        <!-- Satellite Forgery Image Dataset -->
+        <div class="section">
+            <div class="dash-card-dataset">
+                <h3 class="dash-header-dataset">🛰️ Satellite Forgery Image Dataset</h3>
+                <p class="leading-relaxed text-gray-700 mb-4">우리는<a href="http://deepglobe.org/" target="_blank" class="text-blue-600 hover:text-blue-800">DeepGlop dataset</a>  데이터셋과<a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w39/Horvath_Manipulation_Detection_in_Satellite_Images_Using_Deep_Belief_Networks_CVPRW_2020_paper.pdf" target="_blank" class="text-blue-600 hover:text-blue-800">Deep Belief networks</a>. 네트워크에서 제안된 방법을 사용하여 위성 조작 이미지를 생성했습니다. 해상도가 1000×1000인 293개의 정사보정(orthorectified) 이미지를 수집하였으며, 이 중 100개의 이미지를 사용해 조작된 이미지를 만들었습니다. 19개의 다양한 객체를 100개의 이미지에 합성하여 총 500개의 조작된 이미지와 정답 마스크를 생성했습니다. 19개의 객체에는 로켓, 비행기, 드론 이미지 등이 포함되어 있습니다. 아래 그림은 조작된 데이터셋의 예시를 보여줍니다.</p>
+
+                <p class="text-center mt-5">
+                    <img loading="lazy" src="" onerror="this.src=getImg('/img/Publications/satellite_forgery.png')" alt="Satellite Forgery Example" class="max-w-full h-auto rounded-lg shadow-lg mx-auto" />
+                </p>
+            </div>
+        </div>
+
+        <!-- RWDF-23 Dataset -->
+        <div class="section">
+            <div class="dash-card-dataset">
+                <h3 class="dash-header-dataset">🎬 RWDF-23 Dataset</h3>
+                <p class="leading-relaxed text-gray-700 mb-4">RWDF-23 데이터셋은 21개국에서 4가지 언어를 대상으로 하는 2,000개의 딥페이크 비디오로부터 수집되었고, 수집된 플랫폼은 Reddit, YouTube, TikTok 그리고 Bilibili입니다. 저희는 기존 연구를 넘어 데이터셋의 스코프를 확장함으로써, 광범위한 real-world 딥페이크 콘텐츠를 캡처하였고, 이는 끊임없이 진화하는 온라인 플랫폼 환경을 반영합니다. 또한, creator, manipulation strategy, purpose, real-world content production method 등 다양한 측면을 포괄하는 종합적인 분석을 진행하였습니다. 이를 통해, 다양한 맥락에서 딥페이크의 뉘앙스와 특성에 대한 통찰력을 얻을 수 있을 것입니다. 마지막으로, 비디오 콘텐츠 외에도 시청자의 댓글과 상호작용을 수집하여, 딥페이크 콘텐츠에 대한 사용자들의 참여를 탐색할 수 있게 하였습니다. </p>
+
+                <div class="mt-5 p-4 bg-blue-100 rounded-lg border-l-4 border-blue-600 text-center">
+                    <strong class="text-gray-800">📝 To obtain the dataset, please fill out the form <a href="https://docs.google.com/forms/d/e/1FAIpQLScsxskSEI0LkmUdI7ClAqs-xslyviDNoKHhiZC3FsBqFG4NJA/viewform" target="_blank" class="text-blue-700 hover:text-blue-900 underline">HERE</a></strong>
+                </div>
+
+                <p class="text-center mt-5">
+                    <img loading="lazy" src="" onerror="this.src=getImg('/img/Publications/rwdf23_cikm23.png')" alt="RWDF-23 Example" class="max-w-full h-auto rounded-lg shadow-lg mx-auto" />
+                </p>
+            </div>
+        </div>
+
+        <!-- FakeAVCeleb Dataset -->
+        <div class="section">
+            <div class="dash-card-dataset">
+                <h3 class="dash-header-dataset">🎭 FakeAVCeleb Dataset</h3>
+                <p class="leading-relaxed text-gray-700 mb-4">FakeAVCeleb에서, 저희는 딥페이크 비디오뿐만 아니라 립싱크로부터 합성된 fake 오디오도 포함하는 새로운 Audio-Video 딥페이크 데이터셋을 제안하였습니다. 저희의 FakeAVCeleb은 가장 유명한 최신 딥페이크 제작 방식으로 만들어졌습니다. 더 사실적인 데이터셋을 만들기 위해, 저희는 4개 인종(Caucasian, Black, East Asian, South Asian) 연예인의 YouTube 영상을 선택하여 인종에 bias 되는 문제를 해결하였습니다.</p>
+
+                <p class="text-center mt-5">
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/FakeAVCeleb/fakeceleb_nips2021.png')" alt="FakeAVCeleb Example" class="max-w-full h-auto rounded-lg shadow-lg mx-auto" />
+                </p>
+            </div>
+        </div>
+
+        <!-- VFP290K Dataset -->
+        <div class="section">
+            <div class="dash-card-dataset">
+                <h3 class="dash-header-dataset">🚨 VFP290K Dataset</h3>
+                <p class="leading-relaxed text-gray-700 mb-4">Vision-based Fallen Person (VFP290K) 데이터셋은 49개의 배경, 131개의 장면을 갖는 178개의 비디오로부터 낙상사고를 당한 사람에 대해 294,714개의 프레임을 추출하여 만들어졌습니다. 저희는 object detection 모델에 따른 성능 변화를 광범위한 실험을 통해 비교하였고, feature의 효과를 입증할 수 있었습니다. 또한, 저희는 낙상 감지 시스템의 성능을 측정하여 데이터세트를 평가하였습니다. 저희는 VFP290K 데이터셋을 사용하여, 2020 AI Grand Challenge의 비정상 행동 탐지 track의 첫 번째 라운드에서 1위를 달성하였고, 이는 지능형 CCTV나 감시 시스템과 같은 곳에 확대 적용될 가능성을 보여줍니다.</p>
+
+                <div class="mt-4 p-4 bg-yellow-100 rounded-lg border-l-4 border-yellow-600">
+                    <strong class="text-gray-800">🏆 We ranked first in the first round of the anomalous behavior recognition track of AI Grand Challenge 2020, South Korea, using our VFP290K dataset, which can further extend to other applications, such as intelligent CCTV or monitoring systems, as well.</strong>
+                </div>
+
+                <p class="text-center mt-5">
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/VFP.JPG')" alt="VFP290K Example" class="max-w-full h-auto rounded-lg shadow-lg mx-auto" />
+                </p>
+            </div>
+        </div>
+
+        <!-- SKKU AGC Anomaly Detection Dataset -->
+        <div class="section">
+            <div class="dash-card-dataset">
+                <h3 class="dash-header-dataset">📹 SKKU AGC Anomaly Detection Dataset</h3>
+                <p class="leading-relaxed text-gray-700 mb-4">SKKU AGC Anomaly Detection Dataset은 다양한 장소에서 낮과 밤 모두에 대해 보행자가 내려다 보이는 높이에 카메라를 고정하여 촬영하였으며 Detection Data와 Classificaiton Data로 구성되어 있습니다. Adnomal event는 사람의 머리가 땅에 닿는 경우입니다.</p>
+
+                <div class="mt-6">
+                    <h5 class="text-blue-700 font-bold mb-3">1. Detection Data</h5>
+                    <p class="leading-relaxed text-gray-700">1920x1080 크기의 이미지와 anomaly label(.xml)로 구성되어 있으며, 이미지들은 day와 night 폴더에 있으며, label들은 day_anno, night_anno 폴더에 있습니다.</p>
+                    <p class="leading-relaxed text-gray-700 mt-1"><strong>Day:</strong> 3000 | <strong>Night:</strong> 2000</p>
+                </div>
+
+                <div class="mt-6">
+                    <h5 class="text-blue-700 font-bold mb-3">2. Classification Data</h5>
+                    <p class="leading-relaxed text-gray-700">사람을 크롭한 이미지로 구성되어 있으며, nomal과 falldown의 두가지 클래스가 있습니다. 정상 이미지는 normal day와 normal night 폴더에 있고, falldown 이미지는 falldown_day와 falldown_night 폴더에 있습니다..</p>
+                    <p class="leading-relaxed text-gray-700 mt-1"><strong>Normal Day:</strong> 3200 | <strong>Normal Night:</strong> 1300 | <strong>Falldown Day:</strong> 3700 | <strong>Falldown Night:</strong> 900</p>
+                </div>
+
+                <hr class="my-6 border-gray-300" />
+
+                <h5 class="text-blue-700 font-bold mb-3">Examples of Detection Data</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_detection.jpg')" class="dataset-grid-img" alt="AGC Detection Example 1" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_detection3.jpg')" class="dataset-grid-img" alt="AGC Detection Example 2" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_detection4.jpg')" class="dataset-grid-img" alt="AGC Detection Example 3" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_detection1.jpg')" class="dataset-grid-img" alt="AGC Detection Example 4" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_detection2.jpg')" class="dataset-grid-img" alt="AGC Detection Example 5" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_detection5.jpg')" class="dataset-grid-img" alt="AGC Detection Example 6" />
+                </div>
+
+                <hr class="my-6 border-gray-300" />
+
+                <h5 class="text-blue-700 font-bold mb-3">Examples of Classification Data</h5>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_classification.jpg')" class="dataset-grid-img" alt="AGC Classification Example 1" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_classification1.jpg')" class="dataset-grid-img" alt="AGC Classification Example 2" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_classification2.jpg')" class="dataset-grid-img" alt="AGC Classification Example 3" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_classification3.jpg')" class="dataset-grid-img" alt="AGC Classification Example 4" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_classification4.jpg')" class="dataset-grid-img" alt="AGC Classification Example 5" />
+                    <img loading="lazy" src="" onerror="this.src=getImg('img/datasets/VFP290k/AGC_classification5.jpg')" class="dataset-grid-img" alt="AGC Classification Example 6" />
+                </div>
+            </div>
+        </div>
+        
+        <!-- Deepfake Inspector -->
+        <div class="section">
+            <div class="dash-card-dataset">
+                <h3 class="dash-header-dataset">🔍 Deepfake Inspector</h3>
+                <div class="p-5 bg-blue-100 rounded-lg border-l-4 border-blue-600 text-center">
+                    <p class="text-lg leading-relaxed m-0 text-gray-800">
+                        Try our beta version here: <a href="#" class="text-blue-700 font-bold underline hover:text-blue-900">Tool</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer is injected here by common.js -->
+
+</body>
+</html>

@@ -13,6 +13,12 @@ body {
     overflow-x: hidden;
 }
 
+/* UPDATED: Prevent images/videos from forcing horizontal scroll on mobile */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Shared Header Style */
 .dash-header, 
 .project-header, 
@@ -162,6 +168,14 @@ body {
     height: 60px;
     width: auto;
     object-fit: contain;
+}
+
+/* UPDATED: Adjust logo on mobile to prevent overflow/overlap */
+@media (max-width: 640px) {
+    #nav-logo {
+        height: 40px; /* Smaller height on mobile */
+        max-width: 60vw; /* Ensure it doesn't push hamburger menu off screen */
+    }
 }
 
 /* ==========================================================================
@@ -451,8 +465,11 @@ body {
 .method-card { background-color: #E6F3FF; border-radius: 16px; margin-bottom: 1rem; padding: 1.5rem; text-align: center; }
 .media-link-item { display: flex; align-items: flex-start; margin-bottom: 10px; }
 .media-link-item::before { content: "•"; color: #1976d2; font-weight: bold; display: inline-block; min-width: 1.5rem; padding-right: 0.5rem; text-align: right; }
-.media-content { flex-grow: 1; }
+
+/* UPDATED: Added min-width: 0 to allow text wrapping in flex container */
+.media-content { flex-grow: 1; min-width: 0; }
 .media-content a { word-break: break-all; }
+
 .video-responsive { overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0; max-width: 100%; border-radius: 8px; }
 .video-responsive iframe { left: 0; top: 0; height: 100%; width: 100%; position: absolute; border: 0; }
 img.clickable-image { cursor: pointer; transition: transform 0.2s ease-in-out; }

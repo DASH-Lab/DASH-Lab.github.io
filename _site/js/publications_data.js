@@ -14,7 +14,7 @@ const PUBLICATIONS_DATA_LOCAL = [
             "",
             0
         ],
-        "year": 2026,
+        "year": 2025,
         "links": {
             "conf": "https://xai.kaist.ac.kr/Workshop/hcai2025/"
                  },
@@ -28,7 +28,7 @@ const PUBLICATIONS_DATA_LOCAL = [
             "Sungjea Hwang",
             "Simon S. Woo"
         ],
-        "venue_full": "International Conference on Software Engineering in Practice",
+        "venue_full": "International Conference on Software Engineering",
         "venue": "ICSE-SEIP",
         "track": "Industry",
         "Factor": [ "",

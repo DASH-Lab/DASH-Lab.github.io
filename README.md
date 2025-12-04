@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DASH Lab Website
 
 This repository contains the source code for the DASH Lab (Data & Security Hacking Lab) website. The site has been migrated to GitHub Pages to allow for easier collaboration among lab moderators.

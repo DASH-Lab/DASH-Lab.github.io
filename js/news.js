@@ -118,11 +118,9 @@ function renderCarousel(limit, selector) {
     }
 }
 
-// --- NEWS PAGE LOGIC (Full Archive) ---
+// --- NEWS PAGE LOGIC (Scrollable Archive) ---
 
 let filteredNews = [];
-let currentPage = 1;
-const ITEMS_PER_PAGE = 7;
 let currentFilter = 'All';
 
 function filterNews(filter) {
@@ -137,7 +135,8 @@ function filterNews(filter) {
         const year = parseInt(filter);
         filteredNews = newsData.filter(item => item.year === year);
     }
-    currentPage = 1;
+    
+    // Render full list (scrolling handles the view)
     renderNewsArchive();
     updateFilterTabs();
 }
@@ -155,20 +154,22 @@ function updateFilterTabs() {
 
 function renderNewsArchive() {
     const container = document.getElementById('news-archive-container');
-    const pageInfo = document.getElementById('page-info');
-    const prevBtn = document.getElementById('prev-page-btn');
-    const nextBtn = document.getElementById('next-page-btn');
     
+    // Hide pagination controls since we are using a scrollable list
+    const paginationControls = document.querySelector('.pagination-controls');
+    if (paginationControls) paginationControls.style.display = 'none';
+    
+    // Also hide page info text if it exists
+    const pageInfo = document.getElementById('page-info');
+    if (pageInfo && pageInfo.parentElement) pageInfo.parentElement.style.display = 'none';
+
     if (!container) return; // Exit if not on the News Page
 
-    const totalItems = filteredNews.length;
-    const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
+    // Apply the scrollable class to the container
+    container.classList.add('news-scroll-wrapper');
 
-    const start = (currentPage - 1) * ITEMS_PER_PAGE;
-    const end = start + ITEMS_PER_PAGE;
-    const itemsToShow = filteredNews.slice(start, end);
-
-    container.innerHTML = itemsToShow.map(item => `
+    // Use ALL filtered items (no pagination slicing)
+    container.innerHTML = filteredNews.map(item => `
         <div class="archive-item">
             <span class="archive-icon">${item.icon}</span>
             <div class="archive-item-content text-gray-700 text-base">
@@ -177,22 +178,6 @@ function renderNewsArchive() {
             </div>
         </div>
     `).join('');
-
-    if (pageInfo) pageInfo.innerText = totalItems > 0 ? `Page ${currentPage} of ${totalPages}` : `Page 0 of 0`;
-    if (prevBtn) prevBtn.disabled = currentPage === 1 || totalItems === 0;
-    if (nextBtn) nextBtn.disabled = currentPage >= totalPages || totalItems === 0;
-}
-
-function changePage(direction) {
-    const totalItems = filteredNews.length;
-    const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
-    
-    currentPage += direction;
-
-    if (currentPage < 1) currentPage = 1;
-    else if (currentPage > totalPages) currentPage = totalPages;
-
-    renderNewsArchive();
 }
 
 // --- MODAL LOGIC (News Details) ---
@@ -280,7 +265,7 @@ function closeImageModal() {
 // --- INITIALIZATION ---
 
 window.filterNews = filterNews;
-window.changePage = changePage;
+// window.changePage = changePage; // Removed pagination logic
 window.changeNewsPage = changeNewsPage; 
 window.openNewsModal = openNewsModal;
 window.closeNewsModal = closeNewsModal;

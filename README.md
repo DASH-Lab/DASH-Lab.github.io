@@ -123,5 +123,5 @@ If you want to run the code locally to test changes before pushing to GitHub:
 ---
 
 ## Contact
->>>>>>> 1836f8c7c54679ef42330a8bf47dc9908623828a
+
 If you have questions regarding the code structure or deployment, please contact the repository owner.

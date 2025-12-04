@@ -30,10 +30,9 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Software Engineering in Practice",
         "venue": "ICSE-SEIP",
-        "track": "Main",
-        "Factor": [
-            "BK Computer Science IF=",
-            4
+        "track": "Industry",
+        "Factor": [ "",
+            0
         ],
         "year": 2026,
         "links": {},

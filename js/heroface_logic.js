@@ -59,8 +59,7 @@ function renderHerofacePage() {
             <div class="method-card overflow-hidden bg-white rounded-lg shadow-sm border border-gray-100 p-4">
                 <p class="text-xl font-bold pb-4 text-center text-gray-800">${method.title}</p>
                 <div class="flex justify-center items-center h-64 bg-gray-50 rounded-md">
-                    <!-- UPDATED: Changed from w-full/object-cover to h-full/object-contain/max-w-[90%] 
-                         This prevents diagrams from being cropped or stretching too wide -->
+                    <!-- Images are contained to prevent cropping diagrams -->
                     <img src="${getImg(method.img)}" 
                          alt="${method.title} Diagram" 
                          class="h-full max-w-[95%] object-contain object-center clickable-image hover:scale-105 transition-transform cursor-pointer" 
@@ -118,11 +117,11 @@ function renderHerofacePage() {
     const partnersContainer = document.getElementById('partners-grid');
     if (partnersContainer && typeof herofaceParticipants !== 'undefined') {
         partnersContainer.innerHTML = herofaceParticipants.map(participant => `
-            <div class="text-center w-full sm:w-auto px-6 sm:px-0">
-                <!-- Removed grayscale and opacity classes -->
+            <!-- UPDATED: w-auto allows them to sit side-by-side on mobile. Reduced padding. -->
+            <div class="text-center w-auto px-2 sm:px-0">
                 <img src="${getImg(participant.img)}" 
                      alt="${participant.name}" 
-                     class="h-20 sm:h-24 w-auto max-w-[180px] object-contain mx-auto transition-all duration-300 hover:scale-105" 
+                     class="h-14 sm:h-24 w-auto max-w-[100px] sm:max-w-[180px] object-contain mx-auto transition-all duration-300 hover:scale-105" 
                      onerror="this.style.display='none'"/>
             </div>
         `).join('');

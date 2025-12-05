@@ -3,10 +3,10 @@
 // It must be loaded before news.js in your HTML.
 
 const newsData = [
-    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at workshop track of <b>CIKM 2025</b>' },
-    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at main track of <b>ICSE-SEIP 2026</b>' },
-    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at short track of <b>WSDM 2026 (BK IF=2)</b>' },
-    { icon: '📄', date: 'Nov 2025', year: 2025, text: 'One paper accepted at main track of <b>AAAI 2026 (BK IF=4)</b>' },
+    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at workshop paper track of <b>CIKM 2025</b>' },
+    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at main paper track of <b>ICSE-SEIP 2026</b>' },
+    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at short paper track of <b>WSDM 2026 (BK IF=2)</b>' },
+    { icon: '📄', date: 'Nov 2025', year: 2025, text: 'One paper accepted at main paper track of <b>AAAI 2026 (BK IF=4)</b>' },
     { icon: '📄', date: 'Sep 2025', year: 2025, text: 'Two paper accepted at <b>NeurIPS 2025 (BK IF=4)</b>' },
     { icon: '📄', date: 'Aug 2025', year: 2025, text: 'One applied research paper, two full papers and three short papers accepted at <b>CIKM 2025 (BK IF=3)</b>' },
     { icon: '📄', date: 'Jul 2025', year: 2025, text: 'Three full papers accepted at <b>MM 2025 (BK IF=4)</b>' },
@@ -48,7 +48,7 @@ const newsData = [
     { icon: '💰', date: 'Apr 2022', year: 2022, text: 'Won the grant from IITP "개인정보보호 관련 정책 변화를 유연하게 반영하여 준수하는 인공지능 기술 개발" (PI: 연구비 5년간 100억)' },
     { icon: '📄', date: 'Feb 2022', year: 2022, text: 'Two papers accepted at <b>WWW 2022 (BK+ CS IF=4)</b>' },
     { icon: '📄', date: 'Dec 2021', year: 2021, text: 'One paper accepted at <b>AAAI 2022 (BK+ CS IF=4)</b>' },
-    { icon: '📄', date: 'Oct 2021', year: 2021, text: 'Two papers accepted at <b>NeurIPS 2021 (BK+ CS IF=4)</b> Benchmark and Dataset Track' },
+    { icon: '📄', date: 'Oct 2021', year: 2021, text: 'Two papers accepted at <b>NeurIPS 2021 (BK+ CS IF=4)</b> Benchmark and Dataset paper track' },
     { icon: '🏆', date: '2021', year: 2021, text: 'IITP 인공지능그랜드챌린지 4차 3단계 트랙 1 <u>1위 입상</u>' },
     { icon: '📰', date: 'Apr 2021', year: 2021, text: '성대신문 <a href="http://www.skkuw.com/news/articleView.html?idxno=22706" target="_blank">딥페이크 기술, 실제와 허구의 경계에 서다</a>' },
     { icon: '🏆', date: 'Dec 2020', year: 2020, text: '<a href="https://ai.skku.edu/ai/community/news.do?mode=view&articleNo=109849" target="_blank">IITP 2020인공지능그랜드챌린지 4차 2단계 <u>3위 입상</u></a>' },

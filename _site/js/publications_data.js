@@ -9,7 +9,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "CIKM Workshop on Human-Centric AI: From Explainability and Trustworthiness to Actionable Ethics",
         "venue": null,
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -30,7 +30,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Software Engineering",
         "venue": "ICSE-SEIP",
-        "track": "Industry",
+        "track": "Industry Paper",
         "Factor": [ "",
             0
         ],
@@ -47,7 +47,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Web Search and Data Mining",
         "venue": "WSDM",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -66,7 +66,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "AAAI Conference on Artificial Intelligence",
         "venue": "AAAI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -103,7 +103,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Conference on Neural Information Processing Systems",
         "venue": "NeurIPS",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -123,7 +123,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Conference on Neural Information Processing Systems",
         "venue": "NeurIPS",
-        "track": "Dataset",
+        "track": "Dataset Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -141,7 +141,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -159,7 +159,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -179,7 +179,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -197,7 +197,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -216,7 +216,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -257,7 +257,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Multimedia",
         "venue": "MM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -276,7 +276,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Multimedia",
         "venue": "MM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -295,7 +295,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Multimedia",
         "venue": "MM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -314,7 +314,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -336,7 +336,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Computer Vision",
         "venue": "ICCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -359,7 +359,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Computer Vision",
         "venue": "ICCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -379,7 +379,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Computer Vision",
         "venue": "ICCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -401,7 +401,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
         "venue": "KDD",
-        "track": "Dataset",
+        "track": "Dataset Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -505,7 +505,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -525,7 +525,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -546,7 +546,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -566,7 +566,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -589,7 +589,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -610,7 +610,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -737,7 +737,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Asian Conference on Computer Vision",
         "venue": "ACCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -758,7 +758,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Asian Conference on Computer Vision",
         "venue": "ACCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -823,7 +823,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Pattern Recognition",
         "venue": "ICPR",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -846,7 +846,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Pattern Recognition",
         "venue": "ICPR",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -868,7 +868,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Pattern Recognition",
         "venue": "ICPR",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -889,7 +889,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -912,7 +912,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -935,7 +935,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -981,7 +981,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "European Conference on Computer Vision",
         "venue": "ECCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -1048,7 +1048,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
         "venue": "KDD",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1090,7 +1090,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Joint Conference on Artificial Intelligence",
         "venue": "IJCAI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1111,7 +1111,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Joint Conference on Artificial Intelligence",
         "venue": "IJCAI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1131,7 +1131,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
         "venue": "CVPR",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1153,7 +1153,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "CVPR Workshop on Media Forensics",
         "venue": "CVPRW",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -1172,7 +1172,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "",
             0
@@ -1192,7 +1192,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
         "venue": "PAKDD",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1212,7 +1212,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
         "venue": "PAKDD",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1232,7 +1232,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
         "venue": "PAKDD",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1254,7 +1254,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
         "venue": "PAKDD",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1318,7 +1318,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "AAAI Conference on Artificial Intelligence",
         "venue": "AAAI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1339,7 +1339,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "AAAI Conference on Artificial Intelligence",
         "venue": "AAAI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1405,7 +1405,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1426,7 +1426,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1536,7 +1536,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM CIKM Workshop on Large Language Models’ Interpretation and Trustworthiness",
         "venue": "LLIMT",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -1556,7 +1556,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Workshop on International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -1598,7 +1598,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -1621,7 +1621,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -1646,7 +1646,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -1666,7 +1666,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF International Conference on Computer Vision",
         "venue": "ICCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1769,7 +1769,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Joint Conference on Artificial Intelligence",
         "venue": "IJCAI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -1789,7 +1789,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -1812,7 +1812,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -1923,7 +1923,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "AAAI Workshop on Practical Deep Learning in the Wild",
         "venue": "PDLW",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -1943,7 +1943,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1967,7 +1967,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -1989,7 +1989,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -2127,7 +2127,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE International Conference on Advanced Video and Signal Based Surveillance",
         "venue": "AVSS",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -2148,7 +2148,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM CIKM Workshop on Privacy Algorithms in Systems",
         "venue": "PAS",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2169,7 +2169,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Asian Conference on Computer Vision",
         "venue": "ACCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -2187,7 +2187,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM RecSys Workshop on Responsible Recommendation",
         "venue": "FAccTRec",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2208,7 +2208,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -2238,7 +2238,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -2257,7 +2257,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -2278,7 +2278,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -2301,7 +2301,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -2324,7 +2324,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "European Conference on Computer Vision",
         "venue": "ECCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -2404,7 +2404,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
         "venue": "KDD",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -2426,7 +2426,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Pattern Recognition",
         "venue": "ICPR",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -2446,7 +2446,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF CVPR Workshop on Human-centered Intelligent Services: Safe and Trustworthy",
         "venue": "HCIS",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2466,7 +2466,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2488,7 +2488,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2512,7 +2512,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2533,7 +2533,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2596,7 +2596,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -2617,7 +2617,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -2641,7 +2641,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -2660,7 +2660,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -2678,7 +2678,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "AAAI Conference on Artificial Intelligence",
         "venue": "AAAI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -2723,7 +2723,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM MM Workshop on Synthetic Multimedia - Audiovisual Deepfake Generation and Detection",
         "venue": "ADGD",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2745,7 +2745,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Conference on Neural Information Processing Systems",
         "venue": "NeurIPS",
-        "track": "Dataset",
+        "track": "Dataset Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -2772,7 +2772,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Conference on Neural Information Processing Systems",
         "venue": "NeurIPS",
-        "track": "Dataset",
+        "track": "Dataset Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -2812,7 +2812,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -2873,7 +2873,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Multimedia",
         "venue": "MM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -2895,7 +2895,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM KDD workshop on programming language processing",
         "venue": "PLP",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2913,7 +2913,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IJCAI Workshop on Safety and Security of Deep Learning",
         "venue": null,
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -2934,7 +2934,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF CVPR Workshop on Media Forensics",
         "venue": "CVPRW",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -3024,7 +3024,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IFIP International Conference on ICT Systems Security and Privacy Protection",
         "venue": "IFIP SEC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3046,7 +3046,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IFIP International Conference on ICT Systems Security and Privacy Protection",
         "venue": "IFIP SEC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3091,7 +3091,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "WWW Workshop on Fairness, Accountability, Transparency, Ethics and Society on the Web",
         "venue": "FATES",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -3110,7 +3110,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -3152,7 +3152,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3214,7 +3214,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Asian Conference on Computer Vision",
         "venue": "ACCV",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3239,7 +3239,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -3277,7 +3277,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -3407,7 +3407,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Machine Learning",
         "venue": "ICML",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -3469,7 +3469,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF CVPR Workshop on Media Forensics",
         "venue": "CVPRW",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -3510,7 +3510,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -3532,7 +3532,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -3553,7 +3553,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Information Security and Privacy Protection",
         "venue": "IFIP SEC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3575,7 +3575,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Asia Conference on Computer and Communications Security,",
         "venue": "ASIACCS",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3599,7 +3599,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Asian Workshop on Usable Security",
         "venue": "AsiaUSEC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -3620,7 +3620,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium On Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3705,7 +3705,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM International Conference on Information and Knowledge Management",
         "venue": "CIKM",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -3726,7 +3726,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF ICCV Workshop on Human Behavior Understanding",
         "venue": "HBU",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -3748,7 +3748,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM KDD Workshop on Tensor Methods for Emerging Data Science Challenges",
         "venue": "TMEDSC",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -3774,7 +3774,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM KDD Workshop on Mining and Learning from Time Series",
         "venue": null,
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -3799,7 +3799,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
         "venue": "KDD",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -3821,7 +3821,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Asia Conference on Computer and Communications Security,",
         "venue": "ASIACCS",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -3864,7 +3864,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM Web Conference",
         "venue": "WWW",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             3
@@ -3910,7 +3910,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM SIGAPP Symposium on Applied Computing",
         "venue": "SAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -4053,7 +4053,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International workshop on Information & Operational Technology ",
         "venue": "IT & OT",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -4076,7 +4076,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "CCS Workshop on Multimedia Privacy and Security",
         "venue": "MPS",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -4096,7 +4096,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Symposium on Research in Attacks, Intrusions and Defenses",
         "venue": "RAID",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -4138,7 +4138,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "International Conference on Information Security and Privacy Protection",
         "venue": "IFIP SEC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             1
@@ -4157,7 +4157,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF CVPR Workshop on The Bright and Dark Sides of Computer Vision: Challenges and Opportunities for Privacy and Security",
         "venue": "CV-COPS",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -4219,7 +4219,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Conference on Human Factors in Computing Systems",
         "venue": "CHI",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             4
@@ -4318,7 +4318,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF CVPR Workshop on The Bright and Dark Sides of Computer Vision: Challenges and Opportunities for Privacy and Security",
         "venue": "CV-COPS",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -4378,7 +4378,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Annual Conference on Computer Security Applications",
         "venue": "ACSAC",
-        "track": "Main",
+        "track": "Main Paper",
         "Factor": [
             "BK Computer Science IF=",
             2
@@ -4441,7 +4441,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": " ACM SIGIR Workshop on Privacy-Preserving Information Retrieval",
         "venue": "PPIR",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -4503,7 +4503,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "Who are you?! Adventures in Authentication: ACM SOUPS-WAY Workshop",
         "venue": "WAY",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0

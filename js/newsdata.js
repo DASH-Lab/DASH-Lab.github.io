@@ -4,7 +4,7 @@
 
 const newsData = [
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at workshop paper track of <b>CIKM 2025</b>' },
-    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at main paper track of <b>ICSE-SEIP 2026</b>' },
+    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at industry paper track of <b>ICSE-SEIP 2026</b>' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at short paper track of <b>WSDM 2026 (BK IF=2)</b>' },
     { icon: '📄', date: 'Nov 2025', year: 2025, text: 'One paper accepted at main paper track of <b>AAAI 2026 (BK IF=4)</b>' },
     { icon: '📄', date: 'Sep 2025', year: 2025, text: 'Two paper accepted at <b>NeurIPS 2025 (BK IF=4)</b>' },

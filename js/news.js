@@ -47,7 +47,7 @@ function startAutoPlay() {
     if (newsInterval) clearInterval(newsInterval); // Prevent duplicates
     newsInterval = setInterval(() => {
         changeNewsPage(1, true); // true indicates auto-change
-    }, 4000); // 4 seconds per slide
+    }, 1000); // 1 seconds per slide
 }
 
 // Stop automatic cycling

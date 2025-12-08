@@ -1,6 +1,49 @@
 const PUBLICATIONS_DATA_LOCAL = [
 
     {
+        "title": "ATLAS: Satellite Battery Anomaly Detection via TSFM-driven Latent Space Clustering",
+        "authors": [
+            "Kangjun Lee",
+            "JongU Park",
+            "SeungWon Jeong",
+            "Youjin Shin",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM/SIGAPP Symposium on Applied Computing",
+        "venue": "SAC",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            1
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://www.sigapp.org/sac/sac2026/"
+                 },
+        "img": "/img/Publications/SAC-Main_2026_KangJunLee.png",
+        "abstract": "In the era of expanding satellite operations, ensuring the reliability of battery systems is crucial, as anomalies can lead to catastrophic mission failures and contribute to space debris. However, the development of robust anomaly detection systems is severely hampered by the extreme rarity of labeled anomaly data in real-world satellite telemetry. Existing methods to synthetically generate data often fail to capture the complex, multivariate nature of genuine battery faults. To address these challenges, we propose ATLAS (Satellite Battery Anomaly Detection via TSFM-driven LAtent Space Clustering), a novel, unsupervised anomaly detection framework. First, we systematically define ten distinct battery anomaly types based on real-world incidents and engineering reports from space agencies. Second, we construct a high-fidelity benchmark dataset by injecting these defined anomalies into real-world telemetry from the KAFASAT and SNIPE satellites, ensuring the data preserves realistic operational context and physical constraints. Third, we introduce a reconstruction-based model that leverages a Time-Series Foundation Model (TSFM) as an encoder to learn robust representations, combined with latent space clustering to effectively distinguish between normal and anomalous states without requiring labels. Comprehensive experiments show that ATLAS significantly outperforms 15 state-of-the-art baseline models on our benchmark. By releasing the code for our benchmark data generation, we provide a standard for future research and a robust solution for enhancing the safety and longevity of satellite missions."
+    },   
+    {
+        "title": "TwinTCN: Correlation-Gated Temporal Convolutions with Twin Encoders",
+        "authors": [
+            "Yong-Cheol Ro",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM/SIGAPP Symposium on Applied Computing",
+        "venue": "SAC",
+        "track": "Machine Learning and Its Application (MLA)",
+        "Factor": [
+            "BK Computer Science IF=",
+            1
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://www.sigapp.org/sac/sac2026/"
+                 },
+        "img": "/img/Publications/SAC-MLA_2026_YongCheolRo.png",
+        "abstract": "Along with the global trend of electric vehicle adoption, robust fault detection in EV battery management systems (BMS) is becoming increasingly important. In particular, fault detection in electric vehicles poses significant challenges to conventional methods due to non-stationarity, multi-scale dynamics, and label scarcity. We propose a correlation-aware \emph{TwinTCN} with \emph{RF-aligned} gating that matches correlation windows to TCN receptive fields, and couple it with a twin-encoder contrastive objective plus reconstruction to enhance discriminability while preserving normal patterns. Across three real-world EV datasets, the proposed model attains the highest \(F_1\) with a balanced precision–recall profile, outperforming unsupervised, supervised, and semi-supervised baselines."
+    },   
+    {
         "title": "Exploring Gemini 2.5 for Explainable Deepfake Detection under Black-Box Constraints",
         "authors": [
             "Hyunjune Kim",

@@ -3,7 +3,7 @@
 // It must be loaded before news.js in your HTML.
 
 const newsData = [
-    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'Two papers accepted at <b>SAC 2026 (BK IF=1)</b> (main paper track and MLA track)' },
+    { icon: '📄', date: 'Dec 2025', year: 2025, text: 'Two papers accepted at main paper and MLA track of <b>SAC 2026 (BK IF=1)</b> ' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at workshop paper track of <b>CIKM 2025</b>' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at industry paper track of <b>ICSE-SEIP 2026</b>' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at short paper track of <b>WSDM 2026 (BK IF=2)</b>' },

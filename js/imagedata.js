@@ -5,11 +5,11 @@
 const galleryData = [
     { 
         src: 'img/dash_gallery/neurips-sangyong_2025.jpg', 
-        desc: 'DASH Lab Researcher Presenting their Poster at NeurIPS 2025 San Diego!' 
+        desc: 'DASH Lab Researcher Presenting their Poster at (NeurIPS 2025 San Diego!)' 
     },
     { 
         src: 'img/dash_gallery/neurips_professor_2025.jpg', 
-        desc: 'DASH Lab Researchers and Simon S.Woo at NeurIPS 2025 San Diego!' 
+        desc: 'DASH Lab Researchers and Simon S.Woo at (NeurIPS 2025 San Diego!)' 
     },
     { 
         src: 'img/dash_gallery/xmas-2025.jpg', 
@@ -170,5 +170,189 @@ const galleryData = [
     { 
         src: 'img/dash_gallery/taejun_grad_03.jpg', 
         desc: 'Taejun\'s graduation (Feb 2024)' 
+    },
+    {
+        src: 'img/dash_gallery/asvspoof23_02.jpeg',
+        desc: 'DASH group at ASVSpoof workshop (Japan - Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/asvspoof_03.jpg',
+        desc: 'DASH group at ASVSpoof workshop (Japan - Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/asvspoof_04.jpg',
+        desc: 'DASH group at ASVSpoof workshop (Japan - Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/asvspoof_05.jpg',
+        desc: 'DASH group at ASVSpoof workshop (Japan - Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/asvspoof_06.jpg',
+        desc: 'Diner at ASVSpoof workshop (Japan - Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/asvspoof_08.jpg',
+        desc: 'DASH group at ASVSpoof workshop (Japan - Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/asvspoof_01.jpeg',
+        desc: 'Deliver Speech at ASVSpoof workshop (Japan - Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/univ_glasgow_01.jpg',
+        desc: 'Visiting and meeting at University of Glasgow (Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/univ_glasgow_04.jpg',
+        desc: 'Visiting and meeting at University of Glasgow (Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/univ_glasgow_05.jpg',
+        desc: 'Visiting and meeting at University of Glasgow (Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/univ_glasgow_06.jpg',
+        desc: 'Visiting and meeting at University of Glasgow (Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/ai_workshop_01.jpg',
+        desc: 'AI workshop (Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/ai_workshop_02.jpg',
+        desc: 'AI workshop (Nov 2023)'
+    },
+    {
+        src: 'img/dash_gallery/cikm23_01.jpg',
+        desc: 'DASH lab group @CIKM23 (UK - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/cikm23_02.jpg',
+        desc: 'Group dinner at Birmingham (UK - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/sangyong_cikm23.jpg',
+        desc: 'Lab\'s poster @CIKM23 (UK - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/cikm23_03.jpg',
+        desc: 'ANSD Workshop @CIKM23 (UK - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/cikm23_04.jpg',
+        desc: 'With Hassam Khalid (MS alumni) at Oxford University'
+    },
+    {
+        src: 'img/dash_gallery/cikm23_05.jpg',
+        desc: 'Session @CIKM23 (UK - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/icip23_dr_chan.jpg',
+        desc: 'Visiting Dr. Chan at University of Malaya (Malaysia - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/icip23_UM.jpg',
+        desc: 'Visiting research group at University of Malaya (Malaysia - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/icip23_sessionchair.jpg',
+        desc: 'With Session Chair @ICIP23 (Malaysia - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/poster_iccv23.jpg',
+        desc: 'Lab\'s poster @ICCV23 (France - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/dr_sonvu_iccv23.jpg',
+        desc: 'With Dr. Son (CY Cergy Paris University) @ICCV23 (France - Oct 2023)'
+    },
+    {
+        src: 'img/dash_gallery/david08.jpeg',
+        desc: 'Having David Crandall (Indiana University) Visiting our lab (Aug 2023)'
+    },
+    {
+        src: 'img/dash_gallery/grad_2023.jpeg',
+        desc: 'Jeongho & Sam\'s graduation (Feb 2023)'
+    },
+    {
+        src: 'img/dash_gallery/lab_dinner2023.jpg',
+        desc: 'Lab dinner (Feb 2023)'
+    },
+    {
+        src: 'img/dash_gallery/lab_mem2022.jpg',
+        desc: 'Lab members (2022)'
+    },
+    {
+        src: 'img/dash_gallery/grad_student_22.jpg',
+        desc: 'Ph.D. students (2022)'
+    },
+    {
+        src: 'img/dash_gallery/grad_student_1_22.jpg',
+        desc: 'Ph.D. students (2022)'
+    },
+    {
+        src: 'img/dash_gallery/prof_meet.jpg',
+        desc: 'Simon S.Woo with other Professors'
+    },
+    {
+        src: 'img/dash_gallery/agc_2022.jpg',
+        desc: 'AGC 2022'
+    },
+    {
+        src: 'img/dash_gallery/agc_1_2022.jpg',
+        desc: 'AGC 2022'
+    },
+    {
+        src: 'img/dash_gallery/cikm_dinner.jpg',
+        desc: 'DASH Lab group @CIKM22 (USA - Oct 2022)'
+    },
+    {
+        src: 'img/dash_gallery/minha_cikm2022.jpg',
+        desc: 'Lab\'s presentation @CIKM22 (USA - Oct 2022)'
+    },
+    {
+        src: 'img/dash_gallery/jho_cikm_2022.jpg',
+        desc: 'Lab\'s poster @CIKM22 (USA - Oct 2022)'
+    },
+    {
+        src: 'img/dash_gallery/jho_1_cikm2022.jpg',
+        desc: 'Lab\'s presentation @CIKM22 (USA - Oct 2022)'
+    },
+    {
+        src: 'img/dash_gallery/binh_cikm2022.jpg',
+        desc: 'Lab\'s presentation @CIKM22 (USA - Oct 2022)'
+    },
+    {
+        src: 'img/dash_gallery/seabyoel_cikm2022.jpg',
+        desc: 'Lab\'s presentation @CIKM22 (USA - Oct 2022)'
+    },
+    {
+        src: 'img/dash_gallery/prof_at_skku.jpg',
+        desc: 'Professor Simon S.Woo with SKKU Professors'
+    },
+    {
+        src: 'img/dash_gallery/lab_dinner_2022.jpg',
+        desc: 'Lab dinner'
+    },
+    {
+        src: 'img/dash_gallery/21-1.jpg',
+        desc: 'Lab members (2021)'
+    },
+    {
+        src: 'img/dash_gallery/family.jpg',
+        desc: 'Annual retreat (2021)'
+    },
+    {
+        src: 'img/dash_gallery/group lunch.jpg',
+        desc: 'Annual retreat (2021)'
+    },
+    {
+        src: 'img/dash_gallery/group lunch3.jpg',
+        desc: 'Annual retreat (2021)'
+    },
+    {
+        src: 'img/dash_gallery/graduation.jpg',
+        desc: 'MS students (2021)'
     }
 ];

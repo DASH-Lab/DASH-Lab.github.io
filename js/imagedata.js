@@ -4,6 +4,18 @@
 
 const galleryData = [
     { 
+        src: 'img/dash_gallery/neurips-sangyong_2025.jpg', 
+        desc: 'DASH Lab Researcher Presenting their Poster at NeurIPS 2025 San Diego!' 
+    },
+    { 
+        src: 'img/dash_gallery/neurips_professor_2025.jpg', 
+        desc: 'DASH Lab Researchers and Simon S.Woo at NeurIPS 2025 San Diego!' 
+    },
+    { 
+        src: 'img/dash_gallery/xmas-2025.jpg', 
+        desc: 'DASH Lab Researchers celebrating early christmas' 
+    },
+    { 
         src: 'img/dash_gallery/2025_summer_grad.jpg', 
         desc: 'Summer 2025 Graduates, DASH Lab Researchers and Professor Simon S. Woo' 
     },

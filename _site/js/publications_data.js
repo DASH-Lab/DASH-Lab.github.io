@@ -1,5 +1,26 @@
 const PUBLICATIONS_DATA_LOCAL = [
-
+    {
+        "title": "Self-Disclosure of Mental Health via Deepfakes: Testing the Effects of Self-Deepfakes on Affective Resistance and Intention to Seek Mental Health Support",
+        "authors": [
+            "Jiyoung Lee", 
+            "Christopher M Dobmeier", 
+            "Minji Heo",
+            "Simon S. Woo"
+        ],
+        "venue_full": "Health Communication",
+        "venue": null,
+        "track": "Etc.",
+        "Factor": [
+            "SSCI IF=",
+            2.7
+        ],
+        "year": 2025,
+        "links": {
+            "conf": "https://www.tandfonline.com/journals/hhth20"
+                 },
+        "img": "/img/Publications/2025_minji_health_communication.png",
+        "abstract": "This study examines the use of deepfakes in self-disclosure interventions within mental health contexts. Specifically, we investigate how videos featuring self-deepfakes, celebrity deepfakes, and virtual agents disclosing mental health challenges shape affective resistance and intention to seek support, considering the moderating influence of individual baseline mental health. The findings indicate that self-deepfakes elicited greater affective resistance than celebrity deepfakes, leading to reduced help-seeking intention, whereas no significant differences were observed between self-deepfakes and virtual agent disclosures. Also, the moderation analysis showed that participants with lower baseline mental health were especially prone to heightened affective resistance toward self-disclosure videos featuring deepfake representations of themselves. Our findings indicate that artificial intelligence (AI)-generated self-deepfakes, which personalize content without affording users agency, may reverse the conventional self-referencing effect, provoking affective resistance rooted in identity threat. Since these counterproductive effects are most salient among individuals with negative self-schemas who struggle with greater mental health challenges, AI-driven technologies should be applied in health communication with caution, accompanied by tailored strategies designed to curb impulsive, emotion-driven resistance."
+    },
     {
         "title": "TwinTCN: Correlation-Gated Temporal Convolutions with Twin Encoders",
         "authors": [

@@ -11,7 +11,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "venue": null,
         "track": "Etc.",
         "Factor": [
-            "BK Computer Science IF=",
+            "SSCI IF=",
             2.7
         ],
         "year": 2025,

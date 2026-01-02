@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASH LAB - 6.25 전쟁영웅 사진 복원 사업</title>
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Shared Resources -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Inline Helper: Prevents ReferenceError if images load before scripts -->
+    <script>
+        function getImg(path) {
+            var imgBase = ""; 
+            if (!path) return '';
+            var cleanPath = path.startsWith('/') ? path.substring(1) : path;
+            return imgBase + cleanPath;
+        }
+    </script>
+    
+    <script src="js/common.js"></script>
+    
+    <!-- 1. DATA: Loads the variables -->
+    <script src="js/heroface_data.js"></script>
+    <!-- 2. LOGIC: Renders the page using the variables -->
+    <script src="js/heroface_logic.js" defer></script>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    
+    <!-- Image Enlargement Modal -->
+    <div id="image-modal" onclick="closeModal()">
+        <div id="modal-content">
+            <span class="close-btn" onclick="closeModal()"> &times; </span>
+            <img id="modal-img" src="" alt="Enlarged Image" />
+        </div>
+    </div>
+    
+    <div class="container mx-auto px-4 pt-8 pb-12 max-w-6xl flex-grow">
+        <a href="Projects" class="text-blue-700 hover:text-blue-800 font-medium inline-block mb-4">&larr; Back to Projects</a>
+
+        <!-- 1. Header Section Container -->
+        <div id="header-section">
+            <!-- Content will be injected here by JS -->
+        </div>
+
+        <h2 class="restoration-header">사용한 방법들</h2>
+        
+        <!-- 2. Methods Grid Container -->
+        <!-- Responsive Grid: 1 column on mobile, 2 columns on desktop -->
+        <div id="methods-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Content will be injected here by JS -->
+        </div>
+
+        <h2 class="restoration-header">보도자료</h2>
+        
+        <!-- 3. Media Section Container -->
+        <div id="media-section">
+            <!-- Content will be injected here by JS -->
+        </div>
+
+        <h2 class="restoration-header">참여기관</h2>
+        
+        <!-- 4. Partners Grid Container -->
+        <!-- UPDATED: flex-row ensures horizontal layout on mobile. gap-4 is smaller for mobile space. -->
+        <div id="partners-grid" class="flex flex-row flex-wrap justify-center items-center gap-4 sm:gap-20 py-8">
+            <!-- Content will be injected here by JS -->
+        </div>
+    </div>
+
+    <!-- Footer is injected here by common.js -->
+</body>
+</html>

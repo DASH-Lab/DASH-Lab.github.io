@@ -1,6 +1,6 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
-        "Title": "Top Secret Project",
+        "title": "Top Secret Project",
         "authors": [
             "Yeju Kim", 
             "Bin M. Lee",

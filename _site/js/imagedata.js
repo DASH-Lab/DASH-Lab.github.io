@@ -4,6 +4,10 @@
 
 const galleryData = [
     { 
+        src: 'img/dash_gallery/alumni_dinner_2026.jpg', 
+        desc: 'DASH Lab Alumni Dinner with Professor Woo' 
+    },
+    { 
         src: 'img/dash_gallery/neurips-sangyong_2025.jpg', 
         desc: 'DASH Lab Researcher Presenting their Poster at (NeurIPS 2025 San Diego!)' 
     },

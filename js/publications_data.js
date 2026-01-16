@@ -1,6 +1,6 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
-        "title": "SSuppression or Deletion: A Restoration-Based Representation-Level Analysis of Machine Unlearning",
+        "title": "Suppression or Deletion: A Restoration-Based Representation-Level Analysis of Machine Unlearning",
         "authors": [
             "Yurim Jang", 
             "Jaeung Lee", 

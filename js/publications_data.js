@@ -11,9 +11,9 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE Transactions on Visualization and Computer Graphics",
         "venue": "TVCG",
-        "track": "Journal",
+        "track": null,
         "Factor": [
-            "SCI IF",
+            "SCI IF=",
             6.5
         ],
         "year": 2026,

@@ -13,8 +13,8 @@ const PUBLICATIONS_DATA_LOCAL = [
         "venue": "ICLR",
         "track": "Main Paper",
         "Factor": [
-            "",
-            0
+            "BK Computer Science IF=",
+            4
         ],
         "year": 2026,
         "links": {

@@ -1,5 +1,28 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Suppression or Deletion: A Restoration-Based Representation-Level Analysis of Machine Unlearning",
+        "authors": [
+            "Yurim Jang", 
+            "Jaeung Lee", 
+            "Dohyun Kim",
+            "Jaemin Jo",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM Web Conference",
+        "venue": "WWW",
+        "track": "Short Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            3
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://www2026.thewebconf.org/"
+                 },
+        "img": "/img/Publications/WWW2026short_yurim.png",
+        "abstract": "As pretrained models are increasingly shared on the web, ensuring that models can forget or delete sensitive, copyrighted, or private information upon request has become crucial. Machine unlearning has been proposed to address this issue. However, current evaluations for unlearning methods rely on output-based metrics, which cannot verify whether information is completely deleted or merely suppressed at the representation level, where suppression is insufficient for true unlearning. To address this gap, we propose a novel restoration-based analysis framework that uses Sparse Autoencoders to identify class-specific expert features in intermediate layers and applies inference-time steering to quantitatively distinguish between suppression and deletion. Applying our framework to 12 major unlearning methods in image classification tasks, we find that most methods achieve high restoration rates of unlearned information, indicating that they only suppress information at the decision-boundary level, while preserving semantic features in intermediate representations. Notably, even retraining from pretrained checkpoints shows high restoration, revealing that pretrained feature hierarchies persist. These results demonstrate that representation-level retention poses significant risks overlooked by output-based metrics, highlighting the need for new unlearning evaluation criteria. We propose new evaluation guidelines that prioritize representation-level verification, especially for privacy-critical applications in the pretrained model era."
+    },
+    {
         "title": "Self-Disclosure of Mental Health via Deepfakes: Testing the Effects of Self-Deepfakes on Affective Resistance and Intention to Seek Mental Health Support",
         "authors": [
             "Jiyoung Lee", 

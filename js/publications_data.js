@@ -1,4 +1,28 @@
 const PUBLICATIONS_DATA_LOCAL = [
+    
+    {
+        "title": "A Rich Knowledge Space for Scalable Deepfake Detection",
+        "authors": [
+            "Inho Jung", 
+            "Hyeongjun Choi", 
+            "Binh M. Le",
+            "Hohyun Na",
+            "Simon S. Woo"
+        ],
+        "venue_full": "International Conference on Learning Representations",
+        "venue": "ICLR",
+        "track": "Main Paper",
+        "Factor": [
+            "",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://iclr.cc/Conferences/2026"
+                 },
+        "img": "/img/Publications/ICLR2026_inho.png",
+        "abstract": "The proliferation of realistic deepfakes has driven the development of numerous benchmark datasets to support detection research. Despite their increasing volume and diversity, no prior effort has systematically consolidated these resources into a unified framework for large-scale model training, nor has there been a massively pre-trained model tailored to deepfake detection. In this work, we introduce MMI-DD (Multi-modal Multi-type Integrated Deepfake Dataset), a large-scale resource containing 3.6 million facial images, the largest collection to date. It unifies diverse benchmarks with uniform preprocessing, and further provides fine-grained annotations across four deepfake types, as well as VLM-generated descriptions capturing both facial and environmental attributes for each image. By leveraging this comprehensive multi-modal dataset, we construct a foundational deepfake knowledge space that empowers our model to discern a broad spectrum of synthetic media. Our method, SD^2 (Scalable Deepfake Detection), refines CLIP for deepfake detection, optimizing image-text classification with rich, type-specific labels. We enhance this with intermediate visual features capturing low-level cues and text label separation loss for stability. We further leverage VLM-generated descriptions and contrastive learning to expand the scope of forgery knowledge, reducing overfitting and enhancing generalization. Extensive experiments on challenging deepfake datasets and AIGC benchmark demonstrate the effectiveness, scalability, and real-world applicability of our approach. Our dataset and code will be available at https://anonymous.4open.science/r/SDD/."
+    },
     {
         "title": "Suppression or Deletion: A Restoration-Based Representation-Level Analysis of Machine Unlearning",
         "authors": [

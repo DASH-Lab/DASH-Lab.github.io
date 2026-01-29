@@ -9,6 +9,7 @@ const newsData = [
     { icon: '📄', date: 'Jan 2026', year: 2026, text: 'One paper accepted at short paper track of <b>WWW 2026 (BK IF=3)</b> ' },
     { icon: '📰', date: 'Jan 2026', year: 2026, text: 'ZDNET Korea: <b>"AI 역기능 막는 기술 확보가 국가 경쟁력 좌우"</b> [<a href="https://zdnet.co.kr/view/?no=20260114145258" target="_blank">media</a>]' },
     
+    { icon: '📰', date: 'Dec 2025', year: 2025, text: 'SKKU: <b>"우사이먼성일 교수, 과학기술정보통신부장관 표창 수상"</b> [<a href="https://ai.skku.edu/ai/community/news.do?mode=view&articleNo=210238" target="_blank">media</a>]' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at MLA track of <b>SAC 2026 (BK IF=1)</b> ' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at workshop paper track of <b>CIKM 2025</b>' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at industry paper track of <b>ICSE-SEIP 2026</b>' },

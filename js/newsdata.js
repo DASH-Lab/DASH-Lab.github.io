@@ -3,6 +3,7 @@
 // It must be loaded before news.js in your HTML.
 
 const newsData = [
+    { icon: '📄', date: 'Feb 2026', year: 2026, text: 'One paper accepted at main paper track of <b>PAKDD 2026 (BK IF=1)</b> ' },
     { icon: '📰', date: 'Jan 2026', year: 2026, text: '이데일리: <b>"아빠, 나야" 다급한 AI 가짜 목소리에 당했다…갈수록 지능화·교묘화</b> [<a href="https://n.news.naver.com/article/018/0006207564?type=journalists" target="_blank">media</a>]' },
     { icon: '📄', date: 'Jan 2026', year: 2026, text: 'One paper accepted at main paper track of <b>ICLR 2026</b> ' },
     { icon: '📰', date: 'Jan 2026', year: 2026, text: 'SKKUZINE: <b>"딥페이크 탐지 기술로 사회를 지키는 연구자 - 소프트웨어학과 우사이먼성일 교수"</b> [<a href="https://webzine.skku.edu/skkuzine/section/people.do?mode=list&articleNo=134157" target="_blank">media</a>]' },

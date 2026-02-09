@@ -464,7 +464,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "authors": [
             "Seunghoo Hong",
             "Geonho Son",
-            "J.Y. Lee",
+            "Juhun Lee",
             "Simon S. Woo"
         ],
         "venue_full": "International Conference on Computer Vision",

@@ -1,5 +1,27 @@
 const PUBLICATIONS_DATA_LOCAL = [
-    
+    {
+        "title": "ICR-NET: Robust Deepfake Detection under Temporal Corruption",
+        "authors": [
+            "Chan Park", 
+            "Hyeongjun Choi", 
+            "Shahid Muneer Muhammad",
+            "Binh M. Le",
+            "Simon S. Woo"
+        ],
+        "venue_full": "The 30th Pacific-Asia Conference on Knowledge Discovery and Data Mining ",
+        "venue": "PAKDD",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            1
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://www.pakdd2026.org/"
+                 },
+        "img": "/img/Publications/pakdd26_Chan.png",
+        "abstract": "Deepfake video detection aims to distinguish AI-generated facial forgeries from authentic videos. Recent methods have achieved strong performance under spatial corruptions, but their temporal robustness remains largely unexplored. In realistic web-streaming scenarios, network disruptions such as packet loss, bit errors, and aggressive compression induce temporal corruptions that current evaluation protocols and benchmarks do not cover. To cover this gap, we introduce DeepFake Temporal Corruption Benchmark (DF-TCB), built on the standard FaceForensics++ and DFDC video datasets with diverse temporal corruption types and severity levels. Our analysis on DF-TCB reveals that existing detectors are highly fragile under temporal corruptions. We further propose ICR-Net, which predicts frame reliability, selectively corrects corrupted features, and leverages clean–corrupted contrastive learning to obtain corruption-invariant, class-separable representations. We achieve state-of-the-art robustness and cross-dataset generalization under temporal corruptions."
+    },
     {
         "title": "A Rich Knowledge Space for Scalable Deepfake Detection",
         "authors": [

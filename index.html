@@ -64,10 +64,10 @@
         <!-- FEATURE BOXES -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             
-            <!-- Data Driven -->
+            <!-- Data Driven (pattern from animation code/index.html) -->
             <div class="feature-box" id="dataDrivenFeatureBox">
                 <div class="satellite-graph-wrap feature-img">
-                    <img src="" onerror="this.src=getImg('img/dash_logo/satellite_v3.svg')" alt="Satellite Icon" class="satellite-static-figure">
+                    <img src="" onerror="this.src=getImg('img/dash_logo/satellite_v3.svg')" alt="Satellite Icon" class="satellite-static-figure" id="satelliteStaticFigure">
                     <div class="satellite-lottie-container" id="satelliteLottieContainer"></div>
                 </div>
                 <h3 class="feature-title">Data Driven</h3>
@@ -180,24 +180,36 @@
                 });
             }
 
-            // Data Driven satellite: Lottie animation on hover
+            // Data Driven satellite: Lottie animation on hover (same pattern as animation code/index.html)
             const dataDrivenBox = document.getElementById('dataDrivenFeatureBox');
             const satelliteLottie = document.getElementById('satelliteLottieContainer');
             if (dataDrivenBox && satelliteLottie && typeof lottie !== 'undefined') {
-                const satelliteAnim = lottie.loadAnimation({
-                    container: satelliteLottie,
-                    renderer: 'svg',
-                    loop: true,
-                    autoplay: false,
-                    path: getImg('img/dash_logo/satellite_anim.json')
-                });
+                let satelliteAnim = null;
+                let satelliteLoaded = false;
+                fetch(getImg('img/dash_logo/satellite_anim.json'))
+                    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+                    .then(animationData => {
+                        satelliteAnim = lottie.loadAnimation({
+                            container: satelliteLottie,
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: false,
+                            animationData: animationData
+                        });
+                        satelliteAnim.addEventListener('DOMLoaded', () => { satelliteLoaded = true; });
+                    })
+                    .catch(err => console.error('Satellite animation load failed:', err));
                 dataDrivenBox.addEventListener('mouseenter', () => {
-                    dataDrivenBox.classList.add('playing');
-                    satelliteAnim.goToAndPlay(0, true);
+                    if (satelliteLoaded && satelliteAnim) {
+                        dataDrivenBox.classList.add('playing');
+                        satelliteAnim.goToAndPlay(0, true);
+                    }
                 });
                 dataDrivenBox.addEventListener('mouseleave', () => {
-                    dataDrivenBox.classList.remove('playing');
-                    satelliteAnim.stop();
+                    if (satelliteAnim) {
+                        dataDrivenBox.classList.remove('playing');
+                        satelliteAnim.stop();
+                    }
                 });
             }
         });

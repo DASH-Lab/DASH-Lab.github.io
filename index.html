@@ -10,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
@@ -84,8 +85,11 @@
             </div>
 
             <!-- Security & Privacy -->
-            <div class="feature-box">
-                <img src="" onerror="this.src=getImg('img/dash_logo/security_v0.png')" alt="Security Icon" class="feature-img">
+            <div class="feature-box" id="securityFeatureBox">
+                <div class="security-graph-wrap feature-img">
+                    <img src="" onerror="this.src=getImg('img/dash_logo/security_graph.svg')" alt="Security Icon" class="security-static-figure">
+                    <div class="security-lottie-container" id="securityLottieContainer"></div>
+                </div>
                 <h3 class="feature-title">Security & Privacy</h3>
                 <p class="feature-desc">
                     Online User Privacy/Abuse & Fake info detection<br>
@@ -150,6 +154,27 @@
                     modal.style.display = 'flex';
                     localStorage.setItem('dash_visited', 'true');
                 }
+            }
+
+            // Security graph: Lottie animation on hover
+            const securityBox = document.getElementById('securityFeatureBox');
+            const securityLottie = document.getElementById('securityLottieContainer');
+            if (securityBox && securityLottie && typeof lottie !== 'undefined') {
+                const anim = lottie.loadAnimation({
+                    container: securityLottie,
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: false,
+                    path: getImg('img/dash_logo/security_graph_anim.json')
+                });
+                securityBox.addEventListener('mouseenter', () => {
+                    securityBox.classList.add('playing');
+                    anim.goToAndPlay(0, true);
+                });
+                securityBox.addEventListener('mouseleave', () => {
+                    securityBox.classList.remove('playing');
+                    anim.stop();
+                });
             }
         });
     </script>

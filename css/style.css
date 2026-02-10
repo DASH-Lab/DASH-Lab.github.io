@@ -272,6 +272,21 @@ img, video {
 
 .feature-box:hover { transform: translateY(-5px); animation: glowing 1.5s infinite alternate ease-in-out; border-color: #a5b4fc; }
 .feature-img { height: 5rem; width: auto; margin-bottom: 1rem; }
+
+/* Security graph: static SVG + Lottie animation on hover */
+.security-graph-wrap {
+    position: relative; width: auto; height: 5rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;
+}
+.security-static-figure,
+.security-lottie-container {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: auto; height: 100%; max-width: 100%; object-fit: contain;
+    transition: opacity 0.3s ease; pointer-events: none;
+}
+.security-static-figure { opacity: 1; }
+.security-lottie-container { opacity: 0; width: 7rem; height: 5rem; }
+#securityFeatureBox.playing .security-static-figure { opacity: 0; }
+#securityFeatureBox.playing .security-lottie-container { opacity: 1; }
 .feature-title { font-size: 1.5rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem; }
 .feature-desc { font-size: 0.95rem; color: #4b5563; line-height: 1.5; }
 

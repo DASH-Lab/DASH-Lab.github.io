@@ -77,9 +77,12 @@
                 </p>
             </div>
 
-            <!-- A.I -->
-            <div class="feature-box">
-                <img src="" onerror="this.src=getImg('img/dash_logo/face_icon_motion_2.gif')" alt="Face Scan Icon GIF" class="feature-img">
+            <!-- A.I (same pattern as Satellite) -->
+            <div class="feature-box" id="aiFeatureBox">
+                <div class="face-graph-wrap feature-img">
+                    <img src="" onerror="this.src=getImg('img/dash_logo/face_icon_3.svg')" alt="Face Scan Icon" class="face-static-figure" id="faceStaticFigure">
+                    <div class="face-lottie-container" id="faceLottieContainer"></div>
+                </div>
                 <h3 class="feature-title">A.I</h3>
                 <p class="feature-desc">
                     DeepFake (Video / Audio) Detection <br>
@@ -157,6 +160,39 @@
                     modal.style.display = 'flex';
                     localStorage.setItem('dash_visited', 'true');
                 }
+            }
+
+            // A.I face: Lottie animation on hover (same pattern as Satellite)
+            const aiBox = document.getElementById('aiFeatureBox');
+            const faceLottie = document.getElementById('faceLottieContainer');
+            if (aiBox && faceLottie && typeof lottie !== 'undefined') {
+                let faceAnim = null;
+                let faceLoaded = false;
+                fetch(getImg('img/dash_logo/face_anim.json'))
+                    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+                    .then(animationData => {
+                        faceAnim = lottie.loadAnimation({
+                            container: faceLottie,
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: false,
+                            animationData: animationData
+                        });
+                        faceAnim.addEventListener('DOMLoaded', () => { faceLoaded = true; });
+                    })
+                    .catch(err => console.error('Face animation load failed:', err));
+                aiBox.addEventListener('mouseenter', () => {
+                    if (faceLoaded && faceAnim) {
+                        aiBox.classList.add('playing');
+                        faceAnim.goToAndPlay(0, true);
+                    }
+                });
+                aiBox.addEventListener('mouseleave', () => {
+                    if (faceAnim) {
+                        aiBox.classList.remove('playing');
+                        faceAnim.stop();
+                    }
+                });
             }
 
             // Security graph: Lottie animation on hover

@@ -304,6 +304,24 @@ img, video {
 #dataDrivenFeatureBox.playing .satellite-static-figure { opacity: 0; z-index: 0; }
 #dataDrivenFeatureBox.playing .satellite-lottie-container { opacity: 1; visibility: visible; z-index: 1; }
 
+/* A.I face graph: static SVG + Lottie animation on hover */
+.face-graph-wrap {
+    position: relative; width: 7rem; height: 5rem; margin-bottom: 1rem;
+}
+.face-static-figure,
+.face-lottie-container {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: contain;
+}
+.face-static-figure {
+    opacity: 1; transition: opacity 0.3s ease; pointer-events: none;
+}
+.face-lottie-container {
+    opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
+}
+#aiFeatureBox.playing .face-static-figure { opacity: 0; }
+#aiFeatureBox.playing .face-lottie-container { opacity: 1; }
+
 .feature-title { font-size: 1.5rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem; }
 .feature-desc { font-size: 0.95rem; color: #4b5563; line-height: 1.5; }
 

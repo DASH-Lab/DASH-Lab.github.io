@@ -65,8 +65,11 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             
             <!-- Data Driven -->
-            <div class="feature-box">
-                <img src="" onerror="this.src=getImg('img/dash_logo/satellite_v2.png')" alt="Satellite Icon" class="feature-img">
+            <div class="feature-box" id="dataDrivenFeatureBox">
+                <div class="satellite-graph-wrap feature-img">
+                    <img src="" onerror="this.src=getImg('img/dash_logo/satellite_v3.svg')" alt="Satellite Icon" class="satellite-static-figure">
+                    <div class="satellite-lottie-container" id="satelliteLottieContainer"></div>
+                </div>
                 <h3 class="feature-title">Data Driven</h3>
                 <p class="feature-desc">
                     Applied Data Science & Data Engineering<br>
@@ -174,6 +177,27 @@
                 securityBox.addEventListener('mouseleave', () => {
                     securityBox.classList.remove('playing');
                     anim.stop();
+                });
+            }
+
+            // Data Driven satellite: Lottie animation on hover
+            const dataDrivenBox = document.getElementById('dataDrivenFeatureBox');
+            const satelliteLottie = document.getElementById('satelliteLottieContainer');
+            if (dataDrivenBox && satelliteLottie && typeof lottie !== 'undefined') {
+                const satelliteAnim = lottie.loadAnimation({
+                    container: satelliteLottie,
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: false,
+                    path: getImg('img/dash_logo/satellite_anim.json')
+                });
+                dataDrivenBox.addEventListener('mouseenter', () => {
+                    dataDrivenBox.classList.add('playing');
+                    satelliteAnim.goToAndPlay(0, true);
+                });
+                dataDrivenBox.addEventListener('mouseleave', () => {
+                    dataDrivenBox.classList.remove('playing');
+                    satelliteAnim.stop();
                 });
             }
         });

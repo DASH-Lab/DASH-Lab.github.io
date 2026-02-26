@@ -2,15 +2,7 @@
 // Load this in your HTML before members.js
 
 const researchProfessors = [
-    {
-        name: "Binh M. Le",
-        role: "Research Professor",
-        dept: "Computer Science & Engineering",
-        interests: "Adversarial Robustness, Representation Learning",
-        email: "bmle@g.skku.edu",
-        img: "img/member_images/BinhMLe.jpg",
-        link: "https://sites.google.com/view/binhminhle/home"
-    }
+    {name: "Binh M. Le", role: "Research Professor", dept: "Computer Science & Engineering", interests: "Adversarial Robustness, Representation Learning",email: "bmle@g.skku.edu", img: "img/member_images/BinhMLe.jpg", link: "https://sites.google.com/view/binhminhle/home"}
 ];
 
 const phdStudents = [

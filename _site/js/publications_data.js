@@ -1,5 +1,27 @@
 const PUBLICATIONS_DATA_LOCAL = [
-    
+    {
+        "title": "ICR-NET: Robust Deepfake Detection under Temporal Corruption",
+        "authors": [
+            "Chan Park", 
+            "Hyeongjun Choi", 
+            "Shahid Muneer Muhammad",
+            "Binh M. Le",
+            "Simon S. Woo"
+        ],
+        "venue_full": "The 30th Pacific-Asia Conference on Knowledge Discovery and Data Mining ",
+        "venue": "PAKDD",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            1
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://www.pakdd2026.org/"
+                 },
+        "img": "/img/Publications/pakdd26_Chan.png",
+        "abstract": "Deepfake video detection aims to distinguish AI-generated facial forgeries from authentic videos. Recent methods have achieved strong performance under spatial corruptions, but their temporal robustness remains largely unexplored. In realistic web-streaming scenarios, network disruptions such as packet loss, bit errors, and aggressive compression induce temporal corruptions that current evaluation protocols and benchmarks do not cover. To cover this gap, we introduce DeepFake Temporal Corruption Benchmark (DF-TCB), built on the standard FaceForensics++ and DFDC video datasets with diverse temporal corruption types and severity levels. Our analysis on DF-TCB reveals that existing detectors are highly fragile under temporal corruptions. We further propose ICR-Net, which predicts frame reliability, selectively corrects corrupted features, and leverages clean–corrupted contrastive learning to obtain corruption-invariant, class-separable representations. We achieve state-of-the-art robustness and cross-dataset generalization under temporal corruptions."
+    },
     {
         "title": "A Rich Knowledge Space for Scalable Deepfake Detection",
         "authors": [
@@ -14,14 +36,13 @@ const PUBLICATIONS_DATA_LOCAL = [
         "track": "Main Paper",
         "Factor": [
             "",
-            0
         ],
         "year": 2026,
         "links": {
             "conf": "https://iclr.cc/Conferences/2026"
                  },
         "img": "/img/Publications/ICLR2026_inho.png",
-        "abstract": "The proliferation of realistic deepfakes has driven the development of numerous benchmark datasets to support detection research. Despite their increasing volume and diversity, no prior effort has systematically consolidated these resources into a unified framework for large-scale model training, nor has there been a massively pre-trained model tailored to deepfake detection. In this work, we introduce MMI-DD (Multi-modal Multi-type Integrated Deepfake Dataset), a large-scale resource containing 3.6 million facial images, the largest collection to date. It unifies diverse benchmarks with uniform preprocessing, and further provides fine-grained annotations across four deepfake types, as well as VLM-generated descriptions capturing both facial and environmental attributes for each image. By leveraging this comprehensive multi-modal dataset, we construct a foundational deepfake knowledge space that empowers our model to discern a broad spectrum of synthetic media. Our method, SD^2 (Scalable Deepfake Detection), refines CLIP for deepfake detection, optimizing image-text classification with rich, type-specific labels. We enhance this with intermediate visual features capturing low-level cues and text label separation loss for stability. We further leverage VLM-generated descriptions and contrastive learning to expand the scope of forgery knowledge, reducing overfitting and enhancing generalization. Extensive experiments on challenging deepfake datasets and AIGC benchmark demonstrate the effectiveness, scalability, and real-world applicability of our approach. Our dataset and code will be available at https://anonymous.4open.science/r/SDD/."
+        "abstract": "The proliferation of realistic deepfakes has driven the development of numerous benchmark datasets to support detection research. Despite their increasing volume and diversity, no prior effort has systematically consolidated these resources into a unified framework for large-scale model training, nor has there been a massively pre-trained model tailored to deepfake detection. In this work, we introduce MMI-DD (Multi-modal Multi-type Integrated Deepfake Dataset), a large-scale resource containing 3.6 million facial images, the largest collection to date. It unifies diverse benchmarks with uniform preprocessing, and further provides fine-grained annotations across four deepfake types, as well as VLM-generated descriptions capturing both facial and environmental attributes for each image. By leveraging this comprehensive multi-modal dataset, we construct a foundational deepfake knowledge space that empowers our model to discern a broad spectrum of synthetic media. Our method, SD^2 (Scalable Deepfake Detection), refines CLIP for deepfake detection, optimizing image-text classification with rich, type-specific labels. We enhance this with intermediate visual features capturing low-level cues and text label separation loss for stability. We further leverage VLM-generated descriptions and contrastive learning to expand the scope of forgery knowledge, reducing overfitting and enhancing generalization. Extensive experiments on challenging deepfake datasets and AIGC benchmark demonstrate the effectiveness, scalability, and real-world applicability of our approach."
     },
     {
         "title": "Unlearning Comparator: A Visual Analytics System for Comparative Evaluation of Machine Unlearning Methods",
@@ -443,7 +464,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "authors": [
             "Seunghoo Hong",
             "Geonho Son",
-            "J.Y. Lee",
+            "Juhun Lee",
             "Simon S. Woo"
         ],
         "venue_full": "International Conference on Computer Vision",

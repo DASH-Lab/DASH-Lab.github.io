@@ -23,7 +23,7 @@ function renderAuthors(authors) {
     } else {
         for (let i = 0; i < author_count; i++) {
             if (i === author_count - 1) {
-                author_string += ` and ${authors[i]}`;
+                author_string += `, and ${authors[i]}`;
             } else if (i === 0) {
                 author_string += authors[i];
             } else {

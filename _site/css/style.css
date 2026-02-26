@@ -272,6 +272,56 @@ img, video {
 
 .feature-box:hover { transform: translateY(-5px); animation: glowing 1.5s infinite alternate ease-in-out; border-color: #a5b4fc; }
 .feature-img { height: 5rem; width: auto; margin-bottom: 1rem; }
+
+/* Security graph: static SVG + Lottie animation on hover */
+.security-graph-wrap {
+    position: relative; height: 5rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;
+    min-width: 7rem;
+}
+.security-static-figure {
+    height: 5rem; width: auto; display: block; transition: opacity 0.3s ease; pointer-events: none;
+}
+.security-lottie-container {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 7rem; height: 5rem; overflow: hidden; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
+}
+.security-static-figure { opacity: 1; }
+#securityFeatureBox.playing .security-static-figure { opacity: 0; }
+#securityFeatureBox.playing .security-lottie-container { opacity: 1; }
+
+/* Satellite graph: static SVG + Lottie animation on hover */
+.satellite-graph-wrap {
+    position: relative; height: 5rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;
+    min-width: 7rem;
+}
+.satellite-static-figure {
+    height: 5rem; width: auto; display: block; opacity: 1; z-index: 1; transition: opacity 0.3s ease; pointer-events: none;
+}
+.satellite-lottie-container {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 7rem; height: 5rem; overflow: hidden; opacity: 0; visibility: hidden; z-index: 0; transition: opacity 0.3s ease; pointer-events: none;
+}
+#dataDrivenFeatureBox.playing .satellite-static-figure { opacity: 0; z-index: 0; }
+#dataDrivenFeatureBox.playing .satellite-lottie-container { opacity: 1; visibility: visible; z-index: 1; }
+
+/* A.I face graph: static SVG + Lottie animation on hover */
+.face-graph-wrap {
+    position: relative; width: 7rem; height: 5rem; margin-bottom: 1rem;
+}
+.face-static-figure,
+.face-lottie-container {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: contain;
+}
+.face-static-figure {
+    opacity: 1; transition: opacity 0.3s ease; pointer-events: none;
+}
+.face-lottie-container {
+    opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
+}
+#aiFeatureBox.playing .face-static-figure { opacity: 0; }
+#aiFeatureBox.playing .face-lottie-container { opacity: 1; }
+
 .feature-title { font-size: 1.5rem; font-weight: 600; color: #111827; margin-bottom: 0.75rem; }
 .feature-desc { font-size: 0.95rem; color: #4b5563; line-height: 1.5; }
 

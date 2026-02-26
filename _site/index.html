@@ -10,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
@@ -63,9 +64,12 @@
         <!-- FEATURE BOXES -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             
-            <!-- Data Driven -->
-            <div class="feature-box">
-                <img src="" onerror="this.src=getImg('img/dash_logo/satellite_v2.png')" alt="Satellite Icon" class="feature-img">
+            <!-- Data Driven (pattern from animation code/index.html) -->
+            <div class="feature-box" id="dataDrivenFeatureBox">
+                <div class="satellite-graph-wrap feature-img">
+                    <img src="" onerror="this.src=getImg('img/dash_logo/satellite_v3.svg')" alt="Satellite Icon" class="satellite-static-figure" id="satelliteStaticFigure">
+                    <div class="satellite-lottie-container" id="satelliteLottieContainer"></div>
+                </div>
                 <h3 class="feature-title">Data Driven</h3>
                 <p class="feature-desc">
                     Applied Data Science & Data Engineering<br>
@@ -73,9 +77,12 @@
                 </p>
             </div>
 
-            <!-- A.I -->
-            <div class="feature-box">
-                <img src="" onerror="this.src=getImg('img/dash_logo/face_icon_motion_2.gif')" alt="Face Scan Icon GIF" class="feature-img">
+            <!-- A.I (same pattern as Satellite) -->
+            <div class="feature-box" id="aiFeatureBox">
+                <div class="face-graph-wrap feature-img">
+                    <img src="" onerror="this.src=getImg('img/dash_logo/face_icon_3.svg')" alt="Face Scan Icon" class="face-static-figure" id="faceStaticFigure">
+                    <div class="face-lottie-container" id="faceLottieContainer"></div>
+                </div>
                 <h3 class="feature-title">A.I</h3>
                 <p class="feature-desc">
                     DeepFake (Video / Audio) Detection <br>
@@ -84,8 +91,11 @@
             </div>
 
             <!-- Security & Privacy -->
-            <div class="feature-box">
-                <img src="" onerror="this.src=getImg('img/dash_logo/security_v0.png')" alt="Security Icon" class="feature-img">
+            <div class="feature-box" id="securityFeatureBox">
+                <div class="security-graph-wrap feature-img">
+                    <img src="" onerror="this.src=getImg('img/dash_logo/security_graph.svg')" alt="Security Icon" class="security-static-figure">
+                    <div class="security-lottie-container" id="securityLottieContainer"></div>
+                </div>
                 <h3 class="feature-title">Security & Privacy</h3>
                 <p class="feature-desc">
                     Online User Privacy/Abuse & Fake info detection<br>
@@ -150,6 +160,93 @@
                     modal.style.display = 'flex';
                     localStorage.setItem('dash_visited', 'true');
                 }
+            }
+
+            // A.I face: Lottie animation on hover (same pattern as Satellite)
+            const aiBox = document.getElementById('aiFeatureBox');
+            const faceLottie = document.getElementById('faceLottieContainer');
+            if (aiBox && faceLottie && typeof lottie !== 'undefined') {
+                let faceAnim = null;
+                let faceLoaded = false;
+                fetch(getImg('img/dash_logo/face_anim.json'))
+                    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+                    .then(animationData => {
+                        faceAnim = lottie.loadAnimation({
+                            container: faceLottie,
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: false,
+                            animationData: animationData
+                        });
+                        faceAnim.addEventListener('DOMLoaded', () => { faceLoaded = true; });
+                    })
+                    .catch(err => console.error('Face animation load failed:', err));
+                aiBox.addEventListener('mouseenter', () => {
+                    if (faceLoaded && faceAnim) {
+                        aiBox.classList.add('playing');
+                        faceAnim.goToAndPlay(0, true);
+                    }
+                });
+                aiBox.addEventListener('mouseleave', () => {
+                    if (faceAnim) {
+                        aiBox.classList.remove('playing');
+                        faceAnim.stop();
+                    }
+                });
+            }
+
+            // Security graph: Lottie animation on hover
+            const securityBox = document.getElementById('securityFeatureBox');
+            const securityLottie = document.getElementById('securityLottieContainer');
+            if (securityBox && securityLottie && typeof lottie !== 'undefined') {
+                const anim = lottie.loadAnimation({
+                    container: securityLottie,
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: false,
+                    path: getImg('img/dash_logo/security_graph_anim.json')
+                });
+                securityBox.addEventListener('mouseenter', () => {
+                    securityBox.classList.add('playing');
+                    anim.goToAndPlay(0, true);
+                });
+                securityBox.addEventListener('mouseleave', () => {
+                    securityBox.classList.remove('playing');
+                    anim.stop();
+                });
+            }
+
+            // Data Driven satellite: Lottie animation on hover (same pattern as animation code/index.html)
+            const dataDrivenBox = document.getElementById('dataDrivenFeatureBox');
+            const satelliteLottie = document.getElementById('satelliteLottieContainer');
+            if (dataDrivenBox && satelliteLottie && typeof lottie !== 'undefined') {
+                let satelliteAnim = null;
+                let satelliteLoaded = false;
+                fetch(getImg('img/dash_logo/satellite_anim.json'))
+                    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+                    .then(animationData => {
+                        satelliteAnim = lottie.loadAnimation({
+                            container: satelliteLottie,
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: false,
+                            animationData: animationData
+                        });
+                        satelliteAnim.addEventListener('DOMLoaded', () => { satelliteLoaded = true; });
+                    })
+                    .catch(err => console.error('Satellite animation load failed:', err));
+                dataDrivenBox.addEventListener('mouseenter', () => {
+                    if (satelliteLoaded && satelliteAnim) {
+                        dataDrivenBox.classList.add('playing');
+                        satelliteAnim.goToAndPlay(0, true);
+                    }
+                });
+                dataDrivenBox.addEventListener('mouseleave', () => {
+                    if (satelliteAnim) {
+                        dataDrivenBox.classList.remove('playing');
+                        satelliteAnim.stop();
+                    }
+                });
             }
         });
     </script>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASH LAB - Deepfake Inspector</title>
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Shared Resources -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/common.js"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl flex-grow">
+        
+        <div class="section">
+            <div class="dash-card-dataset">
+                <!-- Header Actions -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                    <a href="Datasets.html" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-900 transition-colors">
+                        <i class="fas fa-arrow-left"></i> Back to Datasets
+                    </a>
+                    <div class="flex items-center gap-2">
+                        <span id="lock-status" class="text-[10px] font-bold uppercase py-1 px-3 rounded-full bg-green-100 text-green-700 hidden border border-green-200">
+                            <i class="fas fa-lock"></i> Area Locked
+                        </span>
+                        <button id="reset-btn" class="forensic-btn btn-danger py-1 px-3 text-xs" style="display: none;">
+                            <i class="fas fa-redo"></i> Reset Station
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="dash-header-dataset">🔍 Deepfake Inspector (Beta)</h3>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    
+                    <!-- Left Column: Tool Interface -->
+                    <div class="lg:col-span-8 xl:col-span-9">
+                        <div class="canvas-container shadow-inner" id="tool-viewport">
+                            <div id="selection-box" class="selection-box"></div>
+                            <canvas id="main-canvas"></canvas>
+                            <canvas id="lens-preview" width="256" height="256"></canvas>
+                            
+                            <!-- Empty State Message -->
+                            <div id="empty-state">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p class="text-gray-300 font-medium mb-1">Begin Histogram Analysis</p>
+                                <p class="text-gray-500 text-sm">Upload or Drag & Drop an image</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Controls -->
+                    <div class="lg:col-span-4 xl:col-span-3">
+                        <div class="flex flex-col gap-5">
+                            
+                            <!-- 1. Selection -->
+                            <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">1. Source Image</label>
+                                <label for="file-upload" class="forensic-btn btn-primary sidebar-btn">
+                                    <i class="fas fa-file-image"></i> Select File
+                                </label>
+                                <input type="file" id="file-upload" accept="image/*" class="hidden">
+                                <div id="file-meta" class="mt-3 text-[11px] text-gray-500 hidden italic">
+                                    Resolution: <span id="meta-res" class="font-bold text-gray-700">---</span>
+                                </div>
+                            </div>
+
+                            <!-- 2. Modes -->
+                            <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">2. Analysis</label>
+                                
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg mb-4">
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-gray-700">Original Mode</span>
+                                        <span id="mode-status-text" class="text-[9px] text-blue-600 font-bold uppercase">Histogram Active</span>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" id="mode-toggle">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+
+                                <div class="space-y-3">
+                                    <div class="flex justify-between text-[11px] font-bold text-gray-500">
+                                        <span>MAGNIFICATION</span>
+                                        <span id="zoom-val" class="text-blue-600">4x</span>
+                                    </div>
+                                    <input type="range" id="zoom-slider" min="2" max="10" step="1" value="4" class="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                                </div>
+                            </div>
+
+                            <!-- User Manual -->
+                            <div class="bg-gray-50 rounded-xl p-5 border border-transparent">
+                                <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">Manual</h4>
+                                <div class="space-y-5">
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-0.5 text-blue-600 flex-shrink-0">
+                                            <i class="fas fa-search-plus text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-[11px] font-bold text-gray-700">Standard Zoom</p>
+                                            <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Check for unnatural blurring at object boundaries.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-0.5 text-indigo-600 flex-shrink-0">
+                                            <i class="fas fa-wave-square text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-[11px] font-bold text-gray-700">Histogram Filter</p>
+                                            <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Reveals mismatched sensor noise in Deepfakes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Actions -->
+                            <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                                <button id="snapshot-btn" class="forensic-btn btn-secondary sidebar-btn" disabled>
+                                    <i class="fas fa-camera"></i> Save Snapshot
+                                </button>
+                                <p class="text-[10px] text-gray-400 mt-2 text-center">Click/Tap image to lock area.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const uploadInput = document.getElementById('file-upload');
+        const mainCanvas = document.getElementById('main-canvas');
+        const lensPreview = document.getElementById('lens-preview');
+        const modeToggle = document.getElementById('mode-toggle');
+        const modeStatusText = document.getElementById('mode-status-text');
+        const zoomSlider = document.getElementById('zoom-slider');
+        const zoomValDisplay = document.getElementById('zoom-val');
+        const emptyState = document.getElementById('empty-state');
+        const viewport = document.getElementById('tool-viewport');
+        const selectionBox = document.getElementById('selection-box');
+        const snapshotBtn = document.getElementById('snapshot-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const lockStatus = document.getElementById('lock-status');
+        
+        const ctx = mainCanvas.getContext('2d');
+        const previewCtx = lensPreview.getContext('2d');
+        
+        let showOriginal = false;
+        let imageLoaded = false;
+        let isLocked = false;
+        let zoomFactor = 4;
+
+        let lastX = 0, lastY = 0;
+        let lastClientX = 0, lastClientY = 0;
+
+        modeToggle.addEventListener('change', () => { 
+            showOriginal = modeToggle.checked; 
+            modeStatusText.textContent = showOriginal ? "Viewing Original" : "Histogram Active";
+            modeStatusText.className = showOriginal ? "text-[9px] text-gray-500 font-bold uppercase" : "text-[9px] text-blue-600 font-bold uppercase";
+            if(imageLoaded) updateLens(); 
+        });
+
+        zoomSlider.addEventListener('input', (e) => {
+            zoomFactor = parseInt(e.target.value);
+            zoomValDisplay.textContent = `${zoomFactor}x`;
+            if(imageLoaded) updateLens(); 
+        });
+
+        // Click or Tap to Lock
+        viewport.addEventListener('click', (e) => {
+            if (!imageLoaded) return;
+            isLocked = !isLocked;
+            viewport.classList.toggle('is-locked', isLocked);
+            selectionBox.classList.toggle('locked', isLocked);
+            lockStatus.classList.toggle('hidden', !isLocked);
+        });
+
+        resetBtn.addEventListener('click', () => {
+            ctx.clearRect(0, 0, mainCanvas.width, mainCanvas.height);
+            mainCanvas.width = 0;
+            mainCanvas.height = 0;
+            emptyState.style.display = 'flex';
+            resetBtn.style.display = 'none';
+            snapshotBtn.disabled = true;
+            document.getElementById('file-meta').classList.add('hidden');
+            selectionBox.style.display = 'none';
+            lensPreview.style.display = 'none';
+            isLocked = false; imageLoaded = false;
+            viewport.classList.remove('is-locked');
+            selectionBox.classList.remove('locked');
+            lockStatus.classList.add('hidden');
+        });
+
+        function processImage(file) {
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const img = new Image();
+                img.onload = () => {
+                    const containerWidth = viewport.clientWidth;
+                    const containerHeight = viewport.clientHeight;
+                    let width = img.width; let height = img.height;
+                    if (width > containerWidth) { height *= (containerWidth / width); width = containerWidth; }
+                    if (height > containerHeight) { width *= (containerHeight / height); height = containerHeight; }
+                    mainCanvas.width = width; mainCanvas.height = height;
+                    ctx.drawImage(img, 0, 0, width, height);
+                    document.getElementById('meta-res').textContent = `${img.width}x${img.height}`;
+                    document.getElementById('file-meta').classList.remove('hidden');
+                    emptyState.style.display = 'none';
+                    resetBtn.style.display = 'inline-flex';
+                    snapshotBtn.disabled = false; imageLoaded = true;
+                };
+                img.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        uploadInput.addEventListener('change', (e) => processImage(e.target.files[0]));
+        viewport.addEventListener('dragover', (e) => { e.preventDefault(); viewport.classList.add('drag-active'); });
+        viewport.addEventListener('dragleave', () => viewport.classList.remove('drag-active'));
+        viewport.addEventListener('drop', (e) => { e.preventDefault(); viewport.classList.remove('drag-active'); processImage(e.dataTransfer.files[0]); });
+
+        snapshotBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const link = document.createElement('a');
+            link.download = `dash_analysis_${Date.now()}.png`;
+            link.href = lensPreview.toDataURL(); link.click();
+        });
+
+        function updateLens(mouseX = lastX, mouseY = lastY, clientX = lastClientX, clientY = lastClientY) {
+            if (!imageLoaded) return;
+            selectionBox.style.display = 'block'; lensPreview.style.display = 'block';
+            const cropSize = 256 / zoomFactor;
+            lastX = mouseX; lastY = mouseY; lastClientX = clientX; lastClientY = clientY;
+            
+            if (clientX && clientY) {
+                const rect = viewport.getBoundingClientRect();
+                lensPreview.style.left = `${clientX - rect.left - 128}px`;
+                lensPreview.style.top = `${clientY - rect.top - 128}px`;
+            }
+            
+            selectionBox.style.width = `${cropSize}px`; selectionBox.style.height = `${cropSize}px`;
+            const boxX = mouseX - (cropSize / 2); const boxY = mouseY - (cropSize / 2);
+            selectionBox.style.left = `${boxX + mainCanvas.offsetLeft}px`; selectionBox.style.top = `${boxY + mainCanvas.offsetTop}px`;
+            
+            const cropX = Math.max(0, Math.min(mouseX - cropSize / 2, mainCanvas.width - cropSize));
+            const cropY = Math.max(0, Math.min(mouseY - cropSize / 2, mainCanvas.height - cropSize));
+            
+            if (showOriginal) {
+                previewCtx.clearRect(0, 0, lensPreview.width, lensPreview.height);
+                previewCtx.imageSmoothingEnabled = false;
+                previewCtx.drawImage(mainCanvas, cropX, cropY, cropSize, cropSize, 0, 0, 256, 256);
+            } else {
+                const imageData = ctx.getImageData(cropX, cropY, cropSize, cropSize);
+                const data = imageData.data;
+                const equalize = (channel) => {
+                    const histogram = new Array(256).fill(0);
+                    for (let i = 0; i < channel.length; i++) histogram[channel[i]]++;
+                    const cdf = new Array(256).fill(0); cdf[0] = histogram[0];
+                    for (let i = 1; i < 256; i++) cdf[i] = cdf[i - 1] + histogram[i];
+                    const cdfMin = cdf.find(v => v > 0) || 0; const total = channel.length;
+                    return channel.map(v => (total === cdfMin) ? v : Math.round(((cdf[v] - cdfMin) / (total - cdfMin)) * 255));
+                };
+                const r = [], g = [], b = [];
+                for (let i = 0; i < data.length; i += 4) { r.push(data[i]); g.push(data[i + 1]); b.push(data[i + 2]); }
+                const rEq = equalize(r), gEq = equalize(g), bEq = equalize(b);
+                for (let i = 0; i < data.length; i += 4) { data[i] = rEq[i/4]; data[i+1] = gEq[i/4]; data[i+2] = bEq[i/4]; }
+                const tempCanvas = document.createElement('canvas'); tempCanvas.width = cropSize; tempCanvas.height = cropSize;
+                tempCanvas.getContext('2d').putImageData(new ImageData(data, cropSize, cropSize), 0, 0);
+                previewCtx.clearRect(0, 0, lensPreview.width, lensPreview.height); previewCtx.imageSmoothingEnabled = false;
+                previewCtx.drawImage(tempCanvas, 0, 0, cropSize, cropSize, 0, 0, 256, 256);
+            }
+        }
+
+        // Mouse Tracker
+        viewport.addEventListener('mousemove', (e) => {
+            if (!imageLoaded || isLocked) return;
+            const rect = mainCanvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left; const mouseY = e.clientY - rect.top;
+            if (mouseX < 0 || mouseX > mainCanvas.width || mouseY < 0 || mouseY > mainCanvas.height) {
+                lensPreview.style.display = 'none'; selectionBox.style.display = 'none'; return;
+            }
+            updateLens(mouseX, mouseY, e.clientX, e.clientY);
+        });
+
+        // Touch Tracker for Mobile
+        function handleTouch(e) {
+            if (!imageLoaded || isLocked) return;
+            e.preventDefault();
+            const touch = e.touches[0];
+            const rect = mainCanvas.getBoundingClientRect();
+            const touchX = touch.clientX - rect.left;
+            const touchY = touch.clientY - rect.top;
+            if (touchX < 0 || touchX > mainCanvas.width || touchY < 0 || touchY > mainCanvas.height) return;
+            updateLens(touchX, touchY, touch.clientX, touch.clientY);
+        }
+
+        viewport.addEventListener('touchstart', handleTouch, { passive: false });
+        viewport.addEventListener('touchmove', handleTouch, { passive: false });
+
+        viewport.addEventListener('mouseleave', () => { if (!isLocked) { lensPreview.style.display = 'none'; selectionBox.style.display = 'none'; } });
+    </script>
+</body>
+</html>

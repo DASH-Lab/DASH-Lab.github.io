@@ -22,11 +22,11 @@
                     <a href="Datasets_kor.html" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-900 transition-colors">
                         <i class="fas fa-arrow-left"></i> Back to Datasets
                     </a>
-                    <div class="flex items-center gap-2">
-                        <span id="lock-status" class="text-[10px] font-bold uppercase py-1 px-3 rounded-full bg-green-100 text-green-700 hidden border border-green-200">
-                            <i class="fas fa-lock"></i> Area Locked
+                    <div class="flex items-center gap-2 h-9">
+                        <span id="lock-status" class="text-[10px] font-bold uppercase py-1.5 px-3 rounded-full bg-green-100 text-green-700 hidden border border-green-200">
+                            <i class="fas fa-lock mr-1"></i> Area Locked
                         </span>
-                        <button id="reset-btn" class="forensic-btn btn-danger py-1 px-3 text-xs" style="display: none;">
+                        <button id="reset-btn" class="forensic-btn btn-danger py-1 px-3 text-xs h-full" style="display: none;">
                             <i class="fas fa-redo"></i> Reset Station
                         </button>
                     </div>
@@ -46,8 +46,8 @@
                             <!-- Empty State Message -->
                             <div id="empty-state">
                                 <i class="fas fa-cloud-upload-alt"></i>
-                                <p class="text-gray-300 font-medium mb-1">Begin Histogram Analysis</p>
-                                <p class="text-gray-500 text-sm">Upload or Drag & Drop an image</p>
+                                <p class="text-gray-300 font-medium mb-1 text-lg text-center">Ready for Analysis</p>
+                                <p class="text-gray-500 text-sm text-center">Upload or Drag & Drop an image</p>
                             </div>
                         </div>
                     </div>
@@ -64,18 +64,18 @@
                                 </label>
                                 <input type="file" id="file-upload" accept="image/*" class="hidden">
                                 <div id="file-meta" class="mt-3 text-[11px] text-gray-500 hidden italic">
-                                    Resolution: <span id="meta-res" class="font-bold text-gray-700">---</span>
+                                    Res: <span id="meta-res" class="font-bold text-gray-700">---</span>
                                 </div>
                             </div>
 
-                            <!-- 2. Modes -->
+                            <!-- 2. Analysis Mode -->
                             <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
-                                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">2. Analysis</label>
+                                <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">2. Analysis Mode</label>
                                 
                                 <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg mb-4">
-                                    <div class="flex flex-col">
-                                        <span class="text-sm font-bold text-gray-700">Original Mode</span>
-                                        <span id="mode-status-text" class="text-[9px] text-blue-600 font-bold uppercase">Histogram Active</span>
+                                    <div class="flex flex-col justify-center h-10 overflow-hidden">
+                                        <span id="mode-title" class="text-sm font-bold leading-tight">---</span>
+                                        <span id="mode-subtitle" class="text-[10px] font-black uppercase tracking-tighter">---</span>
                                     </div>
                                     <label class="switch">
                                         <input type="checkbox" id="mode-toggle">
@@ -83,10 +83,10 @@
                                     </label>
                                 </div>
 
-                                <div class="space-y-3">
+                                <div class="space-y-2">
                                     <div class="flex justify-between text-[11px] font-bold text-gray-500">
                                         <span>MAGNIFICATION</span>
-                                        <span id="zoom-val" class="text-blue-600">4x</span>
+                                        <span id="zoom-val" class="text-blue-600 font-black">4x</span>
                                     </div>
                                     <input type="range" id="zoom-slider" min="2" max="10" step="1" value="4" class="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                                 </div>
@@ -94,24 +94,27 @@
 
                             <!-- User Manual -->
                             <div class="bg-gray-50 rounded-xl p-5 border border-transparent">
-                                <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">Manual</h4>
+                                <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">Forensic Guide</h4>
                                 <div class="space-y-5">
                                     <div class="flex items-start gap-3">
-                                        <div class="mt-0.5 text-blue-600 flex-shrink-0">
-                                            <i class="fas fa-search-plus text-sm"></i>
-                                        </div>
+                                        <div class="mt-0.5 text-blue-600 flex-shrink-0"><i class="fas fa-search-plus text-sm"></i></div>
                                         <div>
-                                            <p class="text-[11px] font-bold text-gray-700">Standard Zoom</p>
-                                            <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Check for unnatural blurring at object boundaries.</p>
+                                            <p class="text-[11px] font-bold text-gray-700">Standard View</p>
+                                            <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Checked (ON): Check for unnatural blurring or "ghosting" around edges.</p>
                                         </div>
                                     </div>
                                     <div class="flex items-start gap-3">
-                                        <div class="mt-0.5 text-indigo-600 flex-shrink-0">
-                                            <i class="fas fa-wave-square text-sm"></i>
-                                        </div>
+                                        <div class="mt-0.5 text-orange-500 flex-shrink-0"><i class="fas fa-fire text-sm"></i></div>
                                         <div>
-                                            <p class="text-[11px] font-bold text-gray-700">Histogram Filter</p>
-                                            <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Reveals mismatched sensor noise in Deepfakes.</p>
+                                            <p class="text-[11px] font-bold text-gray-700">Heat Map Filter</p>
+                                            <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Unchecked (OFF): Amplifies sensor noise to find mismatched pixel patterns.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-0.5 text-green-600 flex-shrink-0"><i class="fas fa-expand-arrows-alt text-sm"></i></div>
+                                        <div>
+                                            <p class="text-[11px] font-bold text-gray-700">Magnification</p>
+                                            <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Adjust the zoom power (2x to 10x) for deep pixel inspection.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -122,9 +125,8 @@
                                 <button id="snapshot-btn" class="forensic-btn btn-secondary sidebar-btn" disabled>
                                     <i class="fas fa-camera"></i> Save Snapshot
                                 </button>
-                                <p class="text-[10px] text-gray-400 mt-2 text-center">Click/Tap image to lock area.</p>
+                                <p class="text-[10px] text-gray-400 mt-2 text-center font-medium italic">Click image to lock area.</p>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -137,7 +139,8 @@
         const mainCanvas = document.getElementById('main-canvas');
         const lensPreview = document.getElementById('lens-preview');
         const modeToggle = document.getElementById('mode-toggle');
-        const modeStatusText = document.getElementById('mode-status-text');
+        const modeTitle = document.getElementById('mode-title');
+        const modeSubtitle = document.getElementById('mode-subtitle');
         const zoomSlider = document.getElementById('zoom-slider');
         const zoomValDisplay = document.getElementById('zoom-val');
         const emptyState = document.getElementById('empty-state');
@@ -154,14 +157,28 @@
         let imageLoaded = false;
         let isLocked = false;
         let zoomFactor = 4;
-
         let lastX = 0, lastY = 0;
         let lastClientX = 0, lastClientY = 0;
 
+        // FIXED Label Logic: Clean, non-shifting labels
+        function updateStatusUI() {
+            if (modeToggle.checked) {
+                modeTitle.textContent = "ORIGINAL VIEW";
+                modeTitle.className = "text-sm font-bold leading-tight text-gray-600";
+                modeSubtitle.textContent = "NO FILTER";
+                modeSubtitle.className = "text-[10px] font-black uppercase tracking-tighter text-gray-400";
+            } else {
+                modeTitle.textContent = "HISTOGRAM";
+                modeTitle.className = "text-sm font-bold leading-tight text-blue-600";
+                modeSubtitle.textContent = "HEAT MAP";
+                modeSubtitle.className = "text-[10px] font-black uppercase tracking-tighter text-orange-500";
+            }
+        }
+        updateStatusUI();
+
         modeToggle.addEventListener('change', () => { 
             showOriginal = modeToggle.checked; 
-            modeStatusText.textContent = showOriginal ? "Viewing Original" : "Histogram Active";
-            modeStatusText.className = showOriginal ? "text-[9px] text-gray-500 font-bold uppercase" : "text-[9px] text-blue-600 font-bold uppercase";
+            updateStatusUI();
             if(imageLoaded) updateLens(); 
         });
 
@@ -171,7 +188,32 @@
             if(imageLoaded) updateLens(); 
         });
 
-        // Click or Tap to Lock
+        // Mouse Tracker logic
+        viewport.addEventListener('mousemove', (e) => {
+            if (!imageLoaded || isLocked) return;
+            const rect = mainCanvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+            if (mouseX < 0 || mouseX > mainCanvas.width || mouseY < 0 || mouseY > mainCanvas.height) {
+                lensPreview.style.display = 'none'; selectionBox.style.display = 'none'; return;
+            }
+            updateLens(mouseX, mouseY, e.clientX, e.clientY);
+        });
+
+        // Mobile Touch logic
+        function handleTouch(e) {
+            if (!imageLoaded || isLocked) return;
+            e.preventDefault();
+            const touch = e.touches[0];
+            const rect = mainCanvas.getBoundingClientRect();
+            const touchX = touch.clientX - rect.left;
+            const touchY = touch.clientY - rect.top;
+            if (touchX < 0 || touchX > mainCanvas.width || touchY < 0 || touchY > mainCanvas.height) return;
+            updateLens(touchX, touchY, touch.clientX, touch.clientY);
+        }
+        viewport.addEventListener('touchstart', handleTouch, { passive: false });
+        viewport.addEventListener('touchmove', handleTouch, { passive: false });
+
         viewport.addEventListener('click', (e) => {
             if (!imageLoaded) return;
             isLocked = !isLocked;
@@ -182,17 +224,12 @@
 
         resetBtn.addEventListener('click', () => {
             ctx.clearRect(0, 0, mainCanvas.width, mainCanvas.height);
-            mainCanvas.width = 0;
-            mainCanvas.height = 0;
-            emptyState.style.display = 'flex';
-            resetBtn.style.display = 'none';
-            snapshotBtn.disabled = true;
-            document.getElementById('file-meta').classList.add('hidden');
-            selectionBox.style.display = 'none';
-            lensPreview.style.display = 'none';
+            mainCanvas.width = 0; mainCanvas.height = 0;
+            emptyState.style.display = 'flex'; resetBtn.style.display = 'none';
+            snapshotBtn.disabled = true; document.getElementById('file-meta').classList.add('hidden');
+            selectionBox.style.display = 'none'; lensPreview.style.display = 'none';
             isLocked = false; imageLoaded = false;
-            viewport.classList.remove('is-locked');
-            selectionBox.classList.remove('locked');
+            viewport.classList.remove('is-locked'); selectionBox.classList.remove('locked');
             lockStatus.classList.add('hidden');
         });
 
@@ -211,8 +248,7 @@
                     ctx.drawImage(img, 0, 0, width, height);
                     document.getElementById('meta-res').textContent = `${img.width}x${img.height}`;
                     document.getElementById('file-meta').classList.remove('hidden');
-                    emptyState.style.display = 'none';
-                    resetBtn.style.display = 'inline-flex';
+                    emptyState.style.display = 'none'; resetBtn.style.display = 'inline-flex';
                     snapshotBtn.disabled = false; imageLoaded = true;
                 };
                 img.src = event.target.result;
@@ -228,14 +264,15 @@
         snapshotBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             const link = document.createElement('a');
-            link.download = `dash_analysis_${Date.now()}.png`;
+            link.download = `dash_heat_analysis_${Date.now()}.png`;
             link.href = lensPreview.toDataURL(); link.click();
         });
 
         function updateLens(mouseX = lastX, mouseY = lastY, clientX = lastClientX, clientY = lastClientY) {
             if (!imageLoaded) return;
             selectionBox.style.display = 'block'; lensPreview.style.display = 'block';
-            const cropSize = 256 / zoomFactor;
+            
+            const cropSize = 256 / zoomFactor; 
             lastX = mouseX; lastY = mouseY; lastClientX = clientX; lastClientY = clientY;
             
             if (clientX && clientY) {
@@ -276,32 +313,6 @@
                 previewCtx.drawImage(tempCanvas, 0, 0, cropSize, cropSize, 0, 0, 256, 256);
             }
         }
-
-        // Mouse Tracker
-        viewport.addEventListener('mousemove', (e) => {
-            if (!imageLoaded || isLocked) return;
-            const rect = mainCanvas.getBoundingClientRect();
-            const mouseX = e.clientX - rect.left; const mouseY = e.clientY - rect.top;
-            if (mouseX < 0 || mouseX > mainCanvas.width || mouseY < 0 || mouseY > mainCanvas.height) {
-                lensPreview.style.display = 'none'; selectionBox.style.display = 'none'; return;
-            }
-            updateLens(mouseX, mouseY, e.clientX, e.clientY);
-        });
-
-        // Touch Tracker for Mobile
-        function handleTouch(e) {
-            if (!imageLoaded || isLocked) return;
-            e.preventDefault();
-            const touch = e.touches[0];
-            const rect = mainCanvas.getBoundingClientRect();
-            const touchX = touch.clientX - rect.left;
-            const touchY = touch.clientY - rect.top;
-            if (touchX < 0 || touchX > mainCanvas.width || touchY < 0 || touchY > mainCanvas.height) return;
-            updateLens(touchX, touchY, touch.clientX, touch.clientY);
-        }
-
-        viewport.addEventListener('touchstart', handleTouch, { passive: false });
-        viewport.addEventListener('touchmove', handleTouch, { passive: false });
 
         viewport.addEventListener('mouseleave', () => { if (!isLocked) { lensPreview.style.display = 'none'; selectionBox.style.display = 'none'; } });
     </script>

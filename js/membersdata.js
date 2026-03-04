@@ -6,7 +6,7 @@ const researchProfessors = [
 ];
 
 const phdStudents = [
-    { name: "Eunju Park", dept: "Computer Science & Engineering", interests: "Deepfakes", email: "cindi01@g.skku.edu", img: "img/member_images/dummy_female.png" },
+    { name: "Eunju Park", dept: "Computer Science & Engineering", interests: "Deepfakes", email: "cindi01@g.skku.edu", img: "img/member_images/EunjuPark.jpg" },
     { name: "Juhun Lee", dept: "Artificial Intelligence", interests: "Computer Vision", email: "josejhlee@g.skku.edu", img: "img/member_images/JuhunLee.jpg" },
     { name: "Seunghoo Hong", dept: "Artificial Intelligence", interests: "Multi-modal, Deepfake detection, Representation learning", email: "hoo0681@g.skku.edu", img: "img/member_images/SeungHooHong.jpg" },
     { name: "Kangjun Lee", dept: "Computer Science & Engineering", interests: "Time-Series Anomaly Detection & Forecasting", email: "gkdl677@g.skku.edu", img: "img/member_images/KangjunLee.jpg" },

@@ -12,13 +12,11 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     
-    <!-- Critical Helper: Defined in Head so inline 'onerror' can find it immediately -->
+    <!-- Critical Helper: Defined in Head for immediate availability -->
     <script>
         window.getImg = function(path) {
             if (!path) return '';
-            // Cleans leading slashes
             let cleanPath = path.startsWith('/') ? path.substring(1) : path;
-            // Ensure path is treated as a relative URL (fixes fetch issues in some environments)
             if (!cleanPath.startsWith('http') && !cleanPath.startsWith('./') && !cleanPath.startsWith('data:')) {
                 cleanPath = './' + cleanPath;
             }
@@ -39,9 +37,7 @@
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
 
-    <!-- JOIN US POPUP 
-         Class 'home-popup' ensures it uses the Home Page styles from style.css 
-    -->
+    <!-- JOIN US POPUP -->
     <div id="join-modal" class="home-popup">
         <div class="modal-content">
             <span class="close-modal" id="close-home-modal" onclick="document.getElementById('join-modal').style.display='none'">&times;</span>
@@ -187,7 +183,8 @@
     </div>
 
     <!-- Footer is injected here by common.js -->
-    <!-- Scripts -->
+
+    <!-- Page Specific Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Set the Hero Background Image
@@ -208,91 +205,56 @@
                 }
             }
 
-            // A.I face: Lottie animation on hover (same pattern as Satellite)
+            // A.I face: Lottie animation - Plays continuously
             const aiBox = document.getElementById('aiFeatureBox');
             const faceLottie = document.getElementById('faceLottieContainer');
             if (aiBox && faceLottie && typeof lottie !== 'undefined') {
-                let faceAnim = null;
-                let faceLoaded = false;
                 fetch(getImg('img/dash_logo/face_anim.json'))
                     .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
                     .then(animationData => {
-                        faceAnim = lottie.loadAnimation({
+                        lottie.loadAnimation({
                             container: faceLottie,
                             renderer: 'svg',
                             loop: true,
-                            autoplay: false,
+                            autoplay: true, // Auto-play regardless of hover
                             animationData: animationData
                         });
-                        faceAnim.addEventListener('DOMLoaded', () => { faceLoaded = true; });
+                        aiBox.classList.add('playing'); // Immediately switch from static to animation
                     })
                     .catch(err => console.error('Face animation load failed:', err));
-                aiBox.addEventListener('mouseenter', () => {
-                    if (faceLoaded && faceAnim) {
-                        aiBox.classList.add('playing');
-                        faceAnim.goToAndPlay(0, true);
-                    }
-                });
-                aiBox.addEventListener('mouseleave', () => {
-                    if (faceAnim) {
-                        aiBox.classList.remove('playing');
-                        faceAnim.stop();
-                    }
-                });
             }
 
-            // Security graph: Lottie animation on hover
+            // Security graph: Lottie animation - Plays continuously
             const securityBox = document.getElementById('securityFeatureBox');
             const securityLottie = document.getElementById('securityLottieContainer');
             if (securityBox && securityLottie && typeof lottie !== 'undefined') {
-                const anim = lottie.loadAnimation({
+                lottie.loadAnimation({
                     container: securityLottie,
                     renderer: 'svg',
                     loop: true,
-                    autoplay: false,
+                    autoplay: true, // Auto-play regardless of hover
                     path: getImg('img/dash_logo/security_graph_anim.json')
                 });
-                securityBox.addEventListener('mouseenter', () => {
-                    securityBox.classList.add('playing');
-                    anim.goToAndPlay(0, true);
-                });
-                securityBox.addEventListener('mouseleave', () => {
-                    securityBox.classList.remove('playing');
-                    anim.stop();
-                });
+                securityBox.classList.add('playing'); // Immediately switch from static to animation
             }
 
-            // Data Driven satellite: Lottie animation on hover (same pattern as animation code/index.html)
+            // Data Driven satellite: Lottie animation - Plays continuously
             const dataDrivenBox = document.getElementById('dataDrivenFeatureBox');
             const satelliteLottie = document.getElementById('satelliteLottieContainer');
             if (dataDrivenBox && satelliteLottie && typeof lottie !== 'undefined') {
-                let satelliteAnim = null;
-                let satelliteLoaded = false;
                 fetch(getImg('img/dash_logo/satellite_anim.json'))
                     .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
                     .then(animationData => {
-                        satelliteAnim = lottie.loadAnimation({
+                        lottie.loadAnimation({
                             container: satelliteLottie,
                             renderer: 'svg',
                             loop: true,
-                            autoplay: false,
+                            autoplay: true, // Auto-play regardless of hover
                             animationData: animationData
                         });
-                        satelliteAnim.addEventListener('DOMLoaded', () => { satelliteLoaded = true; });
+                        dataDrivenBox.classList.add('playing'); // Immediately switch from static to animation
                     })
                     .catch(err => console.error('Satellite animation load failed:', err));
-                dataDrivenBox.addEventListener('mouseenter', () => {
-                    if (satelliteLoaded && satelliteAnim) {
-                        dataDrivenBox.classList.add('playing');
-                        satelliteAnim.goToAndPlay(0, true);
-                    }
-                });
-                dataDrivenBox.addEventListener('mouseleave', () => {
-                    if (satelliteAnim) {
-                        dataDrivenBox.classList.remove('playing');
-                        satelliteAnim.stop();
-                    }
-                });
             }
         });
     </script>

@@ -9,6 +9,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
+    <!-- Critical Helper: Defined in Head so inline 'onerror' can find it immediately -->
+    <script>
+        window.getImg = function(path) {
+            if (!path) return '';
+            // Cleans leading slashes to ensure paths work relative to the root in VS Code
+            return path.startsWith('/') ? path.substring(1) : path;
+        };
+    </script>
+
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/common.js"></script>
@@ -100,8 +109,10 @@
         </div>
     </div>
 
-    <!-- RECRUITMENT MODAL -->
-    <div id="join-modal">
+    <!-- RECRUITMENT MODAL 
+         Class 'member-popup' matches Section 13 in style.css to prevent collisions with index.html
+    -->
+    <div id="join-modal" class="member-popup">
         <div class="modal-content relative overflow-hidden">
             <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
                 <i class="fas fa-times text-xl"></i>

@@ -352,43 +352,54 @@ img, video {
 
 
 /* ==========================================================================
-   6. MEMBERS PAGE (Responsive Tables)
+   6. MEMBERS PAGE Styles
    ========================================================================== */
-.member-photo { width: 128px; height: 128px; object-fit: cover; border-radius: 50%; border: 3px solid #1976d2; margin-bottom: 0.5rem; }
 
-/* Member Card Styles */
+   .member-photo { 
+    width: 128px; 
+    height: 128px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 3px solid #1976d2; 
+    margin-bottom: 0.5rem; 
+}
+
 .member-card { 
     background-color: #ffffff; 
-    border-radius: 8px; 
+    border-radius: 12px; 
     box-shadow: 0 1px 4px rgba(0,0,0,0.05); 
     padding: 1.5rem; 
     text-align: center; 
-    transition: all 0.3s ease; 
-    border: 1px solid transparent; 
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    border: 1px solid #f0f0f0; 
     height: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Added glowing animation to member cards on hover */
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px rgba(165, 180, 252, 0.4); border-color: #a5b4fc; }
+    100% { box-shadow: 0 0 15px rgba(165, 180, 252, 0.7); border-color: #6366f1; }
+}
+
 .member-card:hover { 
-    transform: translateY(-5px); 
+    transform: translateY(-8px); 
     animation: glowing 1.5s infinite alternate ease-in-out; 
-    border-color: #a5b4fc; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    z-index: 10;
 }
 
 .alumni-table table { width: 100%; border-collapse: collapse; }
-.alumni-table th, .alumni-table td { padding: 12px 8px; text-align: left; border-bottom: 1px solid #e5e7eb; font-size: 0.95rem; vertical-align: top; }
+.alumni-table th, .alumni-table td { padding: 12px 8px; text-align: left; border-bottom: 1px solid #e5e7eb; font-size: 0.95rem; }
 .alumni-table th { background-color: #f3f4f6; font-weight: 700; color: #374151; }
+
 @media (max-width: 768px) {
-    .alumni-table table, .alumni-table thead, .alumni-table tbody, .alumni-table th, .alumni-table td, .alumni-table tr { display: block; width: 100%; }
+    .alumni-table table, .alumni-table thead, .alumni-table tbody, .alumni-table th, .alumni-table td, .alumni-table tr { display: block; }
     .alumni-table thead tr { position: absolute; top: -9999px; left: -9999px; }
-    .alumni-table tr { margin-bottom: 1.5rem; border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; padding: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-    .alumni-table td { border: none; position: relative; padding-left: 0; text-align: left; word-wrap: break-word; padding-bottom: 8px; }
-    .alumni-table td:before { content: attr(data-label); font-weight: bold; color: #1976d2; display: block; margin-bottom: 4px; font-size: 0.85rem; }
+    .alumni-table tr { margin-bottom: 1rem; border: 1px solid #eee; border-radius: 8px; padding: 10px; }
+    .alumni-table td:before { content: attr(data-label); font-weight: bold; color: #1976d2; display: block; margin-bottom: 2px; font-size: 0.75rem; }
 }
+
 
 /* ==========================================================================
    7. PROJECTS PAGE
@@ -768,4 +779,40 @@ input:checked + .slider:before { transform: translateX(26px); }
 .btn-danger:hover {
     background-color: #fee2e2;
     transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   13. MODAL & RECRUITMENT UI -- undergraduate Members
+   ========================================================================== */
+
+   #join-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 30, 60, 0.8);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    padding: 20px;
+}
+
+#join-modal.active { display: flex; }
+
+.modal-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#join-modal.active .modal-content {
+    transform: scale(1);
+    opacity: 1;
 }

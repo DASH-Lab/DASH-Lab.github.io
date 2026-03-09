@@ -13,7 +13,7 @@ const phdStudents = [
     { name: "Geonho Son", dept: "Computer Science & Engineering", interests: "Multi-modal & Super Resolution", email: "sohn1029@g.skku.edu", img: "img/member_images/songeonho.jpg" },
     { name: "Sangyong Lee", dept: "Computer Science & Engineering", interests: "Differential privacy", email: "sang8961@g.skku.edu", img: "img/member_images/Sangyong.jpg" },
     { name: "Jiwon Kim", dept: "Computer Science & Engineering", interests: "Computer Vision & Multi-modal", email: "jiwon.merily.kim@gmail.com", img: "img/member_images/JiwonKim.png" },
-    { name: "Seungyeon Back", dept: "Computer Science & Engineering", interests: "Computer Vision", email: "syon1203@g.skku.edu", img: "img/member_images/SeungyeonBack.jpg" },
+    { name: "Seungyeon Back", dept: "Computer Science & Engineering", interests: "Computer Vision", email: "syon1203@g.skku.edu", img: "img/member_images/Seungyeon_Baek.jpg" },
     { name: "Hyunjune Kim", dept: "Computer Science & Engineering", interests: "Machine Unlearning, Deepfake detection, LLM", email: "hyunjune.kim@g.skku.edu", img: "img/member_images/HyunjuneKim.jpg" },
     { name: "Inzamamul Alam", dept: "Computer Science and Engineering", interests: "Multi-modal, Image Manupulation, Deepfake Detection, Representation learning", email: "inzi15@g.skku.edu", img: "img/member_images/inzi.jpg" },
     { name: "Razaib Tariq", dept: "Computer Science & Engineering", interests: "Deepfake Detection", email: "razaibtariq@g.skku.edu", img: "img/member_images/razaibtariq.jpg" },

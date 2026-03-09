@@ -1,5 +1,25 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Fitting Image Diffusion Models on Video Datasets",
+        "authors": [
+            "Juhun Lee",
+            "Simon S. Woo"
+        ],
+        "venue_full": "Workshop on International Conference on Computer Vision",
+        "venue": "ICCV",
+        "track": "Workshop Paper",
+        "Factor": [
+            "",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://iccv.thecvf.com/"
+                 },
+        "img": "/img/Publications/2026_ICCVW_Juhun.png",
+        "abstract": "Image diffusion models are trained on independently sampled static images. While this is the bedrock task protocol in generative modeling, capturing the temporal world through the lens of static snapshots is information-deficient by design. This limitation leads to slower convergence, limited distributional coverage, and reduced generalization. In this work, we propose a simple and effective training strategy that leverages the temporal inductive bias present in continuous video frames to improve diffusion training. Notably, the proposed method requires no architectural modification and can be seamlessly integrated into standard diffusion training pipelines. We evaluate our method on the HandCo dataset, where hand-object interactions exhibit dense temporal coherence andsubtle variations in finger articulation often result in semantically distinct motions. Empirically, our method accelerates convergence by over 2x faster and achieves lower FID on both training and validation distributions. It also improves generative diversity by encouraging the model to capture meaningful temporal variations. We further provide an optimization analysis showing that our regularization reduces the gradient variance, which contributes to faster convergence."
+    },
+    {
         "title": "ICR-NET: Robust Deepfake Detection under Temporal Corruption",
         "authors": [
             "Chan Park", 

@@ -47,7 +47,19 @@
                     class="w-32 h-32 object-contain" alt="Logo">
             </div>
             <h2 class="text-2xl font-bold text-blue-800 mb-4">Join Our Lab</h2>
-            <p class="text-gray-600 mb-6">For those interested in joining our lab, please fill out the <strong>Application Form</strong>.</p>
+            <p class="text-gray-600 mb-4">For those interested in joining our lab, please fill out the <strong>Application Form</strong>.</p>
+            
+            <!-- Important Notice in Popup -->
+            <div class="mb-6 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-xl text-left">
+                <p class="text-xs md:text-sm text-red-600 font-bold flex items-start gap-2">
+                    <i class="fas fa-exclamation-triangle mt-0.5 flex-shrink-0"></i>
+                    <span>
+                        Only the applicants who fill out the official form will have their applications reviewed. 
+                        Direct emails will be ignored.
+                    </span>
+                </p>
+            </div>
+
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScUGAM_k4n7rT736ThnAe5jn2owVe2KFO7cib3fHsiL6I099g/viewform?usp=send_form" 
                target="_blank" rel="noopener noreferrer" 
                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-10 rounded-full shadow-lg transform transition hover:-translate-y-1">
@@ -135,8 +147,8 @@
                     <div class="relative group">
                         <div class="absolute inset-0 bg-blue-200 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
                         <img loading="lazy" 
-                             src="img/dash_logo/Join_our_lab.png" 
-                             onerror="this.src=getImg('img/dash_logo/Join_our_lab.png')" 
+                             src="img/dash_logo/Join_our_lab_new.png" 
+                             onerror="this.src=getImg('img/dash_logo/Join_our_lab_new.png')" 
                              alt="Join Our Lab" 
                              class="relative max-w-[180px] md:max-w-full h-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-105"
                         />
@@ -157,10 +169,21 @@
                         Shape the Future of <span class="text-blue-600">AI & Security</span> with us.
                     </h3>
                     
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed max-w-2xl">
                         We are looking for dedicated individuals whose research interests align with Computer Vision, Anomaly Detection, and Applied Data Science. 
                         <strong>Coding proficiency and passion for research are highly valued.</strong>
                     </p>
+
+                    <!-- IMPORTANT NOTICE IN RED -->
+                    <div class="mb-8 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-xl inline-block text-left">
+                        <p class="text-sm md:text-base text-red-600 font-bold flex items-start gap-2">
+                            <i class="fas fa-exclamation-triangle mt-1 flex-shrink-0"></i>
+                            <span>
+                                Only the applicants who fill out this form have their applications looked through. 
+                                Any emails sent directly will be ignored and only the Google Forms will be accepted.
+                            </span>
+                        </p>
+                    </div>
                     
                     <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
                         <a href="https://forms.gle/RYCUasAUbsFhJtyb6" 

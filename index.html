@@ -41,17 +41,26 @@
     <div id="join-modal" class="home-popup">
         <div class="modal-content">
             <span class="close-modal" id="close-home-modal" onclick="document.getElementById('join-modal').style.display='none'">&times;</span>
-            <div class="mb-6 flex justify-center">
-               <img src="img/dash_logo/Dashlab_logo.jpg" 
-                    onerror="this.src='https://via.placeholder.com/150?text=DASH+LAB'; this.onerror=null;" 
-                    class="w-32 h-32 object-contain" alt="Logo">
+            
+            <!-- ENHANCED LOGO CONTAINER -->
+            <div class="mb-8 flex justify-center">
+                <div class="relative">
+                    <!-- Decorative Background Rings -->
+                    <div class="absolute inset-0 bg-blue-100 rounded-full scale-150 blur-2xl opacity-40 animate-pulse"></div>
+                    <div class="relative w-40 h-40 bg-white rounded-full p-4 shadow-2xl flex items-center justify-center border-4 border-blue-50">
+                        <img src="img/dash_logo/Dashlab_logo.jpg" 
+                             onerror="this.src='https://via.placeholder.com/150?text=DASH+LAB'; this.onerror=null;" 
+                             class="w-full h-full object-contain" alt="Logo">
+                    </div>
+                </div>
             </div>
-            <h2 class="text-2xl font-bold text-blue-800 mb-4">Join Our Lab</h2>
-            <p class="text-gray-600 mb-4">For those interested in joining our lab, please fill out the <strong>Application Form</strong>.</p>
+
+            <h2 class="text-3xl font-black text-blue-900 mb-2 tracking-tight">Join Our Lab</h2>
+            <p class="text-gray-600 mb-6 px-4">For those interested in joining our research team, please fill out the official <strong>Application Form</strong> below.</p>
             
             <!-- Important Notice in Popup -->
-            <div class="mb-6 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-xl text-left">
-                <p class="text-xs md:text-sm text-red-600 font-bold flex items-start gap-2">
+            <div class="mb-8 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-xl text-left mx-4 shadow-sm">
+                <p class="text-sm text-red-600 font-bold flex items-start gap-3">
                     <i class="fas fa-exclamation-triangle mt-0.5 flex-shrink-0"></i>
                     <span>
                         Only the applicants who fill out the official form will have their applications reviewed. 
@@ -62,8 +71,8 @@
 
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScUGAM_k4n7rT736ThnAe5jn2owVe2KFO7cib3fHsiL6I099g/viewform?usp=send_form" 
                target="_blank" rel="noopener noreferrer" 
-               class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-10 rounded-full shadow-lg transform transition hover:-translate-y-1">
-               Apply Now 🚀
+               class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-full shadow-xl shadow-blue-200 transform transition hover:-translate-y-1 active:scale-95 mb-4">
+               Apply Now
             </a>
         </div>
     </div>

@@ -67,7 +67,7 @@ const alumni = [
     { name: "Hohyun Na (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
     { name: "Sangjun Chung (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
     { name: "Hyeonsu Hwang (MS) 2026", major: "Computer Vision", employment: "TBD"},
-    { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "TBD", link: "https://sites.google.com/view/binhminhle/home" },
+    { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist at Meta", link: "https://sites.google.com/view/binhminhle/home" },
     { name: "Minji Heo (MS) 2025", major: "Computer Vision", employment: "TBD" },
     { name: "Minsun Jeon (MS) 2025", major: "Computer Vision & Multi-modal", employment: "TBD" },
     { name: "Inho Jung (MS) 2025", major: "Representation Learning & XAI", employment: "TBD" },

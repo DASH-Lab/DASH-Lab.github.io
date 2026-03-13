@@ -1,4 +1,25 @@
 const PUBLICATIONS_DATA_LOCAL = [
+    {
+        "title": "Robust Continual Unlearning against Knowledge Erosion and Forgetting Reversal",
+        "authors": [
+            "EUN-JU PARK", 
+            "Youjin Shin", 
+            "Simon S. Woo"
+        ],
+        "venue_full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "venue": "CVPR",
+        "track": "Findings",
+        "Factor": [
+            "",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://cvpr.thecvf.com/Conferences/2026/CallForPapers"
+                 },
+        "img": "/img/Publications/2026_CVPR_EUN-JU PARK.png",
+        "abstract": "As a means to balance the growth of the AI industry with the need for privacy protection, machine unlearning plays a crucial role in realizing the ``right to be forgotten'' in artificial intelligence. This technique enables AI systems to remove the influence of specific data while preserving the rest of the learned knowledge. Although it has been actively studied, most existing unlearning methods assume that unlearning is performed only once. In this work, we evaluate existing unlearning algorithms in a more realistic scenario where unlearning is conducted repeatedly, and in this setting, we identify two critical phenomena: (1) Knowledge Erosion, where the accuracy on retain data progressively degrades over unlearning phases, and (2) Forgetting Reversal, where previously forgotten samples become recognizable again in later phases. To address these challenges, we propose SAFER (StAbility-preserving Forgetting with Effective Regularization), a continual unlearning framework that maintains representation stability for retain data while enforcing negative logit margins for forget data. Extensive experiments show that SAFER mitigates not only knowledge erosion but also forgetting reversal, achieving stable performance across multiple unlearning phases."
+    },
     
     {
         "title": "ICR-NET: Robust Deepfake Detection under Temporal Corruption",

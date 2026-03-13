@@ -79,7 +79,7 @@ const alumni = [
     { name: "Jungho Kim (MS) 2023", major: "Knowledge distillation", employment: "KAIST, PhD program" },
     { name: "Gwanghan Lee (MS) 2023", major: "Model compression", employment: "Upstage" },
     { name: "Jinbeom Kim (MS) 2023", major: "Object detection & Knowledge Distillation", employment: "LIG 넥스원" },
-    { name: "Sangyup Lee (Ph.D.) 2023", major: "Time-Series Anomaly Detection & Forecasting, Deepfakes Detection & Multi-media Forensics", employment: "Principal Research Engineer, Hyundai Mobis", link: "https://sites.google.com/view/sangyuplee/" },
+    { name: "Sangyup Lee (Ph.D.) 2023", major: "Time-Series Anomaly Detection & Forecasting, Deepfakes Detection & Multi-media Forensics", employment: "Assistant Professor at Incheon National University", link: "https://sites.google.com/view/sangyuplee/" },
     { name: "Keeyoung Kim (Ph.D.) 2022", major: "Computer Vision & Anomaly Detection", employment: "Ingenio AI (Start-Up)" },
     { name: "Youjin Shin (Ph.D.) 2022", major: "Tensor methods for Anomaly Detection and Deep learning & Deepfakes", employment: "Tenured Track Assistant Professor, Department of Data Science, The Catholic University of Korea, Seoul", link: "https://sites.google.com/view/adslab0/members?authuser=0" },
     { name: "Chingis Oinar (BS) 2022", major: "Representation learning", employment: "Mercari, Japan --> NYU Data Science MS (accepted)", employmentLink: "https://jp.mercari.com/" },

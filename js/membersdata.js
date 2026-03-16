@@ -1,9 +1,9 @@
 // --- Members Data ---
 // Load this in your HTML before members.js
 
-const researchProfessors = [
-    {name: "Binh M. Le", role: "Research Professor", dept: "Computer Science & Engineering", interests: "Adversarial Robustness, Representation Learning",email: "bmle@g.skku.edu", img: "img/member_images/BinhMLe.jpg", link: "https://sites.google.com/view/binhminhle/home"}
-];
+// const researchProfessors = [
+//     {name: "Binh M. Le", role: "Research Professor", dept: "Computer Science & Engineering", interests: "Adversarial Robustness, Representation Learning",email: "bmle@g.skku.edu", img: "img/member_images/BinhMLe.jpg", link: "https://sites.google.com/view/binhminhle/home"}
+// ];
 
 const phdStudents = [
     { name: "Eunju Park", dept: "Computer Science & Engineering", interests: "Deepfakes", email: "cindi01@g.skku.edu", img: "img/member_images/EunjuPark.jpg" },
@@ -67,7 +67,7 @@ const alumni = [
     { name: "Hohyun Na (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
     { name: "Sangjun Chung (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
     { name: "Hyeonsu Hwang (MS) 2026", major: "Computer Vision", employment: "TBD"},
-    { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist at Meta", link: "https://sites.google.com/view/binhminhle/home" },
+    { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist in Meta", link: "https://sites.google.com/view/binhminhle/home" },
     { name: "Minji Heo (MS) 2025", major: "Computer Vision", employment: "TBD" },
     { name: "Minsun Jeon (MS) 2025", major: "Computer Vision & Multi-modal", employment: "TBD" },
     { name: "Inho Jung (MS) 2025", major: "Representation Learning & XAI", employment: "TBD" },

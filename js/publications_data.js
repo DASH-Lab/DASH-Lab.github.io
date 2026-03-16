@@ -1,4 +1,24 @@
 const PUBLICATIONS_DATA_LOCAL = [
+     {
+        "title": "Efficient Unlearning through Maximizing Relearning Convergence Delay",
+        "authors": [
+            "Khoa Tran", 
+            "Simon S. Woo"
+        ],
+        "venue_full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "venue": "CVPR",
+        "track": "Findings",
+        "Factor": [
+            "",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://cvpr.thecvf.com/Conferences/2026/CallForPapers"
+                 },
+        "img": "/img/Publications/2026_CVPR_KhoaTran.jpg",
+        "abstract": "Machine unlearning poses challenges in removing mislabeled, contaminated, or problematic data from a pretrained model. Current unlearning approaches and evaluation metrics are solely focused on model predictions, which limits insight into the model's true underlying data characteristics. To address this issue, we introduce a new metric called relearning convergence delay, which captures both changes in weight space and prediction space, providing a more comprehensive assessment of the model's understanding of the forgotten dataset. This metric can be used to assess the risk of forgotten data being recovered from the unlearned model. Based on this, we propose the Influence Eliminating Unlearning framework, which removes the influence of the forgetting set by degrading its performance and incorporates weight decay and injecting noise into the model's weights, while maintaining accuracy on the retaining set. Extensive experiments show that our method outperforms existing metrics and our proposed relearning convergence delay metric, approaching ideal unlearning performance. We provide theoretical guarantees, including exponential convergence and upper bounds, as well as empirical evidence of strong retention and resistance to relearning in both classification and generative unlearning tasks."
+    },
     {
         "title": "Efficient Unlearning through Maximizing Relearning Convergence Delay",
         "authors": [

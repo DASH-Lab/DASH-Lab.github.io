@@ -75,7 +75,7 @@ const masterSupervision = [
 
 const alumni = [
     { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist in Meta", link: "https://sites.google.com/view/binhminhle/home" },
-    { name: "Yongcheol Noh (MS) 2026", major: "Computer Science & Engineering", employment: "TBD" },
+    { name: "Yongcheol Noh (MS) 2026", major: "Computer Science & Engineering", employment: "모티프드라이브" },
     { name: "Hakjun Moon (MS) 2026", major: "Computer Science & Engineering", employment: "TBD" },
     { name: "Jungwook Shon (MS) 2026", major: "Time Series Anomaly Detection", employment: "Samsung Electronics" },
     { name: "Hohyun Na (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung" },

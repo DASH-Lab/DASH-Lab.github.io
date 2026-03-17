@@ -3,13 +3,14 @@
 // It must be loaded before news.js in your HTML.
 
 const newsData = [
+    { icon: '📄', date: 'Feb 2026', year: 2026, text: 'Two papers accepted at findings track of <b>CVPR 2026 (BK IF=N/A)</b> ' },
     { icon: '📄', date: 'Feb 2026', year: 2026, text: 'One paper accepted at main paper track of <b>PAKDD 2026 (BK IF=1)</b> ' },
     { icon: '📰', date: 'Jan 2026', year: 2026, text: '이데일리: <b>"아빠, 나야" 다급한 AI 가짜 목소리에 당했다…갈수록 지능화·교묘화</b> [<a href="https://n.news.naver.com/article/018/0006207564?type=journalists" target="_blank">media</a>]' },
     { icon: '📄', date: 'Jan 2026', year: 2026, text: 'One paper accepted at main paper track of <b>ICLR 2026</b> ' },
     { icon: '📰', date: 'Jan 2026', year: 2026, text: 'SKKUZINE: <b>"딥페이크 탐지 기술로 사회를 지키는 연구자 - 소프트웨어학과 우사이먼성일 교수"</b> [<a href="https://webzine.skku.edu/skkuzine/section/people.do?mode=list&articleNo=134157" target="_blank">media</a>]' },
     { icon: '📄', date: 'Jan 2026', year: 2026, text: 'One paper accepted at short paper track of <b>WWW 2026 (BK IF=3)</b> ' },
     { icon: '📰', date: 'Jan 2026', year: 2026, text: 'ZDNET Korea: <b>"AI 역기능 막는 기술 확보가 국가 경쟁력 좌우"</b> [<a href="https://zdnet.co.kr/view/?no=20260114145258" target="_blank">media</a>]' },
-    
+
     { icon: '📰', date: 'Dec 2025', year: 2025, text: 'SKKU: <b>"우사이먼성일 교수, 과학기술정보통신부장관 표창 수상"</b> [<a href="https://ai.skku.edu/ai/community/news.do?mode=view&articleNo=210238" target="_blank">media</a>]' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at MLA track of <b>SAC 2026 (BK IF=1)</b> ' },
     { icon: '📄', date: 'Dec 2025', year: 2025, text: 'One paper accepted at workshop paper track of <b>CIKM 2025</b>' },
@@ -41,7 +42,7 @@ const newsData = [
     { icon: '📄', date: 'Feb 2024', year: 2024, text: 'One paper accepted at <b>CVPR 2024 (BK IF=4)</b>' },
     { icon: '📄', date: 'Jan 2024', year: 2024, text: 'Four papers accepted at <b>PAKDD 2024 (BK IF=1)</b>' },
     { icon: '🎯', date: 'Jan 2024', year: 2024, text: 'Organizing <b>The 3rd Workshop on the security implications of Deepfakes and Cheapfakes (<a href="https://sites.google.com/view/wdc-2024/" target="_blank">WDC \'24</a>)</b>, co-located with ACM ASIACCS 2024' },
-    
+
     // ARCHIVE ITEMS (2023 and earlier)
     { icon: '📄', date: 'Dec 2023', year: 2023, text: 'Three papers accepted at <b>AAAI 2024 (BK IF=4)</b> (Acceptance rate: 24%)' },
     { icon: '📄', date: 'Aug 2023', year: 2023, text: 'Four papers accepted at <b>CIKM 2023</b>' },

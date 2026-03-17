@@ -1,198 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASH LAB - Professor Simon S. Woo Profile</title>
-    
+
     <!-- External Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/common.js"></script>
 </head>
+
 <body class="bg-gray-50 flex flex-col min-h-screen">
-    
+
     <!-- Navbar is injected here by common.js -->
 
-    <div class="container mx-auto px-4 pt-8 max-w-6xl flex-grow">
+    <div class="container mx-auto px-4 pt-8 pb-20 max-w-6xl flex-grow">
 
-        <!-- Main Grid -->
-        <div class="grid md:grid-cols-1 gap-8">
-            <div class="space-y-6">
-                
-                <!-- SUMMARY CARD -->
-                <div class="dash-card">
-                    <div class="flex flex-col sm:flex-row gap-8 items-start">
-                        <div class="flex-shrink-0 mx-auto sm:mx-0">
-                            <img src="" onerror="this.src=getImg('img/member_images/SimonWoo_new.jpg')" class="rounded-lg shadow-lg w-48 h-auto object-cover" alt="Simon S. Woo">
+        <!-- PREMIUM PROFILE HERO -->
+        <div class="profile-hero">
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
+                <!-- Image Side -->
+                <div class="profile-image-container flex-shrink-0">
+                    <img src="" onerror="this.src=getImg('img/member_images/SimonWoo_new.jpg')"
+                        class="rounded-3xl w-44 h-auto object-cover" alt="Simon S. Woo">
+                </div>
+
+                <!-- Info Side -->
+                <div class="flex-grow text-center md:text-left space-y-4">
+                    <div class="space-y-1">
+                        <h3 class="text-4xl font-black mb-0 tracking-tight leading-tight text-gray-900">Simon S. Woo
+                        </h3>
+                        <div
+                            class="inline-flex items-center px-3 py-1 bg-blue-50 rounded-full text-blue-600 text-sm font-bold border border-blue-100">
+                            Associate Professor
                         </div>
-                        <div class="flex-grow text-center sm:text-left">
-                            <h3 class="text-3xl font-bold text-gray-900 mb-2">Simon S. Woo</h3>
-                            <p class="text-blue-600 font-bold text-lg mb-1">Associate Professor</p>
-                            <p class="text-gray-500 mb-4">Sungkyunkwan University (SKKU)</p>
-                            <div class="space-y-1 text-sm text-gray-700">
-                                <p><i class="fas fa-envelope w-6 text-center"></i> swoo @ g.skku.edu</p>
-                                <p><i class="fas fa-map-marker-alt w-6 text-center"></i> N Center 86401, SKKU, Suwon</p>
+                    </div>
+
+                    <p class="text-xl text-blue-800 font-bold">Sungkyunkwan University (SKKU)</p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto md:mx-0">
+                        <div class="glass-card flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-envelope text-blue-500"></i>
+                            </div>
+                            <div class="text-left">
+                                <p
+                                    class="text-[10px] text-gray-400 uppercase font-black tracking-widest leading-none mb-1">
+                                    Email</p>
+                                <p class="text-sm font-mono truncate text-gray-800">swoo @ g.skku.edu</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-blue-500"></i>
+                            </div>
+                            <div class="text-left">
+                                <p
+                                    class="text-[10px] text-gray-400 uppercase font-black tracking-widest leading-none mb-1">
+                                    Office</p>
+                                <p class="text-sm text-gray-800">N Center 86401, SKKU</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- EDUCATION & CAREER HIGHLIGHTS -->
-                <div class="dash-card bg-white p-6 shadow-md border border-gray-100">
-                    <div class="flex flex-col md:flex-row items-start gap-8">
-                        <div class="flex-grow">
-                            <h5 class="text-xl font-bold text-blue-700 mb-4 pb-2 border-b-2 border-blue-700">Education & Career Highlights</h5>
-                            <div class="text-gray-700 leading-loose text-sm md:text-base">
-                                <p>• <strong>SKKU Fellowship Professor</strong>, 2022 (<a href="https://cs.skku.edu/ko/edures/education/view/7054" target="_top" class="text-blue-600 hover:text-blue-800">News</a>)<br /></p>
-                                <p>• <strong>Early Tenure Granted</strong>, 2024<br /></p>
-                                <p>• <strong>Ph.D.</strong> Computer Science, University of Southern California (USC), Los Angeles, CA<br /></p>
-                                <p>• <strong>M.S.</strong> Computer Science, University of Southern California (USC), Los Angeles, CA<br /></p>
-                                <p>• <strong>M.S.</strong> Electrical and Computer Engineering, University of California, San Diego (UCSD), CA<br /></p>
-                                <p>• <strong>B.S.</strong> Electrical Engineering, University of Washington (UW), Seattle, WA<br /></p>
-                                <div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-600 rounded">
-                                    <em class="text-gray-600">Fluent in Korean and English</em>
+        <!-- 1. RESEARCH PHILOSOPHY (FULL WIDTH HERO SECTION) -->
+        <div class="dash-card border-t-4 border-t-blue-600 mb-12">
+            <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Research Philosophy</h4>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="relative pl-8">
+                    <div
+                        class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-600 to-blue-400 rounded-full">
+                    </div>
+                    <p class="text-lg font-black text-gray-900 mb-3">Breaking Boundaries.</p>
+                    <p class="text-gray-600 leading-relaxed italic text-[13px]">
+                        My mission is to guide students beyond their comfort zones, fostering intellectual growth that
+                        transcends technical expertise.
+                        I encourage them to embrace diverse perspectives and challenge conventional thinking,
+                        cultivating both professional excellence and personal development.
+                    </p>
+                </div>
+
+                <div class="relative pl-8">
+                    <div
+                        class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-400 to-indigo-400 rounded-full">
+                    </div>
+                    <p class="text-lg font-black text-gray-900 mb-3">Global Excellence.</p>
+                    <p class="text-gray-600 leading-relaxed italic text-[13px]">
+                        Our vision extends far beyond institutional or national recognition. I am committed to
+                        developing globally competitive scholars who contribute meaningfully to the international
+                        research community, establishing themselves as leaders in their fields.
+                    </p>
+                </div>
+
+                <div class="relative pl-8">
+                    <div
+                        class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-400 to-purple-400 rounded-full">
+                    </div>
+                    <p class="text-lg font-black text-gray-900 mb-3">Diversity as Strength.</p>
+                    <p class="text-gray-600 leading-relaxed italic text-[13px]">
+                        Having experienced two decades as an immigrant and minority scholar, I have witnessed firsthand
+                        the transformative power of diversity and mutual respect.
+                        I am dedicated to creating synergistic collaborations between Korean and international students,
+                        where different backgrounds and perspectives become catalysts for innovation and growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 2. PROFESSIONAL JOURNEY (INTEGRATED FULL WIDTH SECTION) -->
+        <div class="dash-card mb-12">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <!-- Left Side: Work Experience -->
+                <div class="lg:w-3/5">
+                    <h4 class="section-accent text-xl font-black text-gray-900 mb-10">Work Experience</h4>
+                    <div class="space-y-12">
+                        <!-- SKKU Entry -->
+                        <div class="relative pl-8 border-l-2 border-blue-600">
+                            <div
+                                class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white">
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="text-xl font-black text-gray-900 leading-tight">Associate Professor</h5>
+                                <p class="text-sm font-bold text-blue-600 uppercase tracking-wide mt-1">Sungkyunkwan
+                                    University (SKKU)</p>
+                                <p class="text-xs text-gray-400 font-bold mt-1">2019 - Present</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+                                <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-blue-400 rounded-full"></span> Applied Data Science
+                                    (데이터사이언스)
+                                </p>
+                                <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a
+                                        href="https://swb.skku.edu/security2020/index.do" target="_blank"
+                                        class="hover:text-blue-600 hover:underline">CSE (소프트웨어/융합보안대학원)</a>
+                                </p>
+                                <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a
+                                        href="https://skb.skku.edu/skkuaai/index.do" target="_blank"
+                                        class="hover:text-blue-600 hover:underline">Applied AI Dept. (인공지능융합학과)</a>
+                                </p>
+                                <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a href="https://ai.skku.edu"
+                                        target="_blank" class="hover:text-blue-600 hover:underline">AI (인공지능학과)</a>
+                                </p>
+                                <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
+                                    <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a
+                                        href="https://intelligentsw.skku.edu/intelligentsw/index.do" target="_blank"
+                                        class="hover:text-blue-600 hover:underline">지능형소프트웨어학과</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Mid Career -->
+                        <div class="relative pl-8 border-l-2 border-gray-200">
+                            <div
+                                class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-200 rounded-full border-4 border-white">
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-10">
+                                <div>
+                                    <h5 class="text-base font-black text-gray-800 leading-tight">Research Assistant
+                                        Professor</h5>
+                                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1">Stony
+                                        Brook University (SBU)</p>
+                                    <p class="text-[10px] text-gray-400 font-bold mt-1">Stonybrook, NY | 2017 - 2019</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-base font-black text-gray-800 leading-tight">Assistant Professor
+                                    </h5>
+                                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1">SUNY
+                                        Korea</p>
+                                    <p class="text-[10px] text-gray-400 font-bold mt-1">2017 - 2019</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- RESEARCH PHILOSOPHY -->
-                <div class="dash-card p-6 shadow-md border border-gray-100">
-                    <h5 class="text-xl font-bold text-blue-700 mb-4">Research Philosophy</h5>
 
-                    <p class="mb-4 text-gray-700"><strong>Breaking Boundaries.</strong> My mission is to guide students beyond their comfort zones, fostering intellectual growth that transcends technical expertise. I encourage them to embrace diverse perspectives and challenge conventional thinking, cultivating both professional excellence and personal development.</p>
-
-                    <p class="mb-4 text-gray-700"><strong>Global Excellence.</strong> Our vision extends far beyond institutional or national recognition. I am committed to developing globally competitive scholars who contribute meaningfully to the international research community, establishing themselves as leaders in their fields.</p>
-
-                    <p class="text-gray-700"><strong>Diversity as Strength.</strong> Having experienced two decades as an immigrant and minority scholar, I have witnessed firsthand the transformative power of diversity and mutual respect. I am dedicated to creating synergistic collaborations between Korean and international students, where different backgrounds and perspectives become catalysts for innovation and growth.</p>
-                </div>
-
-                <!-- WORK EXPERIENCE -->
-                <div class="dash-card p-6 shadow-md border border-gray-100">
-                    <h5 class="text-xl font-bold text-blue-700 mb-4 pb-2 border-b-2 border-blue-700">Work Experience</h5>
-                    <div class="text-gray-700 leading-relaxed text-sm md:text-base space-y-4">
-                        <div>
-                            <strong class="text-blue-700">• Associate Professor</strong>, Sungkyunkwan University (SKKU), 2019-Present<br />
-                            <div class="ml-5 mt-2 text-gray-600 space-y-1">
-                                <p>➤ Applied Data Science (데이터사이언스)</p>
-                                <p>➤ <a href="https://swb.skku.edu/security2020/index.do" target="_blank" class="text-blue-600 hover:text-blue-800">CSE (소프트웨어/융합보안대학원)</a></p>
-                                <p>➤ <a href="https://skb.skku.edu/skkuaai/index.do" target="_blank" class="text-blue-600 hover:text-blue-800">Applied AI Dept. (인공지능융합학과)</a></p>
-                                <p>➤ <a href="https://ai.skku.edu" target="_blank" class="text-blue-600 hover:text-blue-800">AI (인공지능학과)</a></p>
-                                <p>➤ <a href="https://intelligentsw.skku.edu/intelligentsw/index.do" target="_blank" class="text-blue-600 hover:text-blue-800">지능형소프트웨어학과</a></p>
+                        <!-- NASA -->
+                        <div class="relative pl-8 border-l-2 border-gray-200">
+                            <div
+                                class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-200 rounded-full border-4 border-white">
                             </div>
-                        </div>
-                        <p>• <strong>Research Assistant Professor</strong>, Stony Brook University (SBU), Stonybrook, NY, 2017-2019</p>
-                        <p>• <strong>Assistant Professor</strong>, The State University of New York (SUNY), Korea, 2017-2019</p>
-                        <p>• <strong>Member of Technical Staff</strong>, NASA Jet Propulsion Lab (JPL), Pasadena, CA, 2005-2014</p>
-                        <p>• <strong>Researcher</strong>, Verisign Research Lab, Reston, VA, 2016</p>
-                        <p>• <strong>Co-op Intern</strong>, Intel Corp, 2001, 2002</p>
-                        <div class="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-600 rounded">
-                            <em class="text-gray-600">Part-time cook at Burger King, Waiter &amp; Dishwasher, once upon a time in highschool/college years</em>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RESEARCH INTERESTS -->
-                <div class="dash-card p-6 shadow-md border border-gray-100">
-                    <h5 class="text-xl font-bold text-blue-700 mb-4 pb-2 border-b-2 border-blue-700">Research Interests</h5>
-                    <div class="text-gray-700 leading-relaxed text-sm md:text-base space-y-2">
-                        <p>• <strong>Generative AI Model</strong><br />
-                            <div class="ml-5 mt-1 mb-2 text-xs text-gray-500">
-                                Media Coverage: 
-                                <a href="https://www.joongang.co.kr/article/25140582#home" target="_blank" class="text-blue-600 hover:text-blue-800">중앙일보</a>, 
-                                <a href="https://sports.khan.co.kr/entertainment/sk_index.html?art_id=202306220218003&amp;sec_id=540201&amp;pt=nv" target="_blank" class="text-blue-600 hover:text-blue-800">경향신문</a>, 
-                                <a href="https://www.arirang.com/tv/37/archive?board=147&amp;id=28137&amp;sort=episode" target="_blank" class="text-blue-600 hover:text-blue-800">아리랑TV</a>
-                            </div>
-                        </p>
-                        <p>• <strong>AI Security</strong></p>
-                        <p>• <strong>Deepfake Detection and Generation</strong></p>
-                        <p>• <strong>Time Series Analysis / Anomaly Detection</strong></p>
-                        <p>• <strong>Computer Security</strong> (Usable Security, Blockchain, Intrusion/Anomaly Detection)</p>
-                        <p>• <strong>Satellite Image Processing</strong>, Object Detection, Communications and Protocols</p>
-                        <p>• <strong>Data Science</strong></p>
-                    </div>
-                    <div class="mt-6 text-center">
-                        <img src="" onerror="this.src=getImg('img/교수님_기사사진.jpg')" alt="Research Visualization" class="max-w-full h-auto rounded-lg shadow-xl mx-auto" />
-                        <p class="mt-2 text-xs text-gray-500">
-                            영국 BBC도 도움 요청했다…'딥페이크 범죄' 잡는 韓교수 
-                            [출처:<a href="https://www.joongang.co.kr/article/25344739" target="_blank" class="text-blue-600 hover:text-blue-800">중앙일보</a>]
-                        </p>
-                    </div>
-                </div>
-
-                <!-- INTERNATIONAL HONORS AND AWARDS -->
-                <div class="dash-card p-6 shadow-md border border-gray-100">
-                    <h5 class="text-xl font-bold text-blue-700 mb-4 pb-2 border-b-2 border-blue-700">International Honors and Awards</h5>
-                    <div class="text-gray-700 leading-relaxed text-sm md:text-base space-y-2">
-                        <p>🏆 <strong>2024</strong> - The 28th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), <a href="https://pakdd2024.org/award24awardpakdd24/" target="_top" class="text-blue-600 hover:text-blue-800">Best Paper Running-Up Award</a> (2nd Place out of 720 papers)</p>
-                        <p>🏆 <strong>2023</strong> - The 38th ACM/SIGAPP Symposium on Applied Computing (SAC), <a href="https://www.sigapp.org/sac/sac2023/" target="_blank" class="text-blue-600 hover:text-blue-800">Best Paper Award (AI and Agents)</a> (<a href="https://www.acm.org/conferences/best-paper-awards" target="_blank" class="text-blue-600 hover:text-blue-800">ACM Archive</a>)</p>
-                        <p>🎓 <strong>2023</strong> - Invited for Schloss Dagstuhl (Leibniz Center for Informatics) on 23021 Media Forensics and the Challenge of Big Data</p>
-                        <p>🏆 <strong>2021</strong> - PLP 2021: Workshop on Programming Language Processing, <a href="https://sw.skku.edu/sw/news.do?mode=view&amp;articleNo=150622&amp;article.offset=10&amp;articleLimit=10&amp;srSearchVal=우사이먼" target="_top" class="text-blue-600 hover:text-blue-800">Best Paper Award</a>, KDD</p>
-                        <p>🏆 <strong>2016</strong> - The 17th World Conference on Information Security Applications (WISA), Best Paper Award</p>
-                        <p>🎓 <strong>2003</strong> - Mary Gates Scholar, University of Washington, Seattle, USA</p>
-                    </div>
-                </div>
-
-                <!-- PROFESSIONAL SERVICES -->
-                <div class="dash-card p-6 shadow-md border border-gray-100">
-                    <h5 class="text-xl font-bold text-blue-700 mb-4 pb-2 border-b-2 border-blue-700">Professional Services</h5>
-                    <div class="text-gray-700 leading-relaxed text-sm md:text-base space-y-4">
-                        
-                        <div>
-                            <strong class="text-blue-700">📌 Leadership Roles (2024-2025)</strong><br />
-                            <ul class="ml-5 mt-1 list-disc list-inside space-y-1 text-gray-600">
-                                <li>KDD Research Track Area Chair</li>
-                                <li>CIKM Senior PC on Resource/Demo Track</li>
-                                <li>IJCAI Web Chair</li>
-                                <li>ACML Area Chair</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <strong class="text-blue-700">📌 Conference/Workshop Chairing</strong><br />
-                            <ul class="ml-5 mt-1 list-disc list-inside space-y-1 text-gray-600">
-                                <li>ACM CoNext Finance Chair (2017)</li>
-                                <li>EAI CyDiP Technical Program Committee Chair (2021)</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <strong class="text-blue-700">📌 Technical Program Committees</strong><br />
-                            <div class="ml-5 mt-1 text-gray-600">
-                                SecureComm, SOUPS, TheWebConf (WWW), ACM SAC ML Track, ECCV, ACCV, BMVC, ICCV, CSET, CIKM, AAAI, KDD, IJCAI, WACV, ICML, CVPR, ICPR, SDM, NeurIPS (2019-2024)
+                            <div>
+                                <h5 class="text-base font-black text-gray-800 leading-tight">Member of Technical Staff
+                                </h5>
+                                <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1">NASA Jet
+                                    Propulsion Lab (JPL)</p>
+                                <p class="text-[10px] text-gray-400 font-bold mt-1">Pasadena, CA | 2005 - 2014</p>
                             </div>
                         </div>
 
-                        <div>
-                            <strong class="text-blue-700">📌 Editorial Boards</strong><br />
-                            <ul class="ml-5 mt-1 list-disc list-inside space-y-1 text-gray-600">
-                                <li>TIIS Editor (2019-2021)</li>
-                                <li>IEEE TIFS (2019)</li>
-                                <li>AIAA Journal of Aerospace Information Systems (2020)</li>
-                            </ul>
+                        <!-- Previous and Others -->
+                        <div class="relative pl-8 border-l-2 border-gray-200">
+                            <div
+                                class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-200 rounded-full border-4 border-white">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                                <div>
+                                    <h5 class="text-sm font-black text-gray-800 leading-tight">Researcher</h5>
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">
+                                        Verisign Research Lab</p>
+                                    <p class="text-[10px] text-gray-400 font-bold mt-1">2016</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-sm font-black text-gray-800 leading-tight">Co-op Intern</h5>
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">Intel
+                                        Corp</p>
+                                    <p class="text-[10px] text-gray-400 font-bold mt-1">2001, 2002</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div>
-                            <strong class="text-blue-700">📌 Workshop Organizer</strong><br />
-                            <ul class="ml-5 mt-1 list-disc list-inside space-y-1 text-gray-600">
-                                <li>ACM AsiaCCS Workshop on Deepfakes and Cheapfakes (WDC) (<a href="https://sites.google.com/view/wdc-2022/" target="_blank" class="text-blue-600 hover:text-blue-800">2022</a>, <a href="https://sites.google.com/view/wdc-2023/" target="_blank" class="text-blue-600 hover:text-blue-800">2023</a>, <a href="https://sites.google.com/view/wdc-2024/" target="_blank" class="text-blue-600 hover:text-blue-800">2024</a>)</li>
-                                <li><a href="https://sites.google.com/view/ansd23?pli=1" target="_blank" class="text-blue-600 hover:text-blue-800">ANSD Workshop</a> at CIKM 2023, Birmingham UK</li>
-                                <li>AIMM 2024 at <a href="https://insights.sei.cmu.edu/news/international-conference-on-conceptual-modeling-er-2024-opens-call-for-papers/" target="_blank" class="text-blue-600 hover:text-blue-800">ER 2024</a>, Carnegie Mellon University</li>
-                            </ul>
+                        <div class="pt-4 border-t border-gray-50">
+                            <p class="text-[11px] text-gray-400 italic font-medium leading-relaxed">
+                                Note: Part-time cook at Burger King, Waiter & Dishwasher, once upon a time in
+                                highschool/college years.
+                            </p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Right Side: Education Timeline -->
+                <div class="lg:w-2/5 lg:border-l border-gray-100 lg:pl-16">
+                    <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Education</h4>
+                    <div class="space-y-8">
+                        <div class="timeline-item">
+                            <div class="flex items-center gap-3 mb-1">
+                                <span class="w-3 h-3 bg-blue-600 rounded-full ring-4 ring-blue-50"></span>
+                                <p class="text-sm font-black text-blue-600 uppercase tracking-tighter">Tenure</p>
+                            </div>
+                            <p class="font-bold text-gray-900">Early Tenure Granted, 2024</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="flex items-center gap-3 mb-1">
+                                <span class="w-3 h-3 bg-blue-600 rounded-full ring-4 ring-blue-50"></span>
+                                <p class="text-sm font-black text-blue-600 uppercase tracking-tighter">Fellowship</p>
+                            </div>
+                            <p class="font-bold text-gray-900 leading-snug">SKKU Fellowship Professor, 2022 <a
+                                    href="https://cs.skku.edu/ko/edures/education/view/7054" target="_blank"
+                                    class="text-blue-500 hover:underline italic font-sans">(News)</a></p>
+                        </div>
+
+                        <div class="space-y-6 pt-4">
+                            <div class="timeline-item pb-1">
+                                <p
+                                    class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
+                                    Ph.D.</p>
+                                <p class="text-base font-black text-gray-800 mb-1">Computer Science</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight">University of Southern
+                                    California (USC),<br>Los Angeles, CA</p>
+                            </div>
+
+                            <div class="timeline-item pb-1">
+                                <p
+                                    class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
+                                    M.S.</p>
+                                <p class="text-base font-black text-gray-800 mb-1">Computer Science</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight">University of Southern
+                                    California (USC),<br>Los Angeles, CA</p>
+                            </div>
+
+                            <div class="timeline-item pb-1">
+                                <p
+                                    class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
+                                    M.S.</p>
+                                <p class="text-base font-black text-gray-800 mb-1">Electrical and Computer Engineering
+                                </p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight">University of California, San
+                                    Diego (UCSD), CA</p>
+                            </div>
+
+                            <div class="timeline-item pb-1">
+                                <p
+                                    class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
+                                    B.S.</p>
+                                <p class="text-base font-black text-gray-800 mb-1">Electrical Engineering</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight">University of Washington
+                                    (UW), Seattle, WA</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 pt-8 border-t border-gray-100/60">
+                            <div class="flex items-center gap-4 text-gray-700">
+                                <div
+                                    class="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <p class="text-sm font-black italic">Fluent in Korean and English</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
+
+        <!-- 3. RESEARCH LANDSCAPE -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-12">
+            <!-- Interests -->
+            <div class="dash-card">
+                <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Research Interests</h4>
+                <div class="space-y-6">
+                    <div
+                        class="group p-6 bg-gradient-to-br from-purple-50/50 to-white rounded-3xl border border-purple-100/50 hover:shadow-lg transition-all">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all">
+                                <i class="fas fa-brain text-xl"></i>
+                            </div>
+                            <p class="text-lg font-black text-gray-900">Generative AI Model</p>
+                        </div>
+                        <div class="flex items-center gap-3 ml-16">
+                            <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+                            <p class="text-[11px] font-black text-gray-500 italic tracking-wide uppercase">Media
+                                Coverage</p>
+                            <p class="text-[13px] font-bold text-purple-900/60 font-sans">
+                                <a href="https://www.joongang.co.kr/article/25140582#home" target="_blank"
+                                    class="hover:text-purple-600 hover:underline">중앙일보</a>,
+                                <a href="https://sports.khan.co.kr/entertainment/sk_index.html?art_id=202306220218003&sec_id=540201&pt=nv"
+                                    target="_blank" class="hover:text-purple-600 hover:underline">경향신문</a>,
+                                <a href="https://www.arirang.com/tv/37/archive?board=147&id=28137&sort=episode"
+                                    target="_blank" class="hover:text-purple-600 hover:underline">아리랑TV</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div
+                            class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-red-200 transition-all">
+                            <i class="fas fa-shield-alt text-red-500"></i> <span
+                                class="text-xs font-bold leading-tight">AI Security</span>
+                        </div>
+                        <div
+                            class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-blue-200 transition-all">
+                            <i class="fas fa-eye text-blue-500"></i> <span
+                                class="text-xs font-bold leading-tight">Deepfake Detection and Generation</span>
+                        </div>
+                        <div
+                            class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-emerald-200 transition-all">
+                            <i class="fas fa-chart-line text-emerald-500"></i> <span
+                                class="text-xs font-bold leading-tight">Time Series Analysis / Anomaly Detection</span>
+                        </div>
+                        <div
+                            class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-indigo-200 transition-all">
+                            <i class="fas fa-lock text-indigo-500"></i> <span
+                                class="text-xs font-bold leading-tight">Computer Security</span>
+                        </div>
+                        <div
+                            class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-sky-200 transition-all">
+                            <i class="fas fa-satellite text-sky-500"></i> <span
+                                class="text-xs font-bold leading-tight">Satellite Image Processing</span>
+                        </div>
+                        <div
+                            class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-orange-200 transition-all">
+                            <i class="fas fa-database text-orange-500"></i> <span
+                                class="text-xs font-bold leading-tight">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visualization -->
+            <div class="dash-card">
+                <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Research Visualization</h4>
+                <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 relative group">
+                    <img src="" onerror="this.src=getImg('img/교수님_기사사진.jpg')" alt="Deepfake Research Media"
+                        class="w-full h-auto transition-transform duration-1000 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-10 pt-24">
+                        <a href="https://www.joongang.co.kr/article/25344739" target="_blank" class="block group/link">
+                            <p
+                                class="text-white text-xl font-black leading-tight mb-4 drop-shadow-lg leading-snug group-hover/link:text-red-400 transition-colors">
+                                영국 BBC도 도움 요청했다…'딥페이크 범죄' 잡는 韓교수
+                            </p>
+                        </a>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="w-10 h-[2px] bg-red-500"></span>
+                                <p class="text-white/80 text-[11px] font-black uppercase tracking-widest">[출처:중앙일보]</p>
+                            </div>
+                            <a href="https://www.joongang.co.kr/article/25344739" target="_blank"
+                                class="px-5 py-2.5 bg-red-600 text-white text-[11px] font-black rounded-xl hover:bg-white hover:text-red-600 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                                READ ARTICLE <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. INTERNATIONAL HONORS AND AWARDS -->
+        <div class="dash-card mb-12">
+            <h4 class="section-accent text-xl font-black text-gray-900 mb-10">International Honors and Awards</h4>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Award 1 -->
+                <div
+                    class="flex gap-4 items-start p-6 bg-amber-50/20 rounded-3xl border border-amber-100/50 group hover:bg-amber-50 hover:border-amber-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-4xl transition-all">🏆</span>
+                    <div>
+                        <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">PAKDD • 2024</p>
+                        <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
+                            <a href="https://pakdd2024.org/award24awardpakdd24/" target="_blank"
+                                class="hover:text-amber-700 hover:underline">PAKDD Best Paper Running-Up Award</a> (2nd
+                            Place out of 720 papers)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div
+                    class="flex gap-4 items-start p-6 bg-blue-50/20 rounded-3xl border border-blue-100/50 group hover:bg-blue-50 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-4xl transition-all">🏆</span>
+                    <div>
+                        <p class="text-xs font-black text-blue-700 uppercase tracking-widest mb-1">ACM SAC • 2023</p>
+                        <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
+                            <a href="https://www.sigapp.org/sac/sac2023/" target="_blank"
+                                class="hover:text-blue-700 hover:underline">ACM/SIGAPP SAC Best Paper Award</a> (AI and
+                            Agents)
+                            <span class="block mt-1 text-[11px]"><a
+                                    href="https://www.acm.org/conferences/best-paper-awards" target="_blank"
+                                    class="text-blue-600 hover:underline">ACM Archive</a></span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Award 3 -->
+                <div
+                    class="flex gap-4 items-start p-6 bg-gray-50/40 rounded-3xl border border-gray-100 group hover:bg-white hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-4xl transition-all">🎓</span>
+                    <div>
+                        <p class="text-xs font-black text-gray-700 uppercase tracking-widest mb-1">Invitation • 2023</p>
+                        <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
+                            Invited for Schloss Dagstuhl on Media Forensics
+                        </p>
+                    </div>
+                </div>
+
+                <!-- KSC 2022 -->
+                <div
+                    class="flex gap-4 items-start p-6 bg-amber-50/20 rounded-3xl border border-amber-100/50 group hover:bg-amber-50 hover:border-amber-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-4xl transition-all">🏆</span>
+                    <div>
+                        <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">KSC • 2022</p>
+                        <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
+                            <a href="https://sw.skku.edu/sw/news.do?mode=view&articleNo=150622&article.offset=10&articleLimit=10&srSearchVal=%EC%9A%B0%EC%82%AC%EC%9D%B4%EB%A8%BC"
+                                target="_blank" class="hover:text-amber-700 hover:underline">KSC 2022 Best Paper
+                                Award</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Award 4 -->
+                <div
+                    class="flex gap-4 items-start p-6 bg-blue-50/20 rounded-3xl border border-blue-100/50 group hover:bg-blue-50 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-4xl transition-all">🏆</span>
+                    <div>
+                        <p class="text-xs font-black text-blue-700 uppercase tracking-widest mb-1">KDD • 2021</p>
+                        <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
+                            KDD Workshop (PLP) Best Paper Award
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Award 5 -->
+                <div
+                    class="flex gap-4 items-start p-6 bg-amber-50/20 rounded-3xl border border-amber-100/50 group hover:bg-amber-50 hover:border-amber-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-4xl transition-all">🏆</span>
+                    <div>
+                        <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">WISA • 2016</p>
+                        <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
+                            WISA Best Paper Award
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Award 6 -->
+                <div
+                    class="flex gap-4 items-start p-6 bg-indigo-50/40 rounded-3xl border border-indigo-100/50 group hover:bg-indigo-50 hover:border-indigo-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <span class="text-4xl transition-all">🎓</span>
+                    <div>
+                        <p class="text-xs font-black text-indigo-700 uppercase tracking-widest mb-1">Scholar • 2003</p>
+                        <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
+                            Mary Gates Scholar, University of Washington
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFESSIONAL SERVICES -->
+        <div class="dash-card">
+            <h4 class="section-accent text-xl font-black text-gray-900 mb-10">Professional Services</h4>
+
+            <div class="space-y-12">
+                <!-- Leadership -->
+                <div class="relative pl-10 border-l-4 border-blue-600">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-blue-600 rounded-full border-4 border-white">
+                    </div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-crown text-blue-600/30 text-lg"></i>
+                        <h5 class="text-base font-black text-blue-600 uppercase tracking-wide">Leadership Roles
+                            (2024–2025)</h5>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
+                            <p class="text-[13px] font-bold text-gray-700">KDD Research Track Area Chair</p>
+                        </div>
+                        <div
+                            class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
+                            <p class="text-[13px] font-bold text-gray-700">CIKM Senior PC on Resource/Demo Track</p>
+                        </div>
+                        <div
+                            class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
+                            <p class="text-[13px] font-bold text-gray-700">IJCAI Web Chair</p>
+                        </div>
+                        <div
+                            class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
+                            <p class="text-[13px] font-bold text-gray-700">ACML Area Chair</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chairing and TPC Grid -->
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Chairing -->
+                    <div class="relative pl-10 border-l-4 border-gray-200">
+                        <div class="absolute -left-[11px] top-0 w-5 h-5 bg-gray-200 rounded-full border-4 border-white">
+                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <i class="fas fa-users-cog text-gray-300 text-lg"></i>
+                            <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Conference/Workshop
+                                Chairing</h5>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 bg-gray-50/50 p-3 rounded-xl border border-gray-100">
+                                <i class="fas fa-check-circle text-blue-500 text-[10px]"></i>
+                                <p class="text-[13px] font-bold text-gray-700">ACM CoNext Finance Chair (2017)</p>
+                            </div>
+                            <div class="flex items-center gap-3 bg-gray-50/50 p-3 rounded-xl border border-gray-100">
+                                <i class="fas fa-check-circle text-blue-500 text-[10px]"></i>
+                                <p class="text-[13px] font-bold text-gray-700">EAI CyDiP TPC Chair (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TPC -->
+                    <div class="relative pl-10 border-l-4 border-gray-200">
+                        <div class="absolute -left-[11px] top-0 w-5 h-5 bg-gray-200 rounded-full border-4 border-white">
+                        </div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <i class="fas fa-list-ul text-gray-300 text-lg"></i>
+                            <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Technical Program
+                                Committees</h5>
+                        </div>
+                        <div class="p-5 bg-gray-50 rounded-2xl border border-gray-100">
+                            <p class="text-[12px] font-bold text-gray-600 leading-relaxed font-sans">
+                                SecureComm, SOUPS, TheWebConf (WWW), ACM SAC ML Track, ECCV, ACCV, BMVC, ICCV,
+                                CSET, CIKM, AAAI, KDD, IJCAI, WACV, ICML, CVPR, ICPR, SDM, NeurIPS (2019–2024)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Editorial -->
+                <div class="relative pl-10 border-l-4 border-gray-200">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-gray-200 rounded-full border-4 border-white">
+                    </div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-feather-alt text-gray-300 text-lg"></i>
+                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Editorial Boards</h5>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">TIIS Editor
+                            </p>
+                            <p class="text-sm font-bold text-gray-800">2019 - 2021</p>
+                        </div>
+                        <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">IEEE TIFS</p>
+                            <p class="text-sm font-bold text-gray-800">2019</p>
+                        </div>
+                        <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">AIAA JAIS</p>
+                            <p class="text-sm font-bold text-gray-800">2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop -->
+                <div class="relative pl-10 border-l-4 border-gray-200">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-gray-200 rounded-full border-4 border-white">
+                    </div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <i class="fas fa-flask text-gray-300 text-lg"></i>
+                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Workshop Organizer</h5>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="p-6 bg-gray-50/50 rounded-2xl border border-gray-100">
+                            <p class="text-sm font-black text-gray-900 mb-4">ACM AsiaCCS Workshop on Deepfakes and
+                                Cheapfakes (WDC)</p>
+                            <div class="flex flex-wrap gap-2">
+                                <a href="https://sites.google.com/view/wdc-2022/" target="_blank"
+                                    class="px-5 py-2 bg-white text-blue-600 text-[11px] font-black rounded-lg border border-blue-100 hover:bg-blue-600 hover:text-white transition-all shadow-sm">2022</a>
+                                <a href="https://sites.google.com/view/wdc-2023/" target="_blank"
+                                    class="px-5 py-2 bg-white text-blue-600 text-[11px] font-black rounded-lg border border-blue-100 hover:bg-blue-600 hover:text-white transition-all shadow-sm">2023</a>
+                                <a href="https://sites.google.com/view/wdc-2024/" target="_blank"
+                                    class="px-5 py-2 bg-white text-blue-600 text-[11px] font-black rounded-lg border border-blue-100 hover:bg-blue-600 hover:text-white transition-all shadow-sm">2024</a>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href="https://sites.google.com/view/ansd23?pli=1" target="_blank"
+                                class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm hover:border-blue-200 transition-all group/ansd">
+                                <span class="w-1.5 h-1.5 bg-blue-400 rounded-full group-hover/ansd:bg-blue-600"></span>
+                                <p class="text-[12px] font-bold text-gray-700 leading-tight">ANSD Workshop at CIKM 2023,
+                                    Birmingham UK</p>
+                            </a>
+                            <a href="https://insights.sei.cmu.edu/news/international-conference-on-conceptual-modeling-er-2024-opens-call-for-papers/"
+                                target="_blank"
+                                class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm hover:border-blue-200 transition-all group/aimm">
+                                <span class="w-1.5 h-1.5 bg-blue-400 rounded-full group-hover/aimm:bg-blue-600"></span>
+                                <p class="text-[12px] font-bold text-gray-700 leading-tight">AIMM 2024 at ER 2024,
+                                    Carnegie Mellon University
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Footer is injected here by common.js -->
 </body>
+
 </html>

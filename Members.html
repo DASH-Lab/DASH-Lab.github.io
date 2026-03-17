@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASH LAB - Members</title>
-    
+
     <!-- External Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Critical Helper: Defined in Head so inline 'onerror' can find it immediately -->
     <script>
-        window.getImg = function(path) {
+        window.getImg = function (path) {
             if (!path) return '';
             // Cleans leading slashes to ensure paths work relative to the root in VS Code
             return path.startsWith('/') ? path.substring(1) : path;
@@ -21,21 +22,34 @@
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/common.js"></script>
-    
+
     <!-- Members Scripts -->
     <script src="js/membersdata.js"></script>
     <script src="js/members.js" defer></script>
 </head>
+
 <body class="bg-gray-50 flex flex-col min-h-screen">
-    
+
     <!-- Navbar injected by common.js -->
 
     <div class="container mx-auto px-4 pt-8 max-w-6xl flex-grow">
 
+        <!-- Industry Positions (New Section) -->
+        <div class="member-section-card">
+            <h5 class="member-header text-blue-800">Industry Positions</h5>
+            <div id="industry-alumni-container"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- JS Injects Here -->
+            </div>
+        </div>
+
         <!-- Research Professor -->
         <div class="member-section-card">
-            <h5 class="member-header">Research Professors/Post-Doc Researcher</h5>
-            <div id="research-professors-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="flex items-center justify-between mb-6">
+                <h5 class="member-header !mb-0">Research Professors/Post-Doc Researcher</h5>
+            </div>
+            <div id="research-professors-container"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- JS Injects Here -->
             </div>
         </div>
@@ -43,7 +57,8 @@
         <!-- Ph.D. Students -->
         <div class="member-section-card">
             <h5 class="member-header">Ph.D. Students</h5>
-            <div id="phd-students-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div id="phd-students-container"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- JS Injects Here -->
             </div>
         </div>
@@ -60,17 +75,25 @@
         <div class="member-section-card">
             <h5 class="member-header">Undergraduate Students</h5>
             <div id="ug-students-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- JS Injects Members Here -->
-                
-                <!-- Recruitment Trigger Card -->
-                <div id="join-lab-trigger" class="member-card cursor-pointer border-2 border-dashed border-blue-200 bg-blue-50/30 hover:bg-blue-50 hover:border-blue-400 transition-all flex flex-col items-center justify-center p-8 group">
-                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-user-plus text-2xl text-blue-600"></i>
-                    </div>
-                    <strong class="text-blue-700 text-lg">Join the Lab</strong>
-                    <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Open Positions</p>
-                </div>
+                <!-- JS Injects Members & Recruitment Card Here -->
             </div>
+        </div>
+
+        <!-- Alumni -->
+        <div class="member-section-card alumni-table">
+            <h5 class="member-header">Alumni</h5>
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th data-label="Name">Name</th>
+                        <th data-label="Major">Major</th>
+                        <th data-label="Employment">Current employment</th>
+                    </tr>
+                </thead>
+                <tbody id="alumni-table-body">
+                    <!-- JS Injects Here -->
+                </tbody>
+            </table>
         </div>
 
         <!-- Master Thesis Supervision -->
@@ -90,23 +113,6 @@
                 </tbody>
             </table>
         </div>
-
-        <!-- Alumni -->
-        <div class="member-section-card alumni-table">
-            <h5 class="member-header">Alumni</h5>
-            <table class="w-full">
-                <thead>
-                    <tr>
-                        <th data-label="Name">Name</th>
-                        <th data-label="Major">Major</th>
-                        <th data-label="Employment">Current employment</th>
-                    </tr>
-                </thead>
-                <tbody id="alumni-table-body">
-                    <!-- JS Injects Here -->
-                </tbody>
-            </table>
-        </div>
     </div>
 
     <!-- RECRUITMENT MODAL 
@@ -117,30 +123,37 @@
             <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
                 <i class="fas fa-times text-xl"></i>
             </button>
-            
+
             <div class="text-center">
-                <div class="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 border border-gray-100 shadow-inner">
-                    <img src="img/dash_logo/Dashlab_logo.jpg" alt="DASH Lab" class="w-12 opacity-80" onerror="this.style.display='none'">
+                <div
+                    class="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 border border-gray-100 shadow-inner">
+                    <img src="img/dash_logo/Dashlab_logo.jpg" alt="DASH Lab" class="w-12 opacity-80"
+                        onerror="this.style.display='none'">
                     <i class="fas fa-graduation-cap text-blue-500 text-3xl" id="fallback-icon"></i>
                 </div>
-                
+
                 <h2 class="text-2xl font-bold text-gray-800 mb-2">Join DASH Lab</h2>
-                <p class="text-gray-500 text-sm mb-8 leading-relaxed px-4">We are looking for students who can code and have a deep passion for AI research.</p>
-                
+                <p class="text-gray-500 text-sm mb-8 leading-relaxed px-4">We are looking for students who can code and
+                    have a deep passion for AI research.</p>
+
                 <div class="space-y-4 text-left px-2">
                     <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                        <p class="text-[10px] font-black text-blue-700 uppercase mb-1 tracking-widest">Research Focus</p>
-                        <p class="text-sm text-blue-900 font-medium leading-tight">Computer Vision, Anomaly Detection, NLP, and AI Security.</p>
+                        <p class="text-[10px] font-black text-blue-700 uppercase mb-1 tracking-widest">Research Focus
+                        </p>
+                        <p class="text-sm text-blue-900 font-medium leading-tight">Computer Vision, Anomaly Detection,
+                            NLP, and AI Security.</p>
                     </div>
-                    
+
                     <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
                         <p class="text-[10px] font-black text-gray-500 uppercase mb-1 tracking-widest">How to Apply</p>
                         <p class="text-sm font-bold text-gray-800 mb-1">Email your resume to:</p>
-                        <a href="mailto:undergraduate@g.skku.edu" class="text-blue-600 font-mono text-sm hover:underline">undergraduate@g.skku.edu</a>
+                        <a href="mailto:undergraduate@g.skku.edu"
+                            class="text-blue-600 font-mono text-sm hover:underline">undergraduate@g.skku.edu</a>
                     </div>
                 </div>
 
-                <button id="modal-confirm" class="w-full mt-8 bg-blue-600 text-white font-bold py-3.5 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
+                <button id="modal-confirm"
+                    class="w-full mt-8 bg-blue-600 text-white font-bold py-3.5 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
                     Close Window
                 </button>
             </div>
@@ -149,4 +162,5 @@
 
     <!-- Footer injected by common.js -->
 </body>
+
 </html>

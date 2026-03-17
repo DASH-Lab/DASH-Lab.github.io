@@ -1,8 +1,21 @@
 // --- Members Data ---
 // Load this in your HTML before members.js
 
+const industryAlumni = [
+    {
+        name: "Binh M. Le",
+        role: "Research Scientist",
+        company: "Meta",
+        location: "USA",
+        city: "San Francisco",
+        img: "img/member_images/BinhMLe.jpg",
+        link: "https://sites.google.com/view/binhminhle/home",
+        companyLogo: "fa-brands fa-meta",
+        companyColor: "#0668E1" // Meta Blue
+    }
+];
+
 const researchProfessors = [
-    //{name: "Binh M. Le", role: "Research Professor", dept: "Computer Science & Engineering", interests: "Adversarial Robustness, Representation Learning",email: "bmle@g.skku.edu", img: "img/member_images/BinhMLe.jpg", link: "https://sites.google.com/view/binhminhle/home"}
 ];
 
 const phdStudents = [
@@ -20,8 +33,8 @@ const phdStudents = [
     { name: "M. Shahid Muneer", dept: "Computer Science and Engineering", interests: "DeepFake detection, VLMs, LLMs", email: "shahidmuneer@g.skku.edu", img: "img/member_images/shahid.png", link: "https://scholar.google.com/citations?user=aOz3PaoAAAAJ&hl=en" },
     { name: "이현근", dept: "Applied Artificial Intelligence", interests: "Anomaly Detection", email: "—", img: "img/member_images/HynegeunLee.jpg" },
     { name: "Sanghyeok Park", dept: "Semiconductor Display Engineering", interests: "Large Language Models, Industrial AI Applications", email: "sh88park@g.skku.edu", img: "img/member_images/ParkSangHyeok.jpg" },
-    { name: "Tran Van Khoa", dept: "Computer Science & Engineering", interests: "Machine Learning, AI Privacy, Representation Learning", email: "khoa.tr@g.skku.edu", img: "img/member_images/Khoa Tran.jpg" },    
-    { name: "Tuan V. Nguyen", dept: "Computer Science & Engineering", interests: "Deepfake Generation, Deepfake Detection, PINNs", email: "tuannv99@g.skku.edu", img: "img/member_images/tuannguyen.jpg" }   
+    { name: "Tran Van Khoa", dept: "Computer Science & Engineering", interests: "Machine Learning, AI Privacy, Representation Learning", email: "khoa.tr@g.skku.edu", img: "img/member_images/Khoa Tran.jpg" },
+    { name: "Tuan V. Nguyen", dept: "Computer Science & Engineering", interests: "Deepfake Generation, Deepfake Detection, PINNs", email: "tuannv99@g.skku.edu", img: "img/member_images/tuannguyen.jpg" }
 ];
 
 const msStudents = [
@@ -62,20 +75,20 @@ const masterSupervision = [
 
 const alumni = [
     { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist in Meta", link: "https://sites.google.com/view/binhminhle/home" },
-    { name: "Yongcheol Noh (MS) 2026", major: "Computer Science & Engineering", employment: "모티프드라이브"},
-    { name: "Hakjun Moon (MS) 2026", major: "Computer Science & Engineering", employment: "TBD"},
-    { name: "Jungwook Shon (MS) 2026", major: "Time Series Anomaly Detection", employment: "Samsung Electronics"},
-    { name: "Hohyun Na (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
-    { name: "Sangjun Chung (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
-    { name: "Hyeonsu Hwang (MS) 2026", major: "Computer Vision", employment: "TBD"},
+    { name: "Yongcheol Noh (MS) 2026", major: "Computer Science & Engineering", employment: "TBD" },
+    { name: "Hakjun Moon (MS) 2026", major: "Computer Science & Engineering", employment: "TBD" },
+    { name: "Jungwook Shon (MS) 2026", major: "Time Series Anomaly Detection", employment: "Samsung Electronics" },
+    { name: "Hohyun Na (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung" },
+    { name: "Sangjun Chung (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung" },
+    { name: "Hyeonsu Hwang (MS) 2026", major: "Computer Vision", employment: "TBD" },
     { name: "Minji Heo (MS) 2025", major: "Computer Vision", employment: "TBD" },
     { name: "Minsun Jeon (MS) 2025", major: "Computer Vision & Multi-modal", employment: "TBD" },
     { name: "Inho Jung (MS) 2025", major: "Representation Learning & XAI", employment: "TBD" },
     { name: "김현준 (MS) 2025", major: "AI, LLM & Machine Unlearning", employment: "NAVER" },
     { name: "Minha Kim (MS) 2024", major: "Time Series & Reinforcement Learning", employment: "Applied Materials" },
     { name: "Girim Ban (MS) 2024", major: "Big Data, E-Commerce & Data Science", employment: "Data Scientist at Toss" },
-    { name: "Taejune Kim (MS) 2024", major: "Anomaly Detection & Computer Vision", employment: "Robotics Lab, Hyundai Motor Company"},
-    { name: "Kishor Kumar Bhaumik (MS) 2023", major: "Image Manipulation Detection & Time Series", employment: "UC Riverside, PhD program (w/ Dean's Distinguished Award + RA)"},
+    { name: "Taejune Kim (MS) 2024", major: "Anomaly Detection & Computer Vision", employment: "Robotics Lab, Hyundai Motor Company" },
+    { name: "Kishor Kumar Bhaumik (MS) 2023", major: "Image Manipulation Detection & Time Series", employment: "UC Riverside, PhD program (w/ Dean's Distinguished Award + RA)" },
     { name: "Jungho Kim (MS) 2023", major: "Knowledge distillation", employment: "KAIST, PhD program" },
     { name: "Gwanghan Lee (MS) 2023", major: "Model compression", employment: "Upstage" },
     { name: "Jinbeom Kim (MS) 2023", major: "Object detection & Knowledge Distillation", employment: "LIG 넥스원" },

@@ -16,6 +16,7 @@ const industryAlumni = [
 ];
 
 const researchProfessors = [
+    // { name: "Simon S. Woo", dept: "Computer Science & Engineering", interests: "Deepfakes", email: "cindi01@g.skku.edu", img: "img/member_images/EunjuPark.jpg" },
 ];
 
 const phdStudents = [

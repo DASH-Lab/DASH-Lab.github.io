@@ -61,13 +61,13 @@ const masterSupervision = [
 ];
 
 const alumni = [
-    { name: "Yongcheol Noh (MS) 2026", major: "Computer Science & Engineering", employment: "TBD"},
+    { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist in Meta", link: "https://sites.google.com/view/binhminhle/home" },
+    { name: "Yongcheol Noh (MS) 2026", major: "Computer Science & Engineering", employment: "모티프드라이브"},
     { name: "Hakjun Moon (MS) 2026", major: "Computer Science & Engineering", employment: "TBD"},
     { name: "Jungwook Shon (MS) 2026", major: "Time Series Anomaly Detection", employment: "Samsung Electronics"},
     { name: "Hohyun Na (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
     { name: "Sangjun Chung (MS) 2026", major: "Computer Vision & Multi-modal", employment: "Samsung"},
     { name: "Hyeonsu Hwang (MS) 2026", major: "Computer Vision", employment: "TBD"},
-    { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist in Meta", link: "https://sites.google.com/view/binhminhle/home" },
     { name: "Minji Heo (MS) 2025", major: "Computer Vision", employment: "TBD" },
     { name: "Minsun Jeon (MS) 2025", major: "Computer Vision & Multi-modal", employment: "TBD" },
     { name: "Inho Jung (MS) 2025", major: "Representation Learning & XAI", employment: "TBD" },

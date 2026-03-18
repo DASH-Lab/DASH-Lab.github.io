@@ -5,7 +5,7 @@
 const galleryData = [
     { 
         src: 'img/dash_gallery/2026_BinhCongratsDinner.jpg', 
-        desc: 'Lab dinner with Professor Woo to celebrate Binh joining Meta'
+        desc: 'Celebrate Binh joining Meta USA,<br> Sangyup joining Incheon National Univ,<br> and Youjin\'s successful reappointment at Catholic Univ of Korea'
     },
     { 
         src: 'img/dash_gallery/alumni_dinner_2026.jpg', 

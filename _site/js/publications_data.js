@@ -1,5 +1,27 @@
 const PUBLICATIONS_DATA_LOCAL = [
-     {
+    {
+        "title": "Analyzing Commercial Deepfake Detectors on Real-World Cases",
+        "authors": [
+            "Bohyun Moon",
+            "Jiwon Kim", 
+            "Muhammad Shahid Muneer",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
+        "venue": "WDC",
+        "track": "Short",
+        "Factor": [
+            "",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://sites.google.com/view/wdc-2026"
+                 },
+        "img": "/img/Publications/2026_WDC_Bohyun.png",
+        "abstract": "The accessibility of generative AI has led to a rapid rise in AI-generated content (AIGC), accompanied by widespread misuse and misinformation. As a result, both researchers and industry have proposed deepfake detection methods, ranging from reproducible academic models to commercial detection services. Commercial deepfake detection tools widely used by many users claim high performance and robustness, while academic tools report strong performance on controlled benchmarks. However, the reliability of both approaches under diverse real-world generation methods remains underexplored. In this work, we perform deepfake detection using both commercial and academic detectors. Our evaluation shows that commercial software tends to achieve stronger out-of-domain generalization than academic baselines. Furthermore, we conduct a case-driven analysis of commercial deepfake detectors with a curated real-world dataset that reflects recent incidents and generation trends. We found that aggregation strategies, mosaic artifacts, and reliance on face detection influence detection decisions, as well as a qualitative analysis of explanation mechanisms. This study identifies structural limitations in current commercial deepfake detection services and proposes potential design directions to enhance robustness in real-world deployment."
+    },
+    {
         "title": "Efficient Unlearning through Maximizing Relearning Convergence Delay",
         "authors": [
             "Khoa Tran", 

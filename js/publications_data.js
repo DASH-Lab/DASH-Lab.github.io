@@ -1,5 +1,26 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "HIDE: Detecting Diffusion-Based Inpainting via Latent h-Space Representation",
+        "authors": [
+            "Seunghwan ji",
+            "Geonho Son",
+            "Simon S. Woo"
+        ],
+        "venue_full": "IEEE/CVF CVPR Workshop on Synthetic & Adversarial ForEnsics",
+        "venue": "SAFE",
+        "track": "Workshop",
+        "Factor": [
+            "",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://www.safeworkshop.org/cvpr-2026/#home"
+                 },
+        "img": "/img/Publications/2026_SAFE_Geunho.png",
+        "abstract": "The emergence of text-guided diffusion models has enabled highly realistic image inpainting, posing new challenges for image forensics. In particular, diffusion-based inpainting generates semantically coherent and visually seamless content, making forgery localization increasingly difficult. While various detection models have been proposed, they rely on low-level statistical traces that are absent in diffusion-generated content, leaving them ill-equipped for such manipulations. In this work, we propose HIDE (H-space-guided Inpainting DEtection), a Conditional U-Net architecture that leverages multi-domain features including frequency-domain representations, and incorporates high-level semantic priors to detect diffusion-based forgeries. Specifically, we extract h-space features from the intermediate layers of a Latent Diffusion Model, capturing global object layout and scene semantics, and integrate them into a segmentation network via cross-attention. Through extensive experiments on a Stable Diffusion v1.5 inpainting dataset, our findings highlight the importance of jointly exploiting semantic and statistical cues for detecting modern generative inpainting forgeries."
+    },
+    {
         "title": "Analyzing Commercial Deepfake Detectors on Real-World Cases",
         "authors": [
             "Bohyun Moon",

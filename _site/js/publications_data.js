@@ -8,7 +8,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF CVPR Workshop on Synthetic & Adversarial ForEnsics",
         "venue": "SAFE",
-        "track": "Workshop",
+        "track": "Workshop Paper",
         "Factor": [
             "",
             0
@@ -30,7 +30,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "ACM ASIACCS Workshop on Security Implications of Deepfakes and Cheapfakes",
         "venue": "WDC",
-        "track": "Short",
+        "track": "Short Paper",
         "Factor": [
             "",
             0
@@ -50,7 +50,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
         "venue": "CVPR",
-        "track": "Findings",
+        "track": "Findings Paper",
         "Factor": [
             "",
             0
@@ -72,7 +72,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         ],
         "venue_full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
         "venue": "CVPR",
-        "track": "Findings",
+        "track": "Findings Paper",
         "Factor": [
             "",
             0

@@ -19,7 +19,7 @@ const PUBLICATIONS_DATA_LOCAL = [
             "conf": "https://sites.google.com/view/mv2026/task-description"
         },
         "img": "/img/Publications/2026_ICMR_Shahid.png",
-        "abstract": ""
+        "abstract": "Verifying social media content from active conflict zones requires rapid geolocation, source attribution, forensic analysis, and multi-platform verification—tasks that overwhelm individual analysts at scale. We present Multi-agent OSINT Swarm for Automated Information Verification (MOSAIV), a three-stage agentic swarm built on Large Language Models (LLMs) for automated verification of multimedia news. MOSAIV operates in three sequential phases: (1) a Prime Agent use 50 labeled training samples via few-shot in-context learning to produce a shared context document and a reusable 7-step verification skill specification; (2) multiple parallel Verification Agents each process social media posts using the primed skill, performing live web searches, OSINT analysis, and structured report generation; and (3) a dedicated Localization Agent independently verifies GPS coordinates and produces bounding-box-annotated evidence images, dual-panel OpenStreetMap location cards, and live source evidence thumbnails, multiple evidence artifacts per run in total. We evaluated 10 conflict-zone validation cases provided by the MV2026 challenge."
     },
     {
         "title": "HIDE: Detecting Diffusion-Based Inpainting via Latent h-Space Representation",

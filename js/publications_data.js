@@ -18,7 +18,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "links": {
             "conf": "https://sites.google.com/view/mv2026/task-description"
         },
-        "img": "",
+        "img": "/img/Publications/2026_ICMR_Shahid.png",
         "abstract": ""
     },
     {

@@ -1,5 +1,27 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "MOSAIV: Multi-Agent LLM Swarms for Automated Multimedia News Verification",
+        "authors": [
+            "Muhammad Shahid Muneer",
+            "Khoa Van Tran",
+            "Van Tuan Nguyen",
+            "Simon S. woo"
+        ],
+        "venue_full": "The 2026 Grand Challenge on Multimedia Verification",
+        "venue": "ICMR",
+        "track": "Demo & Challenge",
+        "Factor": [
+            "BK Computer Science IF=",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://sites.google.com/view/mv2026/task-description"
+        },
+        "img": "",
+        "abstract": ""
+    },
+    {
         "title": "HIDE: Detecting Diffusion-Based Inpainting via Latent h-Space Representation",
         "authors": [
             "Seunghwan ji",
@@ -16,7 +38,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://www.safeworkshop.org/cvpr-2026/#home"
-                 },
+        },
         "img": "/img/Publications/2026_SAFE_Geunho.png",
         "abstract": "The emergence of text-guided diffusion models has enabled highly realistic image inpainting, posing new challenges for image forensics. In particular, diffusion-based inpainting generates semantically coherent and visually seamless content, making forgery localization increasingly difficult. While various detection models have been proposed, they rely on low-level statistical traces that are absent in diffusion-generated content, leaving them ill-equipped for such manipulations. In this work, we propose HIDE (H-space-guided Inpainting DEtection), a Conditional U-Net architecture that leverages multi-domain features including frequency-domain representations, and incorporates high-level semantic priors to detect diffusion-based forgeries. Specifically, we extract h-space features from the intermediate layers of a Latent Diffusion Model, capturing global object layout and scene semantics, and integrate them into a segmentation network via cross-attention. Through extensive experiments on a Stable Diffusion v1.5 inpainting dataset, our findings highlight the importance of jointly exploiting semantic and statistical cues for detecting modern generative inpainting forgeries."
     },
@@ -24,7 +46,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "title": "Analyzing Commercial Deepfake Detectors on Real-World Cases",
         "authors": [
             "Bohyun Moon",
-            "Jiwon Kim", 
+            "Jiwon Kim",
             "Muhammad Shahid Muneer",
             "Simon S. Woo"
         ],
@@ -38,14 +60,14 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://sites.google.com/view/wdc-2026"
-                 },
+        },
         "img": "/img/Publications/2026_WDC_Bohyun.png",
         "abstract": "The accessibility of generative AI has led to a rapid rise in AI-generated content (AIGC), accompanied by widespread misuse and misinformation. As a result, both researchers and industry have proposed deepfake detection methods, ranging from reproducible academic models to commercial detection services. Commercial deepfake detection tools widely used by many users claim high performance and robustness, while academic tools report strong performance on controlled benchmarks. However, the reliability of both approaches under diverse real-world generation methods remains underexplored. In this work, we perform deepfake detection using both commercial and academic detectors. Our evaluation shows that commercial software tends to achieve stronger out-of-domain generalization than academic baselines. Furthermore, we conduct a case-driven analysis of commercial deepfake detectors with a curated real-world dataset that reflects recent incidents and generation trends. We found that aggregation strategies, mosaic artifacts, and reliance on face detection influence detection decisions, as well as a qualitative analysis of explanation mechanisms. This study identifies structural limitations in current commercial deepfake detection services and proposes potential design directions to enhance robustness in real-world deployment."
     },
     {
         "title": "Efficient Unlearning through Maximizing Relearning Convergence Delay",
         "authors": [
-            "Khoa Tran", 
+            "Khoa Tran",
             "Simon S. Woo"
         ],
         "venue_full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
@@ -58,16 +80,16 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://cvpr.thecvf.com/Conferences/2026/CallForPapers"
-                 },
+        },
         "img": "/img/Publications/2026_CVPR_KhoaTran.jpg",
         "abstract": "Machine unlearning poses challenges in removing mislabeled, contaminated, or problematic data from a pretrained model. Current unlearning approaches and evaluation metrics are solely focused on model predictions, which limits insight into the model's true underlying data characteristics. To address this issue, we introduce a new metric called relearning convergence delay, which captures both changes in weight space and prediction space, providing a more comprehensive assessment of the model's understanding of the forgotten dataset. This metric can be used to assess the risk of forgotten data being recovered from the unlearned model. Based on this, we propose the Influence Eliminating Unlearning framework, which removes the influence of the forgetting set by degrading its performance and incorporates weight decay and injecting noise into the model's weights, while maintaining accuracy on the retaining set. Extensive experiments show that our method outperforms existing metrics and our proposed relearning convergence delay metric, approaching ideal unlearning performance. We provide theoretical guarantees, including exponential convergence and upper bounds, as well as empirical evidence of strong retention and resistance to relearning in both classification and generative unlearning tasks."
     },
-    
+
     {
         "title": "Robust Continual Unlearning against Knowledge Erosion and Forgetting Reversal",
         "authors": [
-            "EUN-JU PARK", 
-            "Youjin Shin", 
+            "EUN-JU PARK",
+            "Youjin Shin",
             "Simon S. Woo"
         ],
         "venue_full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
@@ -80,16 +102,16 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://cvpr.thecvf.com/Conferences/2026/CallForPapers"
-                 },
+        },
         "img": "/img/Publications/2026_CVPR_EUN-JU PARK.png",
         "abstract": "As a means to balance the growth of the AI industry with the need for privacy protection, machine unlearning plays a crucial role in realizing the ``right to be forgotten'' in artificial intelligence. This technique enables AI systems to remove the influence of specific data while preserving the rest of the learned knowledge. Although it has been actively studied, most existing unlearning methods assume that unlearning is performed only once. In this work, we evaluate existing unlearning algorithms in a more realistic scenario where unlearning is conducted repeatedly, and in this setting, we identify two critical phenomena: (1) Knowledge Erosion, where the accuracy on retain data progressively degrades over unlearning phases, and (2) Forgetting Reversal, where previously forgotten samples become recognizable again in later phases. To address these challenges, we propose SAFER (StAbility-preserving Forgetting with Effective Regularization), a continual unlearning framework that maintains representation stability for retain data while enforcing negative logit margins for forget data. Extensive experiments show that SAFER mitigates not only knowledge erosion but also forgetting reversal, achieving stable performance across multiple unlearning phases."
     },
-    
+
     {
         "title": "ICR-NET: Robust Deepfake Detection under Temporal Corruption",
         "authors": [
-            "Chan Park", 
-            "Hyeongjun Choi", 
+            "Chan Park",
+            "Hyeongjun Choi",
             "Shahid Muneer Muhammad",
             "Binh M. Le",
             "Simon S. Woo"
@@ -104,15 +126,15 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://www.pakdd2026.org/"
-                 },
+        },
         "img": "/img/Publications/pakdd26_Chan.png",
         "abstract": "Deepfake video detection aims to distinguish AI-generated facial forgeries from authentic videos. Recent methods have achieved strong performance under spatial corruptions, but their temporal robustness remains largely unexplored. In realistic web-streaming scenarios, network disruptions such as packet loss, bit errors, and aggressive compression induce temporal corruptions that current evaluation protocols and benchmarks do not cover. To cover this gap, we introduce DeepFake Temporal Corruption Benchmark (DF-TCB), built on the standard FaceForensics++ and DFDC video datasets with diverse temporal corruption types and severity levels. Our analysis on DF-TCB reveals that existing detectors are highly fragile under temporal corruptions. We further propose ICR-Net, which predicts frame reliability, selectively corrects corrupted features, and leverages clean–corrupted contrastive learning to obtain corruption-invariant, class-separable representations. We achieve state-of-the-art robustness and cross-dataset generalization under temporal corruptions."
     },
     {
         "title": "A Rich Knowledge Space for Scalable Deepfake Detection",
         "authors": [
-            "Inho Jung", 
-            "Hyeongjun Choi", 
+            "Inho Jung",
+            "Hyeongjun Choi",
             "Binh M. Le",
             "Hohyun Na",
             "Simon S. Woo"
@@ -126,19 +148,19 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://iclr.cc/Conferences/2026"
-                 },
+        },
         "img": "/img/Publications/ICLR2026_inho.png",
         "abstract": "The proliferation of realistic deepfakes has driven the development of numerous benchmark datasets to support detection research. Despite their increasing volume and diversity, no prior effort has systematically consolidated these resources into a unified framework for large-scale model training, nor has there been a massively pre-trained model tailored to deepfake detection. In this work, we introduce MMI-DD (Multi-modal Multi-type Integrated Deepfake Dataset), a large-scale resource containing 3.6 million facial images, the largest collection to date. It unifies diverse benchmarks with uniform preprocessing, and further provides fine-grained annotations across four deepfake types, as well as VLM-generated descriptions capturing both facial and environmental attributes for each image. By leveraging this comprehensive multi-modal dataset, we construct a foundational deepfake knowledge space that empowers our model to discern a broad spectrum of synthetic media. Our method, SD^2 (Scalable Deepfake Detection), refines CLIP for deepfake detection, optimizing image-text classification with rich, type-specific labels. We enhance this with intermediate visual features capturing low-level cues and text label separation loss for stability. We further leverage VLM-generated descriptions and contrastive learning to expand the scope of forgery knowledge, reducing overfitting and enhancing generalization. Extensive experiments on challenging deepfake datasets and AIGC benchmark demonstrate the effectiveness, scalability, and real-world applicability of our approach."
     },
     {
         "title": "Unlearning Comparator: A Visual Analytics System for Comparative Evaluation of Machine Unlearning Methods",
-        "authors": [ 
-            "Jaeung Lee", 
+        "authors": [
+            "Jaeung Lee",
             "Suhyeon Yu",
             "Yurim Jang",
             "Simon S. Woo",
             "Jaemin Jo"
-            
+
         ],
         "venue_full": "IEEE Transactions on Visualization and Computer Graphics",
         "venue": "TVCG",
@@ -150,15 +172,15 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://www.computer.org/csdl/journal/tg"
-                 },
+        },
         "img": "/img/Publications/TVCG26_yurim.png",
         "abstract": "Machine Unlearning (MU) aims to remove target training data from a trained model so that the removed data no longer influences the model's behavior, fulfilling \"right to be forgotten\" obligations under data privacy laws. Yet, we observe that researchers in this rapidly emerging field face challenges in analyzing and understanding the behavior of different MU methods, especially in terms of three fundamental principles in MU: accuracy, efficiency, and privacy. Consequently, they often rely on aggregate metrics and ad-hoc evaluations, making it difficult to accurately assess the trade-offs between methods. To fill this gap, we introduce a visual analytics system, Unlearning Comparator, designed to facilitate the systematic evaluation of MU methods. Our system supports two important tasks in the evaluation process: model comparison and attack simulation. First, it allows the user to compare the behaviors of two models, such as a model generated by a certain method and a retrained baseline, at class-, instance-, and layer-levels to better understand the changes made after unlearning. Second, our system simulates membership inference attacks (MIAs) to evaluate the privacy of a method, where an attacker attempts to determine whether specific data samples were part of the original training set. We evaluate our system through a case study visually analyzing prominent MU methods and demonstrate that it helps the user not only understand model behaviors but also gain insights that can inform the improvement of MU methods."
     },
     {
         "title": "Suppression or Deletion: A Restoration-Based Representation-Level Analysis of Machine Unlearning",
         "authors": [
-            "Yurim Jang", 
-            "Jaeung Lee", 
+            "Yurim Jang",
+            "Jaeung Lee",
             "Dohyun Kim",
             "Jaemin Jo",
             "Simon S. Woo"
@@ -173,7 +195,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://www2026.thewebconf.org/"
-                 },
+        },
         "img": "/img/Publications/WWW2026short_yurim.png",
         "abstract": "As pretrained models are increasingly shared on the web, ensuring that models can forget or delete sensitive, copyrighted, or private information upon request has become crucial. Machine unlearning has been proposed to address this issue. However, current evaluations for unlearning methods rely on output-based metrics, which cannot verify whether information is completely deleted or merely suppressed at the representation level, where suppression is insufficient for true unlearning. To address this gap, we propose a novel restoration-based analysis framework that uses Sparse Autoencoders to identify class-specific expert features in intermediate layers and applies inference-time steering to quantitatively distinguish between suppression and deletion. Applying our framework to 12 major unlearning methods in image classification tasks, we find that most methods achieve high restoration rates of unlearned information, indicating that they only suppress information at the decision-boundary level, while preserving semantic features in intermediate representations. Notably, even retraining from pretrained checkpoints shows high restoration, revealing that pretrained feature hierarchies persist. These results demonstrate that representation-level retention poses significant risks overlooked by output-based metrics, highlighting the need for new unlearning evaluation criteria. We propose new evaluation guidelines that prioritize representation-level verification, especially for privacy-critical applications in the pretrained model era."
     },
@@ -193,15 +215,15 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2025,
         "links": {
             "conf": "https://iccv.thecvf.com/"
-                 },
+        },
         "img": "/img/Publications/2025_ICCVW_Juhun.png",
         "abstract": "Image diffusion models are trained on independently sampled static images. While this is the bedrock task protocol in generative modeling, capturing the temporal world through the lens of static snapshots is information-deficient by design. This limitation leads to slower convergence, limited distributional coverage, and reduced generalization. In this work, we propose a simple and effective training strategy that leverages the temporal inductive bias present in continuous video frames to improve diffusion training. Notably, the proposed method requires no architectural modification and can be seamlessly integrated into standard diffusion training pipelines. We evaluate our method on the HandCo dataset, where hand-object interactions exhibit dense temporal coherence andsubtle variations in finger articulation often result in semantically distinct motions. Empirically, our method accelerates convergence by over 2x faster and achieves lower FID on both training and validation distributions. It also improves generative diversity by encouraging the model to capture meaningful temporal variations. We further provide an optimization analysis showing that our regularization reduces the gradient variance, which contributes to faster convergence."
     },
     {
         "title": "Self-Disclosure of Mental Health via Deepfakes: Testing the Effects of Self-Deepfakes on Affective Resistance and Intention to Seek Mental Health Support",
         "authors": [
-            "Jiyoung Lee", 
-            "Christopher M Dobmeier", 
+            "Jiyoung Lee",
+            "Christopher M Dobmeier",
             "Minji Heo",
             "Simon S. Woo"
         ],
@@ -215,7 +237,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2025,
         "links": {
             "conf": "https://www.tandfonline.com/journals/hhth20"
-                 },
+        },
         "img": "/img/Publications/2025_minji_health_communication.png",
         "abstract": "This study examines the use of deepfakes in self-disclosure interventions within mental health contexts. Specifically, we investigate how videos featuring self-deepfakes, celebrity deepfakes, and virtual agents disclosing mental health challenges shape affective resistance and intention to seek support, considering the moderating influence of individual baseline mental health. The findings indicate that self-deepfakes elicited greater affective resistance than celebrity deepfakes, leading to reduced help-seeking intention, whereas no significant differences were observed between self-deepfakes and virtual agent disclosures. Also, the moderation analysis showed that participants with lower baseline mental health were especially prone to heightened affective resistance toward self-disclosure videos featuring deepfake representations of themselves. Our findings indicate that artificial intelligence (AI)-generated self-deepfakes, which personalize content without affording users agency, may reverse the conventional self-referencing effect, provoking affective resistance rooted in identity threat. Since these counterproductive effects are most salient among individuals with negative self-schemas who struggle with greater mental health challenges, AI-driven technologies should be applied in health communication with caution, accompanied by tailored strategies designed to curb impulsive, emotion-driven resistance."
     },
@@ -235,10 +257,10 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2026,
         "links": {
             "conf": "https://www.sigapp.org/sac/sac2026/"
-                 },
+        },
         "img": "/img/Publications/SAC-MLA_2026_YongCheolRo.png",
         "abstract": "Along with the global trend of electric vehicle adoption, robust fault detection in EV battery management systems (BMS) is becoming increasingly important. In particular, fault detection in electric vehicles poses significant challenges to conventional methods due to non-stationarity, multi-scale dynamics, and label scarcity. We propose a correlation-aware \emph{TwinTCN} with \emph{RF-aligned} gating that matches correlation windows to TCN receptive fields, and couple it with a twin-encoder contrastive objective plus reconstruction to enhance discriminability while preserving normal patterns. Across three real-world EV datasets, the proposed model attains the highest \(F_1\) with a balanced precision–recall profile, outperforming unsupervised, supervised, and semi-supervised baselines."
-    },   
+    },
     {
         "title": "Exploring Gemini 2.5 for Explainable Deepfake Detection under Black-Box Constraints",
         "authors": [
@@ -256,21 +278,21 @@ const PUBLICATIONS_DATA_LOCAL = [
         "year": 2025,
         "links": {
             "conf": "https://xai.kaist.ac.kr/Workshop/hcai2025/"
-                 },
+        },
         "img": "/img/Publications/CIKM-W2026_HyunjuneKim.png",
         "abstract": "The rapid advancement of deepfake generation poses significant challenges for reliable media verification. Effective detection increasingly demands methods that are both accurate and interpretable, motivating the use of multimodal large language models (MLLMs) for transparency and human-aligned explainability. While prior work has primarily focused on open-source MLLMs, we investigate, for the first time, the potential of a closed-source model, Google Gemini 2.5, for deepfake detection and explanation. We systematically evaluate Gemini via zero-shot testing and adapter-based black-box fine-tuning using Google Vertex AI. On a simple binary dataset (FaceForensics++), zero-shot performance is low and fine-tuning yields only modest gains. Remarkably, on a vision-language benchmark (DD-VQA), even straightforward black-box fine-tuning enables Gemini to outperform existing state-of-the-art models, highlighting the dataset-dependent impact of fine-tuning on closed-source models. Our study empirically demonstrates the feasibility of explainable deepfake detection using closed-source MLLMs, revealing both their promise and current limitations."
-    },    
+    },
     {
         "title": "From Rules to LLM-Enhanced Templates: A Hybrid ALPG Code Generation System",
         "authors": [
-            "Sanghyeok Park", 
+            "Sanghyeok Park",
             "Sungjea Hwang",
             "Simon S. Woo"
         ],
         "venue_full": "International Conference on Software Engineering",
         "venue": "ICSE-SEIP",
         "track": "Industry Paper",
-        "Factor": [ "",
+        "Factor": ["",
             0
         ],
         "year": 2026,
@@ -278,7 +300,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "img": "/img/Publications/ICSE-SEIP2026_SangHyeokPark.png",
         "abstract": "The semiconductor industry operates as a multidisciplinary environment where engineers face development challenges due to varying coding proficiency. ALPG (Algorithmic Pattern Generator), used in semiconductor test equipment, requires nanosecond-level timing precision and signal control, yet existing LLMs fail to generate proper ALPG code due to the absence of public datasets. To address these challenges, we first developed RuleLang, a rule-based system achieving 76.3% coverage across 271 ALPG test patterns, but revealing limitations in handling new combinations. We then propose a hybrid system where LLMs generate JSON templates that are parsed by rule-based parsers into executable ALPG code. By constraining LLM outputs to schema-validated JSON, the system mitigates probabilistic uncertainty and prevents unsafe direct code generation. Evaluation on 271 real-world ALPG test patterns from Samsung’s 8th-generation V-NAND Flash memory achieved 84.2% accuracy, including a 23.4%p gain on new sequence test patterns, demonstrating significant improvements over manual and rule-based development."
     },
-        {
+    {
         "title": "CelebCaption: A Benchmark Dataset for Identity-Sensitive Unlearning in Image Captioning",
         "authors": [
             "Hakjun Moon",
@@ -296,7 +318,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "img": "/img/Publications/WSDM2026_HakjunMoon.png",
         "abstract": "Machine unlearning seeks to remove the influence of selected training examples without retraining the model from scratch. Recent work has extended this goal to vision–language models, yet existing datasets are not suited for judging whether a sample’s influence has truly been erased from learned image–text pairs. Current algorithms often intend to introduce false information into sentences generated after unlearning, which compromises utility. We first establish three criteria that an image-caption unlearning method should meet: Specificity Reduction, Identity Removal, and Performance Preservation. Guided by these criteria, we present CelebCaption, an image–text dataset of 15,000 photographs covering 150 well-known individuals, each linked to four captions that vary in detail (detailed vs. summary) and in the presence of the subject’s name. This design enables controlled, quantitative assessment of the proposed unlearning objectives. We benchmark several representative unlearning algorithms on CelebCaption, using both caption quality scores and MIA accuracy as a quantitative unlearning metric, and observe that current methods fail to achieve their privacy objectives. Our unlearning criteria and dataset provide a focused, reproducible testbed for advancing privacy-aware image captioning. Our CelebCaption dataset is publicly available at https://github.com/Gloriel621/CelebCaption"
     },
-    
+
     {
         "title": "Machine Pareidolia: Protecting Facial Images with Emotional Editing",
         "authors": [

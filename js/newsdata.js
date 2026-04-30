@@ -3,6 +3,7 @@
 // It must be loaded before news.js in your HTML.
 
 const newsData = [
+    { icon: '📰', date: 'Apr 2026', year: 2026, text: '동아일보: <b>“기억을 지웁니다”…AI ‘무한 학습’ 시대 가고 ‘망각’의 시대 오나</b> [<a href="https://www.donga.com/news/amp/all/20260427/133819471/1" target="_blank">media</a>]' },
     { icon: '📄', date: 'Apr 2026', year: 2026, text: 'One paper accepted at Demo & Challenge track of <b>ICMR 2026</b> ' },
     { icon: '📄', date: 'Feb 2026', year: 2026, text: 'Two papers accepted at findings track of <b>CVPR 2026 (BK IF=N/A)</b> ' },
     { icon: '📄', date: 'Feb 2026', year: 2026, text: 'One paper accepted at main paper track of <b>PAKDD 2026 (BK IF=1)</b> ' },

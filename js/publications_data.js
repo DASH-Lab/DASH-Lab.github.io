@@ -1,5 +1,28 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "VisionDES: Robust and Explainable Dynamic Vision Ensemble",
+        "authors": [
+            "Firuz Juraev",
+            "Mohammed Abuhamad",
+            "Shaker El-Sappagh",
+            "Simon S. Woo",
+            "Tamer Abuhmed"
+        ],
+        "venue_full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+        "venue": "KDD",
+        "track": "Research Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            4
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://kdd2026.kdd.org/"
+        },
+        "img": "/img/Publications/2026_KDD_prof.png",
+        "abstract": "Dynamic Ensemble Selection (DES) is an adaptive ensemble learning paradigm that selects a subset of base classifiers specific to each test input, enabling more flexible predictions than static ensemble methods. Although successful in tabular settings, DES remains largely unexplored in robust vision applications. We introduce VisionDES, a novel DES framework for image classification that uses deep model embeddings to estimate classifier competence. VisionDES leverages pre-trained vision transformer models to embed inputs and employs approximate nearest neighbor search to define a local region of competence for each sample. It then dynamically selects and fuses the most reliable models, using a similarity-weighted combination that down-weights less reliable or adversarially-compromised classifiers. Our VisionDES is extensively evaluated on various benchmarks and under clean conditions, distribution shifts, and strong adversarial attacks. It consistently outperforms static ensembles and existing uncertainty-based DES methods, improving robust accuracy by up to 20% under strong attacks and 2-3% higher accuracy under distribution shifts, with modest inference overhead. VisionDES offers instance-level interpretability by revealing models' contributions to the final decision."
+    },
+    {
         "title": "MOSAIV: Multi-Agent LLM Swarms for Automated Multimedia News Verification",
         "authors": [
             "Muhammad Shahid Muneer",

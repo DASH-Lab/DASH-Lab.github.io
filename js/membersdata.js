@@ -91,7 +91,7 @@ const alumni = [
     { name: "Girim Ban (MS) 2024", major: "Big Data, E-Commerce & Data Science", employment: "Data Scientist at Toss" },
     { name: "Taejune Kim (MS) 2024", major: "Anomaly Detection & Computer Vision", employment: "Robotics Lab, Hyundai Motor Company" },
     { name: "Kishor Kumar Bhaumik (MS) 2023", major: "Image Manipulation Detection & Time Series", employment: "UC Riverside, PhD program (w/ Dean's Distinguished Award + RA)" },
-    { name: "Jungho Kim (MS) 2023", major: "Knowledge distillation", employment: "KAIST, PhD program" },
+    { name: "Jungho Kim (MS) 2023", major: "Knowledge distillation", employment: "Qualcomm" },
     { name: "Gwanghan Lee (MS) 2023", major: "Model compression", employment: "Upstage" },
     { name: "Jinbeom Kim (MS) 2023", major: "Object detection & Knowledge Distillation", employment: "LIG 넥스원" },
     { name: "Sangyup Lee (Ph.D.) 2023", major: "Time-Series Anomaly Detection & Forecasting, Deepfakes Detection & Multi-media Forensics", employment: "Assistant Professor at Incheon National University", link: "https://sites.google.com/view/sangyuplee/" },

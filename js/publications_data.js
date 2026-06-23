@@ -1,5 +1,28 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Toward trustworthy digital healthcare: A system-level convergence of IoMT, large language models, and explainable AI",
+        "authors": [
+            "Maria Bashir",
+            "Mohammed Abuhamad",
+            "Simon S. Woo",
+            "Dong In Kim",
+            "Tamer Abuhmed"
+        ],
+        "venue_full": "Information Fusion",
+        "venue": null,
+        "track": "SCIE Journal",
+        "Factor": [
+            "SCIE IF =",
+            15.5
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://www.sciencedirect.com/science/article/pii/S1566253526003866"
+        },
+        "img": "/img/Publications/2026_InformationFusion_Simon.jpg",
+        "abstract": "The Internet of Medical Things (IoMT) enables continuous monitoring, remote diagnosis, and personalized treatment through interconnected medical devices operating across edge, cloud, and local environments. As a communication-centric infrastructure, IoMT depends on interoperability, low-latency networking, and coordinated intelligence to support reliable healthcare services. Realizing its full potential requires computational models that are interpretable, robust, and trustworthy. Large Language Models (LLMs) offer strong capabilities in natural language generation and contextual reasoning for clinical documentation, patient interaction, and decision support, yet their black-box behavior raises concerns regarding transparency and clinical trust. Explainable Artificial Intelligence (XAI) addresses these challenges by providing mechanisms for interpretability and accountability. Although IoMT, LLMs, and XAI have each advanced significantly, prior studies have largely examined them as separate research directions or through limited partial integrations. This work presents a unified system-level analytical study of their convergence in healthcare, positioning IoMT as the foundational infrastructure, LLMs as the contextual reasoning layer, and XAI as the trust-enabling layer for transparency and accountability. Furthermore, the paper systematically examines this convergence through rigorous analysis of architectural foundations and diverse healthcare application domains, and presents clinically grounded case studies to offer a unified, comprehensive, and forward-looking perspective on trustworthy digital healthcare systems."
+    },
+    {
         "title": "VisionDES: Robust and Explainable Dynamic Vision Ensemble",
         "authors": [
             "Firuz Juraev",

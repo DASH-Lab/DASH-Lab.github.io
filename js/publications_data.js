@@ -1,5 +1,49 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Anchor-Regularized Adaptation for Generalizable AI-Generated Image Detection with DINOv3",
+        "authors": [
+            "Hyeongjun Choi",
+            "Juhun Lee",
+            "Davide Cozzolino",
+            "Luisa Verdoliva",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM International Conference on Multimedia",
+        "venue": "MM",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science=",
+            4
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://2026.acmmm.org/"
+        },
+        "img": "/img/Publications/2026_ACMMM_hyungjune.png",
+        "abstract": "Recent works in AI-generated image detection have shown that careful training data alignment can improve generalization by removing spurious correlations. However, linear probes on frozen DINOv3 representations achieve remarkably strong performance even when trained on misaligned datasets. Motivated by this result, we analyze the underlying rationale and the limits of this generalization. We find that frozen DINOv3 performs well because its decisions rely on features that faithfully represent the space of authentic images. At the same time, its final layer is less effective at capturing the subtle pixel-artifact cues that can be emphasized by aligned training data. We further observe that naively mixing aligned and misaligned data during adaptation improves sensitivity to such cues but at the cost of distorting the pre-trained representation, limiting generalization. To address this issue, we propose Anchor-Regularized Adaptation (ARA). We apply Low-Rank Adaptation to capture pixel-level artifacts while leveraging a frozen anchor classifier to avoid deviations from the original representation structure. This allows the model to exploit pixel-artifact cues without sacrificing generalization. Our method achieves state-of-the-art performance on nine diverse and challenging benchmarks, indicating that ARA enables complementary supervision from misaligned and aligned data for more effective detection."
+    },
+    {
+        "title": "SAVAL: Signal-Driven Adaptive Validation for Post-Silicon Testing via Sequential Decision-Making and Causal-Guided Counterfactual Exploration in NAND Flash Memory",
+        "authors": [
+            "Sanghyeok Park",
+            "Soyoon Park",
+            "Simon S. Woo"
+        ],
+        "venue_full": "IEEE/ACM International Conference on Computer-Aided Design",
+        "venue": "ICCAD",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science=",
+            3
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://iccad.com/2026"
+        },
+        "img": "/img/Publications/2026_ICCAD_SangHeuk.jpg",
+        "abstract": "Post-silicon validation of timing-related defects in advanced 3D NAND flash has become a critical bottleneck due to exhaustive scan evaluation over increasingly complex operation spaces, where defects occur within narrow temporal windows and create a mismatch between sparse failure regions and uniform scan strategies. In this work, we propose SAVAL (Signal-driven Adaptive VALidation), a framework that leverages internal signals (ICC, IVC, ISM) to identify vulnerable intervals and selectively allocate scan effort. SAVAL formulates validation as a sequential decision-making process by integrating hybrid predictive modeling with adaptive exploration, combining deep learning–based temporal feature extraction with tree-based classification and a feedback-driven strategy that balances exploitation of known patterns and discovery of unseen defects. To address the challenge of limited failure observations, we introduce a counterfactual-style exploration mechanism inspired by causal reasoning, which infers failure-prone conditions from pass-dominated signals and guides exploration toward vulnerable regions beyond observed data. Experimental results on industrial 3D NAND datasets demonstrate a 17.8× speedup (94.4% reduction in validation turnaround time) while maintaining 97.5% defect detection accuracy, with 77% alignment to historical defects, highlighting the effectiveness of signal-driven adaptive validation for scalable semiconductor testing. While evaluated on NAND flash memory, the proposed framework is applicable to broader post-silicon validation scenarios across semiconductor systems."
+    },
+    {
         "title": "Toward trustworthy digital healthcare: A system-level convergence of IoMT, large language models, and explainable AI",
         "authors": [
             "Maria Bashir",

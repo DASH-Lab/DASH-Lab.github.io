@@ -1,5 +1,28 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Toward Data-Driven Satellite Orbit Prediction: A Dataset and Method Survey for Multi-Regime Satellites",
+        "authors": [
+            "Kangjun Lee",
+            " Seungwon Jeong",
+            "JongU Park",
+            "Youjin Shin",
+            "Simon S. Woo"
+        ],
+        "venue_full": "IEEE Access",
+        "venue": null,
+        "track": "SCIE Journal",
+        "Factor": [
+            "SCIED IF =",
+            4.2
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://ieeexplore.ieee.org/document/11594093"
+        },
+        "img": "/img/Publications/2026_IEEE_KangJun.png",
+        "abstract": "The rapid proliferation of artificial satellites and space debris necessitates accurate orbit prediction to ensure orbital sustainability. While machine learning has emerged as a powerful tool for this task, existing surveys lack a systematic investigation into the critical relationship between orbital regimes (LEO, MEO, and GEO) and dataset characteristics. This paper presents a comprehensive survey of data-driven satellite orbit prediction, offering a novel taxonomy centered on the datasets that underpin these studies. We systematically analyze how distinct orbital dynamics and data formats, ranging from Two-Line Elements (TLEs) to precise ephemerides, affect predictive model performance, and we categorize the models into hybrid and non-hybrid approaches that leverage machine learning and deep learning. Furthermore, we identify significant limitations in current research, particularly the lack of model generalization across diverse missions and the imbalance of available data. Finally, we propose future research directions, advocating the development of foundation models and the curation of high-fidelity, multi-regime datasets to advance the field toward universal orbit prediction."
+    },
+    {
         "title": "Anchor-Regularized Adaptation for Generalizable AI-Generated Image Detection with DINOv3",
         "authors": [
             "Hyeongjun Choi",

@@ -1,26 +1,24 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
-        "title": "Toward Data-Driven Satellite Orbit Prediction: A Dataset and Method Survey for Multi-Regime Satellites",
+        "title": "Beyond Attack Success: Trustworthiness Failure Signatures under Adversarial Prompting",
         "authors": [
-            "Kangjun Lee",
-            " Seungwon Jeong",
-            "JongU Park",
-            "Youjin Shin",
+            "Mirae Kim",
+            "Sangyup Lee",
             "Simon S. Woo"
         ],
-        "venue_full": "IEEE Access",
-        "venue": null,
-        "track": "SCIE Journal",
+        "venue_full": "KDD Workshop on Secure and Trustworthy Large Language Models",
+        "venue": "SeT-LLM",
+        "track": "Workshop Paper",
         "Factor": [
-            "SCIED IF =",
-            4.2
+            "",
+            0
         ],
         "year": 2026,
         "links": {
-            "conf": "https://ieeexplore.ieee.org/document/11594093"
+            "conf": null
         },
-        "img": "/img/Publications/2026_IEEE_KangJun.png",
-        "abstract": "The rapid proliferation of artificial satellites and space debris necessitates accurate orbit prediction to ensure orbital sustainability. While machine learning has emerged as a powerful tool for this task, existing surveys lack a systematic investigation into the critical relationship between orbital regimes (LEO, MEO, and GEO) and dataset characteristics. This paper presents a comprehensive survey of data-driven satellite orbit prediction, offering a novel taxonomy centered on the datasets that underpin these studies. We systematically analyze how distinct orbital dynamics and data formats, ranging from Two-Line Elements (TLEs) to precise ephemerides, affect predictive model performance, and we categorize the models into hybrid and non-hybrid approaches that leverage machine learning and deep learning. Furthermore, we identify significant limitations in current research, particularly the lack of model generalization across diverse missions and the imbalance of available data. Finally, we propose future research directions, advocating the development of foundation models and the curation of high-fidelity, multi-regime datasets to advance the field toward universal orbit prediction."
+        "img": "/img/Publications/2026_SeT-LLM_sangyupLee.png",
+        "abstract": "Adversarial attacks against large language models (LLMs) are commonly evaluated through aggregate attack-success metrics, implicitly treating attacks with similar success rates as producing comparable damage. We challenge this assumption by analysing adversarial effects across multiple trustworthiness dimensions—accuracy, safety, confidence, and robustness—and show that attacks induce heterogeneous failure signatures rather than uniform damage. Across five attacks, five benchmarks,and five models, we observe distinct degradation patterns that are not captured by aggregate success metrics. For example, GCG produces negligible accuracy degradation (Δ𝑄 = −0.08) while increasing the unsafe response rate to 90% in a less safety-tuned model, whereas jailbreak rewriting induces both performance degradation and the largest increase in confidently incorrect responses. To investigate the mechanisms behind these outcomes, we further separate observed degradation into multiple failure modes, including protocol-sensitive derailment, safety bypass without proportional capability degradation, and confidence collapse. Our results show that similar apparent attack success can arise from fundamentally different underlying mechanisms. These findings suggest that attack success alone is insufficient for interpreting adversarial outcomes and motivate evaluating attacks through their trustworthiness signatures to support attack-aware evaluation."
     },
     {
         "title": "Anchor-Regularized Adaptation for Generalizable AI-Generated Image Detection with DINOv3",
@@ -311,6 +309,29 @@ const PUBLICATIONS_DATA_LOCAL = [
         },
         "img": "/img/Publications/WWW2026short_yurim.png",
         "abstract": "As pretrained models are increasingly shared on the web, ensuring that models can forget or delete sensitive, copyrighted, or private information upon request has become crucial. Machine unlearning has been proposed to address this issue. However, current evaluations for unlearning methods rely on output-based metrics, which cannot verify whether information is completely deleted or merely suppressed at the representation level, where suppression is insufficient for true unlearning. To address this gap, we propose a novel restoration-based analysis framework that uses Sparse Autoencoders to identify class-specific expert features in intermediate layers and applies inference-time steering to quantitatively distinguish between suppression and deletion. Applying our framework to 12 major unlearning methods in image classification tasks, we find that most methods achieve high restoration rates of unlearned information, indicating that they only suppress information at the decision-boundary level, while preserving semantic features in intermediate representations. Notably, even retraining from pretrained checkpoints shows high restoration, revealing that pretrained feature hierarchies persist. These results demonstrate that representation-level retention poses significant risks overlooked by output-based metrics, highlighting the need for new unlearning evaluation criteria. We propose new evaluation guidelines that prioritize representation-level verification, especially for privacy-critical applications in the pretrained model era."
+    },
+    {
+        "title": "Toward Data-Driven Satellite Orbit Prediction: A Dataset and Method Survey for Multi-Regime Satellites",
+        "authors": [
+            "Kangjun Lee",
+            "Seungwon Jeong",
+            "JongU Park",
+            "Youjin Shin",
+            "Simon S. Woo"
+        ],
+        "venue_full": "IEEE Access",
+        "venue": null,
+        "track": "SCIE Journal",
+        "Factor": [
+            "SCIED IF =",
+            4.2
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://ieeexplore.ieee.org/document/11594093"
+        },
+        "img": "/img/Publications/2026_IEEE_KangJun.png",
+        "abstract": "The rapid proliferation of artificial satellites and space debris necessitates accurate orbit prediction to ensure orbital sustainability. While machine learning has emerged as a powerful tool for this task, existing surveys lack a systematic investigation into the critical relationship between orbital regimes (LEO, MEO, and GEO) and dataset characteristics. This paper presents a comprehensive survey of data-driven satellite orbit prediction, offering a novel taxonomy centered on the datasets that underpin these studies. We systematically analyze how distinct orbital dynamics and data formats, ranging from Two-Line Elements (TLEs) to precise ephemerides, affect predictive model performance, and we categorize the models into hybrid and non-hybrid approaches that leverage machine learning and deep learning. Furthermore, we identify significant limitations in current research, particularly the lack of model generalization across diverse missions and the imbalance of available data. Finally, we propose future research directions, advocating the development of foundation models and the curation of high-fidelity, multi-regime datasets to advance the field toward universal orbit prediction."
     },
     {
         "title": "Fitting Image Diffusion Models on Video Datasets",

@@ -1,5 +1,26 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Traffic-IMC: An Urban Road-Network Traffic Forecasting Benchmark",
+        "authors": [
+            "Seungbin Yim",
+            "Hyungchai Park",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems",
+        "venue": "SIGSPATIAL",
+        "track": "Research Paper",
+        "Factor": [
+            "",
+            0
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://sigspatial2026.sigspatial.org/"
+        },
+        "img": "/img/Publications/ACM SIGSPATIAL_2026_Seungbin.png",
+        "abstract": "Accurate traffic forecasting is essential for intelligent transportation systems, yet common benchmarks often focus on highway settings, rely on heavily preprocessed tensors, and offer limited support for studying operational data failures in complex urban road networks. We present Traffic-IMC, an imputation-aware urban traffic-volume forecasting benchmark built from more than three years of hourly measurements from 2,013 quality-controlled road-link sensors in Incheon, South Korea. Traffic-IMC combines traffic records with road-segment metadata and a directed, reachability-aware graph derived from the Korean Standard Node–Link system, enabling evaluation under road directionality, feasible vehicle movements, turn restrictions, and heterogeneous road attributes. Unlike single cleaned releases, Traffic-IMC preserves operational missingness and quality-control invalidations through a frozen validity mask while providing standardized imputed releases for complete model inputs. Its protocol excludes originally missing or invalidated targets from metric computation, enabling controlled analysis of imputation–forecasting pipelines. Baseline results show that urban forecasting accuracy is shaped by the interaction among imputation choices, architectural assumptions, prediction horizons, and physical road-network structure. Traffic-IMC provides a reproducible testbed for diagnosing and improving traffic forecasting in interrupted-flow urban environments. The dataset and source code have been made publicly available at https://github.com/ysb06/traffic-imc."
+    },
+    {
         "title": "Beyond Attack Success: Trustworthiness Failure Signatures under Adversarial Prompting",
         "authors": [
             "Mirae Kim",

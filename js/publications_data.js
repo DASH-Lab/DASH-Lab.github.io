@@ -1,5 +1,26 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Closing Generalization Gaps in Continual Face Forgery Detection",
+        "authors": [
+            "Bohyun Moon",
+            "Minh Binh Le",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM International Conference on Information and Knowledge Management",
+        "venue": "CIKM",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            3
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://cikm2026.diag.uniroma1.it/"
+        },
+        "img": "/img/Publications/2026_CIKM_Bohyun.png",
+        "abstract": "Deepfake manipulations evolve rapidly across digital media platforms, requiring continual updates to detectors as face forgery distributions shift. Unlike general class-incremental learning, continual face forgery detection is a domain-incremental binary task in which new manipulations of the same fake class are introduced. We demonstrate that existing continual deepfake detectors remain tied to distribution-specific cues, preserving performance on seen datasets while struggling to generalize to unseen manipulation domains. We further find that SVD-based parameter-efficient tuning provides a more transferable representation basis but still requires additional regularization to prevent forgetting during sequential updates. Building on these observations, we propose TASER, an exemplar-free continual face forgery detection framework that couples generalized low-rank adaptation with transport-guided representation regularization. Asymmetric Class-Wise Partial Optimal Transport (AC-POT) aligns real and fake manifolds separately for class-aware adaptation, while OT-guided Contrastive Separation (OTCon) strengthens the real/fake boundary using transport-selected positives and opposite-class negatives. TASER achieves state-of-the-art intra-dataset retention and cross-dataset generalization, achieving a final average AUC of 0.9787 with 0.0123 forgetting and an overall cross-dataset AUC of 0.8626 across challenging continual face forgery benchmarks."
+    },
+    {
         "title": "Traffic-IMC: An Urban Road-Network Traffic Forecasting Benchmark",
         "authors": [
             "Seungbin Yim",

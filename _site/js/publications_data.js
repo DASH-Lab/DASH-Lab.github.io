@@ -1,5 +1,28 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "NullGuard: Null-Space Embedding for Driftless Invisible Image Watermarking",
+        "authors": [
+            "Inzamamul Alam",
+            "Md Tanvir Islam",
+            "Juhun Lee",
+            "Sangtae Ahn",
+            "Simon S. Woo"
+        ],
+        "venue_full": "British Machine Vision Conference",
+        "venue": "BMVC",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            2
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://bmvc2026.bmva.org/"
+        },
+        "img": "/img/Publications/2026_BMVC_Inzi.jpg",
+        "abstract": "Abstract: Recent progress in text-to-image diffusion highlights the need for invisible, tamper-resilient watermarking that maintains both visual fidelity and prompt alignment. Existing approaches often compromise on robustness, imperceptibility, or scalability, with many introducing semantic drift that weakens provenance guarantees. To address this, we introduce NullGuard, a training-free, plug-and-play watermarking framework that embeds cryptographically keyed signals in the null-space of pretrained diffusion Jacobians, using user-specific rotations to define imperceptible directions. A lightweight Gauss–Newton pivot refinement, constrained by a perceptual mask, perturbs only watermark-relevant components while preserving global semantics, and a calibrated keyed forward likelihood-gap test detects watermarks, achieving up to 99% detection accuracy under attacks such as blurring and JPEG compression, with PSNR $\ge$ 45 dB. Extensive evaluations on MS-COCO and DiffusionDB demonstrate that NullGuard surpasses state-of-the-art (SOTA) methods in robustness, invisibility, and semantic alignment, offering a scalable foundation for provenance-aware diffusion governance."
+    },
+    {
         "title": "Decomposed Attention Frequency Debiased Transformer Model: Large Time-series Model for Satellite Orbit Prediction",
         "authors": [
             "Kanjun Lee",

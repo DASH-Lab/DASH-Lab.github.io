@@ -1,5 +1,49 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "Decomposed Attention Frequency Debiased Transformer Model: Large Time-series Model for Satellite Orbit Prediction",
+        "authors": [
+            "Kanjun Lee",
+            "Seungwon Jeong",
+            "Jongu Park",
+            "Youjin Shin",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM International Conference on Information and Knowledge Management",
+        "venue": "CIKM",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            3
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://cikm2026.diag.uniroma1.it/"
+        },
+        "img": "/img/Publications/2026_CIKM_Kangjun.png",
+        "abstract": "Accurate satellite orbit prediction is critical for collision avoidance and sustainable space operations. However, conventional prediction methods are constrained by coarse update intervals and orbit discontinuities. Additionally, building separate prediction models for each satellite is computationally expensive, making large-scale accurate forecasting increasingly impractical. To address the aforementioned challenges, we propose the Decomposed Attention Frequency-debiased transformer (DAF) model, a large time-series prediction model that utilizes efficient Real Fast Fourier Transform (RFFT) and Inverse RFFT alongside positional embeddings. Our DAF also integrates Tensorized Multi-Head Attention based on Tensor Train Decomposition for parameter-efficient compression and improved performance. We pre-trained on a large-scale Starlink dataset comprising 6,955 satellites and evaluated zero-shot performance on seven cross-domain satellite orbit datasets and three real-world datasets. DAF achieves up to 34.85% reduction in mean squared error and 16.01% reduction in mean absolute error over the second-best model, using only 0.045% of its parameters and maintaining inference speed comparable to conventional neural network baselines. These results demonstrate that DAF enables zero-shot, high-precision orbit prediction not only for Starlink satellites, but also for other types of satellites. The code is available here: https://anonymous.4open.science/r/DAF-0D75"
+    },
+     {
+        "title": "FOCAL: Forgery-Centric One-Class Artifact Learning for Out-of-Distribution Deepfake Detection",
+        "authors": [
+            "Muhammad Shahid Muneer",
+            "Razaib Tariq",
+            "Simon S. Woo"
+        ],
+        "venue_full": "ACM International Conference on Information and Knowledge Management",
+        "venue": "CIKM",
+        "track": "Main Paper",
+        "Factor": [
+            "BK Computer Science IF=",
+            3
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://cikm2026.diag.uniroma1.it/"
+        },
+        "img": "/img/Publications/2026_CIKM_Shahid.png",
+        "abstract": "Existing deepfake detection methods learn facial representations that capture the identity, semantics, or geometric structure of real faces. We argue that such face-centric representations can introduce identity and semantic biases, encoding appearance attributes that correlate with a person’s identity rather than with the image’s manipulation, thereby limiting transferability to unseen forgery types. In this work, we propose Forgery-Centric One-Class Artifact Learning (FOCAL), a representation learning framework that models manipulation artifacts directly rather than generic facial semantics. FOCAL is trained exclusively on forged images: an encoder-decoder reconstructs spatial artifact maps from fake inputs, forcing the encoder to learn where and how manipulation has occurred. This reconstruction objective is complemented by spatial and frequency-domain contrastive losses that encourage invariance to input perturbations while preserving discriminative forgery cues. Because the encoder captures a compact forgery-artifact distribution, real faces unseen during training naturally fall outside. We exploit this property by proposing the Dynamic-Centroid Mahalanobis Distance (DCMD), which enables classifier-free, zero-shot detection without target-domain adaptation. Despite being trained only on fake images, FOCAL surpasses state-of-the-art methods on standard cross-dataset benchmarks in both detection AUC and pixel-level forgery. This clearly demonstrates that forgery-centric representations yield more transferable features than approaches anchored to real-face distributions."
+    },
+    {
         "title": "Closing Generalization Gaps in Continual Face Forgery Detection",
         "authors": [
             "Bohyun Moon",

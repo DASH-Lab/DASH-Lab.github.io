@@ -77,8 +77,8 @@ const PUBLICATIONS_DATA_LOCAL = [
         "venue": "BMVC",
         "track": "Main Paper",
         "Factor": [
-            "BK Computer Science IF=",
-            2
+            "",
+            0
         ],
         "year": 2026,
         "links": {

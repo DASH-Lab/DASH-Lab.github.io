@@ -1,6 +1,6 @@
 // --- Configuration ---
 // Set to empty string for local development so paths are relative (e.g. "img/...")
-const IMG_BASE = ""; 
+const IMG_BASE = "";
 
 // --- LOGO CONFIGURATION ---
 // Change these filenames to match your actual files in the img/dash_logo/ folder
@@ -119,15 +119,10 @@ const footerHTML = `
                 </p>
             </div>
 
-            <!-- Column 2: Visitors Map -->
+            <!-- Column 2: Visitors Map (MapMyVisitors) -->
             <div class="flex flex-col items-center">
                 <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1">Visitors Map</h5>
-                <a href="https://clustrmaps.com/site/1c2h5" title="Visit tracker" target="_blank" class="block hover:opacity-90 transition-opacity">
-                    <img src="//www.clustrmaps.com/map_v2.png?d=cQzNXuve8H7E3SzSJQ8IOQknuoDwXvZEnWvx94wdKDQ&cl=ffffff&co=004274" 
-                          style="border:0;" 
-                          alt="Visit tracker map"
-                          class="mx-auto max-w-[200px] h-auto rounded shadow-lg">
-                </a>
+                <div id="mmv-globe-container" class="visitor-globe" aria-label="Visitor globe map"></div>
             </div>
 
             <!-- Column 3: Links -->
@@ -244,6 +239,17 @@ function initMobileMenu() {
     }
 }
 
+function initMapMyVisitorsGlobe() {
+    const container = document.getElementById('mmv-globe-container');
+    if (!container || document.getElementById('mmvst_globe')) return;
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.id = 'mmvst_globe';
+    script.src = 'https://mapmyvisitors.com/globe.js?d=WSRWDykPFtA_nKHNlwSCbJFMET0v-5iX02V_2yegCd0';
+    container.appendChild(script);
+}
+
 function injectLayout() {
     // 1. Inject Navbar at the very top of body
     const navbarContainer = document.createElement('div');
@@ -263,6 +269,7 @@ function injectLayout() {
     cleanUrl();
     highlightActiveLink();
     initMobileMenu();
+    initMapMyVisitorsGlobe();
 }
 
 // Run immediately when DOM is ready

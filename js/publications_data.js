@@ -656,7 +656,7 @@ const PUBLICATIONS_DATA_LOCAL = [
         "venue_full": "Conference on Neural Information Processing Systems",
         "venue": "NeurIPS",
         "track": "Dataset Paper",
-        "presentationType": null,
+        "presentationType": "Poster Presentation",
         "Factor": [
             "BK Computer Science IF=",
             4

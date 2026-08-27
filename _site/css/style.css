@@ -93,6 +93,23 @@ video {
     margin-top: auto;
 }
 
+.visitor-globe {
+    width: 200px;
+    min-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visitor-globe canvas,
+.visitor-globe img,
+.visitor-globe iframe {
+    max-width: 100%;
+    height: auto !important;
+}
+
 .footer-link {
     color: #d1d5db;
     transition: color 0.2s;

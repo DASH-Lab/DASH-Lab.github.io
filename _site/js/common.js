@@ -122,7 +122,7 @@ const footerHTML = `
             <!-- Column 2: Visitors Map (MapMyVisitors) -->
             <div class="flex flex-col items-center">
                 <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1">Visitors Map</h5>
-                <div id="mmv-globe-container" class="visitor-globe" aria-label="Visitor globe map"></div>
+                <div id="mmv-map-container" class="visitor-map" aria-label="Visitor map"></div>
             </div>
 
             <!-- Column 3: Links -->
@@ -239,14 +239,15 @@ function initMobileMenu() {
     }
 }
 
-function initMapMyVisitorsGlobe() {
-    const container = document.getElementById('mmv-globe-container');
-    if (!container || document.getElementById('mmvst_globe')) return;
+function initMapMyVisitorsMap() {
+    const container = document.getElementById('mmv-map-container');
+    if (!container || document.getElementById('mapmyvisitors')) return;
 
+    // Must load inside <body> (not <head>) — footer injects into body
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.id = 'mmvst_globe';
-    script.src = 'https://mapmyvisitors.com/globe.js?d=WSRWDykPFtA_nKHNlwSCbJFMET0v-5iX02V_2yegCd0';
+    script.id = 'mapmyvisitors';
+    script.src = 'https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=m&d=J2CHa5-1pgRGbM5mUTfjBETiohBQhDbeHmo1V2Aw16o';
     container.appendChild(script);
 }
 
@@ -269,7 +270,7 @@ function injectLayout() {
     cleanUrl();
     highlightActiveLink();
     initMobileMenu();
-    initMapMyVisitorsGlobe();
+    initMapMyVisitorsMap();
 }
 
 // Run immediately when DOM is ready

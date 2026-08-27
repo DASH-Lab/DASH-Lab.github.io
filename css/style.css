@@ -93,9 +93,9 @@ video {
     margin-top: auto;
 }
 
-.visitor-globe {
-    width: 200px;
-    min-height: 200px;
+.visitor-map {
+    width: 300px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -103,9 +103,10 @@ video {
     justify-content: center;
 }
 
-.visitor-globe canvas,
-.visitor-globe img,
-.visitor-globe iframe {
+.visitor-map canvas,
+.visitor-map img,
+.visitor-map iframe,
+.visitor-map a {
     max-width: 100%;
     height: auto !important;
 }

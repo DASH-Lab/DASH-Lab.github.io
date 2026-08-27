@@ -38,6 +38,14 @@ function renderPublication(p) {
     const trackHtml = p.track && p.track !== "Etc." ? 
         `<tr><td><p class="m-0"><small><b class="text-blue-800">${p.track} Track</b></small></p></td></tr>` : '';
 
+    const presentationType = p.presentationType && String(p.presentationType).trim();
+    const isOral = presentationType && /oral/i.test(presentationType);
+    const isPoster = presentationType && /poster/i.test(presentationType);
+    const presentationIcon = isOral ? 'fa-microphone' : (isPoster ? 'fa-image' : 'fa-desktop');
+    const presentationColor = isOral ? 'text-amber-600' : (isPoster ? 'text-teal-600' : 'text-indigo-600');
+    const presentationHtml = presentationType ?
+        `<tr><td><p class="m-0"><small><b class="${presentationColor}"><i class="fas ${presentationIcon} mr-1"></i>${presentationType}</b></small></p></td></tr>` : '';
+
     const factorValue = p.Factor && p.Factor[1] !== null && p.Factor[1] !== undefined ? p.Factor[1] : 0;
     const factorText = p.Factor && p.Factor[0] ? p.Factor[0] : '';
     
@@ -83,6 +91,7 @@ function renderPublication(p) {
                         <tr><td>${renderAuthors(p.authors)}</td></tr>
                         <tr><td><p class="m-0 text-justify mb-1"><small><b>${venueLinkStart}${venueText}${venueLinkEnd}</b></small></p></td></tr>
                         ${trackHtml}
+                        ${presentationHtml}
                         ${factorHtml}
                         ${abstractHtml}
                     </tbody>

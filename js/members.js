@@ -53,17 +53,45 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
+ * Splits a comma-separated interests string into individual chip labels.
+ */
+function parseInterestChips(interests) {
+    if (!interests) return [];
+    return String(interests)
+        .split(',')
+        .map(item => item.trim())
+        .filter(Boolean);
+}
+
+/**
+ * Renders research-interest chips for a member card.
+ */
+function renderInterestChips(interests) {
+    const chips = parseInterestChips(interests);
+    if (!chips.length) return '';
+    return `
+        <div class="member-interests" role="list" aria-label="Research interests">
+            ${chips.map(interest =>
+                `<span class="member-interest-chip" role="listitem">${interest}</span>`
+            ).join('')}
+        </div>
+    `;
+}
+
+/**
  * Renders a grid of member cards
  */
 function renderMembers(data, containerId, defaultRole, showJoinLab = false) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    let membersHtml = data.map(member => `
+    let membersHtml = data.map(member => {
+        const primaryLink = member.link || member.homepage || null;
+        return `
         <div class="member-card">
             <div class="flex flex-col items-center">
-                ${member.link
-            ? `<a href="${member.link}" target="_blank" class="block group mb-3">
+                ${primaryLink
+            ? `<a href="${primaryLink}" target="_blank" class="block group mb-3">
                          <div class="overflow-hidden rounded-full w-32 h-32 border-4 border-white shadow-md transition-transform group-hover:scale-105">
                             <img loading="lazy" src="${getImg(member.img)}" onerror="this.src='${getImg('img/member_images/Dashlab_logo.jpg')}'" alt="${member.name}" class="w-full h-full object-cover">
                          </div>
@@ -74,24 +102,41 @@ function renderMembers(data, containerId, defaultRole, showJoinLab = false) {
         }
                 
                 <div class="mb-2">
-                    ${member.link
-            ? `<a href="${member.link}" target="_blank" class="text-lg font-bold text-blue-700 hover:text-blue-900 leading-tight">${member.name}</a>`
+                    ${primaryLink
+            ? `<a href="${primaryLink}" target="_blank" class="text-lg font-bold text-blue-700 hover:text-blue-900 leading-tight">${member.name}</a>`
             : `<span class="text-lg font-bold text-gray-800 leading-tight">${member.name}</span>`
         }
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-0.5">${member.role || defaultRole}</p>
                 </div>
 
                 ${member.dept ? `<p class="text-[11px] text-gray-500 italic mb-2 text-center px-4">${member.dept}</p>` : ''}
-                <div class="px-3 py-1 bg-blue-50 rounded-full">
-                    <p class="text-[10px] font-semibold text-blue-700 leading-tight text-center">${member.interests}</p>
-                </div>
+                ${renderInterestChips(member.interests)}
             </div>
 
             <div class="mt-4 pt-3 border-t border-gray-50 text-center">
+                ${(member.link || member.linkedin || member.homepage) ? `
+                <div class="flex justify-center items-center gap-3 mb-2">
+                    ${member.link
+            ? `<a href="${member.link}" target="_blank" rel="noopener noreferrer" title="Google Scholar" class="text-blue-600 hover:text-blue-800 transition-colors" aria-label="${member.name} Google Scholar">
+                            <i class="fas fa-graduation-cap text-sm"></i>
+                       </a>`
+            : ''}
+                    ${member.linkedin
+            ? `<a href="${member.linkedin}" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="text-blue-600 hover:text-blue-800 transition-colors" aria-label="${member.name} LinkedIn">
+                            <i class="fab fa-linkedin text-sm"></i>
+                       </a>`
+            : ''}
+                    ${member.homepage
+            ? `<a href="${member.homepage}" target="_blank" rel="noopener noreferrer" title="Homepage" class="text-blue-600 hover:text-blue-800 transition-colors" aria-label="${member.name} Homepage">
+                            <i class="fas fa-globe text-sm"></i>
+                       </a>`
+            : ''}
+                </div>` : ''}
                 <p class="text-[10px] text-gray-400 font-mono truncate">${member.email}</p>
             </div>
         </div>
-    `).join('');
+    `;
+    }).join('');
 
     if (showJoinLab) {
         membersHtml += `

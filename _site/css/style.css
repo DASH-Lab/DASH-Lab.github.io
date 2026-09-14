@@ -684,6 +684,92 @@ video {
     z-index: 10;
 }
 
+/* Research interest chips on member profile cards */
+.member-interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem 0.35rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.15rem 0.25rem;
+    box-sizing: border-box;
+}
+
+.member-interest-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-size: 10.5px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    text-align: center;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* Soft academic palette (cycles; blue/slate/teal family — no neon, no purple-default) */
+.member-interest-chip:nth-child(7n + 1) {
+    background: #e8f1fb;
+    color: #1e4a7a;
+    border-color: #c5daf0;
+}
+
+.member-interest-chip:nth-child(7n + 2) {
+    background: #e6f5f2;
+    color: #0f5c56;
+    border-color: #b8e0d8;
+}
+
+.member-interest-chip:nth-child(7n + 3) {
+    background: #eef1f5;
+    color: #334155;
+    border-color: #d0d7e2;
+}
+
+.member-interest-chip:nth-child(7n + 4) {
+    background: #e7f6fc;
+    color: #0c5a7a;
+    border-color: #b5e0f0;
+}
+
+.member-interest-chip:nth-child(7n + 5) {
+    background: #f8f1e6;
+    color: #7a5420;
+    border-color: #ead9bc;
+}
+
+.member-interest-chip:nth-child(7n + 6) {
+    background: #eaf5eb;
+    color: #2d5a35;
+    border-color: #c5e0c8;
+}
+
+.member-interest-chip:nth-child(7n + 7) {
+    background: #f4ece8;
+    color: #6b3f32;
+    border-color: #e0cdc4;
+}
+
+@media (max-width: 640px) {
+    .member-interests {
+        gap: 0.35rem 0.3rem;
+        padding: 0.1rem 0.15rem;
+    }
+
+    .member-interest-chip {
+        padding: 0.3rem 0.55rem;
+        font-size: 10px;
+        line-height: 1.4;
+    }
+}
+
 .alumni-table table {
     width: 100%;
     border-collapse: collapse;

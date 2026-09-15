@@ -312,7 +312,7 @@ const footerHTML = `
                 </p>
             </div>
 
-            <!-- Column 2: Visitors Map (MapMyVisitors) -->
+            <!-- Column 2: Visitors Map (MapMyVisitors; unique-gated in initMapMyVisitorsMap) -->
             <div class="flex flex-col items-center">
                 <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1">Visitors Map</h5>
                 <div id="mmv-map-container" class="visitor-map" aria-label="Visitor map"></div>
@@ -434,16 +434,168 @@ function initMobileMenu() {
     }
 }
 
-function initMapMyVisitorsMap() {
-    const container = document.getElementById('mmv-map-container');
-    if (!container || document.getElementById('mapmyvisitors')) return;
+/* MapMyVisitors footer map
+ * The free widget couples display + tracking: every map.js / map.png load hits
+ * widget_call_home and can inflate hits. MMV claims IP-based daily uniques
+ * server-side, but has no unique-visitor embed setting, and its third-party
+ * PHPSESSID is often blocked. We gate counting with a first-party cookie so
+ * each browser is registered at most once per uniqueness window.
+ */
+const MMV_MAP_ID = 'J2CHa5-1pgRGbM5mUTfjBETiohBQhDbeHmo1V2Aw16o';
+const MMV_SCRIPT_SRC = `https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=m&d=${MMV_MAP_ID}`;
+const MMV_BG_SRC = 'https://mapmyvisitors.com/generated_content/backs/bg-w_300-cl_ffffff.png';
+const MMV_VISITOR_COOKIE = 'dash_visitor_id';
+const MMV_COUNTED_COOKIE = 'dash_mmv_unique';
+const MMV_SNAPSHOT_KEY = 'dash_mmv_snapshot';
+const MMV_RETURNS_KEY = 'dash_mmv_returns';
+/** How long a browser counts as one unique visitor (days). */
+const MMV_UNIQUE_DAYS = 365;
 
+function getCookie(name) {
+    const prefix = `${name}=`;
+    const parts = document.cookie.split(';');
+    for (let i = 0; i < parts.length; i++) {
+        const part = parts[i].trim();
+        if (part.indexOf(prefix) === 0) {
+            return decodeURIComponent(part.substring(prefix.length));
+        }
+    }
+    return null;
+}
+
+function setCookie(name, value, days) {
+    const maxAge = Math.floor(days * 24 * 60 * 60);
+    const secure = location.protocol === 'https:' ? '; Secure' : '';
+    document.cookie = `${name}=${encodeURIComponent(value)}; Path=/; Max-Age=${maxAge}; SameSite=Lax${secure}`;
+}
+
+function createVisitorId() {
+    if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+        return window.crypto.randomUUID();
+    }
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+        const r = (Math.random() * 16) | 0;
+        const v = c === 'x' ? r : (r & 0x3) | 0x8;
+        return v.toString(16);
+    });
+}
+
+function ensureVisitorId() {
+    let id = getCookie(MMV_VISITOR_COOKIE);
+    if (!id) {
+        id = createVisitorId();
+        setCookie(MMV_VISITOR_COOKIE, id, MMV_UNIQUE_DAYS);
+    } else {
+        // Refresh expiry so active visitors keep a stable id
+        setCookie(MMV_VISITOR_COOKIE, id, MMV_UNIQUE_DAYS);
+    }
+    return id;
+}
+
+function readMmvSnapshot() {
+    try {
+        return JSON.parse(localStorage.getItem(MMV_SNAPSHOT_KEY) || 'null');
+    } catch (e) {
+        return null;
+    }
+}
+
+function writeMmvSnapshot(visitors, dateText) {
+    try {
+        localStorage.setItem(MMV_SNAPSHOT_KEY, JSON.stringify({
+            visitors: visitors || '',
+            date: dateText || '',
+            savedAt: Date.now()
+        }));
+    } catch (e) { /* ignore quota / private mode */ }
+}
+
+function bumpReturnVisitCount() {
+    try {
+        const prev = parseInt(localStorage.getItem(MMV_RETURNS_KEY) || '0', 10) || 0;
+        localStorage.setItem(MMV_RETURNS_KEY, String(prev + 1));
+    } catch (e) { /* ignore */ }
+}
+
+function escapeHtml(text) {
+    return String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function captureMmvSnapshot(container) {
+    const tryCapture = () => {
+        const visitorsEl = container.querySelector('.mapmyvisitors-visitors');
+        const dateEl = container.querySelector('.mapmyvisitors-date');
+        const visitors = visitorsEl ? visitorsEl.textContent.trim() : '';
+        if (!visitors || visitors === '\u00a0') return false;
+        writeMmvSnapshot(visitors, dateEl ? dateEl.textContent.trim() : '');
+        return true;
+    };
+
+    if (tryCapture()) return;
+
+    const observer = new MutationObserver(() => {
+        if (tryCapture()) observer.disconnect();
+    });
+    observer.observe(container, { childList: true, subtree: true, characterData: true });
+    setTimeout(() => observer.disconnect(), 20000);
+}
+
+function loadMapMyVisitorsTracking(container) {
     // Must load inside <body> (not <head>) — footer injects into body
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.id = 'mapmyvisitors';
-    script.src = 'https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=m&d=J2CHa5-1pgRGbM5mUTfjBETiohBQhDbeHmo1V2Aw16o';
+    script.src = MMV_SCRIPT_SRC;
     container.appendChild(script);
+    captureMmvSnapshot(container);
+}
+
+function renderReturnVisitorMap(container) {
+    const snapshot = readMmvSnapshot();
+    const mapHeight = Math.round(300 / 2.04);
+    const visitorsText = escapeHtml(snapshot && snapshot.visitors ? snapshot.visitors : 'Visitors map');
+    const dateText = escapeHtml(snapshot && snapshot.date ? snapshot.date : '');
+
+    const link = document.createElement('a');
+    link.href = 'https://mapmyvisitors.com/';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.id = 'mapmyvisitors-widget';
+    link.className = 'mapmyvisitors-map-control dash-mmv-return';
+    link.setAttribute('aria-label', 'Visitor map (returning visitor — not re-counted)');
+    link.style.cssText = 'display:block;width:300px;max-width:100%;margin:0 auto;text-decoration:none;position:relative;color:transparent;';
+
+    link.innerHTML =
+        '<div class="mapmyvisitors-map-container" style="background-color:#2d78ad;position:relative;">' +
+            `<div class="mpmvs mapmyvisitors-visitors" style="text-align:center;width:100%;z-index:10;color:#ffffff;font-size:12px;line-height:16px;font-family:Helvetica Neue,Arial,sans-serif;">${visitorsText}</div>` +
+            `<div class="mpmvs mapmyvisitors-date" style="text-align:center;width:100%;z-index:10;color:#ffffff;font-size:12px;line-height:16px;font-family:Helvetica Neue,Arial,sans-serif;">${dateText}</div>` +
+            `<div class="mapmyvisitors-map" style="width:300px;max-width:100%;height:${mapHeight}px;background-image:url('${MMV_BG_SRC}');background-repeat:no-repeat;background-size:100% 100%;"></div>` +
+        '</div>';
+
+    container.appendChild(link);
+}
+
+function initMapMyVisitorsMap() {
+    const container = document.getElementById('mmv-map-container');
+    if (!container || document.getElementById('mapmyvisitors') || document.getElementById('mapmyvisitors-widget')) return;
+
+    ensureVisitorId();
+
+    const alreadyCounted = !!getCookie(MMV_COUNTED_COOKIE);
+    if (alreadyCounted) {
+        bumpReturnVisitCount();
+        renderReturnVisitorMap(container);
+        return;
+    }
+
+    // First visit in the uniqueness window: count once via MapMyVisitors
+    setCookie(MMV_COUNTED_COOKIE, '1', MMV_UNIQUE_DAYS);
+    loadMapMyVisitorsTracking(container);
 }
 
 function injectLayout() {

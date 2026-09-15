@@ -444,6 +444,8 @@ function initMobileMenu() {
 const MMV_MAP_ID = 'J2CHa5-1pgRGbM5mUTfjBETiohBQhDbeHmo1V2Aw16o';
 const MMV_SCRIPT_SRC = `https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=m&d=${MMV_MAP_ID}`;
 const MMV_BG_SRC = 'https://mapmyvisitors.com/generated_content/backs/bg-w_300-cl_ffffff.png';
+/** Public stats page the live widget links to (profile_link from widget_call_home). */
+const MMV_PROFILE_URL = 'https://mapmyvisitors.com/web/1c7r4';
 const MMV_VISITOR_COOKIE = 'dash_visitor_id';
 const MMV_COUNTED_COOKIE = 'dash_mmv_unique';
 const MMV_SNAPSHOT_KEY = 'dash_mmv_snapshot';
@@ -545,6 +547,30 @@ function captureMmvSnapshot(container) {
     setTimeout(() => observer.disconnect(), 20000);
 }
 
+/** Keep the live widget pointing at the DASH Lab stats page (widget starts on homepage). */
+function ensureMmvProfileLink(container) {
+    const apply = () => {
+        const link = container.querySelector('#mapmyvisitors-widget') ||
+            document.getElementById('mapmyvisitors-widget');
+        if (!link) return false;
+        link.href = MMV_PROFILE_URL;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        return true;
+    };
+
+    if (apply()) return;
+
+    const observer = new MutationObserver(() => {
+        if (apply()) observer.disconnect();
+    });
+    observer.observe(container, { childList: true, subtree: true });
+    setTimeout(() => {
+        apply();
+        observer.disconnect();
+    }, 20000);
+}
+
 function loadMapMyVisitorsTracking(container) {
     // Must load inside <body> (not <head>) — footer injects into body
     const script = document.createElement('script');
@@ -553,6 +579,7 @@ function loadMapMyVisitorsTracking(container) {
     script.src = MMV_SCRIPT_SRC;
     container.appendChild(script);
     captureMmvSnapshot(container);
+    ensureMmvProfileLink(container);
 }
 
 function renderReturnVisitorMap(container) {
@@ -562,7 +589,7 @@ function renderReturnVisitorMap(container) {
     const dateText = escapeHtml(snapshot && snapshot.date ? snapshot.date : '');
 
     const link = document.createElement('a');
-    link.href = 'https://mapmyvisitors.com/';
+    link.href = MMV_PROFILE_URL;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     link.id = 'mapmyvisitors-widget';

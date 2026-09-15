@@ -93,11 +93,11 @@ function renderCarousel(limit, selector) {
     // If limit is -1, show all. Otherwise slice.
     const imagesToShow = limit === -1 ? galleryData : galleryData.slice(0, limit);
 
-    // Generate HTML
-    const slidesHTML = imagesToShow.map(item => `
+    // Generate HTML — first 2 slides eager for Flickity layout; rest lazy
+    const slidesHTML = imagesToShow.map((item, i) => `
         <div class="gallery-cell" style="margin: auto;">
             <div class="cursor-pointer" onclick="openImageModal('${getImg(item.src)}')" title="Click to enlarge">
-                <img loading="lazy" src="${getImg(item.src)}" onerror="this.src='${getImg(item.src)}'" alt="Event Image" />
+                <img ${i < 2 ? 'loading="eager" fetchpriority="low"' : 'loading="lazy"'} decoding="async" width="800" height="450" src="${getImg(item.src)}" onerror="this.src='${getImg(item.src)}'" alt="Event Image" />
             </div>
             <p>${item.desc}</p>
         </div>

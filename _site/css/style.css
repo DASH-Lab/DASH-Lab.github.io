@@ -91,6 +91,9 @@ video {
     color: white;
     padding: 3rem 0;
     margin-top: auto;
+    /* Skip offscreen footer layout work until near viewport (map still loads via JS) */
+    content-visibility: auto;
+    contain-intrinsic-size: auto 420px;
 }
 
 .visitor-map {
@@ -235,6 +238,7 @@ video {
     pointer-events: none;
     overflow: hidden;
     z-index: 20;
+    contain: layout style paint;
     /* Soft page-load entry — avoids a sudden particle burst */
     opacity: 0;
     animation: nav-fx-enter 0.55s ease-out 0.05s forwards;

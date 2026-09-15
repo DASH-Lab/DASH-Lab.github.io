@@ -9,17 +9,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
     
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/common.js"></script>
+    <script src="js/common.js" defer></script>
     
-    <!-- Data Scripts (Load before logic) -->
-    <script src="js/newsdata.js"></script>
-    <script src="js/imagedata.js"></script>
-    
-    <!-- Logic Script -->
+    <!-- Data + logic (defer preserves document order) -->
+    <script src="js/newsdata.js" defer></script>
+    <script src="js/imagedata.js" defer></script>
     <script src="js/news.js" defer></script>
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">

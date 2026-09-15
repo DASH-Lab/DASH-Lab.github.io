@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASH LAB - Home</title>
     
-    <!-- External Libraries -->
+    <!-- External Libraries (defer non-critical — gallery / Lottie run after parse) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
     
     <!-- Critical Helper: Defined in Head for immediate availability -->
     <script>
@@ -26,13 +26,11 @@
 
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/common.js"></script>
+    <script src="js/common.js" defer></script>
     
-    <!-- Data Scripts (Load before logic) -->
-    <script src="js/newsdata.js"></script> 
-    <script src="js/imagedata.js"></script>
-    
-    <!-- Logic Script -->
+    <!-- Data + page logic (defer preserves order; runs before DOMContentLoaded) -->
+    <script src="js/newsdata.js" defer></script> 
+    <script src="js/imagedata.js" defer></script>
     <script src="js/news.js" defer></script>
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
@@ -243,7 +241,11 @@
                     <img src="img/posters/Lab_Infographics.png"
                          alt="DASH Lab recruiting infographic seeking PhD students"
                          class="poster-ad-thumb"
-                         loading="lazy">
+                         width="148"
+                         height="197"
+                         loading="lazy"
+                         decoding="async"
+                         fetchpriority="low">
                     <span class="poster-ad-hint">Click to view</span>
                 </button>
             </div>
@@ -288,7 +290,11 @@
                     <img src="img/posters/poster_securemachineslab.png"
                          alt="Secure Machines Lab poster AI Forensics & Media Integrity"
                          class="poster-ad-thumb"
-                         loading="lazy">
+                         width="148"
+                         height="197"
+                         loading="lazy"
+                         decoding="async"
+                         fetchpriority="low">
                     <span class="poster-ad-hint">Click to view</span>
                 </button>
                 <button type="button"
@@ -300,7 +306,11 @@
                     <img src="img/posters/poster_dash.png"
                          alt="DASH Lab research overview poster"
                          class="poster-ad-thumb"
-                         loading="lazy">
+                         width="148"
+                         height="197"
+                         loading="lazy"
+                         decoding="async"
+                         fetchpriority="low">
                     <span class="poster-ad-hint">Click to view</span>
                 </button>
                 <button type="button"
@@ -312,7 +322,11 @@
                     <img src="img/posters/Poster_SKKU-DASH_LAB_2024.png"
                          alt="SKKU–DASH Lab 2024 research poster"
                          class="poster-ad-thumb"
-                         loading="lazy">
+                         width="148"
+                         height="197"
+                         loading="lazy"
+                         decoding="async"
+                         fetchpriority="low">
                     <span class="poster-ad-hint">Click to view</span>
                 </button>
                 <button type="button"
@@ -324,7 +338,11 @@
                     <img src="img/posters/poster_skku24.png"
                          alt="DASH Lab 2024 projects poster"
                          class="poster-ad-thumb"
-                         loading="lazy">
+                         width="148"
+                         height="197"
+                         loading="lazy"
+                         decoding="async"
+                         fetchpriority="low">
                     <span class="poster-ad-hint">Click to view</span>
                 </button>
             </div>
@@ -708,56 +726,93 @@
             window.addEventListener('load', updateAllPosterScrollCues);
             requestAnimationFrame(updateAllPosterScrollCues);
 
-            // A.I face: Lottie animation - Plays continuously
-            const aiBox = document.getElementById('aiFeatureBox');
-            const faceLottie = document.getElementById('faceLottieContainer');
-            if (aiBox && faceLottie && typeof lottie !== 'undefined') {
-                fetch(getImg('img/dash_logo/face_anim.json'))
-                    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
-                    .then(animationData => {
-                        lottie.loadAnimation({
-                            container: faceLottie,
-                            renderer: 'svg',
-                            loop: true,
-                            autoplay: true, // Auto-play regardless of hover
-                            animationData: animationData
-                        });
-                        aiBox.classList.add('playing'); // Immediately switch from static to animation
-                    })
-                    .catch(err => console.error('Face animation load failed:', err));
-            }
+            // Feature-box Lottie: start after load / when near viewport (keeps animations, frees first paint)
+            const initFeatureLotties = () => {
+                if (typeof lottie === 'undefined') return;
 
-            // Security graph: Lottie animation - Plays continuously
-            const securityBox = document.getElementById('securityFeatureBox');
-            const securityLottie = document.getElementById('securityLottieContainer');
-            if (securityBox && securityLottie && typeof lottie !== 'undefined') {
-                lottie.loadAnimation({
-                    container: securityLottie,
-                    renderer: 'svg',
-                    loop: true,
-                    autoplay: true, // Auto-play regardless of hover
-                    path: getImg('img/dash_logo/security_graph_anim.json')
-                });
-                securityBox.classList.add('playing'); // Immediately switch from static to animation
-            }
+                const startFace = () => {
+                    const aiBox = document.getElementById('aiFeatureBox');
+                    const faceLottie = document.getElementById('faceLottieContainer');
+                    if (!aiBox || !faceLottie || faceLottie.dataset.lottieReady) return;
+                    faceLottie.dataset.lottieReady = '1';
+                    fetch(getImg('img/dash_logo/face_anim.json'))
+                        .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+                        .then(animationData => {
+                            lottie.loadAnimation({
+                                container: faceLottie,
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                animationData: animationData
+                            });
+                            aiBox.classList.add('playing');
+                        })
+                        .catch(err => console.error('Face animation load failed:', err));
+                };
 
-            // Data Driven satellite: Lottie animation - Plays continuously
-            const dataDrivenBox = document.getElementById('dataDrivenFeatureBox');
-            const satelliteLottie = document.getElementById('satelliteLottieContainer');
-            if (dataDrivenBox && satelliteLottie && typeof lottie !== 'undefined') {
-                fetch(getImg('img/dash_logo/satellite_anim.json'))
-                    .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
-                    .then(animationData => {
-                        lottie.loadAnimation({
-                            container: satelliteLottie,
-                            renderer: 'svg',
-                            loop: true,
-                            autoplay: true, // Auto-play regardless of hover
-                            animationData: animationData
-                        });
-                        dataDrivenBox.classList.add('playing'); // Immediately switch from static to animation
-                    })
-                    .catch(err => console.error('Satellite animation load failed:', err));
+                const startSecurity = () => {
+                    const securityBox = document.getElementById('securityFeatureBox');
+                    const securityLottie = document.getElementById('securityLottieContainer');
+                    if (!securityBox || !securityLottie || securityLottie.dataset.lottieReady) return;
+                    securityLottie.dataset.lottieReady = '1';
+                    lottie.loadAnimation({
+                        container: securityLottie,
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: getImg('img/dash_logo/security_graph_anim.json')
+                    });
+                    securityBox.classList.add('playing');
+                };
+
+                const startSatellite = () => {
+                    const dataDrivenBox = document.getElementById('dataDrivenFeatureBox');
+                    const satelliteLottie = document.getElementById('satelliteLottieContainer');
+                    if (!dataDrivenBox || !satelliteLottie || satelliteLottie.dataset.lottieReady) return;
+                    satelliteLottie.dataset.lottieReady = '1';
+                    fetch(getImg('img/dash_logo/satellite_anim.json'))
+                        .then(r => r.ok ? r.json() : Promise.reject(new Error(r.status)))
+                        .then(animationData => {
+                            lottie.loadAnimation({
+                                container: satelliteLottie,
+                                renderer: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                animationData: animationData
+                            });
+                            dataDrivenBox.classList.add('playing');
+                        })
+                        .catch(err => console.error('Satellite animation load failed:', err));
+                };
+
+                const boxes = [
+                    document.getElementById('dataDrivenFeatureBox'),
+                    document.getElementById('aiFeatureBox'),
+                    document.getElementById('securityFeatureBox')
+                ].filter(Boolean);
+
+                const kickoff = () => {
+                    startSatellite();
+                    startFace();
+                    startSecurity();
+                };
+
+                if ('IntersectionObserver' in window && boxes.length) {
+                    const io = new IntersectionObserver((entries) => {
+                        if (!entries.some((e) => e.isIntersecting)) return;
+                        kickoff();
+                        io.disconnect();
+                    }, { rootMargin: '120px 0px', threshold: 0.05 });
+                    boxes.forEach((el) => io.observe(el));
+                } else {
+                    kickoff();
+                }
+            };
+
+            if (document.readyState === 'complete') {
+                setTimeout(initFeatureLotties, 0);
+            } else {
+                window.addEventListener('load', initFeatureLotties, { once: true });
             }
         });
     </script>

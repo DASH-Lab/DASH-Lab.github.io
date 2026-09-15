@@ -107,13 +107,38 @@ function shouldShowSeasonDemo() {
 }
 
 /**
+ * Adaptive particle budget — full effect on capable devices, lighter on
+ * low-end / reduced-motion / narrow viewports so first paint stays responsive.
+ */
+function getSeasonParticleCount(season) {
+    const base = { spring: 16, summer: 14, autumn: 18, winter: 20 };
+    let count = base[season] || 16;
+    try {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            return Math.min(4, count);
+        }
+        const cores = navigator.hardwareConcurrency || 4;
+        const mem = navigator.deviceMemory; // Chromium only; undefined elsewhere
+        const saveData = !!(navigator.connection && navigator.connection.saveData);
+        if (saveData || (typeof mem === 'number' && mem <= 2) || cores <= 2) {
+            count = Math.max(6, Math.round(count * 0.45));
+        } else if (cores <= 4 || (typeof mem === 'number' && mem <= 4)) {
+            count = Math.max(8, Math.round(count * 0.65));
+        }
+        if (window.matchMedia('(max-width: 768px)').matches) {
+            count = Math.max(6, Math.round(count * 0.7));
+        }
+    } catch (e) { /* ignore */ }
+    return count;
+}
+
+/**
  * Builds lightweight seasonal particles for the full navbar overlay.
  * Left/delay/duration vary so particles spread across the bar width.
  * Delays include a small base offset so the first paint isn't a burst.
  */
 function buildSeasonParticles(season) {
-    const counts = { spring: 16, summer: 14, autumn: 18, winter: 20 };
-    const count = counts[season] || 16;
+    const count = getSeasonParticleCount(season);
     let html = '';
     for (let i = 1; i <= count; i++) {
         // Spread across full navbar width with slight jitter
@@ -125,6 +150,42 @@ function buildSeasonParticles(season) {
         html += `<span class="nav-season-particle nav-season-particle--${((i - 1) % 6) + 1}" style="left:${left.toFixed(1)}%;animation-delay:${delay}s;animation-duration:${duration}s" aria-hidden="true"></span>`;
     }
     return html;
+}
+
+/** Run after paint / when the browser is idle (falls back to setTimeout). */
+function runWhenIdle(fn, timeoutMs) {
+    const timeout = typeof timeoutMs === 'number' ? timeoutMs : 1800;
+    if (typeof requestIdleCallback === 'function') {
+        requestIdleCallback(() => { try { fn(); } catch (e) { /* ignore */ } }, { timeout });
+    } else {
+        setTimeout(() => { try { fn(); } catch (e) { /* ignore */ } }, Math.min(timeout, 200));
+    }
+}
+
+/** Defer work until window load, then idle — keeps third-party off the critical path. */
+function scheduleAfterLoad(fn, timeoutMs) {
+    const run = () => runWhenIdle(fn, timeoutMs);
+    if (document.readyState === 'complete') run();
+    else window.addEventListener('load', run, { once: true });
+}
+
+/**
+ * Fill navbar seasonal particles after first paint (nav shell paints first).
+ * applyNavSeason() still regenerates immediately on demo / season changes.
+ */
+function scheduleSeasonParticles() {
+    const fill = () => {
+        const nav = document.getElementById('main-nav');
+        if (!nav) return;
+        const fx = nav.querySelector('.nav-season-fx');
+        if (!fx || fx.childElementCount > 0) return;
+        const season = nav.getAttribute('data-season') || resolveNavSeason();
+        fx.innerHTML = buildSeasonParticles(season);
+    };
+    // Double rAF ≈ after next paint, then idle so CSS animations don't contend with LCP
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => runWhenIdle(fill, 1200));
+    });
 }
 
 /**
@@ -242,8 +303,8 @@ function initSeasonDemo() {
 const _navSeasonAtLoad = resolveNavSeason();
 const navbarHTML = `
 <nav class="shadow-md fixed w-full z-50 top-0 transition-all duration-300" id="main-nav" data-season="${_navSeasonAtLoad}">
-    <!-- Full-navbar seasonal FX (pointer-events:none — does not block links) -->
-    <span class="nav-season-fx" aria-hidden="true">${buildSeasonParticles(_navSeasonAtLoad)}</span>
+    <!-- Seasonal FX shell — particles filled after first paint (see scheduleSeasonParticles) -->
+    <span class="nav-season-fx" aria-hidden="true"></span>
 
     <div class="w-full px-8 relative z-10">
         <div class="flex justify-between items-center h-20">
@@ -312,7 +373,7 @@ const footerHTML = `
                 </p>
             </div>
 
-            <!-- Column 2: Visitors Map (MapMyVisitors; unique-gated in initMapMyVisitorsMap) -->
+            <!-- Column 2: Visitors Map (MapMyVisitors live embed; see initMapMyVisitorsMap) -->
             <div class="flex flex-col items-center">
                 <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1">Visitors Map</h5>
                 <div id="mmv-map-container" class="visitor-map" aria-label="Visitor map"></div>
@@ -435,119 +496,24 @@ function initMobileMenu() {
 }
 
 /* MapMyVisitors footer map
- * The free widget couples display + tracking: every map.js / map.png load hits
- * widget_call_home and can inflate hits. MMV claims IP-based daily uniques
- * server-side, but has no unique-visitor embed setting, and its third-party
- * PHPSESSID is often blocked. We gate counting with a first-party cookie so
- * each browser is registered at most once per uniqueness window.
+ * Display + tracking are coupled: map.js → widget_call_home is what draws the
+ * visitor dots and also registers the visit. map.png similarly counts
+ * (Cache-Control: no-store) and is not a free “display only” API. MMV documents
+ * IP-based daily uniques server-side; there is no embed flag to show dots
+ * without contacting their servers.
+ *
+ * A prior first-party gate skipped map.js on return visits and rendered a
+ * blank outline (bg image only) — that removed the dots. We restore the
+ * original live embed for visuals. Soft uniqueness is MMV’s own IP/daily
+ * logic; skipping their script cannot keep live dots. Click-through is forced
+ * to the DASH Lab profile URL.
  */
 const MMV_MAP_ID = 'J2CHa5-1pgRGbM5mUTfjBETiohBQhDbeHmo1V2Aw16o';
 const MMV_SCRIPT_SRC = `https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=m&d=${MMV_MAP_ID}`;
-const MMV_BG_SRC = 'https://mapmyvisitors.com/generated_content/backs/bg-w_300-cl_ffffff.png';
-/** Public stats page the live widget links to (profile_link from widget_call_home). */
+/** Public stats page (profile_link from widget_call_home). */
 const MMV_PROFILE_URL = 'https://mapmyvisitors.com/web/1c7r4';
-const MMV_VISITOR_COOKIE = 'dash_visitor_id';
-const MMV_COUNTED_COOKIE = 'dash_mmv_unique';
-const MMV_SNAPSHOT_KEY = 'dash_mmv_snapshot';
-const MMV_RETURNS_KEY = 'dash_mmv_returns';
-/** How long a browser counts as one unique visitor (days). */
-const MMV_UNIQUE_DAYS = 365;
 
-function getCookie(name) {
-    const prefix = `${name}=`;
-    const parts = document.cookie.split(';');
-    for (let i = 0; i < parts.length; i++) {
-        const part = parts[i].trim();
-        if (part.indexOf(prefix) === 0) {
-            return decodeURIComponent(part.substring(prefix.length));
-        }
-    }
-    return null;
-}
-
-function setCookie(name, value, days) {
-    const maxAge = Math.floor(days * 24 * 60 * 60);
-    const secure = location.protocol === 'https:' ? '; Secure' : '';
-    document.cookie = `${name}=${encodeURIComponent(value)}; Path=/; Max-Age=${maxAge}; SameSite=Lax${secure}`;
-}
-
-function createVisitorId() {
-    if (window.crypto && typeof window.crypto.randomUUID === 'function') {
-        return window.crypto.randomUUID();
-    }
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-        const r = (Math.random() * 16) | 0;
-        const v = c === 'x' ? r : (r & 0x3) | 0x8;
-        return v.toString(16);
-    });
-}
-
-function ensureVisitorId() {
-    let id = getCookie(MMV_VISITOR_COOKIE);
-    if (!id) {
-        id = createVisitorId();
-        setCookie(MMV_VISITOR_COOKIE, id, MMV_UNIQUE_DAYS);
-    } else {
-        // Refresh expiry so active visitors keep a stable id
-        setCookie(MMV_VISITOR_COOKIE, id, MMV_UNIQUE_DAYS);
-    }
-    return id;
-}
-
-function readMmvSnapshot() {
-    try {
-        return JSON.parse(localStorage.getItem(MMV_SNAPSHOT_KEY) || 'null');
-    } catch (e) {
-        return null;
-    }
-}
-
-function writeMmvSnapshot(visitors, dateText) {
-    try {
-        localStorage.setItem(MMV_SNAPSHOT_KEY, JSON.stringify({
-            visitors: visitors || '',
-            date: dateText || '',
-            savedAt: Date.now()
-        }));
-    } catch (e) { /* ignore quota / private mode */ }
-}
-
-function bumpReturnVisitCount() {
-    try {
-        const prev = parseInt(localStorage.getItem(MMV_RETURNS_KEY) || '0', 10) || 0;
-        localStorage.setItem(MMV_RETURNS_KEY, String(prev + 1));
-    } catch (e) { /* ignore */ }
-}
-
-function escapeHtml(text) {
-    return String(text)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-}
-
-function captureMmvSnapshot(container) {
-    const tryCapture = () => {
-        const visitorsEl = container.querySelector('.mapmyvisitors-visitors');
-        const dateEl = container.querySelector('.mapmyvisitors-date');
-        const visitors = visitorsEl ? visitorsEl.textContent.trim() : '';
-        if (!visitors || visitors === '\u00a0') return false;
-        writeMmvSnapshot(visitors, dateEl ? dateEl.textContent.trim() : '');
-        return true;
-    };
-
-    if (tryCapture()) return;
-
-    const observer = new MutationObserver(() => {
-        if (tryCapture()) observer.disconnect();
-    });
-    observer.observe(container, { childList: true, subtree: true, characterData: true });
-    setTimeout(() => observer.disconnect(), 20000);
-}
-
-/** Keep the live widget pointing at the DASH Lab stats page (widget starts on homepage). */
+/** Keep the live widget pointing at the DASH Lab stats page (default is homepage). */
 function ensureMmvProfileLink(container) {
     const apply = () => {
         const link = container.querySelector('#mapmyvisitors-widget') ||
@@ -571,81 +537,60 @@ function ensureMmvProfileLink(container) {
     }, 20000);
 }
 
-function loadMapMyVisitorsTracking(container) {
+function loadMapMyVisitorsLive(container) {
     // Must load inside <body> (not <head>) — footer injects into body
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.id = 'mapmyvisitors';
     script.src = MMV_SCRIPT_SRC;
     container.appendChild(script);
-    captureMmvSnapshot(container);
     ensureMmvProfileLink(container);
-}
-
-function renderReturnVisitorMap(container) {
-    const snapshot = readMmvSnapshot();
-    const mapHeight = Math.round(300 / 2.04);
-    const visitorsText = escapeHtml(snapshot && snapshot.visitors ? snapshot.visitors : 'Visitors map');
-    const dateText = escapeHtml(snapshot && snapshot.date ? snapshot.date : '');
-
-    const link = document.createElement('a');
-    link.href = MMV_PROFILE_URL;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.id = 'mapmyvisitors-widget';
-    link.className = 'mapmyvisitors-map-control dash-mmv-return';
-    link.setAttribute('aria-label', 'Visitor map (returning visitor — not re-counted)');
-    link.style.cssText = 'display:block;width:300px;max-width:100%;margin:0 auto;text-decoration:none;position:relative;color:transparent;';
-
-    link.innerHTML =
-        '<div class="mapmyvisitors-map-container" style="background-color:#2d78ad;position:relative;">' +
-            `<div class="mpmvs mapmyvisitors-visitors" style="text-align:center;width:100%;z-index:10;color:#ffffff;font-size:12px;line-height:16px;font-family:Helvetica Neue,Arial,sans-serif;">${visitorsText}</div>` +
-            `<div class="mpmvs mapmyvisitors-date" style="text-align:center;width:100%;z-index:10;color:#ffffff;font-size:12px;line-height:16px;font-family:Helvetica Neue,Arial,sans-serif;">${dateText}</div>` +
-            `<div class="mapmyvisitors-map" style="width:300px;max-width:100%;height:${mapHeight}px;background-image:url('${MMV_BG_SRC}');background-repeat:no-repeat;background-size:100% 100%;"></div>` +
-        '</div>';
-
-    container.appendChild(link);
 }
 
 function initMapMyVisitorsMap() {
     const container = document.getElementById('mmv-map-container');
-    if (!container || document.getElementById('mapmyvisitors') || document.getElementById('mapmyvisitors-widget')) return;
+    if (!container || document.getElementById('mapmyvisitors')) return;
 
-    ensureVisitorId();
+    // Clear legacy blank-snapshot / return-visit artifacts from the unique-gate experiment
+    try {
+        localStorage.removeItem('dash_mmv_snapshot');
+        localStorage.removeItem('dash_mmv_dotted_snapshot');
+        localStorage.removeItem('dash_mmv_returns');
+    } catch (e) { /* ignore */ }
+    // Expire old year-long “already counted” cookie so it cannot suppress the live map
+    try {
+        document.cookie = 'dash_mmv_unique=; Path=/; Max-Age=0; SameSite=Lax';
+        document.cookie = 'dash_visitor_id=; Path=/; Max-Age=0; SameSite=Lax';
+    } catch (e) { /* ignore */ }
 
-    const alreadyCounted = !!getCookie(MMV_COUNTED_COOKIE);
-    if (alreadyCounted) {
-        bumpReturnVisitCount();
-        renderReturnVisitorMap(container);
-        return;
-    }
-
-    // First visit in the uniqueness window: count once via MapMyVisitors
-    setCookie(MMV_COUNTED_COOKIE, '1', MMV_UNIQUE_DAYS);
-    loadMapMyVisitorsTracking(container);
+    loadMapMyVisitorsLive(container);
 }
 
 function injectLayout() {
-    // 1. Inject Navbar at the very top of body
+    // 1. Critical: navbar first so header can paint ASAP
     const navbarContainer = document.createElement('div');
     navbarContainer.innerHTML = navbarHTML;
     document.body.prepend(navbarContainer);
 
-    // 2. Inject Footer at the very bottom of body
+    // 2. Footer structure (map widget loaded later — see step 5)
     const footerContainer = document.createElement('div');
     footerContainer.innerHTML = footerHTML;
     document.body.append(footerContainer);
 
-    // 3. Set Year
+    // 3. Lightweight chrome
     const yearSpan = document.getElementById('current-year-display');
-    if(yearSpan) yearSpan.textContent = new Date().getFullYear();
-
-    // 4. Initialize interactions & cosmetic URL fix
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
     cleanUrl();
     highlightActiveLink();
     initMobileMenu();
-    initMapMyVisitorsMap();
-    initSeasonDemo();
+
+    // 4. Seasonal particles + demo after first paint (non-blocking)
+    scheduleSeasonParticles();
+    runWhenIdle(() => initSeasonDemo(), 2000);
+
+    // 5. MapMyVisitors after load — preserve live widget / uniqueness / profile URL;
+    //    only delays start so it does not compete with hero, gallery, or posters.
+    scheduleAfterLoad(() => initMapMyVisitorsMap(), 2500);
 }
 
 // Run immediately when DOM is ready

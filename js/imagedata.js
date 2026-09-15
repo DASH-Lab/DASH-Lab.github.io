@@ -4,6 +4,10 @@
 
 const galleryData = [
     { 
+        src: 'img/dash_gallery/yurim_graduation_2026.jpg', 
+        desc: 'Summer 2026 Graduate Yurim Jang with DASH Lab Researchers'
+    },
+    { 
         src: 'img/dash_gallery/2026_BinhCongratsDinner.jpg', 
         desc: 'Celebrate Binh joining Meta USA,<br> Sangyup joining Incheon National Univ,<br> and Youjin\'s successful reappointment at Catholic Univ of Korea'
     },

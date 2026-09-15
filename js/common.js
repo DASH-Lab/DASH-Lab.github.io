@@ -51,17 +51,183 @@ function getCurrentSeason() {
     return 'winter';
 }
 
+const NAV_SEASON_STORAGE_KEY = 'dash-nav-season';
+const NAV_SEASONS = ['spring', 'summer', 'autumn', 'winter'];
+
 /**
- * Builds a few lightweight seasonal particles for the navbar logo overlay.
+ * Normalize season query values (fall → autumn, etc.).
+ * Returns null for unknown / empty; 'auto' clears override.
+ */
+function normalizeSeasonValue(raw) {
+    if (raw == null) return null;
+    const v = String(raw).trim().toLowerCase();
+    if (!v) return null;
+    if (v === 'auto' || v === 'date' || v === 'default') return 'auto';
+    if (v === 'fall' || v === 'autumn') return 'autumn';
+    if (NAV_SEASONS.includes(v)) return v;
+    return null;
+}
+
+/**
+ * Resolve active navbar season:
+ * 1) ?season= query (also updates localStorage)
+ * 2) localStorage dash-nav-season
+ * 3) calendar season
+ */
+function resolveNavSeason() {
+    let querySeason = null;
+    try {
+        querySeason = normalizeSeasonValue(new URLSearchParams(window.location.search).get('season'));
+    } catch (e) { /* ignore */ }
+
+    if (querySeason === 'auto') {
+        try { localStorage.removeItem(NAV_SEASON_STORAGE_KEY); } catch (e) { /* ignore */ }
+        return getCurrentSeason();
+    }
+    if (querySeason) {
+        try { localStorage.setItem(NAV_SEASON_STORAGE_KEY, querySeason); } catch (e) { /* ignore */ }
+        return querySeason;
+    }
+
+    try {
+        const stored = normalizeSeasonValue(localStorage.getItem(NAV_SEASON_STORAGE_KEY));
+        if (stored && stored !== 'auto') return stored;
+    } catch (e) { /* ignore */ }
+
+    return getCurrentSeason();
+}
+
+function shouldShowSeasonDemo() {
+    try {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('seasonDemo') === '1' || params.get('seasonDemo') === 'true') return true;
+        if (params.has('season')) return true;
+    } catch (e) { /* ignore */ }
+    return false;
+}
+
+/**
+ * Builds lightweight seasonal particles for the full navbar overlay.
+ * Left/delay/duration vary so particles spread across the bar width.
+ * Delays include a small base offset so the first paint isn't a burst.
  */
 function buildSeasonParticles(season) {
-    const counts = { spring: 9, summer: 8, autumn: 9, winter: 10 };
-    const count = counts[season] || 8;
+    const counts = { spring: 16, summer: 14, autumn: 18, winter: 20 };
+    const count = counts[season] || 16;
     let html = '';
     for (let i = 1; i <= count; i++) {
-        html += `<span class="nav-season-particle nav-season-particle--${i}" aria-hidden="true"></span>`;
+        // Spread across full navbar width with slight jitter
+        const left = ((i - 1) / count) * 96 + (i % 3) * 1.2 + 1;
+        // Stagger over ~5s, with 0.3s base so overlay can fade in first
+        const delay = (0.3 + ((i * 0.43) % 5.1)).toFixed(2);
+        const durationBase = { spring: 6.2, summer: 3.8, autumn: 5.8, winter: 5.2 }[season] || 5.5;
+        const duration = (durationBase + (i % 5) * 0.4).toFixed(2);
+        html += `<span class="nav-season-particle nav-season-particle--${((i - 1) % 6) + 1}" style="left:${left.toFixed(1)}%;animation-delay:${delay}s;animation-duration:${duration}s" aria-hidden="true"></span>`;
     }
     return html;
+}
+
+/**
+ * Apply a season to #main-nav: update data-season and regenerate particles.
+ * @param {string} season - spring|summer|autumn|winter|auto
+ * @param {{persist?: boolean, updateUrl?: boolean, demoChoice?: string}} options
+ */
+function applyNavSeason(season, options) {
+    const opts = options || {};
+    const next = normalizeSeasonValue(season);
+    const resolved = (!next || next === 'auto') ? getCurrentSeason() : next;
+    const nav = document.getElementById('main-nav');
+    if (!nav) return resolved;
+
+    nav.setAttribute('data-season', resolved);
+
+    let fx = nav.querySelector('.nav-season-fx');
+    if (!fx) {
+        fx = document.createElement('span');
+        fx.className = 'nav-season-fx';
+        fx.setAttribute('aria-hidden', 'true');
+        nav.prepend(fx);
+    }
+    fx.innerHTML = buildSeasonParticles(resolved);
+    fx.style.animation = 'none';
+    void fx.offsetWidth;
+    fx.style.animation = '';
+
+    if (opts.persist) {
+        try {
+            if (!next || next === 'auto') localStorage.removeItem(NAV_SEASON_STORAGE_KEY);
+            else localStorage.setItem(NAV_SEASON_STORAGE_KEY, resolved);
+        } catch (e) { /* ignore */ }
+    }
+
+    if (opts.updateUrl) {
+        try {
+            const url = new URL(window.location.href);
+            if (!next || next === 'auto') url.searchParams.delete('season');
+            else url.searchParams.set('season', resolved);
+            if (document.getElementById('dash-season-demo')) {
+                url.searchParams.set('seasonDemo', '1');
+            }
+            window.history.replaceState({}, document.title, url.pathname + url.search + url.hash);
+        } catch (e) { /* ignore */ }
+    }
+
+    const demoChoice = opts.demoChoice || ((next && next !== 'auto') ? resolved : 'auto');
+    const demo = document.getElementById('dash-season-demo');
+    if (demo) {
+        demo.querySelectorAll('[data-season-choice]').forEach((btn) => {
+            const on = btn.getAttribute('data-season-choice') === demoChoice;
+            btn.classList.toggle('is-active', on);
+            btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+    }
+
+    return resolved;
+}
+
+function initSeasonDemo() {
+    if (!shouldShowSeasonDemo()) return;
+    if (document.getElementById('dash-season-demo')) return;
+
+    const panel = document.createElement('div');
+    panel.id = 'dash-season-demo';
+    panel.className = 'dash-season-demo';
+    panel.setAttribute('role', 'group');
+    panel.setAttribute('aria-label', 'Navbar season preview');
+    panel.innerHTML = `
+        <span class="dash-season-demo-label">Season FX</span>
+        <div class="dash-season-demo-btns">
+            <button type="button" data-season-choice="spring">Spring</button>
+            <button type="button" data-season-choice="summer">Summer</button>
+            <button type="button" data-season-choice="autumn">Autumn</button>
+            <button type="button" data-season-choice="winter">Winter</button>
+            <button type="button" data-season-choice="auto">Auto</button>
+        </div>
+    `;
+    document.body.appendChild(panel);
+
+    panel.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-season-choice]');
+        if (!btn) return;
+        const choice = btn.getAttribute('data-season-choice');
+        applyNavSeason(choice, { persist: true, updateUrl: true, demoChoice: choice });
+    });
+
+    let currentChoice = 'auto';
+    try {
+        const q = normalizeSeasonValue(new URLSearchParams(window.location.search).get('season'));
+        if (q && q !== 'auto') currentChoice = q;
+        else {
+            const stored = normalizeSeasonValue(localStorage.getItem(NAV_SEASON_STORAGE_KEY));
+            if (stored && stored !== 'auto') currentChoice = stored;
+        }
+    } catch (e) { /* ignore */ }
+
+    panel.querySelectorAll('[data-season-choice]').forEach((b) => {
+        const on = b.getAttribute('data-season-choice') === currentChoice;
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
 }
 
 // --- HTML Templates ---
@@ -73,15 +239,18 @@ function buildSeasonParticles(season) {
  * - Updated: Dynamic Logo
  * - Updated: Removed bg-white and gray text classes to allow CSS to control colors
  */
+const _navSeasonAtLoad = resolveNavSeason();
 const navbarHTML = `
-<nav class="shadow-md fixed w-full z-50 top-0 transition-all duration-300" id="main-nav">
-    <div class="w-full px-8">
+<nav class="shadow-md fixed w-full z-50 top-0 transition-all duration-300" id="main-nav" data-season="${_navSeasonAtLoad}">
+    <!-- Full-navbar seasonal FX (pointer-events:none — does not block links) -->
+    <span class="nav-season-fx" aria-hidden="true">${buildSeasonParticles(_navSeasonAtLoad)}</span>
+
+    <div class="w-full px-8 relative z-10">
         <div class="flex justify-between items-center h-20">
-            <!-- Logo / Brand (seasonal particles overlay logo only) -->
+            <!-- Logo / Brand -->
             <a href="./" class="nav-logo-link flex items-center gap-2 group" aria-label="DASH Lab Home">
-                <span class="nav-logo-wrap" data-season="${getCurrentSeason()}">
+                <span class="nav-logo-wrap">
                     <img id="nav-logo" src="${getDynamicLogo()}" alt="DASH LAB Logo" class="w-auto object-contain transition-transform duration-300 group-hover:scale-110">
-                    <span class="nav-season-fx" aria-hidden="true">${buildSeasonParticles(getCurrentSeason())}</span>
                 </span>
             </a>
 
@@ -109,7 +278,7 @@ const navbarHTML = `
 
     <!-- Mobile Menu Dropdown -->
     <!-- Kept bg-white for mobile dropdown so it remains distinct -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl relative z-10">
         <div class="px-4 pt-2 pb-4 space-y-2">
              <!-- Changed href to "./" for Home -->
             <a href="./" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">Home</a>
@@ -184,15 +353,17 @@ const footerHTML = `
  */
 function cleanUrl() {
     const path = window.location.pathname;
+    const search = window.location.search || '';
+    const hash = window.location.hash || '';
     // Only replace if it ends in .html AND is not index.html (since index should show as root)
     if (path.endsWith('index.html')) {
         // If it's index.html, we might want to strip it entirely to just /
         const newPath = path.substring(0, path.length - 10); // Remove 'index.html'
-        window.history.replaceState({}, document.title, newPath || '/');
+        window.history.replaceState({}, document.title, (newPath || '/') + search + hash);
     } else if (path.endsWith('.html')) {
         const newPath = path.substring(0, path.length - 5);
-        // Use replaceState to change URL without reloading
-        window.history.replaceState({}, document.title, newPath);
+        // Use replaceState to change URL without reloading — keep query/hash (season preview)
+        window.history.replaceState({}, document.title, newPath + search + hash);
     }
 }
 
@@ -295,6 +466,7 @@ function injectLayout() {
     highlightActiveLink();
     initMobileMenu();
     initMapMyVisitorsMap();
+    initSeasonDemo();
 }
 
 // Run immediately when DOM is ready

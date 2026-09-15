@@ -29,7 +29,6 @@ function getImg(path) {
 function getDynamicLogo() {
     const today = new Date();
     const month = today.getMonth(); // 0-11 (0 is January, 11 is December)
-    const day = today.getDate();
 
     // Logic: Show Christmas logo during December (Month 11)
     // You can adjust the range here (e.g., Month 11 is Dec, Month 0 is Jan)
@@ -38,6 +37,31 @@ function getDynamicLogo() {
     } else {
         return getImg(LOGO_NORMAL);
     }
+}
+
+/**
+ * Northern Hemisphere season from the current date (SKKU / Korea).
+ * Spring Mar–May, Summer Jun–Aug, Autumn Sep–Nov, Winter Dec–Feb.
+ */
+function getCurrentSeason() {
+    const month = new Date().getMonth(); // 0-11
+    if (month >= 2 && month <= 4) return 'spring';
+    if (month >= 5 && month <= 7) return 'summer';
+    if (month >= 8 && month <= 10) return 'autumn';
+    return 'winter';
+}
+
+/**
+ * Builds a few lightweight seasonal particles for the navbar logo overlay.
+ */
+function buildSeasonParticles(season) {
+    const counts = { spring: 9, summer: 8, autumn: 9, winter: 10 };
+    const count = counts[season] || 8;
+    let html = '';
+    for (let i = 1; i <= count; i++) {
+        html += `<span class="nav-season-particle nav-season-particle--${i}" aria-hidden="true"></span>`;
+    }
+    return html;
 }
 
 // --- HTML Templates ---
@@ -53,12 +77,12 @@ const navbarHTML = `
 <nav class="shadow-md fixed w-full z-50 top-0 transition-all duration-300" id="main-nav">
     <div class="w-full px-8">
         <div class="flex justify-between items-center h-20">
-            <!-- Logo / Brand -->
-            <a href="./" class="flex items-center gap-2 group">
-                <!-- Dynamic Image Logo -->
-                <!-- Removed 'h-10' class to allow CSS to control height -->
-                <img id="nav-logo" src="${getDynamicLogo()}" alt="DASH LAB Logo" class="w-auto object-contain transition-transform duration-300 group-hover:scale-110">
-
+            <!-- Logo / Brand (seasonal particles overlay logo only) -->
+            <a href="./" class="nav-logo-link flex items-center gap-2 group" aria-label="DASH Lab Home">
+                <span class="nav-logo-wrap" data-season="${getCurrentSeason()}">
+                    <img id="nav-logo" src="${getDynamicLogo()}" alt="DASH LAB Logo" class="w-auto object-contain transition-transform duration-300 group-hover:scale-110">
+                    <span class="nav-season-fx" aria-hidden="true">${buildSeasonParticles(getCurrentSeason())}</span>
+                </span>
             </a>
 
             <!-- Desktop Menu -->

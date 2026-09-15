@@ -3,7 +3,11 @@
 // It must be loaded before news.js in your HTML.
 
 const newsData = [
+<<<<<<< Updated upstream
     { icon: '🏆', date: 'Sep 2026', year: 2026, text: 'Won 1st Place in the Image Edit Detection and Localization Challenge (IEDAL2) at <b>ICIP 2026</b>'  },
+=======
+    { icon: '🏆', date: 'Sep 2026', year: 2026, text: 'Won 1st Place in the Image Edit Detection and Localization Challenge (IEDAL2) at <b>ICIP 2026</b>'},
+>>>>>>> Stashed changes
     { icon: '📄', date: 'Aug 2026', year: 2026, text: 'Three paper accepted at Main Paper track of <b>CIKM 2026</b>'},
     { icon: '📄', date: 'Aug 2026', year: 2026, text: 'One paper accepted at Main Paper track of <b>BMCV 2026</b>'},
     { icon: '📄', date: 'Aug 2026', year: 2026, text: 'One paper accepted at Research Paper track of <b>SIGSPATIAL 2026</b>' },

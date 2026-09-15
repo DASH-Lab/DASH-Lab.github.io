@@ -211,6 +211,163 @@
         </div>
     </div>
 
+    <!-- SIDE POSTER ADS: left = recruitment only; right = all other posters -->
+    <aside id="poster-ad-left"
+           class="poster-ad poster-ad--left"
+           aria-label="Recruitment poster">
+        <button type="button"
+                class="poster-ad-toggle"
+                id="poster-ad-toggle-left"
+                aria-expanded="false"
+                aria-controls="poster-ad-stack-left">
+            <i class="fas fa-user-plus" aria-hidden="true"></i>
+            <span class="poster-ad-toggle-label">Join Us</span>
+        </button>
+        <div class="poster-ad-rail">
+            <div id="poster-ad-stack-left" class="poster-ad-stack">
+                <div class="poster-ad-stack-header">
+                    <span class="poster-ad-stack-title">Join Us</span>
+                    <button type="button"
+                            class="poster-ad-collapse"
+                            data-poster-collapse
+                            aria-label="Hide recruitment poster">
+                        &times;
+                    </button>
+                </div>
+                <button type="button"
+                        class="poster-ad-trigger"
+                        data-poster-id="recruiting"
+                        aria-haspopup="dialog"
+                        aria-controls="poster-ad-modal">
+                    <span class="poster-ad-badge">Join Us</span>
+                    <img src="img/posters/Lab_Infographics.png"
+                         alt="DASH Lab recruiting infographic seeking PhD students"
+                         class="poster-ad-thumb"
+                         loading="lazy">
+                    <span class="poster-ad-hint">Click to view</span>
+                </button>
+            </div>
+            <div class="poster-ad-scroll-cue" hidden aria-hidden="true">
+                <span class="poster-ad-scroll-cue-grad"></span>
+                <span class="poster-ad-scroll-cue-more">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="poster-ad-right"
+           class="poster-ad poster-ad--right"
+           aria-label="Lab poster advertisements">
+        <button type="button"
+                class="poster-ad-toggle"
+                id="poster-ad-toggle-right"
+                aria-expanded="false"
+                aria-controls="poster-ad-stack-right">
+            <i class="fas fa-images" aria-hidden="true"></i>
+            <span class="poster-ad-toggle-label">Posters</span>
+            <span class="poster-ad-toggle-count" aria-hidden="true">4</span>
+        </button>
+        <div class="poster-ad-rail">
+            <div id="poster-ad-stack-right" class="poster-ad-stack">
+                <div class="poster-ad-stack-header">
+                    <span class="poster-ad-stack-title">Lab posters</span>
+                    <button type="button"
+                            class="poster-ad-collapse"
+                            data-poster-collapse
+                            aria-label="Hide poster thumbnails">
+                        &times;
+                    </button>
+                </div>
+                <button type="button"
+                        class="poster-ad-trigger"
+                        data-poster-id="securemachines"
+                        aria-haspopup="dialog"
+                        aria-controls="poster-ad-modal">
+                    <span class="poster-ad-badge">Featured</span>
+                    <img src="img/posters/poster_securemachineslab.png"
+                         alt="Secure Machines Lab poster AI Forensics & Media Integrity"
+                         class="poster-ad-thumb"
+                         loading="lazy">
+                    <span class="poster-ad-hint">Click to view</span>
+                </button>
+                <button type="button"
+                        class="poster-ad-trigger"
+                        data-poster-id="dash"
+                        aria-haspopup="dialog"
+                        aria-controls="poster-ad-modal">
+                    <span class="poster-ad-badge">DASH Lab</span>
+                    <img src="img/posters/poster_dash.png"
+                         alt="DASH Lab research overview poster"
+                         class="poster-ad-thumb"
+                         loading="lazy">
+                    <span class="poster-ad-hint">Click to view</span>
+                </button>
+                <button type="button"
+                        class="poster-ad-trigger"
+                        data-poster-id="skku-dash-2024"
+                        aria-haspopup="dialog"
+                        aria-controls="poster-ad-modal">
+                    <span class="poster-ad-badge">2024</span>
+                    <img src="img/posters/Poster_SKKU-DASH_LAB_2024.png"
+                         alt="SKKU–DASH Lab 2024 research poster"
+                         class="poster-ad-thumb"
+                         loading="lazy">
+                    <span class="poster-ad-hint">Click to view</span>
+                </button>
+                <button type="button"
+                        class="poster-ad-trigger"
+                        data-poster-id="skku24"
+                        aria-haspopup="dialog"
+                        aria-controls="poster-ad-modal">
+                    <span class="poster-ad-badge">2024</span>
+                    <img src="img/posters/poster_skku24.png"
+                         alt="DASH Lab 2024 projects poster"
+                         class="poster-ad-thumb"
+                         loading="lazy">
+                    <span class="poster-ad-hint">Click to view</span>
+                </button>
+            </div>
+            <div class="poster-ad-scroll-cue" hidden aria-hidden="true">
+                <span class="poster-ad-scroll-cue-grad"></span>
+                <span class="poster-ad-scroll-cue-more">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- SHARED POSTER DETAIL MODAL -->
+    <div id="poster-ad-modal" class="poster-ad-modal" role="dialog" aria-modal="true" aria-labelledby="poster-ad-title" hidden>
+        <div class="poster-ad-modal-backdrop" data-poster-close></div>
+        <div class="poster-ad-modal-panel">
+            <button type="button" class="poster-ad-modal-close close-modal" id="poster-ad-close" aria-label="Close poster details">&times;</button>
+            <div class="poster-ad-modal-grid">
+                <div class="poster-ad-modal-image-wrap">
+                    <img src=""
+                         alt=""
+                         class="poster-ad-modal-image"
+                         id="poster-ad-full-img">
+                </div>
+                <div class="poster-ad-modal-info">
+                    <p id="poster-ad-eyebrow" class="poster-ad-modal-eyebrow"></p>
+                    <h2 id="poster-ad-title" class="poster-ad-modal-title"></h2>
+                    <p id="poster-ad-subtitle" class="poster-ad-modal-subtitle"></p>
+                    <p id="poster-ad-tagline" class="poster-ad-modal-tagline"></p>
+                    <p id="poster-ad-body" class="poster-ad-modal-body"></p>
+                    <ul id="poster-ad-list" class="poster-ad-modal-list"></ul>
+                    <a id="poster-ad-cta"
+                       href="#"
+                       class="poster-ad-modal-cta"
+                       hidden>
+                        <span id="poster-ad-cta-text"></span>
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer is injected here by common.js -->
 
     <!-- Page Specific Script -->
@@ -220,7 +377,11 @@
             const heroSection = document.getElementById('hero-section');
             if(heroSection) {
                 // Using getImg helper
+<<<<<<< Updated upstream
                 heroSection.style.backgroundImage = `url(${getImg('/img/main_skku5.jpg')})`;
+=======
+                heroSection.style.backgroundImage = `url(${getImg('img/dash_gallery/main_skku5.jpg')})`;
+>>>>>>> Stashed changes
             }
             
             // Modal logic
@@ -233,6 +394,323 @@
                     localStorage.setItem('dash_visited', 'true');
                 }
             }
+
+            // Poster ads: shared modal populated from catalog
+            const posterCatalog = {
+                recruiting: {
+                    image: 'img/posters/Lab_Infographics.png',
+                    imageAlt: 'DASH Lab recruiting infographic for PhD students',
+                    eyebrow: 'Now recruiting',
+                    title: 'Join DASH Lab',
+                    subtitle: 'PhD students welcome',
+                    tagline: 'We are looking for PhD students.',
+                    bodyHtml: 'We are looking for people who are able to work with a team and have good problem solving skills. Research interests that align with Computer Vision, Anomaly Detection, and Applied Data Science are a strong fit. <strong>Coding proficiency and passion for research are highly valued.</strong> Only applicants who fill out the official Google Form will be reviewed direct emails are not accepted.',
+                    list: [
+                        'PhD student positions',
+                        'Teamwork & problem-solving focus',
+                        'Apply via the official Application Form'
+                    ],
+                    ctaHref: 'https://forms.gle/RYCUasAUbsFhJtyb6',
+                    ctaText: 'Open Application Form',
+                    ctaExternal: true
+                },
+                securemachines: {
+                    image: 'img/posters/poster_securemachineslab.png',
+                    imageAlt: 'Full Secure Machines Lab poster',
+                    eyebrow: 'Related initiative',
+                    title: 'Secure Machines Lab',
+                    subtitle: 'AI Forensics & Media Integrity',
+                    tagline: 'Seeing isn’t proof.',
+                    bodyHtml: 'Investigate deepfakes and verify digital media. Secure Machines Lab linked with DASH Lab works on image &amp; video detection, multimedia news verification, and forensic inspection, under the theme <em>“Safer AI. Secure world.”</em>',
+                    list: [
+                        'Image & Video Detection',
+                        'Multimedia News Verification',
+                        'Forensic Inspection'
+                    ],
+                    ctaHref: 'https://securemachineslab.com',
+                    ctaText: 'Explore securemachineslab.com',
+                    ctaExternal: true
+                },
+                dash: {
+                    image: 'img/posters/poster_dash.png',
+                    imageAlt: 'Full DASH Lab research overview poster',
+                    eyebrow: 'Lab poster',
+                    title: 'DASH Lab Research Overview',
+                    subtitle: 'Data-driven AI Security & HCI',
+                    tagline: 'Data · Machines · Humans',
+                    bodyHtml: 'Overview poster for the Data-driven AI Security HCI Lab (DASH Lab) at Sungkyunkwan University, led by Prof. Simon S. Woo. The lab develops usable and secure technology after better understanding data, machines, and humans covering computer vision, anomaly detection, AI security, and deepfakes.',
+                    list: [
+                        'Deepfake detection',
+                        'Object detection',
+                        'Time-series & anomaly analysis',
+                        'Benchmark datasets (e.g. VFP290K, FakeAVCeleb)'
+                    ],
+                    ctaHref: 'Members.html',
+                    ctaText: 'Meet the Members',
+                    ctaExternal: false
+                },
+                'skku-dash-2024': {
+                    image: 'img/posters/Poster_SKKU-DASH_LAB_2024.png',
+                    imageAlt: 'Full SKKU–DASH Lab 2024 research poster',
+                    eyebrow: 'Lab poster · 2024',
+                    title: 'SKKU–DASH Lab 2024',
+                    subtitle: 'Research overview',
+                    tagline: 'Year overview poster',
+                    bodyHtml: '2024 research overview poster for DASH Lab at Sungkyunkwan University. It summarizes recent work spanning machine unlearning, deepfake detection, diffusion-model security, time-series analysis, and vision-language models.',
+                    list: [
+                        'Machine unlearning',
+                        'Deepfake detection',
+                        'Diffusion models',
+                        'Time-series analysis',
+                        'Vision language models'
+                    ],
+                    ctaHref: 'Projects.html',
+                    ctaText: 'Browse Lab Projects',
+                    ctaExternal: false
+                },
+                skku24: {
+                    image: 'img/posters/poster_skku24.png',
+                    imageAlt: 'Full DASH Lab 2024 projects poster',
+                    eyebrow: 'Lab poster · 2024',
+                    title: 'DASH Lab 2024 Projects',
+                    subtitle: 'Year materials & research pillars',
+                    tagline: 'Projects & partnerships',
+                    bodyHtml: '2024 year materials from DASH Lab at Sungkyunkwan University, highlighting research pillars and project work including deepfake detection, diffusion-model security, machine unlearning, satellite time-series analysis, and digital human restoration alongside partner collaborations.',
+                    list: [
+                        'Deepfake detection & media integrity',
+                        'Diffusion-model security',
+                        'Machine unlearning',
+                        'Satellite time-series analysis',
+                        'Digital human restoration'
+                    ],
+                    ctaHref: 'Professor.html',
+                    ctaText: 'About the Professor',
+                    ctaExternal: false
+                }
+            };
+
+            const posterModal = document.getElementById('poster-ad-modal');
+            const posterRails = Array.from(document.querySelectorAll('.poster-ad'));
+            const posterTriggers = document.querySelectorAll('.poster-ad-trigger[data-poster-id]');
+            const posterClose = document.getElementById('poster-ad-close');
+            const posterImg = document.getElementById('poster-ad-full-img');
+            const posterEyebrow = document.getElementById('poster-ad-eyebrow');
+            const posterTitle = document.getElementById('poster-ad-title');
+            const posterSubtitle = document.getElementById('poster-ad-subtitle');
+            const posterTagline = document.getElementById('poster-ad-tagline');
+            const posterBody = document.getElementById('poster-ad-body');
+            const posterList = document.getElementById('poster-ad-list');
+            const posterCta = document.getElementById('poster-ad-cta');
+            const posterCtaText = document.getElementById('poster-ad-cta-text');
+            let posterCloseTimer = null;
+            let activePosterTrigger = null;
+            const POSTER_FADE_START = 100;
+            const POSTER_FADE_END = 360;
+
+            const setPosterRailExpanded = (rail, expanded) => {
+                if (!rail) return;
+                const toggle = rail.querySelector('.poster-ad-toggle');
+                rail.classList.toggle('is-expanded', expanded);
+                if (toggle) toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                if (expanded) {
+                    requestAnimationFrame(() => updatePosterScrollCue(rail));
+                }
+            };
+
+            const collapseAllPosterRails = () => {
+                posterRails.forEach((rail) => setPosterRailExpanded(rail, false));
+            };
+
+            const updatePosterScrollCue = (rail) => {
+                const stack = rail.querySelector('.poster-ad-stack');
+                const cue = rail.querySelector('.poster-ad-scroll-cue');
+                if (!stack || !cue) return;
+                const stackVisible = stack.offsetParent !== null || getComputedStyle(stack).display !== 'none';
+                if (!stackVisible) {
+                    cue.hidden = true;
+                    rail.classList.remove('has-scroll-more');
+                    return;
+                }
+                const overflow = stack.scrollHeight > stack.clientHeight + 6;
+                const atBottom = stack.scrollTop + stack.clientHeight >= stack.scrollHeight - 10;
+                const showCue = overflow && !atBottom;
+                cue.hidden = !showCue;
+                rail.classList.toggle('has-scroll-more', showCue);
+            };
+
+            const updateAllPosterScrollCues = () => {
+                posterRails.forEach(updatePosterScrollCue);
+            };
+
+            const updatePosterPageFade = () => {
+                const y = window.scrollY || document.documentElement.scrollTop || 0;
+                let opacity = 1;
+                if (y <= POSTER_FADE_START) opacity = 1;
+                else if (y >= POSTER_FADE_END) opacity = 0;
+                else opacity = 1 - ((y - POSTER_FADE_START) / (POSTER_FADE_END - POSTER_FADE_START));
+
+                const faded = opacity < 0.12;
+                posterRails.forEach((rail) => {
+                    rail.style.opacity = String(opacity);
+                    rail.classList.toggle('is-page-faded', faded);
+                    if (faded) {
+                        rail.style.pointerEvents = 'none';
+                        if (rail.classList.contains('is-expanded')) {
+                            setPosterRailExpanded(rail, false);
+                        }
+                    } else {
+                        rail.style.pointerEvents = '';
+                    }
+                });
+            };
+
+            const setPosterField = (el, value, useHtml = false) => {
+                if (!el) return;
+                const hasValue = !!(value && String(value).trim());
+                el.hidden = !hasValue;
+                if (!hasValue) {
+                    el.textContent = '';
+                    return;
+                }
+                if (useHtml) el.innerHTML = value;
+                else el.textContent = value;
+            };
+
+            const fillPosterModal = (poster) => {
+                if (!poster) return;
+                if (posterImg) {
+                    posterImg.src = poster.image;
+                    posterImg.alt = poster.imageAlt || poster.title || 'Poster';
+                }
+                setPosterField(posterEyebrow, poster.eyebrow);
+                setPosterField(posterTitle, poster.title);
+                setPosterField(posterSubtitle, poster.subtitle);
+                setPosterField(posterTagline, poster.tagline);
+                setPosterField(posterBody, poster.bodyHtml, true);
+
+                if (posterList) {
+                    posterList.innerHTML = '';
+                    const items = Array.isArray(poster.list) ? poster.list : [];
+                    posterList.hidden = items.length === 0;
+                    items.forEach((item) => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        posterList.appendChild(li);
+                    });
+                }
+
+                if (posterCta) {
+                    if (poster.ctaHref && poster.ctaText) {
+                        posterCta.hidden = false;
+                        posterCta.href = poster.ctaHref;
+                        if (poster.ctaExternal) {
+                            posterCta.target = '_blank';
+                            posterCta.rel = 'noopener noreferrer';
+                        } else {
+                            posterCta.removeAttribute('target');
+                            posterCta.removeAttribute('rel');
+                        }
+                        if (posterCtaText) posterCtaText.textContent = poster.ctaText;
+                        const icon = posterCta.querySelector('i');
+                        if (icon) icon.style.display = poster.ctaExternal ? '' : 'none';
+                    } else {
+                        posterCta.hidden = true;
+                    }
+                }
+            };
+
+            const openPosterModal = (trigger) => {
+                if (!posterModal || !trigger) return;
+                const poster = posterCatalog[trigger.getAttribute('data-poster-id')];
+                if (!poster) return;
+                activePosterTrigger = trigger;
+                fillPosterModal(poster);
+                collapseAllPosterRails();
+                if (posterCloseTimer) {
+                    clearTimeout(posterCloseTimer);
+                    posterCloseTimer = null;
+                }
+                posterModal.hidden = false;
+                void posterModal.offsetWidth;
+                posterModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                if (posterClose) posterClose.focus();
+            };
+
+            const closePosterModal = () => {
+                if (!posterModal || posterModal.hidden) return;
+                posterModal.classList.remove('active');
+                document.body.style.overflow = '';
+                const finish = (e) => {
+                    if (e && e.target !== posterModal) return;
+                    posterModal.hidden = true;
+                    posterModal.removeEventListener('transitionend', finish);
+                    if (posterCloseTimer) {
+                        clearTimeout(posterCloseTimer);
+                        posterCloseTimer = null;
+                    }
+                    if (activePosterTrigger && activePosterTrigger.offsetParent !== null) {
+                        activePosterTrigger.focus();
+                    } else {
+                        const fallbackToggle = document.querySelector('.poster-ad-toggle');
+                        if (fallbackToggle) fallbackToggle.focus();
+                    }
+                    activePosterTrigger = null;
+                };
+                posterModal.addEventListener('transitionend', finish);
+                posterCloseTimer = setTimeout(() => finish({ target: posterModal }), 320);
+            };
+
+            posterTriggers.forEach((trigger) => {
+                trigger.addEventListener('click', () => openPosterModal(trigger));
+            });
+            if (posterClose) posterClose.addEventListener('click', closePosterModal);
+            if (posterModal) {
+                posterModal.querySelectorAll('[data-poster-close]').forEach(el => {
+                    el.addEventListener('click', closePosterModal);
+                });
+            }
+
+            posterRails.forEach((rail) => {
+                const toggle = rail.querySelector('.poster-ad-toggle');
+                const stack = rail.querySelector('.poster-ad-stack');
+                if (toggle) {
+                    toggle.addEventListener('click', () => {
+                        setPosterRailExpanded(rail, !rail.classList.contains('is-expanded'));
+                    });
+                }
+                rail.querySelectorAll('[data-poster-collapse]').forEach((btn) => {
+                    btn.addEventListener('click', () => setPosterRailExpanded(rail, false));
+                });
+                if (stack) {
+                    stack.addEventListener('scroll', () => updatePosterScrollCue(rail), { passive: true });
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && posterModal && !posterModal.hidden) {
+                    closePosterModal();
+                    return;
+                }
+                if (e.key === 'Escape') {
+                    const openRail = posterRails.find((rail) => rail.classList.contains('is-expanded'));
+                    if (openRail) setPosterRailExpanded(openRail, false);
+                }
+            });
+
+            window.addEventListener('scroll', updatePosterPageFade, { passive: true });
+            window.addEventListener('resize', () => {
+                updatePosterPageFade();
+                updateAllPosterScrollCues();
+            }, { passive: true });
+            updatePosterPageFade();
+            // Thumbs may load async and change overflow height
+            document.querySelectorAll('.poster-ad-thumb').forEach((img) => {
+                if (img.complete) return;
+                img.addEventListener('load', updateAllPosterScrollCues, { once: true });
+            });
+            window.addEventListener('load', updateAllPosterScrollCues);
+            requestAnimationFrame(updateAllPosterScrollCues);
 
             // A.I face: Lottie animation - Plays continuously
             const aiBox = document.getElementById('aiFeatureBox');

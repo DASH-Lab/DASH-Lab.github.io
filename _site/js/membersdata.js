@@ -36,7 +36,8 @@ const phdStudents = [
     { name: "Sanghyeok Park", dept: "Semiconductor Display Engineering", interests: "Large Language Models, Industrial AI Applications", email: "sh88park@g.skku.edu", img: "img/member_images/ParkSangHyeok.jpg", link: "https://scholar.google.com/citations?hl=ko&user=Kzbt0BIAAAAJ", linkedin: "https://www.linkedin.com/in/sanghyeok88park/" },
     { name: "Tran Van Khoa", dept: "Computer Science & Engineering", interests: "Machine Learning, AI Privacy, Representation Learning", email: "khoa.tr@g.skku.edu", img: "img/member_images/Khoa Tran.jpg", homepage: "https://khoatrv.github.io/" },
     { name: "Tuan V. Nguyen", dept: "Computer Science & Engineering", interests: "Deepfake Generation, Deepfake Detection, PINNs", email: "tuannv99@g.skku.edu", img: "img/member_images/tuannguyen.jpg" },
-    { name: "Seungbin Yim", dept: "Computer Science & Engineering", interests: "Time-Series Forcasting, Multi-modal, LLMs", email: "ysb06@g.skku.edu", img: "img/member_images/SeungbinYim.png" }
+    { name: "Seungbin Yim", dept: "Computer Science & Engineering", interests: "Time-Series Forcasting, Multi-modal, LLMs", email: "ysb06@g.skku.edu", img: "img/member_images/SeungbinYim.png" },
+    { name: "Samuel Matia", dept: "Computer Science & Engineering", interests: "Graph Machine Unlearning, Agentic Unlearning", email: "smatia@g.skku.edu", img: "img/member_images/SamuelMatia.jpg", link: "https://scholar.google.com/citations?user=55P3_qMAAAAJ&hl=fr&oi=ao", linkedin: "https://www.linkedin.com/in/samuel-matia-4b051125b" }
 ];
 
 const msStudents = [

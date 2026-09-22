@@ -41,7 +41,6 @@ const phdStudents = [
 ];
 
 const msStudents = [
-    { name: "Beomsang Cho", dept: "Computer Science & Engineering", interests: "Computer Vision", email: "gababsang@g.skku.edu", img: "img/member_images/BeomSang Cho.png" },
     { name: "Bohyun Moon", dept: "Artificial Intelligence", interests: "Computer Vision, Deepfakes, Video Representation Learning", email: "bhmoon98@g.skku.edu", img: "img/member_images/MoonBoHyun2.jpg" },
     { name: "Seungjune Kang", dept: "Artificial Intelligence", interests: "Computer Vision, Video Anomaly, Deepfakes", email: "seungjune05@g.skku.edu", img: "img/member_images/SeungjuneKang.jpg" },
 
@@ -75,6 +74,7 @@ const masterSupervision = [
 
 const alumni = [
     { name: "Binh M. Le (Ph.D.) 2025", major: "Adversarial Robustness & Representation Learning", employment: "Research Scientist in Meta", link: "https://sites.google.com/view/binhminhle/home" },
+    { name: "Beomsang Cho (MS) 2026", major: "Computer Vision", employment: "TBD"},
     { name: "Yongcheol Noh (MS) 2026", major: "Computer Science & Engineering", employment: "모티프드라이브" },
     { name: "Hakjun Moon (MS) 2026", major: "Computer Science & Engineering", employment: "TBD" },
     { name: "Jungwook Shon (MS) 2026", major: "Time Series Anomaly Detection", employment: "Samsung Electronics" },

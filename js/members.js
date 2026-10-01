@@ -1,22 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Render Industry Alumni
-    if (typeof industryAlumni !== 'undefined') {
-        renderIndustryMembers(industryAlumni, 'industry-alumni-container');
-    }
-
-    // Render standard member grids with "Join Lab" tags where requested
-    renderMembers(researchProfessors, 'research-professors-container', 'Research Professor', true);
-    renderMembers(phdStudents, 'phd-students-container', 'Ph.D. Student', true);
-    renderMembers(msStudents, 'ms-students-container', 'Masters Student', true);
-
-    // Render Undergraduate Students
-    if (typeof unsergraduatedStudents !== 'undefined') {
-        renderMembers(unsergraduatedStudents, 'ug-students-container', 'Undergraduate Student', true);
-    }
-
-    // Render tables
-    renderSupervisionTable(masterSupervision, 'master-supervision-table-body');
-    renderAlumniTable(alumni, 'alumni-table-body');
+    renderAllMembers();
 
     // --- Modal Logic ---
     const modal = document.getElementById('join-modal');
@@ -37,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach click events to all "Join the Lab" triggers
     document.addEventListener('click', (e) => {
         if (e.target.closest('.join-lab-trigger')) {
-            // Updated to go directly to Google Form as requested
             window.open('https://forms.gle/RYCUasAUbsFhJtyb6', '_blank');
         }
     });
@@ -50,6 +32,32 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === modal) toggleModal(false);
         });
     }
+});
+
+function renderAllMembers() {
+    if (typeof industryAlumni !== 'undefined') {
+        renderIndustryMembers(industryAlumni, 'industry-alumni-container');
+    }
+
+    const roleRp = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.role.rp') : 'Research Professor';
+    const rolePhd = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.role.phd') : 'Ph.D. Student';
+    const roleMs = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.role.ms') : 'Masters Student';
+    const roleUg = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.role.ug') : 'Undergraduate Student';
+
+    renderMembers(researchProfessors, 'research-professors-container', roleRp, true);
+    renderMembers(phdStudents, 'phd-students-container', rolePhd, true);
+    renderMembers(msStudents, 'ms-students-container', roleMs, true);
+
+    if (typeof unsergraduatedStudents !== 'undefined') {
+        renderMembers(unsergraduatedStudents, 'ug-students-container', roleUg, true);
+    }
+
+    renderSupervisionTable(masterSupervision, 'master-supervision-table-body');
+    renderAlumniTable(alumni, 'alumni-table-body');
+}
+
+window.addEventListener('dash:langchange', () => {
+    renderAllMembers();
 });
 
 /**
@@ -67,10 +75,14 @@ function parseInterestChips(interests) {
  * Renders research-interest chips for a member card.
  */
 function renderInterestChips(interests) {
-    const chips = parseInterestChips(interests);
+    const localized = (typeof DashMemberI18n !== 'undefined')
+        ? DashMemberI18n.localizeInterests(interests)
+        : interests;
+    const chips = parseInterestChips(localized);
     if (!chips.length) return '';
+    const aria = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.interestsAria') : 'Research interests';
     return `
-        <div class="member-interests" role="list" aria-label="Research interests">
+        <div class="member-interests" role="list" aria-label="${aria}">
             ${chips.map(interest =>
                 `<span class="member-interest-chip" role="listitem">${interest}</span>`
             ).join('')}
@@ -83,10 +95,16 @@ function renderInterestChips(interests) {
  */
 function renderMembers(data, containerId, defaultRole, showJoinLab = false) {
     const container = document.getElementById(containerId);
-    if (!container) return;
+    if (!container || !data) return;
 
     let membersHtml = data.map(member => {
         const primaryLink = member.link || member.homepage || null;
+        const dept = (typeof DashMemberI18n !== 'undefined')
+            ? DashMemberI18n.localizeMemberField(member, 'dept')
+            : (member.dept || '');
+        const role = (typeof DashMemberI18n !== 'undefined')
+            ? DashMemberI18n.localizeRole(member.role || defaultRole)
+            : (member.role || defaultRole);
         return `
         <div class="member-card">
             <div class="flex flex-col items-center">
@@ -106,10 +124,10 @@ function renderMembers(data, containerId, defaultRole, showJoinLab = false) {
             ? `<a href="${primaryLink}" target="_blank" class="text-lg font-bold text-blue-700 hover:text-blue-900 leading-tight">${member.name}</a>`
             : `<span class="text-lg font-bold text-gray-800 leading-tight">${member.name}</span>`
         }
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-0.5">${member.role || defaultRole}</p>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-0.5">${role}</p>
                 </div>
 
-                ${member.dept ? `<p class="text-[11px] text-gray-500 italic mb-2 text-center px-4">${member.dept}</p>` : ''}
+                ${dept ? `<p class="text-[11px] text-gray-500 italic mb-2 text-center px-4">${dept}</p>` : ''}
                 ${renderInterestChips(member.interests)}
             </div>
 
@@ -139,13 +157,15 @@ function renderMembers(data, containerId, defaultRole, showJoinLab = false) {
     }).join('');
 
     if (showJoinLab) {
+        const joinLab = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.joinLab') : 'Join the Lab';
+        const openPos = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.openPositions') : 'Open Positions';
         membersHtml += `
             <div class="member-card join-lab-trigger cursor-pointer border-2 border-dashed border-blue-200 bg-blue-50/30 hover:bg-blue-50 hover:border-blue-400 transition-all flex flex-col items-center justify-center p-8 group">
                 <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <i class="fas fa-user-plus text-2xl text-blue-600"></i>
                 </div>
-                <strong class="text-blue-700 text-lg">Join the Lab</strong>
-                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Open Positions</p>
+                <strong class="text-blue-700 text-lg">${joinLab}</strong>
+                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">${openPos}</p>
             </div>
         `;
     }
@@ -159,10 +179,14 @@ function renderMembers(data, containerId, defaultRole, showJoinLab = false) {
 function renderIndustryMembers(data, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
+    const placement = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.industryPlacement') : 'Industry Placement';
 
-    container.innerHTML = data.map(member => `
+    container.innerHTML = data.map(member => {
+        const role = (typeof DashMemberI18n !== 'undefined')
+            ? DashMemberI18n.localizeRole(member.role)
+            : member.role;
+        return `
         <div class="member-card relative overflow-hidden group transition-all hover:shadow-xl hover:-translate-y-1">
-            <!-- Decorative Background Icon -->
             <div class="absolute -top-4 -right-4 opacity-[0.05] group-hover:opacity-10 transition-opacity transform rotate-12">
                  <i class="${member.companyLogo} text-8xl" style="color: ${member.companyColor}"></i>
             </div>
@@ -181,7 +205,7 @@ function renderIndustryMembers(data, containerId) {
                 
                 <div class="text-center px-4 w-full">
                     <h4 class="text-xl font-black text-gray-900 leading-tight mb-1">${member.name}</h4>
-                    <p class="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] mb-4">${member.role}</p>
+                    <p class="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] mb-4">${role}</p>
                     
                     <div class="flex flex-col gap-2 items-center">
                         <div class="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-2xl border border-gray-100 shadow-inner group-hover:bg-white transition-colors w-fit">
@@ -203,12 +227,12 @@ function renderIndustryMembers(data, containerId) {
                 </div>
             </div>
 
-            <!-- Subtle Tag -->
             <div class="mt-6 pt-4 border-t border-gray-50 flex justify-center">
-                <span class="text-[10px] font-bold text-gray-300 uppercase tracking-widest">Industry Placement</span>
+                <span class="text-[10px] font-bold text-gray-300 uppercase tracking-widest">${placement}</span>
             </div>
         </div>
-    `).join('');
+    `;
+    }).join('');
 }
 
 /**
@@ -216,16 +240,28 @@ function renderIndustryMembers(data, containerId) {
  */
 function renderSupervisionTable(data, tbodyId) {
     const tbody = document.getElementById(tbodyId);
-    if (!tbody) return;
+    if (!tbody || !data) return;
+    const lbName = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.th.name') : 'Name';
+    const lbMajor = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.th.major') : 'Major';
+    const lbEmp = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.th.employment2') : 'Employment';
+    const lbTopic = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.th.topic') : 'Topic';
 
-    tbody.innerHTML = data.map(item => `
+    tbody.innerHTML = data.map(item => {
+        const major = (typeof DashMemberI18n !== 'undefined')
+            ? DashMemberI18n.localizeDept(item.major)
+            : item.major;
+        const topic = (typeof DashMemberI18n !== 'undefined')
+            ? DashMemberI18n.localizeInterestChip(item.topic)
+            : item.topic;
+        return `
         <tr>
-            <td data-label="Name" class="font-bold text-gray-800">${item.name}</td>
-            <td data-label="Major" class="text-gray-600">${item.major}</td>
-            <td data-label="Employment" class="text-blue-700 font-medium">${item.employment}</td>
-            <td data-label="Topic" class="text-gray-500 italic text-sm">${item.topic}</td>
+            <td data-label="${lbName}" class="font-bold text-gray-800">${item.name}</td>
+            <td data-label="${lbMajor}" class="text-gray-600">${major}</td>
+            <td data-label="${lbEmp}" class="text-blue-700 font-medium">${item.employment}</td>
+            <td data-label="${lbTopic}" class="text-gray-500 italic text-sm">${topic}</td>
         </tr>
-    `).join('');
+    `;
+    }).join('');
 }
 
 /**
@@ -233,23 +269,31 @@ function renderSupervisionTable(data, tbodyId) {
  */
 function renderAlumniTable(data, tbodyId) {
     const tbody = document.getElementById(tbodyId);
-    if (!tbody) return;
+    if (!tbody || !data) return;
+    const lbName = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.th.name') : 'Name';
+    const lbMajor = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.th.major') : 'Major';
+    const lbEmp = (typeof DashI18n !== 'undefined') ? DashI18n.t('members.th.employment') : 'Employment';
 
-    tbody.innerHTML = data.map(item => `
+    tbody.innerHTML = data.map(item => {
+        const major = (typeof DashMemberI18n !== 'undefined')
+            ? (DashMemberI18n.localizeDept(item.major) || DashMemberI18n.localizeInterestChip(item.major) || item.major)
+            : item.major;
+        return `
         <tr>
-            <td data-label="Name">
+            <td data-label="${lbName}">
                 ${item.link
             ? `<a href="${item.link}" target="_blank" class="text-blue-600 hover:text-blue-800 font-bold">${item.name}</a>`
             : `<span class="font-bold text-gray-800">${item.name}</span>`
         }
             </td>
-            <td data-label="Major" class="text-gray-600">${item.major}</td>
-            <td data-label="Employment">
+            <td data-label="${lbMajor}" class="text-gray-600">${major}</td>
+            <td data-label="${lbEmp}">
                 ${item.employmentLink
             ? `<a href="${item.employmentLink}" target="_blank" class="text-blue-600 hover:underline font-medium">${item.employment}</a>`
             : `<span class="font-medium text-gray-700">${item.employment}</span>`
         }
             </td>
         </tr>
-    `).join('');
+    `;
+    }).join('');
 }

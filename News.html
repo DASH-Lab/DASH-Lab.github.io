@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-page-title="news.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,11 @@
     
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js" defer></script>
     <script src="js/common.js" defer></script>
     
     <!-- Data + logic (defer preserves document order) -->
+    <script src="js/i18n-content.js" defer></script>
     <script src="js/newsdata.js" defer></script>
     <script src="js/imagedata.js" defer></script>
     <script src="js/news.js" defer></script>
@@ -26,7 +28,7 @@
 
     <div class="container mx-auto px-4 pt-8 max-w-6xl flex-grow">
         
-        <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center md:text-left">News & Events</h1>
+        <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center md:text-left" data-i18n="news.heading">News & Events</h1>
 
         <!-- Flickity Carousel -->
         <!-- Added id="news-carousel" so js/news.js can find it -->
@@ -38,12 +40,12 @@
         <div class="archive-card">
             <div class="archive-header">
                 <i class="fas fa-file-alt text-2xl mr-3 text-blue-700"></i>
-                <h4 class="text-2xl font-bold text-gray-900 flex-grow">News Archive</h4>
+                <h4 class="text-2xl font-bold text-gray-900 flex-grow" data-i18n="news.archive">News Archive</h4>
                 <div class="archive-tabs flex">
-                    <button onclick="filterNews('All')">All</button>
+                    <button onclick="filterNews('All')" data-news-filter="All" data-i18n="common.all">All</button>
                     <button onclick="filterNews('2025')">2025</button>
                     <button onclick="filterNews('2024')">2024</button>
-                    <button onclick="filterNews('Archive')">Archive</button>
+                    <button onclick="filterNews('Archive')" data-news-filter="Archive" data-i18n="common.archive">Archive</button>
                 </div>
             </div>
 
@@ -54,9 +56,9 @@
 
             <!-- Pagination -->
             <div class="pagination-controls flex justify-center items-center mt-6">
-                <button id="prev-page-btn" onclick="changePage(-1)">Previous</button>
+                <button id="prev-page-btn" onclick="changePage(-1)" data-i18n="common.previous">Previous</button>
                 <span id="page-info" class="text-sm font-medium text-gray-600 px-4">Page 0 of 0</span>
-                <button id="next-page-btn" onclick="changePage(1)">Next</button>
+                <button id="next-page-btn" onclick="changePage(1)" data-i18n="common.next">Next</button>
             </div>
         </div>
     </div>

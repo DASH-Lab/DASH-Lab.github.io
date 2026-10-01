@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-page-title="members.title">
 
 <head>
     <meta charset="UTF-8">
@@ -21,9 +21,11 @@
 
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js" defer></script>
     <script src="js/common.js" defer></script>
 
     <!-- Members Scripts -->
+    <script src="js/i18n-members.js" defer></script>
     <script src="js/membersdata.js" defer></script>
     <script src="js/members.js" defer></script>
 </head>
@@ -36,7 +38,7 @@
 
         <!-- Industry Positions (New Section) -->
         <div class="member-section-card">
-            <h5 class="member-header text-blue-800">Industry Positions</h5>
+            <h5 class="member-header text-blue-800" data-i18n="members.industry" data-i18n="members.industry">Industry Positions</h5>
             <div id="industry-alumni-container"
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- JS Injects Here -->
@@ -46,7 +48,7 @@
         <!-- Research Professor -->
         <div class="member-section-card">
             <div class="flex items-center justify-between mb-6">
-                <h5 class="member-header !mb-0">Research Professors/Post-Doc Researcher</h5>
+                <h5 class="member-header !mb-0" data-i18n="members.researchProf" data-i18n="members.researchProf">Research Professors/Post-Doc Researcher</h5>
             </div>
             <div id="research-professors-container"
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -56,7 +58,7 @@
 
         <!-- Ph.D. Students -->
         <div class="member-section-card">
-            <h5 class="member-header">Ph.D. Students</h5>
+            <h5 class="member-header" data-i18n="members.phd" data-i18n="members.phd">Ph.D. Students</h5>
             <div id="phd-students-container"
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- JS Injects Here -->
@@ -65,7 +67,7 @@
 
         <!-- Master's Students -->
         <div class="member-section-card">
-            <h5 class="member-header">Masters Students</h5>
+            <h5 class="member-header" data-i18n="members.ms" data-i18n="members.ms">Masters Students</h5>
             <div id="ms-students-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- JS Injects Here -->
             </div>
@@ -73,7 +75,7 @@
 
         <!-- Undergraduate Students (Now Dynamic) -->
         <div class="member-section-card">
-            <h5 class="member-header">Undergraduate Students</h5>
+            <h5 class="member-header" data-i18n="members.ug" data-i18n="members.ug">Undergraduate Students</h5>
             <div id="ug-students-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <!-- JS Injects Members & Recruitment Card Here -->
             </div>
@@ -81,13 +83,13 @@
 
         <!-- Alumni -->
         <div class="member-section-card alumni-table">
-            <h5 class="member-header">Alumni</h5>
+            <h5 class="member-header" data-i18n="members.alumni" data-i18n="members.alumni">Alumni</h5>
             <table class="w-full">
                 <thead>
                     <tr>
-                        <th data-label="Name">Name</th>
-                        <th data-label="Major">Major</th>
-                        <th data-label="Employment">Current employment</th>
+                        <th data-label="Name" data-i18n="members.th.name">Name</th>
+                        <th data-label="Major" data-i18n="members.th.major">Major</th>
+                        <th data-label="Employment" data-i18n="members.th.employment">Current employment</th>
                     </tr>
                 </thead>
                 <tbody id="alumni-table-body">
@@ -98,14 +100,14 @@
 
         <!-- Master Thesis Supervision -->
         <div class="member-section-card alumni-table">
-            <h5 class="member-header">Master Thesis/Capstone Project Supervision</h5>
+            <h5 class="member-header" data-i18n="members.supervision" data-i18n="members.supervision">Master Thesis/Capstone Project Supervision</h5>
             <table class="w-full">
                 <thead>
                     <tr>
-                        <th data-label="Name">Name</th>
-                        <th data-label="Major" class="w-1/4">Major</th>
-                        <th data-label="Employment" class="w-1/4">Current Employment</th>
-                        <th data-label="Topic" class="w-2/5">Topic</th>
+                        <th data-label="Name" data-i18n="members.th.name">Name</th>
+                        <th data-label="Major" class="w-1/4" data-i18n="members.th.major">Major</th>
+                        <th data-label="Employment" class="w-1/4" data-i18n="members.th.employment2">Current Employment</th>
+                        <th data-label="Topic" class="w-2/5" data-i18n="members.th.topic">Topic</th>
                     </tr>
                 </thead>
                 <tbody id="master-supervision-table-body">
@@ -132,21 +134,21 @@
                     <i class="fas fa-graduation-cap text-blue-500 text-3xl" id="fallback-icon"></i>
                 </div>
 
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">Join DASH Lab</h2>
-                <p class="text-gray-500 text-sm mb-8 leading-relaxed px-4">We are looking for students who can code and
+                <h2 class="text-2xl font-bold text-gray-800 mb-2" data-i18n="members.modal.title">Join DASH Lab</h2>
+                <p class="text-gray-500 text-sm mb-8 leading-relaxed px-4" data-i18n="members.modal.body">We are looking for students who can code and
                     have a deep passion for AI research.</p>
 
                 <div class="space-y-4 text-left px-2">
                     <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                        <p class="text-[10px] font-black text-blue-700 uppercase mb-1 tracking-widest">Research Focus
+                        <p class="text-[10px] font-black text-blue-700 uppercase mb-1 tracking-widest" data-i18n="members.modal.focusLabel">Research Focus
                         </p>
-                        <p class="text-sm text-blue-900 font-medium leading-tight">Computer Vision, Anomaly Detection,
+                        <p class="text-sm text-blue-900 font-medium leading-tight" data-i18n="members.modal.focus">Computer Vision, Anomaly Detection,
                             NLP, and AI Security.</p>
                     </div>
 
                     <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
-                        <p class="text-[10px] font-black text-gray-500 uppercase mb-1 tracking-widest">How to Apply</p>
-                        <p class="text-sm font-bold text-gray-800 mb-1">Email your resume to:</p>
+                        <p class="text-[10px] font-black text-gray-500 uppercase mb-1 tracking-widest" data-i18n="members.modal.applyLabel">How to Apply</p>
+                        <p class="text-sm font-bold text-gray-800 mb-1" data-i18n="members.modal.emailLabel">Email your resume to:</p>
                         <a href="mailto:undergraduate@g.skku.edu"
                             class="text-blue-600 font-mono text-sm hover:underline">undergraduate@g.skku.edu</a>
                     </div>
@@ -154,7 +156,7 @@
 
                 <button id="modal-confirm"
                     class="w-full mt-8 bg-blue-600 text-white font-bold py-3.5 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
-                    Close Window
+                    <span data-i18n="members.modal.close">Close Window</span>
                 </button>
             </div>
         </div>

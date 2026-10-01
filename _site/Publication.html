@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-page-title="pubs.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js" defer></script>
     <script src="js/common.js" defer></script>
     
     <!-- Publication Data & Logic (377KB data deferred off critical path) -->
@@ -37,19 +38,19 @@
         <div class="research-grid">
             <a href="https://github.com/DASH-Lab/deepfakeResearch" target="_blank" class="research-btn group"> 
                 <i class="fas fa-user-secret group-hover:scale-110 transition-transform"></i>
-                <span>Deepfake Research</span>
+                <span data-i18n="pubs.deepfake">Deepfake Research</span>
             </a>
             <a href="https://github.com/DASH-Lab/anomaly_detection_research" target="_blank" class="research-btn group"> 
                 <i class="fas fa-chart-line group-hover:scale-110 transition-transform"></i>
-                <span>Anomaly Detection</span>
+                <span data-i18n="pubs.anomaly">Anomaly Detection</span>
             </a>
             <a href="https://github.com/DASH-Lab/ML_privacy_research" target="_blank" class="research-btn group"> 
                 <i class="fas fa-shield-alt group-hover:scale-110 transition-transform"></i>
-                <span>ML Privacy</span>
+                <span data-i18n="pubs.privacy">ML Privacy</span>
             </a>
             <a href="https://github.com/DASH-Lab/FaceRecogRecovery" target="_blank" class="research-btn group"> 
                 <i class="fas fa-id-card group-hover:scale-110 transition-transform"></i>
-                <span>Face Recog. Recovery</span>
+                <span data-i18n="pubs.face">Face Recog. Recovery</span>
             </a>
         </div>
 
@@ -57,7 +58,7 @@
         <div class="controls-container">
             <div class="search-wrapper">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" id="searchInput" class="search-input" placeholder="Loading data..." disabled>
+                <input type="text" id="searchInput" class="search-input" placeholder="Loading data..." data-i18n-placeholder="common.searchPubs" disabled>
             </div>
             
             <div class="pagination" id="pagination-buttons">

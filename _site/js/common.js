@@ -309,7 +309,7 @@ const navbarHTML = `
     <div class="w-full px-8 relative z-10">
         <div class="flex justify-between items-center h-20">
             <!-- Logo / Brand -->
-            <a href="./" class="nav-logo-link flex items-center gap-2 group" aria-label="DASH Lab Home">
+            <a href="./" class="nav-logo-link flex items-center gap-2 group" data-i18n-aria="nav.homeAria" aria-label="DASH Lab Home">
                 <span class="nav-logo-wrap">
                     <img id="nav-logo" src="${getDynamicLogo()}" alt="DASH LAB Logo" class="w-auto object-contain transition-transform duration-300 group-hover:scale-110">
                 </span>
@@ -318,18 +318,28 @@ const navbarHTML = `
             <!-- Desktop Menu -->
             <!-- Removed text-gray-600 and hover:text-blue-600 to let style.css handle colors -->
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="./" class="nav-link font-medium transition">Home</a>
-                <a href="Professor" class="nav-link font-medium transition">Professor</a>
-                <a href="Datasets" class="nav-link font-medium transition">Datasets</a>
-                <a href="Members" class="nav-link font-medium transition">Members</a>
-                <a href="News" class="nav-link font-medium transition">News</a>
-                <a href="Projects" class="nav-link font-medium transition">Projects</a>
-                <a href="Publication" class="nav-link font-medium transition">Publications</a>
+                <a href="./" class="nav-link font-medium transition" data-i18n="nav.home">Home</a>
+                <a href="Professor" class="nav-link font-medium transition" data-i18n="nav.professor">Professor</a>
+                <a href="Datasets" class="nav-link font-medium transition" data-i18n="nav.datasets">Datasets</a>
+                <a href="Members" class="nav-link font-medium transition" data-i18n="nav.members">Members</a>
+                <a href="News" class="nav-link font-medium transition" data-i18n="nav.news">News</a>
+                <a href="Projects" class="nav-link font-medium transition" data-i18n="nav.projects">Projects</a>
+                <a href="Publication" class="nav-link font-medium transition" data-i18n="nav.publications">Publications</a>
+                <div class="lang-toggle" role="group" data-i18n-aria="nav.langToggle" aria-label="Language">
+                    <button type="button" class="lang-toggle-btn" data-lang-set="en" aria-pressed="true">EN</button>
+                    <span class="lang-toggle-sep" aria-hidden="true">|</span>
+                    <button type="button" class="lang-toggle-btn" data-lang-set="ko" aria-pressed="false">한국어</button>
+                </div>
             </div>
 
             <!-- Mobile Menu Button -->
             <!-- Added text-white for visibility on dark bg -->
-            <div class="md:hidden flex items-center">
+            <div class="md:hidden flex items-center gap-2">
+                <div class="lang-toggle lang-toggle--mobile" role="group" data-i18n-aria="nav.langToggle" aria-label="Language">
+                    <button type="button" class="lang-toggle-btn" data-lang-set="en" aria-pressed="true">EN</button>
+                    <span class="lang-toggle-sep" aria-hidden="true">|</span>
+                    <button type="button" class="lang-toggle-btn" data-lang-set="ko" aria-pressed="false">한국어</button>
+                </div>
                 <button id="mobile-menu-btn" class="text-white hover:text-blue-200 focus:outline-none p-2 rounded-md">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
@@ -342,13 +352,13 @@ const navbarHTML = `
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl relative z-10">
         <div class="px-4 pt-2 pb-4 space-y-2">
              <!-- Changed href to "./" for Home -->
-            <a href="./" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">Home</a>
-            <a href="Professor" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">Professor</a>
-            <a href="Datasets" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">Datasets</a>
-            <a href="Members" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">Members</a>
-            <a href="News" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">News</a>
-            <a href="Projects" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">Projects</a>
-            <a href="Publication" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition">Publications</a>
+            <a href="./" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition" data-i18n="nav.home">Home</a>
+            <a href="Professor" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition" data-i18n="nav.professor">Professor</a>
+            <a href="Datasets" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition" data-i18n="nav.datasets">Datasets</a>
+            <a href="Members" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition" data-i18n="nav.members">Members</a>
+            <a href="News" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition" data-i18n="nav.news">News</a>
+            <a href="Projects" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition" data-i18n="nav.projects">Projects</a>
+            <a href="Publication" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-md transition" data-i18n="nav.publications">Publications</a>
         </div>
     </div>
 </nav>
@@ -366,8 +376,8 @@ const footerHTML = `
             
             <!-- Column 1: Contact Info -->
             <div>
-                <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1">DASH Lab</h5>
-                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1" data-i18n="footer.contact">DASH Lab</h5>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4" data-i18n-html="footer.address">
                     N Center 86401, Sungkyunkwan University<br>
                     2066 Seobu-ro Jangan-gu Suwon, South Korea
                 </p>
@@ -375,19 +385,19 @@ const footerHTML = `
 
             <!-- Column 2: Visitors Map (MapMyVisitors live embed; see initMapMyVisitorsMap) -->
             <div class="flex flex-col items-center">
-                <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1">Visitors Map</h5>
-                <div id="mmv-map-container" class="visitor-map" aria-label="Visitor map"></div>
+                <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1" data-i18n="footer.visitors">Visitors Map</h5>
+                <div id="mmv-map-container" class="visitor-map" data-i18n-aria="footer.visitorsAria" aria-label="Visitor map"></div>
             </div>
 
             <!-- Column 3: Links -->
             <div>
-                <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1">Quick Links</h5>
+                <h5 class="text-xl font-bold mb-4 border-b border-blue-600 inline-block pb-1" data-i18n="footer.quickLinks">Quick Links</h5>
                 <ul class="space-y-2">
-                    <li><a class="footer-link block" href="https://x.com/TheDASHLab" target="_top"><i class="fab fa-twitter w-5"></i> DASH LAB Twitter</a></li>
-                    <li><a class="footer-link block" href="https://gradschool.skku.edu/grad/" target="_top"><i class="fas fa-university w-5"></i> SKKU Graduate School</a></li>
-                    <li><a class="footer-link block" href="https://sci-cube.skku.edu/sci-cube/index.do" target="_top"><i class="fas fa-database w-5"></i> Applied Data Science Dept</a></li>
-                    <li><a class="footer-link block" href="https://cs.skku.edu/" target="_top"><i class="fas fa-laptop-code w-5"></i> CS & Engineering Dept</a></li>
-                    <li><a class="footer-link block" href="https://ai.skku.edu/ai/index.do" target="_top"><i class="fas fa-brain w-5"></i> Dept of AI</a></li>
+                    <li><a class="footer-link block" href="https://x.com/TheDASHLab" target="_top"><i class="fab fa-twitter w-5"></i> <span data-i18n="footer.twitter">DASH LAB Twitter</span></a></li>
+                    <li><a class="footer-link block" href="https://gradschool.skku.edu/grad/" target="_top"><i class="fas fa-university w-5"></i> <span data-i18n="footer.gradSchool">SKKU Graduate School</span></a></li>
+                    <li><a class="footer-link block" href="https://sci-cube.skku.edu/sci-cube/index.do" target="_top"><i class="fas fa-database w-5"></i> <span data-i18n="footer.dataScience">Applied Data Science Dept</span></a></li>
+                    <li><a class="footer-link block" href="https://cs.skku.edu/" target="_top"><i class="fas fa-laptop-code w-5"></i> <span data-i18n="footer.cs">CS & Engineering Dept</span></a></li>
+                    <li><a class="footer-link block" href="https://ai.skku.edu/ai/index.do" target="_top"><i class="fas fa-brain w-5"></i> <span data-i18n="footer.ai">Dept of AI</span></a></li>
                 </ul>
             </div>
         </div>
@@ -396,10 +406,10 @@ const footerHTML = `
     <div class="border-t border-blue-900 mt-10 pt-6">
         <div class="container mx-auto px-4 max-w-6xl text-sm flex justify-between items-center flex-wrap gap-4">
             <div class="text-gray-400 w-full md:w-auto text-center md:text-left">
-                Made by <span class="text-white font-semibold">Dash Lab</span>
+                <span data-i18n="footer.madeBy">Made by</span> <span class="text-white font-semibold">Dash Lab</span>
             </div>
             <div class="text-gray-400 w-full md:w-auto text-center md:text-right">
-                Copyright © <span id="current-year-display"></span> <a" class="text-gray-300 hover:text-white transition-colors" target="_top">DASH-Lab</a>.
+                <span data-i18n="footer.copyright">Copyright ©</span> <span id="current-year-display"></span> <a class="text-gray-300 hover:text-white transition-colors" target="_top">DASH-Lab</a>.
             </div>
         </div>
     </div>
@@ -566,6 +576,22 @@ function initMapMyVisitorsMap() {
     loadMapMyVisitorsLive(container);
 }
 
+function initLangToggle() {
+    document.querySelectorAll('[data-lang-set]').forEach((btn) => {
+        if (btn.dataset.langBound) return;
+        btn.dataset.langBound = '1';
+        btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang-set');
+            if (typeof DashI18n !== 'undefined') {
+                DashI18n.setLang(lang, { updateUrl: false });
+            }
+        });
+    });
+    if (typeof DashI18n !== 'undefined') {
+        DashI18n.apply();
+    }
+}
+
 function injectLayout() {
     // 1. Critical: navbar first so header can paint ASAP
     const navbarContainer = document.createElement('div');
@@ -583,6 +609,7 @@ function injectLayout() {
     cleanUrl();
     highlightActiveLink();
     initMobileMenu();
+    initLangToggle();
 
     // 4. Seasonal particles + demo after first paint (non-blocking)
     scheduleSeasonParticles();

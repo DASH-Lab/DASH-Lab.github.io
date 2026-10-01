@@ -184,6 +184,54 @@ video {
     left: 0;
 }
 
+/* Language toggle (EN | 한국어) */
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    line-height: 1;
+}
+
+.lang-toggle-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 0.15rem 0.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.lang-toggle-btn:hover {
+    color: #ffffff;
+}
+
+.lang-toggle-btn.is-active {
+    color: #4fc3f7;
+}
+
+.lang-toggle-sep {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.7rem;
+    user-select: none;
+}
+
+.lang-toggle--mobile {
+    margin-left: 0;
+    padding: 0.15rem 0.45rem;
+}
+
+.lang-toggle--mobile .lang-toggle-btn {
+    font-size: 0.7rem;
+}
+
 /* Logo Hover Effect */
 #main-nav .text-2xl {
     transition: transform 0.3s ease, text-shadow 0.3s ease;
@@ -2549,11 +2597,9 @@ input:checked+.slider:before {
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 3 / 4;
-    max-height: 176px;
-    object-fit: cover;
-    object-position: top center;
-    background: #0f172a;
+    aspect-ratio: auto; /* ignore HTML width/height attr ratio; use intrinsic image */
+    object-fit: unset;
+    background: transparent;
 }
 
 .poster-ad-hint {
@@ -2859,10 +2905,6 @@ input:checked+.slider:before {
         background: linear-gradient(to top, rgba(248, 250, 252, 0.96) 12%, rgba(248, 250, 252, 0));
     }
 
-    .poster-ad-thumb {
-        max-height: 210px;
-    }
-
     .poster-ad-badge {
         font-size: 0.65rem;
         padding: 5px 6px;
@@ -2906,10 +2948,6 @@ input:checked+.slider:before {
     .poster-ad--right {
         right: 24px;
     }
-
-    .poster-ad-thumb {
-        max-height: 228px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -2930,10 +2968,6 @@ input:checked+.slider:before {
 
     .poster-ad-stack {
         max-height: min(72vh, 520px);
-    }
-
-    .poster-ad-thumb {
-        max-height: 168px;
     }
 
     .poster-ad-modal-panel {

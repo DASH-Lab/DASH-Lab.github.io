@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en" data-i18n-page-title="hero.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,7 @@
         }
     </script>
     
+    <script src="js/i18n.js"></script>
     <script src="js/common.js"></script>
     
     <!-- 1. DATA: Loads the variables -->
@@ -40,14 +41,14 @@
     </div>
     
     <div class="container mx-auto px-4 pt-8 pb-12 max-w-6xl flex-grow">
-        <a href="Projects" class="text-blue-700 hover:text-blue-800 font-medium inline-block mb-4">&larr; Back to Projects</a>
+        <a href="Projects" class="text-blue-700 hover:text-blue-800 font-medium inline-block mb-4">&larr; <span data-i18n="hero.back">Back to Projects</span></a>
 
         <!-- 1. Header Section Container -->
         <div id="header-section">
             <!-- Content will be injected here by JS -->
         </div>
 
-        <h2 class="restoration-header">사용한 방법들</h2>
+        <h2 class="restoration-header" data-i18n="hero.methods">사용한 방법들</h2>
         
         <!-- 2. Methods Grid Container -->
         <!-- Responsive Grid: 1 column on mobile, 2 columns on desktop -->
@@ -55,14 +56,14 @@
             <!-- Content will be injected here by JS -->
         </div>
 
-        <h2 class="restoration-header">보도자료</h2>
+        <h2 class="restoration-header" data-i18n="hero.press">보도자료</h2>
         
         <!-- 3. Media Section Container -->
         <div id="media-section">
             <!-- Content will be injected here by JS -->
         </div>
 
-        <h2 class="restoration-header">참여기관</h2>
+        <h2 class="restoration-header" data-i18n="hero.partners">참여기관</h2>
         
         <!-- 4. Partners Grid Container -->
         <!-- UPDATED: flex-row ensures horizontal layout on mobile. gap-4 is smaller for mobile space. -->

@@ -31,15 +31,18 @@ function renderHerofacePage() {
     // 1. Render Header (Info)
     const headerContainer = document.getElementById('header-section');
     if (headerContainer) {
+        const title = (typeof DashI18n !== 'undefined') ? DashI18n.field(herofaceProjectInfo, 'title') : herofaceProjectInfo.title;
+        const researchers = (typeof DashI18n !== 'undefined') ? DashI18n.field(herofaceProjectInfo, 'researchers') : herofaceProjectInfo.researchers;
+        const description = (typeof DashI18n !== 'undefined') ? DashI18n.field(herofaceProjectInfo, 'description') : herofaceProjectInfo.description;
         headerContainer.innerHTML = `
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center break-keep">
-                ${herofaceProjectInfo.title}
+                ${title}
             </h1>
             <p class="text-center text-base md:text-lg font-semibold text-gray-700 mb-6 break-keep">
-                ${herofaceProjectInfo.researchers}
+                ${researchers}
             </p>
             <p class="text-gray-700 leading-relaxed mb-6 text-justify break-keep">
-                ${herofaceProjectInfo.description}
+                ${description}
             </p>
             <div class="text-center mb-10">
                 <img loading="lazy" src="${getImg(herofaceProjectInfo.mainImage)}" 
@@ -94,7 +97,7 @@ function renderHerofacePage() {
 
             <!-- News Grid Container -->
             <div class="mb-10">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-blue-600 pl-4">Media Coverage</h3>
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-blue-600 pl-4">${(typeof DashI18n !== 'undefined') ? DashI18n.t('prof.mediaCoverage') : 'Media Coverage'}</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     ${newsItems}
                 </div>
@@ -107,7 +110,7 @@ function renderHerofacePage() {
                          alt="Additional Project Image" 
                          class="w-full h-64 md:h-96 object-cover object-top rounded-lg clickable-image cursor-pointer hover:opacity-95 transition-opacity" 
                          onclick="enlargeImage(this.src)" />
-                    <p class="text-xs text-gray-400 mt-2 text-center"><i class="fas fa-search-plus mr-1"></i>Click to enlarge</p>
+                    <p class="text-xs text-gray-400 mt-2 text-center"><i class="fas fa-search-plus mr-1"></i>${(typeof DashI18n !== 'undefined') ? DashI18n.t('common.clickEnlarge') : 'Click to enlarge'}</p>
                 </div>
             </div>
         `;
@@ -130,3 +133,4 @@ function renderHerofacePage() {
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', renderHerofacePage);
+window.addEventListener('dash:langchange', renderHerofacePage);

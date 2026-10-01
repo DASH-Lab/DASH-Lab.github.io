@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-page-title="prof.title">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
 
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js"></script>
     <script src="js/common.js"></script>
 </head>
 
@@ -37,11 +38,11 @@
                         </h3>
                         <div
                             class="inline-flex items-center px-3 py-1 bg-blue-50 rounded-full text-blue-600 text-sm font-bold border border-blue-100">
-                            Associate Professor
+                            <span data-i18n="prof.role">Associate Professor</span>
                         </div>
                     </div>
 
-                    <p class="text-xl text-blue-800 font-bold">Sungkyunkwan University (SKKU)</p>
+                    <p class="text-xl text-blue-800 font-bold" data-i18n="prof.univ">Sungkyunkwan University (SKKU)</p>
 
                     <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto md:mx-0">
                         <div class="glass-card flex items-center gap-4">
@@ -74,14 +75,14 @@
 
         <!-- 1. RESEARCH PHILOSOPHY (FULL WIDTH HERO SECTION) -->
         <div class="dash-card border-t-4 border-t-blue-600 mb-12">
-            <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Research Philosophy</h4>
+            <h4 class="section-accent text-xl font-black text-gray-900 mb-8" data-i18n="prof.philosophy">Research Philosophy</h4>
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="relative pl-8">
                     <div
                         class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-600 to-blue-400 rounded-full">
                     </div>
-                    <p class="text-lg font-black text-gray-900 mb-3">Breaking Boundaries.</p>
-                    <p class="text-gray-600 leading-relaxed italic text-[13px]">
+                    <p class="text-lg font-black text-gray-900 mb-3" data-i18n="prof.phil1.title">Breaking Boundaries.</p>
+                    <p class="text-gray-600 leading-relaxed italic text-[13px]" data-i18n="prof.phil1.body">
                         My mission is to guide students beyond their comfort zones, fostering intellectual growth that
                         transcends technical expertise.
                         I encourage them to embrace diverse perspectives and challenge conventional thinking,
@@ -93,8 +94,8 @@
                     <div
                         class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-400 to-indigo-400 rounded-full">
                     </div>
-                    <p class="text-lg font-black text-gray-900 mb-3">Global Excellence.</p>
-                    <p class="text-gray-600 leading-relaxed italic text-[13px]">
+                    <p class="text-lg font-black text-gray-900 mb-3" data-i18n="prof.phil2.title">Global Excellence.</p>
+                    <p class="text-gray-600 leading-relaxed italic text-[13px]" data-i18n="prof.phil2.body">
                         Our vision extends far beyond institutional or national recognition. I am committed to
                         developing globally competitive scholars who contribute meaningfully to the international
                         research community, establishing themselves as leaders in their fields.
@@ -105,8 +106,8 @@
                     <div
                         class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-400 to-purple-400 rounded-full">
                     </div>
-                    <p class="text-lg font-black text-gray-900 mb-3">Diversity as Strength.</p>
-                    <p class="text-gray-600 leading-relaxed italic text-[13px]">
+                    <p class="text-lg font-black text-gray-900 mb-3" data-i18n="prof.phil3.title">Diversity as Strength.</p>
+                    <p class="text-gray-600 leading-relaxed italic text-[13px]" data-i18n="prof.phil3.body">
                         Having experienced two decades as an immigrant and minority scholar, I have witnessed firsthand
                         the transformative power of diversity and mutual respect.
                         I am dedicated to creating synergistic collaborations between Korean and international students,
@@ -120,7 +121,7 @@
             <div class="flex flex-col lg:flex-row gap-16">
                 <!-- Left Side: Work Experience -->
                 <div class="lg:w-3/5">
-                    <h4 class="section-accent text-xl font-black text-gray-900 mb-10">Work Experience</h4>
+                    <h4 class="section-accent text-xl font-black text-gray-900 mb-10" data-i18n="prof.workExp">Work Experience</h4>
                     <div class="space-y-12">
                         <!-- SKKU Entry -->
                         <div class="relative pl-8 border-l-2 border-blue-600">
@@ -128,34 +129,33 @@
                                 class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white">
                             </div>
                             <div class="mb-4">
-                                <h5 class="text-xl font-black text-gray-900 leading-tight">Associate Professor</h5>
-                                <p class="text-sm font-bold text-blue-600 uppercase tracking-wide mt-1">Sungkyunkwan
-                                    University (SKKU)</p>
-                                <p class="text-xs text-gray-400 font-bold mt-1">2019 - Present</p>
+                                <h5 class="text-xl font-black text-gray-900 leading-tight" data-i18n="prof.assocProf">Associate Professor</h5>
+                                <p class="text-sm font-bold text-blue-600 uppercase tracking-wide mt-1" data-i18n="prof.org.skku">Sungkyunkwan University (SKKU)</p>
+                                <p class="text-xs text-gray-400 font-bold mt-1" data-i18n="prof.present">2019 - Present</p>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
                                 <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
-                                    <span class="w-1 h-1 bg-blue-400 rounded-full"></span> Applied Data Science
-                                    (데이터사이언스)
+                                    <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <span data-i18n="prof.dept.ads">Applied Data Science
+                                    (데이터사이언스)</span>
                                 </p>
                                 <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
                                     <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a
                                         href="https://swb.skku.edu/security2020/index.do" target="_blank"
-                                        class="hover:text-blue-600 hover:underline">CSE (소프트웨어/융합보안대학원)</a>
+                                        class="hover:text-blue-600 hover:underline" data-i18n="prof.dept.cse">CSE (소프트웨어/융합보안대학원)</a>
                                 </p>
                                 <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
                                     <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a
                                         href="https://skb.skku.edu/skkuaai/index.do" target="_blank"
-                                        class="hover:text-blue-600 hover:underline">Applied AI Dept. (인공지능융합학과)</a>
+                                        class="hover:text-blue-600 hover:underline" data-i18n="prof.dept.aai">Applied AI Dept. (인공지능융합학과)</a>
                                 </p>
                                 <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
                                     <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a href="https://ai.skku.edu"
-                                        target="_blank" class="hover:text-blue-600 hover:underline">AI (인공지능학과)</a>
+                                        target="_blank" class="hover:text-blue-600 hover:underline" data-i18n="prof.dept.ai">AI (인공지능학과)</a>
                                 </p>
                                 <p class="text-[12px] font-bold text-gray-600 flex items-center gap-2">
                                     <span class="w-1 h-1 bg-blue-400 rounded-full"></span> <a
                                         href="https://intelligentsw.skku.edu/intelligentsw/index.do" target="_blank"
-                                        class="hover:text-blue-600 hover:underline">지능형소프트웨어학과</a>
+                                        class="hover:text-blue-600 hover:underline" data-i18n="prof.dept.isw">지능형소프트웨어학과</a>
                                 </p>
                             </div>
                         </div>
@@ -167,17 +167,13 @@
                             </div>
                             <div class="grid md:grid-cols-2 gap-10">
                                 <div>
-                                    <h5 class="text-base font-black text-gray-800 leading-tight">Research Assistant
-                                        Professor</h5>
-                                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1">Stony
-                                        Brook University (SBU)</p>
-                                    <p class="text-[10px] text-gray-400 font-bold mt-1">Stonybrook, NY | 2017 - 2019</p>
+                                    <h5 class="text-base font-black text-gray-800 leading-tight" data-i18n="prof.rap">Research Assistant Professor</h5>
+                                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1" data-i18n="prof.org.sbu">Stony Brook University (SBU)</p>
+                                    <p class="text-[10px] text-gray-400 font-bold mt-1" data-i18n="prof.org.sbuLoc">Stonybrook, NY | 2017 - 2019</p>
                                 </div>
                                 <div>
-                                    <h5 class="text-base font-black text-gray-800 leading-tight">Assistant Professor
-                                    </h5>
-                                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1">SUNY
-                                        Korea</p>
+                                    <h5 class="text-base font-black text-gray-800 leading-tight" data-i18n="prof.asstProf">Assistant Professor</h5>
+                                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1" data-i18n="prof.org.suny">SUNY Korea</p>
                                     <p class="text-[10px] text-gray-400 font-bold mt-1">2017 - 2019</p>
                                 </div>
                             </div>
@@ -189,11 +185,9 @@
                                 class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-200 rounded-full border-4 border-white">
                             </div>
                             <div>
-                                <h5 class="text-base font-black text-gray-800 leading-tight">Member of Technical Staff
-                                </h5>
-                                <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1">NASA Jet
-                                    Propulsion Lab (JPL)</p>
-                                <p class="text-[10px] text-gray-400 font-bold mt-1">Pasadena, CA | 2005 - 2014</p>
+                                <h5 class="text-base font-black text-gray-800 leading-tight" data-i18n="prof.mts">Member of Technical Staff</h5>
+                                <p class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mt-1" data-i18n="prof.org.jpl">NASA Jet Propulsion Lab (JPL)</p>
+                                <p class="text-[10px] text-gray-400 font-bold mt-1" data-i18n="prof.org.jplLoc">Pasadena, CA | 2005 - 2014</p>
                             </div>
                         </div>
 
@@ -204,15 +198,13 @@
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                                 <div>
-                                    <h5 class="text-sm font-black text-gray-800 leading-tight">Researcher</h5>
-                                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">
-                                        Verisign Research Lab, Reston, VA</p>
+                                    <h5 class="text-sm font-black text-gray-800 leading-tight" data-i18n="prof.researcher">Researcher</h5>
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1" data-i18n="prof.org.verisign">Verisign Research Lab, Reston, VA</p>
                                     <p class="text-[10px] text-gray-400 font-bold mt-1">2016</p>
                                 </div>
                                 <div>
-                                    <h5 class="text-sm font-black text-gray-800 leading-tight">Co-op Intern</h5>
-                                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">Intel
-                                        Corp</p>
+                                    <h5 class="text-sm font-black text-gray-800 leading-tight" data-i18n="prof.intern">Co-op Intern</h5>
+                                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1" data-i18n="prof.org.intel">Intel Corp</p>
                                     <p class="text-[10px] text-gray-400 font-bold mt-1">2001, 2002</p>
                                 </div>
                             </div>
@@ -220,8 +212,7 @@
 
                         <div class="pt-4 border-t border-gray-50">
                             <p class="text-[11px] text-gray-400 italic font-medium leading-relaxed">
-                                Note: Part-time cook at Burger King, Waiter & Dishwasher, once upon a time in
-                                highschool/college years.
+                                <span data-i18n="prof.workNote">Note: Part-time cook at Burger King, Waiter & Dishwasher, once upon a time in highschool/college years.</span>
                             </p>
                         </div>
                     </div>
@@ -229,24 +220,24 @@
 
                 <!-- Right Side: Education Timeline -->
                 <div class="lg:w-2/5 lg:border-l border-gray-100 lg:pl-16">
-                    <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Education</h4>
+                    <h4 class="section-accent text-xl font-black text-gray-900 mb-8" data-i18n="prof.education">Education</h4>
                     <div class="space-y-8">
                         <div class="timeline-item">
                             <div class="flex items-center gap-3 mb-1">
                                 <span class="w-3 h-3 bg-blue-600 rounded-full ring-4 ring-blue-50"></span>
-                                <p class="text-sm font-black text-blue-600 uppercase tracking-tighter">Tenure</p>
+                                <p class="text-sm font-black text-blue-600 uppercase tracking-tighter" data-i18n="prof.tenure">Tenure</p>
                             </div>
-                            <p class="font-bold text-gray-900">Early Tenure Granted, 2024</p>
+                            <p class="font-bold text-gray-900" data-i18n="prof.tenureGranted">Early Tenure Granted, 2024</p>
                         </div>
 
                         <div class="timeline-item">
                             <div class="flex items-center gap-3 mb-1">
                                 <span class="w-3 h-3 bg-blue-600 rounded-full ring-4 ring-blue-50"></span>
-                                <p class="text-sm font-black text-blue-600 uppercase tracking-tighter">Fellowship</p>
+                                <p class="text-sm font-black text-blue-600 uppercase tracking-tighter" data-i18n="prof.fellowship">Fellowship</p>
                             </div>
-                            <p class="font-bold text-gray-900 leading-snug">SKKU Fellowship Professor, 2022 <a
+                            <p class="font-bold text-gray-900 leading-snug"><span data-i18n="prof.fellowshipLine">SKKU Fellowship Professor, 2022</span> <a
                                     href="https://cs.skku.edu/ko/edures/education/view/7054" target="_blank"
-                                    class="text-blue-500 hover:underline italic font-sans">(News)</a></p>
+                                    class="text-blue-500 hover:underline italic font-sans" data-i18n="prof.newsLink">(News)</a></p>
                         </div>
 
                         <div class="space-y-6 pt-4">
@@ -254,45 +245,40 @@
                                 <p
                                     class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
                                     Ph.D.</p>
-                                <p class="text-base font-black text-gray-800 mb-1">Computer Science</p>
-                                <p class="text-xs text-gray-500 font-medium leading-tight">University of Southern
-                                    California (USC),<br>Los Angeles, CA</p>
+                                <p class="text-base font-black text-gray-800 mb-1" data-i18n="prof.cs">Computer Science</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight" data-i18n-html="prof.edu.usc">University of Southern California (USC),<br>Los Angeles, CA</p>
                             </div>
 
                             <div class="timeline-item pb-1">
                                 <p
                                     class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
                                     M.S.</p>
-                                <p class="text-base font-black text-gray-800 mb-1">Computer Science</p>
-                                <p class="text-xs text-gray-500 font-medium leading-tight">University of Southern
-                                    California (USC),<br>Los Angeles, CA</p>
+                                <p class="text-base font-black text-gray-800 mb-1" data-i18n="prof.cs">Computer Science</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight" data-i18n-html="prof.edu.usc">University of Southern California (USC),<br>Los Angeles, CA</p>
                             </div>
 
                             <div class="timeline-item pb-1">
                                 <p
                                     class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
                                     M.S.</p>
-                                <p class="text-base font-black text-gray-800 mb-1">Electrical and Computer Engineering
-                                </p>
-                                <p class="text-xs text-gray-500 font-medium leading-tight">University of California, San
-                                    Diego (UCSD), CA</p>
+                                <p class="text-base font-black text-gray-800 mb-1" data-i18n="prof.ece">Electrical and Computer Engineering</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight" data-i18n="prof.edu.ucsd">University of California, San Diego (UCSD), CA</p>
                             </div>
 
                             <div class="timeline-item pb-1">
                                 <p
                                     class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
                                     B.S.</p>
-                                <p class="text-base font-black text-gray-800 mb-1">Electrical Engineering</p>
-                                <p class="text-xs text-gray-500 font-medium leading-tight">University of Washington
-                                    (UW), Seattle, WA</p>
+                                <p class="text-base font-black text-gray-800 mb-1" data-i18n="prof.ee">Electrical Engineering</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight" data-i18n="prof.edu.uw">University of Washington (UW), Seattle, WA</p>
                             </div>
 
                             <div class="timeline-item pb-1">
                                 <p
                                     class="text-[10px] font-black text-gray-400 uppercase tracking-widest leading-none mb-2">
-                                    High School</p>
-                                <p class="text-base font-black text-gray-800 mb-1">Lynnwood High School</p>
-                                <p class="text-xs text-gray-500 font-medium leading-tight">Lynnwood, WA, USA</p>
+                                    <span data-i18n="prof.hs">High School</span></p>
+                                <p class="text-base font-black text-gray-800 mb-1" data-i18n="prof.edu.lynnwood">Lynnwood High School</p>
+                                <p class="text-xs text-gray-500 font-medium leading-tight" data-i18n="prof.edu.lynnwoodLoc">Lynnwood, WA, USA</p>
                             </div>
                         </div>
 
@@ -302,7 +288,7 @@
                                     class="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600">
                                     <i class="fas fa-language"></i>
                                 </div>
-                                <p class="text-sm font-black italic">Fluent in Korean and English</p>
+                                <p class="text-sm font-black italic" data-i18n="prof.fluent">Fluent in Korean and English</p>
                             </div>
                         </div>
                     </div>
@@ -315,7 +301,7 @@
         <div class="grid lg:grid-cols-2 gap-8 mb-12">
             <!-- Interests -->
             <div class="dash-card">
-                <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Research Interests</h4>
+                <h4 class="section-accent text-xl font-black text-gray-900 mb-8" data-i18n="prof.interests">Research Interests</h4>
                 <div class="space-y-6">
                     <div
                         class="group p-6 bg-gradient-to-br from-purple-50/50 to-white rounded-3xl border border-purple-100/50 hover:shadow-lg transition-all">
@@ -324,12 +310,11 @@
                                 class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all">
                                 <i class="fas fa-brain text-xl"></i>
                             </div>
-                            <p class="text-lg font-black text-gray-900">Generative AI Model</p>
+                            <p class="text-lg font-black text-gray-900" data-i18n="prof.genAI">Generative AI Model</p>
                         </div>
                         <div class="flex items-center gap-3 ml-16">
                             <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
-                            <p class="text-[11px] font-black text-gray-500 italic tracking-wide uppercase">Media
-                                Coverage</p>
+                            <p class="text-[11px] font-black text-gray-500 italic tracking-wide uppercase" data-i18n="prof.mediaCoverage">Media Coverage</p>
                             <p class="text-[13px] font-bold text-purple-900/60 font-sans">
                                 <a href="https://www.joongang.co.kr/article/25140582#home" target="_blank"
                                     class="hover:text-purple-600 hover:underline">중앙일보</a>,
@@ -345,32 +330,32 @@
                         <div
                             class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-red-200 transition-all">
                             <i class="fas fa-shield-alt text-red-500"></i> <span
-                                class="text-xs font-bold leading-tight">AI Security</span>
+                                class="text-xs font-bold leading-tight" data-i18n="prof.int.aiSec">AI Security</span>
                         </div>
                         <div
                             class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-blue-200 transition-all">
                             <i class="fas fa-eye text-blue-500"></i> <span
-                                class="text-xs font-bold leading-tight">Deepfake Detection and Generation</span>
+                                class="text-xs font-bold leading-tight" data-i18n="prof.int.df">Deepfake Detection and Generation</span>
                         </div>
                         <div
                             class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-emerald-200 transition-all">
                             <i class="fas fa-chart-line text-emerald-500"></i> <span
-                                class="text-xs font-bold leading-tight">Time Series Analysis / Anomaly Detection</span>
+                                class="text-xs font-bold leading-tight" data-i18n="prof.int.ts">Time Series Analysis / Anomaly Detection</span>
                         </div>
                         <div
                             class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-indigo-200 transition-all">
                             <i class="fas fa-lock text-indigo-500"></i> <span
-                                class="text-xs font-bold leading-tight">Computer Security <span class="font-medium text-gray-500">(Usable Security, Blockchain, Intrusion/Anomaly Detection)</span></span>
+                                class="text-xs font-bold leading-tight" data-i18n-html="prof.int.sec">Computer Security <span class="font-medium text-gray-500">(Usable Security, Blockchain, Intrusion/Anomaly Detection)</span></span>
                         </div>
                         <div
                             class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-sky-200 transition-all">
                             <i class="fas fa-satellite text-sky-500"></i> <span
-                                class="text-xs font-bold leading-tight">Satellite Image Processing <span class="font-medium text-gray-500">(Object Detection, Communications and Protocols)</span></span>
+                                class="text-xs font-bold leading-tight" data-i18n-html="prof.int.sat">Satellite Image Processing <span class="font-medium text-gray-500">(Object Detection, Communications and Protocols)</span></span>
                         </div>
                         <div
                             class="interest-tag flex items-center gap-3 p-4 bg-gray-50/50 rounded-2xl border border-gray-100 hover:bg-white hover:border-orange-200 transition-all">
                             <i class="fas fa-database text-orange-500"></i> <span
-                                class="text-xs font-bold leading-tight">Data Science</span>
+                                class="text-xs font-bold leading-tight" data-i18n="prof.int.ds">Data Science</span>
                         </div>
                     </div>
                 </div>
@@ -378,7 +363,7 @@
 
             <!-- Visualization -->
             <div class="dash-card">
-                <h4 class="section-accent text-xl font-black text-gray-900 mb-8">Research Visualization</h4>
+                <h4 class="section-accent text-xl font-black text-gray-900 mb-8" data-i18n="prof.viz">Research Visualization</h4>
                 <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 relative group">
                     <img src="" onerror="this.src=getImg('img/교수님_기사사진.jpg')" alt="Deepfake Research Media"
                         class="w-full h-auto transition-transform duration-1000 group-hover:scale-105" />
@@ -397,7 +382,7 @@
                             </div>
                             <a href="https://www.joongang.co.kr/article/25344739" target="_blank"
                                 class="px-5 py-2.5 bg-red-600 text-white text-[11px] font-black rounded-xl hover:bg-white hover:text-red-600 hover:shadow-lg hover:-translate-y-0.5 transition-all">
-                                READ ARTICLE <i class="fas fa-external-link-alt ml-2"></i>
+                                <span data-i18n="prof.readArticle">READ ARTICLE</span> <i class="fas fa-external-link-alt ml-2"></i>
                             </a>
                         </div>
                     </div>
@@ -407,7 +392,7 @@
 
         <!-- 4. INTERNATIONAL HONORS AND AWARDS -->
         <div class="dash-card mb-12">
-            <h4 class="section-accent text-xl font-black text-gray-900 mb-10">International Honors and Awards</h4>
+            <h4 class="section-accent text-xl font-black text-gray-900 mb-10" data-i18n="prof.awards">International Honors and Awards</h4>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Award 1 -->
                 <div
@@ -429,9 +414,7 @@
                 <div>
                     <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">WACV • 2026</p>
                     <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
-                        <a href="https://sites.google.com/view/synrdinbaswacv2026" target="_blank"
-                            class="hover:text-amber-700 hover:underline">SAFE: Image Edit Detection and Localization Challenge</a> (Workshop, 
-                            2nd Place)
+                        <span data-i18n-html="prof.award1"><a href="https://sites.google.com/view/synrdinbaswacv2026" target="_blank" class="hover:text-amber-700 hover:underline">SAFE: Image Edit Detection and Localization Challenge</a> (Workshop, 2nd Place)</span>
                     </p>
                 </div>
             </div>
@@ -444,9 +427,7 @@
                 <div>
                     <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">ICCV • 2025</p>
                     <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
-                        <a href="https://sites.google.com/berkeley.edu/apai-iccv2025" target="_blank"
-                            class="hover:text-amber-700 hover:underline">SAFE: Synthetic Video Detection Challenge</a> (Workshop – APAI,
-                             2nd Place)
+                        <span data-i18n-html="prof.award2"><a href="https://sites.google.com/berkeley.edu/apai-iccv2025" target="_blank" class="hover:text-amber-700 hover:underline">SAFE: Synthetic Video Detection Challenge</a> (Workshop – APAI, 2nd Place)</span>
                     </p>
                 </div>
             </div>
@@ -458,9 +439,7 @@
                     <div>
                         <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">PAKDD • 2024</p>
                         <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
-                            <a href="https://pakdd2024.org/award24awardpakdd24/" target="_blank"
-                                class="hover:text-amber-700 hover:underline">PAKDD Best Paper Running-Up Award</a> (2nd
-                            Place out of 720 papers)
+                            <span data-i18n-html="prof.award3"><a href="https://pakdd2024.org/award24awardpakdd24/" target="_blank" class="hover:text-amber-700 hover:underline">PAKDD Best Paper Running-Up Award</a> (2nd Place out of 720 papers)</span>
                         </p>
                     </div>
                 </div>
@@ -472,12 +451,8 @@
                     <div>
                         <p class="text-xs font-black text-blue-700 uppercase tracking-widest mb-1">ACM SAC • 2023</p>
                         <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
-                            <a href="https://www.sigapp.org/sac/sac2023/" target="_blank"
-                                class="hover:text-blue-700 hover:underline">ACM/SIGAPP SAC Best Paper Award</a> (AI and
-                            Agents)
-                            <span class="block mt-1 text-[11px]"><a
-                                    href="https://www.acm.org/conferences/best-paper-awards" target="_blank"
-                                    class="text-blue-600 hover:underline">ACM Best Paper Awards Archive</a></span>
+                            <span data-i18n-html="prof.award4"><a href="https://www.sigapp.org/sac/sac2023/" target="_blank" class="hover:text-blue-700 hover:underline">ACM/SIGAPP SAC Best Paper Award</a> (AI and Agents)</span>
+                            <span class="block mt-1 text-[11px]"><a href="https://www.acm.org/conferences/best-paper-awards" target="_blank" class="text-blue-600 hover:underline" data-i18n="prof.award4arch">ACM Best Paper Awards Archive</a></span>
                         </p>
                     </div>
                 </div>
@@ -487,9 +462,9 @@
                     class="flex gap-4 items-start p-6 bg-gray-50/40 rounded-3xl border border-gray-100 group hover:bg-white hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     <span class="text-4xl transition-all">🎓</span>
                     <div>
-                        <p class="text-xs font-black text-gray-700 uppercase tracking-widest mb-1">Invitation • 2023</p>
+                        <p class="text-xs font-black text-gray-700 uppercase tracking-widest mb-1"><span data-i18n="prof.inviteLabel">Invitation • 2023</span></p>
                         <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
-                            Invited for Schloss Dagstuhl (Leibniz Center for Informatics) on 23021 Media Forensics and the Challenge of Big Data
+                            <span data-i18n="prof.award5">Invited for Schloss Dagstuhl (Leibniz Center for Informatics) on 23021 Media Forensics and the Challenge of Big Data</span>
                         </p>
                     </div>
                 </div>
@@ -502,8 +477,7 @@
                         <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">KSC • 2022</p>
                         <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
                             <a href="https://sw.skku.edu/sw/news.do?mode=view&articleNo=150622&article.offset=10&articleLimit=10&srSearchVal=%EC%9A%B0%EC%82%AC%EC%9D%B4%EB%A8%BC"
-                                target="_blank" class="hover:text-amber-700 hover:underline">KSC 2022 Best Paper
-                                Award</a>
+                                target="_blank" class="hover:text-amber-700 hover:underline" data-i18n="prof.award6">KSC 2022 Best Paper Award</a>
                         </p>
                     </div>
                 </div>
@@ -516,7 +490,7 @@
                         <p class="text-xs font-black text-blue-700 uppercase tracking-widest mb-1">KDD • 2021</p>
                         <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
                             <a href="https://sw.skku.edu/sw/news.do?mode=view&articleNo=150622&article.offset=10&articleLimit=10&srSearchVal=%EC%9A%B0%EC%82%AC%EC%9D%B4%EB%A8%BC"
-                                target="_blank" class="hover:text-blue-700 hover:underline">PLP 2021 Best Paper Award</a>, 27th ACM SIGKDD (KDD)
+                                target="_blank" class="hover:text-blue-700 hover:underline" data-i18n="prof.award7">PLP 2021 Best Paper Award</a><span data-i18n="prof.award7suffix">, 27th ACM SIGKDD (KDD)</span>
                         </p>
                     </div>
                 </div>
@@ -528,7 +502,7 @@
                     <div>
                         <p class="text-xs font-black text-amber-700 uppercase tracking-widest mb-1">WISA • 2016</p>
                         <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
-                            The 17th World Conference on Information Security Applications (WISA), Best Paper Award, Korea
+                            <span data-i18n="prof.award8">The 17th World Conference on Information Security Applications (WISA), Best Paper Award, Korea</span>
                         </p>
                     </div>
                 </div>
@@ -538,9 +512,9 @@
                     class="flex gap-4 items-start p-6 bg-indigo-50/40 rounded-3xl border border-indigo-100/50 group hover:bg-indigo-50 hover:border-indigo-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     <span class="text-4xl transition-all">🎓</span>
                     <div>
-                        <p class="text-xs font-black text-indigo-700 uppercase tracking-widest mb-1">Scholar • 2003</p>
+                        <p class="text-xs font-black text-indigo-700 uppercase tracking-widest mb-1"><span data-i18n="prof.scholarLabel">Scholar • 2003</span></p>
                         <p class="text-[13px] text-gray-800 leading-relaxed font-bold">
-                            Mary Gates Scholar, University of Washington, Seattle, USA
+                            <span data-i18n="prof.award9">Mary Gates Scholar, University of Washington, Seattle, USA</span>
                         </p>
                     </div>
                 </div>
@@ -549,7 +523,7 @@
 
         <!-- PROFESSIONAL SERVICES -->
         <div class="dash-card">
-            <h4 class="section-accent text-xl font-black text-gray-900 mb-10">Professional Services</h4>
+            <h4 class="section-accent text-xl font-black text-gray-900 mb-10" data-i18n="prof.services">Professional Services</h4>
 
             <div class="space-y-12">
                 <!-- Leadership -->
@@ -558,25 +532,24 @@
                     </div>
                     <div class="flex items-center gap-3 mb-6">
                         <i class="fas fa-crown text-blue-600/30 text-lg"></i>
-                        <h5 class="text-base font-black text-blue-600 uppercase tracking-wide">Leadership Roles
-                            (2024–2025)</h5>
+                        <h5 class="text-base font-black text-blue-600 uppercase tracking-wide" data-i18n="prof.leadership">Leadership Roles (2024–2025)</h5>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div
                             class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
-                            <p class="text-[13px] font-bold text-gray-700">KDD Research Track Area Chair</p>
+                            <p class="text-[13px] font-bold text-gray-700" data-i18n="prof.lead1">KDD Research Track Area Chair</p>
                         </div>
                         <div
                             class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
-                            <p class="text-[13px] font-bold text-gray-700">CIKM Senior PC on Resource/Demo Track</p>
+                            <p class="text-[13px] font-bold text-gray-700" data-i18n="prof.lead2">CIKM Senior PC on Resource/Demo Track</p>
                         </div>
                         <div
                             class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
-                            <p class="text-[13px] font-bold text-gray-700">IJCAI Web Chair</p>
+                            <p class="text-[13px] font-bold text-gray-700" data-i18n="prof.lead3">IJCAI Web Chair</p>
                         </div>
                         <div
                             class="p-4 bg-blue-50/40 rounded-2xl border border-blue-100/50 hover:bg-white transition-all">
-                            <p class="text-[13px] font-bold text-gray-700">ACML Area Chair</p>
+                            <p class="text-[13px] font-bold text-gray-700" data-i18n="prof.lead4">ACML Area Chair</p>
                         </div>
                     </div>
                 </div>
@@ -587,13 +560,12 @@
                     </div>
                     <div class="flex items-center gap-3 mb-6">
                         <i class="fas fa-users-cog text-gray-300 text-lg"></i>
-                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Conference/Workshop
-                            Chairing</h5>
+                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider" data-i18n="prof.chairing">Conference/Workshop Chairing</h5>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl">
                         <div class="p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
                             <div class="flex items-start justify-between gap-2 mb-2">
-                                <p class="text-[12px] font-black text-gray-800 leading-snug">ACM CoNext Finance Chair</p>
+                                <p class="text-[12px] font-black text-gray-800 leading-snug" data-i18n="prof.chair1">ACM CoNext Finance Chair</p>
                             </div>
                             <div class="flex flex-wrap gap-1">
                                 <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-black rounded-md border border-blue-100">2017</span>
@@ -601,7 +573,7 @@
                         </div>
                         <div class="p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
                             <div class="flex items-start justify-between gap-2 mb-2">
-                                <p class="text-[12px] font-black text-gray-800 leading-snug">EAI CyDiP Technical Program Committee Chair</p>
+                                <p class="text-[12px] font-black text-gray-800 leading-snug" data-i18n="prof.chair2">EAI CyDiP Technical Program Committee Chair</p>
                             </div>
                             <div class="flex flex-wrap gap-1">
                                 <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-black rounded-md border border-blue-100">2021</span>
@@ -616,17 +588,16 @@
                     </div>
                     <div class="flex items-center gap-3 mb-6">
                         <i class="fas fa-list-ul text-gray-300 text-lg"></i>
-                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Technical Program
-                            Committees</h5>
+                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider" data-i18n="prof.tpc">Technical Program Committees</h5>
                     </div>
                     <div class="flex flex-wrap items-center gap-2 mb-6 pb-4 border-b border-gray-100">
-                        <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest mr-2">Areas:</span>
-                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-[10px] font-black rounded-full border border-indigo-100">Vision</span>
-                        <span class="px-2.5 py-1 bg-rose-50 text-rose-700 text-[10px] font-black rounded-full border border-rose-100">ML &amp; AI</span>
-                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-[10px] font-black rounded-full border border-amber-100">Data Mining</span>
-                        <span class="px-2.5 py-1 bg-red-50 text-red-700 text-[10px] font-black rounded-full border border-red-100">Security</span>
-                        <span class="px-2.5 py-1 bg-sky-50 text-sky-700 text-[10px] font-black rounded-full border border-sky-100">Web</span>
-                        <span class="ml-auto text-[10px] font-black text-amber-500"><i class="fas fa-star"></i> Tier-1 venue</span>
+                        <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest mr-2" data-i18n="prof.areas">Areas:</span>
+                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-[10px] font-black rounded-full border border-indigo-100" data-i18n="prof.area.vision">Vision</span>
+                        <span class="px-2.5 py-1 bg-rose-50 text-rose-700 text-[10px] font-black rounded-full border border-rose-100" data-i18n="prof.area.ml">ML &amp; AI</span>
+                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-[10px] font-black rounded-full border border-amber-100" data-i18n="prof.area.dm">Data Mining</span>
+                        <span class="px-2.5 py-1 bg-red-50 text-red-700 text-[10px] font-black rounded-full border border-red-100" data-i18n="prof.area.sec">Security</span>
+                        <span class="px-2.5 py-1 bg-sky-50 text-sky-700 text-[10px] font-black rounded-full border border-sky-100" data-i18n="prof.area.web">Web</span>
+                        <span class="ml-auto text-[10px] font-black text-amber-500"><i class="fas fa-star"></i> <span data-i18n="prof.tier1">Tier-1 venue</span></span>
                     </div>
 
                     <div class="space-y-6">
@@ -636,8 +607,8 @@
                                 <div class="w-7 h-7 bg-indigo-50 rounded-lg flex items-center justify-center">
                                     <i class="fas fa-eye text-indigo-600 text-xs"></i>
                                 </div>
-                                <h6 class="text-[11px] font-black text-indigo-700 uppercase tracking-widest">Computer Vision</h6>
-                                <span class="text-[10px] text-gray-400 font-bold">7 venues</span>
+                                <h6 class="text-[11px] font-black text-indigo-700 uppercase tracking-widest" data-i18n="prof.cvArea">Computer Vision</h6>
+                                <span class="text-[10px] text-gray-400 font-bold" data-i18n="prof.venues7">7 venues</span>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                                 <div class="p-4 bg-white rounded-2xl border border-indigo-100 shadow-sm hover:border-indigo-300 hover:shadow-md transition-all relative">
@@ -699,8 +670,8 @@
                                 <div class="w-7 h-7 bg-rose-50 rounded-lg flex items-center justify-center">
                                     <i class="fas fa-brain text-rose-600 text-xs"></i>
                                 </div>
-                                <h6 class="text-[11px] font-black text-rose-700 uppercase tracking-widest">Machine Learning &amp; AI</h6>
-                                <span class="text-[10px] text-gray-400 font-bold">4 venues</span>
+                                <h6 class="text-[11px] font-black text-rose-700 uppercase tracking-widest" data-i18n="prof.mlArea">Machine Learning &amp; AI</h6>
+                                <span class="text-[10px] text-gray-400 font-bold" data-i18n="prof.venues4">4 venues</span>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                                 <div class="p-4 bg-white rounded-2xl border border-rose-100 shadow-sm hover:border-rose-300 hover:shadow-md transition-all relative">
@@ -746,8 +717,8 @@
                                 <div class="w-7 h-7 bg-amber-50 rounded-lg flex items-center justify-center">
                                     <i class="fas fa-database text-amber-600 text-xs"></i>
                                 </div>
-                                <h6 class="text-[11px] font-black text-amber-700 uppercase tracking-widest">Data Mining</h6>
-                                <span class="text-[10px] text-gray-400 font-bold">3 venues</span>
+                                <h6 class="text-[11px] font-black text-amber-700 uppercase tracking-widest" data-i18n="prof.dmArea">Data Mining</h6>
+                                <span class="text-[10px] text-gray-400 font-bold" data-i18n="prof.venues3">3 venues</span>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                                 <div class="p-4 bg-white rounded-2xl border border-amber-100 shadow-sm hover:border-amber-300 hover:shadow-md transition-all relative">
@@ -785,8 +756,8 @@
                                 <div class="w-7 h-7 bg-red-50 rounded-lg flex items-center justify-center">
                                     <i class="fas fa-shield-alt text-red-600 text-xs"></i>
                                 </div>
-                                <h6 class="text-[11px] font-black text-red-700 uppercase tracking-widest">Security &amp; Privacy</h6>
-                                <span class="text-[10px] text-gray-400 font-bold">4 venues</span>
+                                <h6 class="text-[11px] font-black text-red-700 uppercase tracking-widest" data-i18n="prof.secArea">Security &amp; Privacy</h6>
+                                <span class="text-[10px] text-gray-400 font-bold" data-i18n="prof.venues4">4 venues</span>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                                 <div class="p-4 bg-white rounded-2xl border border-red-100 shadow-sm hover:border-red-300 hover:shadow-md transition-all">
@@ -804,14 +775,14 @@
                                     </div>
                                 </div>
                                 <div class="p-4 bg-white rounded-2xl border border-red-100 shadow-sm hover:border-red-300 hover:shadow-md transition-all">
-                                    <p class="text-[12px] font-black text-gray-800 mb-1">ACM SAC ML App Track</p>
+                                    <p class="text-[12px] font-black text-gray-800 mb-1" data-i18n="prof.sacMl">ACM SAC ML App Track</p>
                                     <div class="flex flex-wrap gap-1 mt-2">
                                         <span class="px-2 py-0.5 bg-red-50 text-red-700 text-[10px] font-black rounded-md border border-red-100">2020</span>
                                         <span class="px-2 py-0.5 bg-red-50 text-red-700 text-[10px] font-black rounded-md border border-red-100">2021</span>
                                     </div>
                                 </div>
                                 <div class="p-4 bg-white rounded-2xl border border-red-100 shadow-sm hover:border-red-300 hover:shadow-md transition-all">
-                                    <p class="text-[12px] font-black text-gray-800 mb-1">CSET Workshop</p>
+                                    <p class="text-[12px] font-black text-gray-800 mb-1" data-i18n="prof.cset">CSET Workshop</p>
                                     <div class="flex flex-wrap gap-1 mt-2">
                                         <span class="px-2 py-0.5 bg-red-50 text-red-700 text-[10px] font-black rounded-md border border-red-100">2021</span>
                                     </div>
@@ -825,8 +796,8 @@
                                 <div class="w-7 h-7 bg-sky-50 rounded-lg flex items-center justify-center">
                                     <i class="fas fa-globe text-sky-600 text-xs"></i>
                                 </div>
-                                <h6 class="text-[11px] font-black text-sky-700 uppercase tracking-widest">Web</h6>
-                                <span class="text-[10px] text-gray-400 font-bold">1 venue</span>
+                                <h6 class="text-[11px] font-black text-sky-700 uppercase tracking-widest" data-i18n="prof.webArea">Web</h6>
+                                <span class="text-[10px] text-gray-400 font-bold" data-i18n="prof.venues1">1 venue</span>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                                 <div class="p-4 bg-white rounded-2xl border border-sky-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all relative">
@@ -850,12 +821,11 @@
                     </div>
                     <div class="flex items-center gap-3 mb-6">
                         <i class="fas fa-feather-alt text-gray-300 text-lg"></i>
-                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Editorial Boards</h5>
+                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider" data-i18n="prof.editorial">Editorial Boards</h5>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                         <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
-                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">TIIS Editor
-                            </p>
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1" data-i18n="prof.tiis">TIIS Editor</p>
                             <p class="text-sm font-bold text-gray-800">2019 - 2021</p>
                         </div>
                         <div class="p-5 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
@@ -875,7 +845,7 @@
                     </div>
                     <div class="flex items-center gap-3 mb-6">
                         <i class="fas fa-microphone text-gray-300 text-lg"></i>
-                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Session Chair</h5>
+                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider" data-i18n="prof.sessionChair">Session Chair</h5>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                         <div class="p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
@@ -921,12 +891,12 @@
                     </div>
                     <div class="flex items-center gap-3 mb-8">
                         <i class="fas fa-flask text-gray-300 text-lg"></i>
-                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider">Workshop Organizer</h5>
+                        <h5 class="text-sm font-black text-gray-800 uppercase tracking-wider" data-i18n="prof.wsOrg">Workshop Organizer</h5>
                     </div>
 
                     <div class="space-y-8">
                         <div class="p-6 bg-gray-50/50 rounded-2xl border border-gray-100">
-                            <p class="text-sm font-black text-gray-900 mb-4">ACM AsiaCCS Workshop on the Security Implications of Deepfakes and Cheapfakes (WDC)</p>
+                            <p class="text-sm font-black text-gray-900 mb-4" data-i18n="prof.wdc">ACM AsiaCCS Workshop on the Security Implications of Deepfakes and Cheapfakes (WDC)</p>
                             <div class="flex flex-wrap gap-2">
                                 <a href="https://sites.google.com/view/wdc-2022/" target="_blank" rel="noopener noreferrer"
                                     class="px-5 py-2 bg-white text-blue-600 text-[11px] font-black rounded-lg border border-blue-100 hover:bg-blue-600 hover:text-white transition-all shadow-sm">2022</a>
@@ -940,11 +910,11 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
                                 <span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>
-                                <p class="text-[12px] font-bold text-gray-700 leading-tight"><a href="https://sites.google.com/view/ansd23?pli=1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">The 1st International Workshop on Anomaly and Novelty Detection in Satellite and Drones Systems (ANSD)</a> at <a href="https://uobevents.eventsair.com/cikm2023/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">CIKM 2023</a>, Birmingham UK</p>
+                                <p class="text-[12px] font-bold text-gray-700 leading-tight" data-i18n-html="prof.ansdHtml"><a href="https://sites.google.com/view/ansd23?pli=1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">The 1st International Workshop on Anomaly and Novelty Detection in Satellite and Drones Systems (ANSD)</a> at <a href="https://uobevents.eventsair.com/cikm2023/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">CIKM 2023</a>, Birmingham UK</p>
                             </div>
                             <div class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
                                 <span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>
-                                <p class="text-[12px] font-bold text-gray-700 leading-tight">The First International Workshop on AI-Driven Modeling and Management of Data (AIMM 2024) at <a href="https://insights.sei.cmu.edu/news/international-conference-on-conceptual-modeling-er-2024-opens-call-for-papers/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">International Conference on Conceptual Modeling (ER) 2024</a>, Carnegie Mellon University, PA, USA</p>
+                                <p class="text-[12px] font-bold text-gray-700 leading-tight" data-i18n-html="prof.aimmHtml">The First International Workshop on AI-Driven Modeling and Management of Data (AIMM 2024) at <a href="https://insights.sei.cmu.edu/news/international-conference-on-conceptual-modeling-er-2024-opens-call-for-papers/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">International Conference on Conceptual Modeling (ER) 2024</a>, Carnegie Mellon University, PA, USA</p>
                             </div>
                         </div>
                     </div>

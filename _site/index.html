@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-page-title="home.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,11 @@
 
     <!-- Custom Shared Resources -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js" defer></script>
     <script src="js/common.js" defer></script>
     
     <!-- Data + page logic (defer preserves order; runs before DOMContentLoaded) -->
+    <script src="js/i18n-content.js" defer></script>
     <script src="js/newsdata.js" defer></script> 
     <script src="js/imagedata.js" defer></script>
     <script src="js/news.js" defer></script>
@@ -53,16 +55,15 @@
                 </div>
             </div>
 
-            <h2 class="text-3xl font-black text-blue-900 mb-2 tracking-tight">Join Our Lab</h2>
-            <p class="text-gray-600 mb-6 px-4">For those interested in joining our research team, please fill out the official <strong>Application Form</strong> below.</p>
+            <h2 class="text-3xl font-black text-blue-900 mb-2 tracking-tight" data-i18n="home.modal.title">Join Our Lab</h2>
+            <p class="text-gray-600 mb-6 px-4" data-i18n-html="home.modal.body">For those interested in joining our research team, please fill out the official <strong>Application Form</strong> below.</p>
             
             <!-- Important Notice in Popup -->
             <div class="mb-8 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-xl text-left mx-4 shadow-sm">
                 <p class="text-sm text-red-600 font-bold flex items-start gap-3">
                     <i class="fas fa-exclamation-triangle mt-0.5 flex-shrink-0"></i>
                     <span>
-                        Only the applicants who fill out the official form will have their applications reviewed. 
-                        Direct emails will be ignored.
+                        <span data-i18n="home.modal.notice">Only the applicants who fill out the official form will have their applications reviewed. Direct emails will be ignored.</span>
                     </span>
                 </p>
             </div>
@@ -70,7 +71,7 @@
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScUGAM_k4n7rT736ThnAe5jn2owVe2KFO7cib3fHsiL6I099g/viewform?usp=send_form" 
                target="_blank" rel="noopener noreferrer" 
                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-full shadow-xl shadow-blue-200 transform transition hover:-translate-y-1 active:scale-95 mb-4">
-               Apply Now
+               <span data-i18n="common.applyNow">Apply Now</span>
             </a>
         </div>
     </div>
@@ -83,7 +84,7 @@
             <div id="hero-overlay"></div>
             <div id="hero-content" class="flex flex-col items-center">
                 <h1 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">DASH Lab</h1>
-                <p class="text-base md:text-xl font-light max-w-3xl mx-auto px-4 text-center">
+                <p class="text-base md:text-xl font-light max-w-3xl mx-auto px-4 text-center" data-i18n="home.heroTagline">
                     Our Research | Computer Vision | Anomaly Detection | AI Security | DeepFakes | Machine Learning | Data Science Applications
                 </p>
             </div>
@@ -104,8 +105,8 @@
                     <img src="img/dash_logo/satellite_v3.svg" alt="Satellite Icon" class="satellite-static-figure">
                     <div class="satellite-lottie-container" id="satelliteLottieContainer"></div>
                 </div>
-                <h3 class="feature-title">Data Science</h3>
-                <p class="feature-desc">
+                <h3 class="feature-title" data-i18n="home.feat.dataTitle">Data Science</h3>
+                <p class="feature-desc" data-i18n-html="home.feat.dataDesc">
                     Innovating at the intersection of <strong>Applied Data Science</strong>, Data Engineering, and <strong>Satellite Systems</strong>.
                 </p>
             </div>
@@ -116,8 +117,8 @@
                     <img src="img/dash_logo/face_icon_3.svg" alt="Face Scan Icon" class="face-static-figure">
                     <div class="face-lottie-container" id="faceLottieContainer"></div>
                 </div>
-                <h3 class="feature-title">Artificial Intelligence</h3>
-                <p class="feature-desc">
+                <h3 class="feature-title" data-i18n="home.feat.aiTitle">Artificial Intelligence</h3>
+                <p class="feature-desc" data-i18n-html="home.feat.aiDesc">
                     Advancing the frontiers of <strong>DeepFake detection</strong> and high-performance <strong>Anomaly modeling</strong>.
                 </p>
             </div>
@@ -128,8 +129,8 @@
                     <img src="img/dash_logo/security_graph.svg" alt="Security Icon" class="security-static-figure">
                     <div class="security-lottie-container" id="securityLottieContainer"></div>
                 </div>
-                <h3 class="feature-title">Security & Privacy</h3>
-                <p class="feature-desc">
+                <h3 class="feature-title" data-i18n="home.feat.secTitle">Security & Privacy</h3>
+                <p class="feature-desc" data-i18n-html="home.feat.secDesc">
                     Protecting digital frontiers through <strong>Privacy Preservation</strong> and <strong>Secure Machine Learning</strong> architectures.
                 </p>
             </div>
@@ -169,14 +170,14 @@
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
                         </span>
-                        Now Recruiting
+                        <span data-i18n="home.recruit.badge">Now Recruiting</span>
                     </div>
                     
-                    <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 leading-tight">
+                    <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 leading-tight" data-i18n-html="home.recruit.headline">
                         Shape the Future of <span class="text-blue-600">AI & Security</span> with us.
                     </h3>
                     
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed max-w-2xl">
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed max-w-2xl" data-i18n-html="home.recruit.body">
                         We are looking for dedicated individuals whose research interests align with Computer Vision, Anomaly Detection, and Applied Data Science. 
                         <strong>Coding proficiency and passion for research are highly valued.</strong>
                     </p>
@@ -186,8 +187,7 @@
                         <p class="text-sm md:text-base text-red-600 font-bold flex items-start gap-2">
                             <i class="fas fa-exclamation-triangle mt-1 flex-shrink-0"></i>
                             <span>
-                                Only the applicants who fill out this form have their applications looked through. 
-                                Any emails sent directly will be ignored and only the Google Forms will be accepted.
+                                <span data-i18n="home.recruit.notice">Only the applicants who fill out this form have their applications looked through. Any emails sent directly will be ignored and only the Google Forms will be accepted.</span>
                             </span>
                         </p>
                     </div>
@@ -197,11 +197,11 @@
                            target="_blank" 
                            rel="noopener noreferrer" 
                            class="group flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-2xl shadow-lg shadow-blue-200 transition-all active:scale-95">
-                            <span>Open Application Form</span>
+                            <span data-i18n="common.openForm">Open Application Form</span>
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </a>
                         <p class="text-sm text-gray-400 font-medium italic">
-                            * Recommended for dedicated researchers
+                            <span data-i18n="home.recruit.note">* Recommended for dedicated researchers</span>
                         </p>
                     </div>
                 </div>
@@ -212,23 +212,23 @@
     <!-- SIDE POSTER ADS: left = recruitment only; right = all other posters -->
     <aside id="poster-ad-left"
            class="poster-ad poster-ad--left"
-           aria-label="Recruitment poster">
+           data-i18n-aria="common.recruitPosterAria" aria-label="Recruitment poster">
         <button type="button"
                 class="poster-ad-toggle"
                 id="poster-ad-toggle-left"
                 aria-expanded="false"
                 aria-controls="poster-ad-stack-left">
             <i class="fas fa-user-plus" aria-hidden="true"></i>
-            <span class="poster-ad-toggle-label">Join Us</span>
+            <span class="poster-ad-toggle-label" data-i18n="common.joinUs">Join Us</span>
         </button>
         <div class="poster-ad-rail">
             <div id="poster-ad-stack-left" class="poster-ad-stack">
                 <div class="poster-ad-stack-header">
-                    <span class="poster-ad-stack-title">Join Us</span>
+                    <span class="poster-ad-stack-title" data-i18n="common.joinUs">Join Us</span>
                     <button type="button"
                             class="poster-ad-collapse"
                             data-poster-collapse
-                            aria-label="Hide recruitment poster">
+                            data-i18n-aria="common.hideRecruit" aria-label="Hide recruitment poster">
                         &times;
                     </button>
                 </div>
@@ -237,7 +237,7 @@
                         data-poster-id="recruiting"
                         aria-haspopup="dialog"
                         aria-controls="poster-ad-modal">
-                    <span class="poster-ad-badge">Join Us</span>
+                    <span class="poster-ad-badge" data-i18n="common.joinUs">Join Us</span>
                     <img src="img/posters/Lab_Infographics.png"
                          alt="DASH Lab recruiting infographic seeking PhD students"
                          class="poster-ad-thumb"
@@ -246,7 +246,7 @@
                          loading="lazy"
                          decoding="async"
                          fetchpriority="low">
-                    <span class="poster-ad-hint">Click to view</span>
+                    <span class="poster-ad-hint" data-i18n="common.clickToView">Click to view</span>
                 </button>
             </div>
             <div class="poster-ad-scroll-cue" hidden aria-hidden="true">
@@ -260,24 +260,24 @@
 
     <aside id="poster-ad-right"
            class="poster-ad poster-ad--right"
-           aria-label="Lab poster advertisements">
+           data-i18n-aria="common.labPosterAria" aria-label="Lab poster advertisements">
         <button type="button"
                 class="poster-ad-toggle"
                 id="poster-ad-toggle-right"
                 aria-expanded="false"
                 aria-controls="poster-ad-stack-right">
             <i class="fas fa-images" aria-hidden="true"></i>
-            <span class="poster-ad-toggle-label">Posters</span>
+            <span class="poster-ad-toggle-label" data-i18n="common.posters">Posters</span>
             <span class="poster-ad-toggle-count" aria-hidden="true">4</span>
         </button>
         <div class="poster-ad-rail">
             <div id="poster-ad-stack-right" class="poster-ad-stack">
                 <div class="poster-ad-stack-header">
-                    <span class="poster-ad-stack-title">Lab posters</span>
+                    <span class="poster-ad-stack-title" data-i18n="common.labPosters">Lab posters</span>
                     <button type="button"
                             class="poster-ad-collapse"
                             data-poster-collapse
-                            aria-label="Hide poster thumbnails">
+                            data-i18n-aria="common.hidePosters" aria-label="Hide poster thumbnails">
                         &times;
                     </button>
                 </div>
@@ -286,7 +286,7 @@
                         data-poster-id="securemachines"
                         aria-haspopup="dialog"
                         aria-controls="poster-ad-modal">
-                    <span class="poster-ad-badge">Featured</span>
+                    <span class="poster-ad-badge" data-i18n="common.featured">Featured</span>
                     <img src="img/posters/poster_securemachineslab.png"
                          alt="Secure Machines Lab poster AI Forensics & Media Integrity"
                          class="poster-ad-thumb"
@@ -295,7 +295,7 @@
                          loading="lazy"
                          decoding="async"
                          fetchpriority="low">
-                    <span class="poster-ad-hint">Click to view</span>
+                    <span class="poster-ad-hint" data-i18n="common.clickToView">Click to view</span>
                 </button>
                 <button type="button"
                         class="poster-ad-trigger"
@@ -311,7 +311,7 @@
                          loading="lazy"
                          decoding="async"
                          fetchpriority="low">
-                    <span class="poster-ad-hint">Click to view</span>
+                    <span class="poster-ad-hint" data-i18n="common.clickToView">Click to view</span>
                 </button>
                 <button type="button"
                         class="poster-ad-trigger"
@@ -327,7 +327,7 @@
                          loading="lazy"
                          decoding="async"
                          fetchpriority="low">
-                    <span class="poster-ad-hint">Click to view</span>
+                    <span class="poster-ad-hint" data-i18n="common.clickToView">Click to view</span>
                 </button>
                 <button type="button"
                         class="poster-ad-trigger"
@@ -343,7 +343,7 @@
                          loading="lazy"
                          decoding="async"
                          fetchpriority="low">
-                    <span class="poster-ad-hint">Click to view</span>
+                    <span class="poster-ad-hint" data-i18n="common.clickToView">Click to view</span>
                 </button>
             </div>
             <div class="poster-ad-scroll-cue" hidden aria-hidden="true">
@@ -359,7 +359,7 @@
     <div id="poster-ad-modal" class="poster-ad-modal" role="dialog" aria-modal="true" aria-labelledby="poster-ad-title" hidden>
         <div class="poster-ad-modal-backdrop" data-poster-close></div>
         <div class="poster-ad-modal-panel">
-            <button type="button" class="poster-ad-modal-close close-modal" id="poster-ad-close" aria-label="Close poster details">&times;</button>
+            <button type="button" class="poster-ad-modal-close close-modal" id="poster-ad-close" data-i18n-aria="common.closePoster" aria-label="Close poster details">&times;</button>
             <div class="poster-ad-modal-grid">
                 <div class="poster-ad-modal-image-wrap">
                     <img src=""
@@ -414,93 +414,102 @@
                 recruiting: {
                     image: 'img/posters/Lab_Infographics.png',
                     imageAlt: 'DASH Lab recruiting infographic for PhD students',
-                    eyebrow: 'Now recruiting',
-                    title: 'Join DASH Lab',
-                    subtitle: 'PhD students welcome',
-                    tagline: 'We are looking for PhD students.',
+                    imageAlt_ko: '박사과정 학생 모집을 위한 DASH Lab 채용 인포그래픽',
+                    eyebrow: 'Now recruiting', eyebrow_ko: '모집 중',
+                    title: 'Join DASH Lab', title_ko: 'DASH Lab에 합류하십시오',
+                    subtitle: 'PhD students welcome', subtitle_ko: '박사과정 학생을 모집합니다',
+                    tagline: 'We are looking for PhD students.', tagline_ko: '박사과정 연구자를 모집합니다.',
                     bodyHtml: 'We are looking for people who are able to work with a team and have good problem solving skills. Research interests that align with Computer Vision, Anomaly Detection, and Applied Data Science are a strong fit. <strong>Coding proficiency and passion for research are highly valued.</strong> Only applicants who fill out the official Google Form will be reviewed direct emails are not accepted.',
-                    list: [
-                        'PhD student positions',
-                        'Teamwork & problem-solving focus',
-                        'Apply via the official Application Form'
-                    ],
+                    bodyHtml_ko: '팀워크와 문제 해결 능력을 갖춘 분을 모집합니다. 컴퓨터 비전, 이상 탐지, 응용 데이터사이언스에 관심 있는 분께 적합합니다. <strong>코딩 역량과 연구에 대한 열정을 높이 평가합니다.</strong> 공식 Google Form을 작성하신 분에 한해 지원서를 검토하며, 개별 이메일은 접수되지 않습니다.',
+                    list: ['PhD student positions', 'Teamwork & problem-solving focus', 'Apply via the official Application Form'],
+                    list_ko: ['박사과정 모집', '팀워크 및 문제 해결 역량 중시', '공식 지원서를 통해 지원'],
                     ctaHref: 'https://forms.gle/RYCUasAUbsFhJtyb6',
-                    ctaText: 'Open Application Form',
+                    ctaText: 'Open Application Form', ctaText_ko: '지원서 작성하기',
                     ctaExternal: true
                 },
                 securemachines: {
                     image: 'img/posters/poster_securemachineslab.png',
                     imageAlt: 'Full Secure Machines Lab poster',
-                    eyebrow: 'Related initiative',
-                    title: 'Secure Machines Lab',
-                    subtitle: 'AI Forensics & Media Integrity',
-                    tagline: 'Seeing isn’t proof.',
+                    imageAlt_ko: 'Secure Machines Lab 포스터',
+                    eyebrow: 'Related initiative', eyebrow_ko: '관련 이니셔티브',
+                    title: 'Secure Machines Lab', title_ko: 'Secure Machines Lab',
+                    subtitle: 'AI Forensics & Media Integrity', subtitle_ko: 'AI 포렌식 및 미디어 무결성',
+                    tagline: 'Seeing isn’t proof.', tagline_ko: '보는 것이 곧 증거는 아닙니다.',
                     bodyHtml: 'Investigate deepfakes and verify digital media. Secure Machines Lab linked with DASH Lab works on image &amp; video detection, multimedia news verification, and forensic inspection, under the theme <em>“Safer AI. Secure world.”</em>',
-                    list: [
-                        'Image & Video Detection',
-                        'Multimedia News Verification',
-                        'Forensic Inspection'
-                    ],
+                    bodyHtml_ko: '딥페이크를 조사하고 디지털 미디어를 검증합니다. DASH Lab과 연계된 Secure Machines Lab은 <em>“Safer AI. Secure world.”</em>라는 주제 아래 이미지·영상 탐지, 멀티미디어 뉴스 검증, 포렌식 검사를 연구합니다.',
+                    list: ['Image & Video Detection', 'Multimedia News Verification', 'Forensic Inspection'],
+                    list_ko: ['이미지 및 영상 탐지', '멀티미디어 뉴스 검증', '포렌식 검사'],
                     ctaHref: 'https://securemachineslab.com',
-                    ctaText: 'Explore securemachineslab.com',
+                    ctaText: 'Explore securemachineslab.com', ctaText_ko: 'securemachineslab.com 바로가기',
                     ctaExternal: true
                 },
                 dash: {
                     image: 'img/posters/poster_dash.png',
                     imageAlt: 'Full DASH Lab research overview poster',
-                    eyebrow: 'Lab poster',
-                    title: 'DASH Lab Research Overview',
-                    subtitle: 'Data-driven AI Security & HCI',
-                    tagline: 'Data · Machines · Humans',
+                    imageAlt_ko: 'DASH Lab 연구 개요 포스터',
+                    eyebrow: 'Lab poster', eyebrow_ko: '연구실 포스터',
+                    title: 'DASH Lab Research Overview', title_ko: 'DASH Lab 연구 개요',
+                    subtitle: 'Data-driven AI Security & HCI', subtitle_ko: '데이터 기반 AI 보안 및 HCI',
+                    tagline: 'Data · Machines · Humans', tagline_ko: 'Data · Machines · Humans',
                     bodyHtml: 'Overview poster for the Data-driven AI Security HCI Lab (DASH Lab) at Sungkyunkwan University, led by Prof. Simon S. Woo. The lab develops usable and secure technology after better understanding data, machines, and humans covering computer vision, anomaly detection, AI security, and deepfakes.',
-                    list: [
-                        'Deepfake detection',
-                        'Object detection',
-                        'Time-series & anomaly analysis',
-                        'Benchmark datasets (e.g. VFP290K, FakeAVCeleb)'
-                    ],
+                    bodyHtml_ko: '성균관대학교 우사이먼성일 교수가 이끄는 Data-driven AI Security HCI Lab(DASH Lab)의 연구 개요 포스터입니다. 데이터·기계·인간에 대한 이해를 바탕으로 사용 가능하고 안전한 기술을 연구하며, 컴퓨터 비전, 이상 탐지, AI 보안, 딥페이크 등을 다룹니다.',
+                    list: ['Deepfake detection', 'Object detection', 'Time-series & anomaly analysis', 'Benchmark datasets (e.g. VFP290K, FakeAVCeleb)'],
+                    list_ko: ['딥페이크 탐지', '객체 탐지', '시계열 및 이상 분석', '벤치마크 데이터셋 (예: VFP290K, FakeAVCeleb)'],
                     ctaHref: 'Members.html',
-                    ctaText: 'Meet the Members',
+                    ctaText: 'Meet the Members', ctaText_ko: '구성원 소개',
                     ctaExternal: false
                 },
                 'skku-dash-2024': {
                     image: 'img/posters/Poster_SKKU-DASH_LAB_2024.png',
                     imageAlt: 'Full SKKU–DASH Lab 2024 research poster',
-                    eyebrow: 'Lab poster · 2024',
-                    title: 'SKKU–DASH Lab 2024',
-                    subtitle: 'Research overview',
-                    tagline: 'Year overview poster',
+                    imageAlt_ko: 'SKKU–DASH Lab 2024 연구 포스터',
+                    eyebrow: 'Lab poster · 2024', eyebrow_ko: '연구실 포스터 · 2024',
+                    title: 'SKKU–DASH Lab 2024', title_ko: 'SKKU–DASH Lab 2024',
+                    subtitle: 'Research overview', subtitle_ko: '연구 개요',
+                    tagline: 'Year overview poster', tagline_ko: '연간 연구 개요 포스터',
                     bodyHtml: '2024 research overview poster for DASH Lab at Sungkyunkwan University. It summarizes recent work spanning machine unlearning, deepfake detection, diffusion-model security, time-series analysis, and vision-language models.',
-                    list: [
-                        'Machine unlearning',
-                        'Deepfake detection',
-                        'Diffusion models',
-                        'Time-series analysis',
-                        'Vision language models'
-                    ],
+                    bodyHtml_ko: '성균관대학교 DASH Lab의 2024년 연구 개요 포스터입니다. 머신 언러닝, 딥페이크 탐지, 확산 모델 보안, 시계열 분석, 비전-언어 모델 등 최근 연구를 요약합니다.',
+                    list: ['Machine unlearning', 'Deepfake detection', 'Diffusion models', 'Time-series analysis', 'Vision language models'],
+                    list_ko: ['머신 언러닝', '딥페이크 탐지', '확산 모델', '시계열 분석', '비전-언어 모델'],
                     ctaHref: 'Projects.html',
-                    ctaText: 'Browse Lab Projects',
+                    ctaText: 'Browse Lab Projects', ctaText_ko: '연구과제 보기',
                     ctaExternal: false
                 },
                 skku24: {
                     image: 'img/posters/poster_skku24.png',
                     imageAlt: 'Full DASH Lab 2024 projects poster',
-                    eyebrow: 'Lab poster · 2024',
-                    title: 'DASH Lab 2024 Projects',
-                    subtitle: 'Year materials & research pillars',
-                    tagline: 'Projects & partnerships',
+                    imageAlt_ko: 'DASH Lab 2024 프로젝트 포스터',
+                    eyebrow: 'Lab poster · 2024', eyebrow_ko: '연구실 포스터 · 2024',
+                    title: 'DASH Lab 2024 Projects', title_ko: 'DASH Lab 2024 프로젝트',
+                    subtitle: 'Year materials & research pillars', subtitle_ko: '연간 자료 및 연구 축',
+                    tagline: 'Projects & partnerships', tagline_ko: '프로젝트 및 협력',
                     bodyHtml: '2024 year materials from DASH Lab at Sungkyunkwan University, highlighting research pillars and project work including deepfake detection, diffusion-model security, machine unlearning, satellite time-series analysis, and digital human restoration alongside partner collaborations.',
-                    list: [
-                        'Deepfake detection & media integrity',
-                        'Diffusion-model security',
-                        'Machine unlearning',
-                        'Satellite time-series analysis',
-                        'Digital human restoration'
-                    ],
+                    bodyHtml_ko: '성균관대학교 DASH Lab의 2024년 자료로, 딥페이크 탐지, 확산 모델 보안, 머신 언러닝, 위성 시계열 분석, 디지털 인물 복원 및 협력 기관과의 연구 성과를 소개합니다.',
+                    list: ['Deepfake detection & media integrity', 'Diffusion-model security', 'Machine unlearning', 'Satellite time-series analysis', 'Digital human restoration'],
+                    list_ko: ['딥페이크 탐지 및 미디어 무결성', '확산 모델 보안', '머신 언러닝', '위성 시계열 분석', '디지털 인물 복원'],
                     ctaHref: 'Professor.html',
-                    ctaText: 'About the Professor',
+                    ctaText: 'About the Professor', ctaText_ko: '교수 소개',
                     ctaExternal: false
                 }
+            };
+
+            const localizePoster = (poster) => {
+                if (!poster) return poster;
+                const pick = (key) => (typeof DashI18n !== 'undefined') ? DashI18n.field(poster, key) : poster[key];
+                const list = (typeof DashI18n !== 'undefined' && DashI18n.getLang() === 'ko' && poster.list_ko)
+                    ? poster.list_ko
+                    : poster.list;
+                return {
+                    ...poster,
+                    imageAlt: pick('imageAlt'),
+                    eyebrow: pick('eyebrow'),
+                    title: pick('title'),
+                    subtitle: pick('subtitle'),
+                    tagline: pick('tagline'),
+                    bodyHtml: pick('bodyHtml'),
+                    list,
+                    ctaText: pick('ctaText')
+                };
             };
 
             const posterModal = document.getElementById('poster-ad-modal');
@@ -635,7 +644,7 @@
 
             const openPosterModal = (trigger) => {
                 if (!posterModal || !trigger) return;
-                const poster = posterCatalog[trigger.getAttribute('data-poster-id')];
+                const poster = localizePoster(posterCatalog[trigger.getAttribute('data-poster-id')]);
                 if (!poster) return;
                 activePosterTrigger = trigger;
                 fillPosterModal(poster);
@@ -677,6 +686,14 @@
 
             posterTriggers.forEach((trigger) => {
                 trigger.addEventListener('click', () => openPosterModal(trigger));
+            });
+            document.addEventListener('dash:langchange', () => {
+                if (activePosterTrigger && posterModal && !posterModal.hidden) {
+                    const poster = localizePoster(
+                        posterCatalog[activePosterTrigger.getAttribute('data-poster-id')]
+                    );
+                    if (poster) fillPosterModal(poster);
+                }
             });
             if (posterClose) posterClose.addEventListener('click', closePosterModal);
             if (posterModal) {

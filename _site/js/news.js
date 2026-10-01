@@ -26,6 +26,8 @@ function renderHomeNews() {
     if (oldNext) oldNext.style.display = 'none';
     
     if (newsTextElement && item) {
+        const dateLabel = (typeof localizeNewsDate === 'function') ? localizeNewsDate(item) : item.date;
+        const textLabel = (typeof localizeNewsText === 'function') ? localizeNewsText(item) : item.text;
         newsTextElement.innerHTML = `
             <div class="flex items-center justify-center gap-3 md:gap-4 max-w-full px-2">
                 <!-- Content Wrapper with Highlight & Click -->
@@ -34,8 +36,8 @@ function renderHomeNews() {
                             bg-white/10 border border-white/20 rounded-full py-1 px-4 
                             cursor-pointer hover:bg-white/20 transition-colors duration-200">
                     <span class="text-xl md:text-2xl flex-shrink-0">${item.icon}</span> 
-                    <span class="font-bold text-blue-300 whitespace-nowrap flex-shrink-0">${item.date}:</span>
-                    <span class="truncate block min-w-0 text-left">${item.text}</span>
+                    <span class="font-bold text-blue-300 whitespace-nowrap flex-shrink-0">${dateLabel}:</span>
+                    <span class="truncate block min-w-0 text-left">${textLabel}</span>
                 </div>
             </div>
         `;
@@ -86,29 +88,39 @@ function renderCarousel(limit, selector) {
     // Safety check: if container missing or data missing, stop.
     if (!carouselContainer || typeof galleryData === 'undefined') return;
 
+    // Destroy previous Flickity instance if re-rendering for language switch
+    if (carouselContainer.flickityInstance) {
+        try { carouselContainer.flickityInstance.destroy(); } catch (e) { /* ignore */ }
+        carouselContainer.flickityInstance = null;
+    }
+
     // Clear existing static content if any
     carouselContainer.innerHTML = '';
 
     // Determine items to show
     // If limit is -1, show all. Otherwise slice.
     const imagesToShow = limit === -1 ? galleryData : galleryData.slice(0, limit);
+    const enlargeTitle = (typeof DashI18n !== 'undefined') ? DashI18n.t('common.clickEnlarge') : 'Click to enlarge';
 
     // Generate HTML — first 2 slides eager for Flickity layout; rest lazy
-    const slidesHTML = imagesToShow.map((item, i) => `
+    const slidesHTML = imagesToShow.map((item, i) => {
+        const desc = (typeof localizeGalleryDesc === 'function') ? localizeGalleryDesc(item) : item.desc;
+        return `
         <div class="gallery-cell" style="margin: auto;">
-            <div class="cursor-pointer" onclick="openImageModal('${getImg(item.src)}')" title="Click to enlarge">
+            <div class="cursor-pointer" onclick="openImageModal('${getImg(item.src)}')" title="${enlargeTitle}">
                 <img ${i < 2 ? 'loading="eager" fetchpriority="low"' : 'loading="lazy"'} decoding="async" width="800" height="450" src="${getImg(item.src)}" onerror="this.src='${getImg(item.src)}'" alt="Event Image" />
             </div>
-            <p>${item.desc}</p>
+            <p>${desc}</p>
         </div>
-    `).join('');
+    `;
+    }).join('');
 
     // Inject HTML
     carouselContainer.innerHTML = slidesHTML;
 
     // Initialize Flickity Manually
     if (typeof Flickity !== 'undefined') {
-        new Flickity(carouselContainer, {
+        carouselContainer.flickityInstance = new Flickity(carouselContainer, {
             autoPlay: 3000,
             wrapAround: true,
             imagesLoaded: true,
@@ -144,7 +156,8 @@ function filterNews(filter) {
 function updateFilterTabs() {
     const tabs = document.querySelectorAll('.archive-tabs button');
     tabs.forEach(button => {
-        if (button.innerText === currentFilter || button.innerText.includes(currentFilter)) {
+        const filterKey = button.getAttribute('data-news-filter') || button.innerText;
+        if (filterKey === currentFilter || button.innerText === currentFilter || button.innerText.includes(currentFilter)) {
             button.classList.add('active');
         } else {
             button.classList.remove('active');
@@ -169,21 +182,26 @@ function renderNewsArchive() {
     container.classList.add('news-scroll-wrapper');
 
     // Use ALL filtered items (no pagination slicing)
-    container.innerHTML = filteredNews.map(item => `
+    container.innerHTML = filteredNews.map(item => {
+        const dateLabel = (typeof localizeNewsDate === 'function') ? localizeNewsDate(item) : item.date;
+        const textLabel = (typeof localizeNewsText === 'function') ? localizeNewsText(item) : item.text;
+        return `
         <div class="archive-item">
             <span class="archive-icon">${item.icon}</span>
             <div class="archive-item-content text-gray-700 text-base">
-                <strong class="text-base">${item.date}</strong> - 
-                ${item.text}
+                <strong class="text-base">${dateLabel}</strong> - 
+                ${textLabel}
             </div>
         </div>
-    `).join('');
+    `;
+    }).join('');
 }
 
 // --- MODAL LOGIC (News Details) ---
 
 function injectNewsModal() {
     if (document.getElementById('news-detail-modal')) return;
+    const closeLabel = (typeof DashI18n !== 'undefined') ? DashI18n.t('common.close') : 'Close';
     const modalHTML = `
         <div id="news-detail-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300">
             <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all scale-100 p-6 relative">
@@ -194,7 +212,7 @@ function injectNewsModal() {
                     <div id="modal-news-text" class="text-gray-800 text-lg leading-relaxed"></div>
                 </div>
                 <div class="mt-6 flex justify-center">
-                    <button onclick="closeNewsModal()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-full transition-colors">Close</button>
+                    <button onclick="closeNewsModal()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-full transition-colors" data-i18n="common.close">${closeLabel}</button>
                 </div>
             </div>
         </div>
@@ -211,8 +229,8 @@ function openNewsModal(index) {
     const modal = document.getElementById('news-detail-modal');
     if (modal) {
         document.getElementById('modal-news-icon').textContent = item.icon;
-        document.getElementById('modal-news-date').textContent = item.date;
-        document.getElementById('modal-news-text').innerHTML = item.text;
+        document.getElementById('modal-news-date').textContent = (typeof localizeNewsDate === 'function') ? localizeNewsDate(item) : item.date;
+        document.getElementById('modal-news-text').innerHTML = (typeof localizeNewsText === 'function') ? localizeNewsText(item) : item.text;
         modal.classList.remove('hidden');
     }
 }
@@ -305,5 +323,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // C. Init Archive (News Page)
     if (document.getElementById('news-archive-container')) {
         filterNews('All');
+    }
+});
+
+window.addEventListener('dash:langchange', () => {
+    if (document.getElementById('hero-news-banner')) {
+        renderHomeNews();
+    }
+    if (document.getElementById('home-carousel')) {
+        renderCarousel(10, '#home-carousel');
+    }
+    if (document.getElementById('news-carousel')) {
+        renderCarousel(-1, '#news-carousel');
+    }
+    if (document.getElementById('news-archive-container')) {
+        filterNews(currentFilter || 'All');
+    }
+    const closeBtn = document.querySelector('#news-detail-modal [data-i18n="common.close"]');
+    if (closeBtn && typeof DashI18n !== 'undefined') {
+        closeBtn.textContent = DashI18n.t('common.close');
     }
 });

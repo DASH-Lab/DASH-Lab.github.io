@@ -14,16 +14,17 @@ let years = [];
 function renderAuthors(authors) {
     if (!authors || authors.length === 0) return '';
     const author_count = authors.length;
+    const andWord = (typeof DashI18n !== 'undefined') ? DashI18n.t('common.and') : 'and';
     let author_string = '';
 
     if (author_count === 1) {
         author_string = authors[0];
     } else if (author_count === 2) {
-        author_string = `${authors[0]} and ${authors[1]}`;
+        author_string = `${authors[0]} ${andWord} ${authors[1]}`;
     } else {
         for (let i = 0; i < author_count; i++) {
             if (i === author_count - 1) {
-                author_string += `, and ${authors[i]}`;
+                author_string += `, ${andWord} ${authors[i]}`;
             } else if (i === 0) {
                 author_string += authors[i];
             } else {
@@ -35,8 +36,9 @@ function renderAuthors(authors) {
 }
 
 function renderPublication(p) {
+    const trackLabel = (typeof DashI18n !== 'undefined') ? DashI18n.t('common.track') : 'Track';
     const trackHtml = p.track && p.track !== "Etc." ? 
-        `<tr><td><p class="m-0"><small><b class="text-blue-800">${p.track} Track</b></small></p></td></tr>` : '';
+        `<tr><td><p class="m-0"><small><b class="text-blue-800">${p.track} ${trackLabel}</b></small></p></td></tr>` : '';
 
     const presentationType = p.presentationType && String(p.presentationType).trim();
     const isOral = presentationType && /oral/i.test(presentationType);
@@ -52,15 +54,19 @@ function renderPublication(p) {
     const factorHtml = p.Factor && factorText !== "" && factorValue !== 0 ?
         `<tr><td><p class="m-0"><small><b class="text-blue-500">${factorText}${factorValue}</b></small></p></td></tr>` : '';
 
-    const abstractHtml = p.abstract ? `
+    const showAbstract = (typeof DashI18n !== 'undefined') ? DashI18n.t('common.showAbstract') : 'Show abstract';
+    const abstractText = (typeof DashI18n !== 'undefined')
+        ? DashI18n.field(p, 'abstract')
+        : (p.abstract || '');
+    const abstractHtml = abstractText ? `
         <tr>
             <td>
                 <span class="abstract-toggle" onclick="toggleAbstract(this)">
-                    <i class="fas fa-chevron-down"></i> <small>Show abstract</small>
+                    <i class="fas fa-chevron-down"></i> <small>${showAbstract}</small>
                 </span>
                 <div class="abstract-content">
-                    <p class="text-gray-600 text-sm text-justify leading-relaxed">
-                        ${p.abstract}
+                    <p class="abstract-body text-gray-600 text-sm text-justify leading-relaxed">
+                        ${abstractText}
                     </p>
                 </div>
             </td>
@@ -117,7 +123,7 @@ function renderYearSection(year, list) {
     const headingHtml = `
         <div class="flex items-center gap-4 mb-6">
             <h4 class="text-2xl font-bold text-gray-800 whitespace-nowrap">
-                ${year === 'older' ? '2017 & Earlier' : year}
+                ${year === 'older' ? ((typeof DashI18n !== 'undefined') ? DashI18n.t('common.earlier') : '2017 & Earlier') : year}
             </h4>
             <div class="h-px bg-gray-300 w-full"></div>
         </div>`;
@@ -196,11 +202,11 @@ window.toggleAbstract = function(button) {
     if (content) {
         content.classList.toggle('open');
         if (content.classList.contains('open')) {
-            textSpan.innerText = 'Hide abstract';
+            textSpan.innerText = (typeof DashI18n !== 'undefined') ? DashI18n.t('common.hideAbstract') : 'Hide abstract';
             icon.classList.remove('fa-chevron-down');
             icon.classList.add('fa-chevron-up');
         } else {
-            textSpan.innerText = 'Show abstract';
+            textSpan.innerText = (typeof DashI18n !== 'undefined') ? DashI18n.t('common.showAbstract') : 'Show abstract';
             icon.classList.remove('fa-chevron-up');
             icon.classList.add('fa-chevron-down');
         }
@@ -294,7 +300,9 @@ function initializePublications() {
         const searchInput = document.getElementById('searchInput');
         if(searchInput) {
             searchInput.disabled = false;
-            searchInput.placeholder = "Search by title, author, or venue...";
+            searchInput.placeholder = (typeof DashI18n !== 'undefined')
+                ? DashI18n.t('common.searchPubs')
+                : "Search by title, author, or venue...";
         }
 
     } catch (error) {
@@ -408,5 +416,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     if(searchInput) {
         searchInput.addEventListener('input', (e) => filterPublications(e.target.value));
+    }
+});
+
+window.addEventListener('dash:langchange', () => {
+    if (!PUBLICATIONS_DATA || PUBLICATIONS_DATA.length === 0) return;
+    const savedYear = currentYear;
+    const searchInput = document.getElementById('searchInput');
+    const query = searchInput ? searchInput.value : '';
+
+    const sections = {};
+    PUBLICATIONS_DATA.forEach(p => {
+        const yearKey = p.year > 2017 ? p.year : 'older';
+        if (!sections[yearKey]) sections[yearKey] = [];
+        sections[yearKey].push(p);
+    });
+    const loadingDiv = document.getElementById('publications-content');
+    if (loadingDiv) loadingDiv.innerHTML = '';
+    Object.entries(sections).forEach(([year, list]) => {
+        list.sort((a, b) => b.year - a.year);
+        renderYearSection(year, list);
+    });
+    generateYearButtons();
+    if (query) filterPublications(query);
+    else if (savedYear) showYear(savedYear);
+    if (searchInput && typeof DashI18n !== 'undefined') {
+        searchInput.placeholder = DashI18n.t('common.searchPubs');
     }
 });

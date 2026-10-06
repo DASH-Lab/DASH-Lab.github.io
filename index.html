@@ -398,16 +398,25 @@
                 heroSection.style.backgroundImage = `url(${getImg('/img/main_skku5.jpg')})`;
             }
             
-            // Modal logic
-            if (!localStorage.getItem('dash_visited')) {
+            // Join / recruit modal: once per browser (localStorage dash_visited).
+            // If the session language greeting is open, wait until it closes so language shows first.
+            function openHomeJoinModalOnce() {
+                if (localStorage.getItem('dash_visited')) return;
                 const modal = document.getElementById('join-modal');
-                if(modal) {
-                    modal.style.display = 'flex';
-                    // Trigger CSS transition if home-popup.active is defined in style.css
-                    setTimeout(() => modal.classList.add('active'), 50);
-                    localStorage.setItem('dash_visited', 'true');
-                }
+                if (!modal) return;
+                modal.style.display = 'flex';
+                setTimeout(() => modal.classList.add('active'), 50);
+                localStorage.setItem('dash_visited', 'true');
             }
+
+            // Defer past other DOMContentLoaded handlers (common.js injects the greeting).
+            setTimeout(() => {
+                if (document.getElementById('dash-lang-greeting')) {
+                    window.addEventListener('dash-lang-greeting-closed', openHomeJoinModalOnce, { once: true });
+                } else {
+                    openHomeJoinModalOnce();
+                }
+            }, 0);
 
             // Poster ads: shared modal populated from catalog
             const posterCatalog = {

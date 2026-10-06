@@ -592,6 +592,174 @@ function initLangToggle() {
     }
 }
 
+/** sessionStorage key — show greeting once per browser session, not forever */
+const LANG_GREETING_SESSION_KEY = 'dash-lang-prompted';
+
+function hasLangGreetingBeenShown() {
+    try {
+        return sessionStorage.getItem(LANG_GREETING_SESSION_KEY) === '1';
+    } catch (e) {
+        return false;
+    }
+}
+
+function markLangGreetingShown() {
+    try {
+        sessionStorage.setItem(LANG_GREETING_SESSION_KEY, '1');
+    } catch (e) { /* ignore */ }
+}
+
+/** Fired when the session language prompt closes (or was already done). Home join modal listens. */
+function notifyLangGreetingClosed() {
+    try {
+        window.dispatchEvent(new CustomEvent('dash-lang-greeting-closed'));
+    } catch (e) { /* ignore */ }
+}
+
+/**
+ * Compact centered language card: first page load of a browsing session.
+ * Choosing EN/한국어 applies DashI18n.setLang and dismisses for the session.
+ * Escape / X / scrim keep the current language and also dismiss for the session.
+ * Navbar EN | 한국어 toggle remains independent and always available.
+ * Home #join-modal waits for dash-lang-greeting-closed so language shows first.
+ */
+function initLangGreeting() {
+    if (document.getElementById('dash-lang-greeting')) return;
+    if (hasLangGreetingBeenShown()) {
+        notifyLangGreetingClosed();
+        return;
+    }
+
+    const root = document.createElement('div');
+    root.id = 'dash-lang-greeting';
+    root.className = 'dash-lang-greeting';
+    root.setAttribute('role', 'dialog');
+    root.setAttribute('aria-modal', 'true');
+    root.setAttribute('aria-labelledby', 'dash-lang-greeting-title');
+    root.setAttribute('aria-describedby', 'dash-lang-greeting-desc');
+    root.innerHTML = `
+        <div class="dash-lang-greeting-scrim" aria-hidden="true"></div>
+        <div class="dash-lang-greeting-card" tabindex="-1">
+            <button type="button" class="dash-lang-greeting-dismiss" aria-label="Dismiss / 닫기" data-lang-dismiss>
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="dash-lang-greeting-copy">
+                <h2 id="dash-lang-greeting-title" class="dash-lang-greeting-line">
+                    Welcome · <span lang="ko">환영합니다</span>
+                </h2>
+                <p id="dash-lang-greeting-desc" class="dash-lang-greeting-sub">
+                    Choose language / <span lang="ko">언어 선택</span>
+                </p>
+            </div>
+            <div class="dash-lang-greeting-seg" role="group" aria-label="Language / 언어">
+                <button type="button" class="dash-lang-greeting-seg-btn" data-lang-choice="en" aria-label="Continue in English">
+                    EN
+                </button>
+                <button type="button" class="dash-lang-greeting-seg-btn" data-lang-choice="ko" lang="ko" aria-label="한국어로 계속">
+                    한국어
+                </button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(root);
+
+    const card = root.querySelector('.dash-lang-greeting-card');
+    const choiceButtons = Array.from(root.querySelectorAll('[data-lang-choice]'));
+    const dismissBtn = root.querySelector('[data-lang-dismiss]');
+    const scrim = root.querySelector('.dash-lang-greeting-scrim');
+    let lastFocus = null;
+    let closing = false;
+
+    function getFocusable() {
+        const items = [...choiceButtons];
+        if (dismissBtn) items.push(dismissBtn);
+        return items.filter((el) => el && !el.disabled);
+    }
+
+    function trapFocus(e) {
+        if (e.key !== 'Tab' || closing) return;
+        const focusable = getFocusable();
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    }
+
+    function onKeyDown(e) {
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            dismiss();
+            return;
+        }
+        trapFocus(e);
+    }
+
+    function applyChoice(lang) {
+        if (typeof DashI18n !== 'undefined') {
+            DashI18n.setLang(lang, { updateUrl: false });
+        }
+        dismiss();
+    }
+
+    function dismiss() {
+        if (closing) return;
+        closing = true;
+        markLangGreetingShown();
+        root.classList.remove('is-open');
+        document.body.classList.remove('dash-lang-greeting-open');
+        document.removeEventListener('keydown', onKeyDown, true);
+        let done = false;
+        const finalize = () => {
+            if (done) return;
+            done = true;
+            root.remove();
+            notifyLangGreetingClosed();
+            if (lastFocus && typeof lastFocus.focus === 'function') {
+                try { lastFocus.focus(); } catch (e) { /* ignore */ }
+            }
+        };
+        root.addEventListener('transitionend', (e) => {
+            if (e.target === root || e.target === card) finalize();
+        });
+        setTimeout(finalize, 280);
+    }
+
+    choiceButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            applyChoice(btn.getAttribute('data-lang-choice'));
+        });
+    });
+    if (dismissBtn) dismissBtn.addEventListener('click', dismiss);
+    if (scrim) scrim.addEventListener('click', dismiss);
+
+    // Open after paint so the enter transition runs
+    lastFocus = document.activeElement;
+    document.body.classList.add('dash-lang-greeting-open');
+    document.addEventListener('keydown', onKeyDown, true);
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            root.classList.add('is-open');
+            // Prefer focusing a language choice; skip if a higher modal already owns focus
+            const joinModal = document.getElementById('join-modal');
+            const joinOpen = joinModal && (
+                joinModal.classList.contains('active') ||
+                (joinModal.style.display && joinModal.style.display !== 'none')
+            );
+            if (!joinOpen) {
+                const first = getFocusable()[0];
+                if (first) first.focus({ preventScroll: true });
+                else if (card) card.focus({ preventScroll: true });
+            }
+        });
+    });
+}
+
 function injectLayout() {
     // 1. Critical: navbar first so header can paint ASAP
     const navbarContainer = document.createElement('div');
@@ -610,6 +778,7 @@ function injectLayout() {
     highlightActiveLink();
     initMobileMenu();
     initLangToggle();
+    initLangGreeting();
 
     // 4. Seasonal particles + demo after first paint (non-blocking)
     scheduleSeasonParticles();

@@ -3,6 +3,8 @@
 // It must be loaded before news.js in your HTML.
 
 const newsData = [
+    { icon: '📄', date: 'Oct 2026', year: 2026, text: 'One paper accepted at <b>ACCV 2026</b>',
+        text_ko: '<b>ACCV 2026</b>에 논문 1편이 게재 확정되었습니다'},
     { icon: '🏆', date: 'Sep 2026', year: 2026, text: 'Won 1st Place in the Image Edit Detection and Localization Challenge (IEDAL2) at <b>ICIP 2026</b>',
         text_ko: '<b>ICIP 2026</b> Image Edit Detection and Localization Challenge(IEDAL2)에서 1위를 수상하였습니다'  },
     { icon: '📄', date: 'Aug 2026', year: 2026, text: 'Three paper accepted at Main Paper track of <b>CIKM 2026</b>',

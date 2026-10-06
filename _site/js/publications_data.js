@@ -1,5 +1,28 @@
 const PUBLICATIONS_DATA_LOCAL = [
     {
+        "title": "BoDA: Boundary-Distance-Aware Coreset Selection for Efficient Machine Unlearning",
+        "authors": [
+            "Hyunjune Kim",
+            "Sangyong Lee",
+            "Simon S. Woo"
+        ],
+        "venue_full": "Asian Conference on Computer Vision",
+        "venue": "ACCV",
+        "track": "Main Paper",
+        "presentationType": null,
+        "Factor": [
+            "BK Computer Science IF=",
+            1
+        ],
+        "year": 2026,
+        "links": {
+            "conf": "https://accv2026.org/"
+        },
+        "img": "/img/Publications/2026-ACCV-Sangyong.png",
+        "abstract": "Machine Unlearning (MU) has emerged to mitigate data privacy concerns by efficiently removing target data from pre-trained models while preserving overall performance. Existing MU methods are faster than retraining from scratch, but still require processing large amounts of data. We formulate data reduction for MU as dual-objective coreset selection that accounts for the forgetting–retention trade-off across diverse unlearning scenarios. We propose BoDA, a plug-and-play framework that accelerates MU through boundary-aware sample selection. BoDA assigns each sample a boundary-aware distance that captures its geometric role relative to the model's decision boundary. It computes this distance by combining latent-space adversarial perturbation with vector interpolation to localize prediction-flipping points between original and perturbed representations. Using the resulting distances, BoDA groups samples into Interior, Midrange, and Extremity regions and selects suitable geometric roles for different unlearning scenarios. As a data-level method, BoDA integrates with existing MU algorithms without architectural or objective modifications. Extensive experiments show that the proposed framework substantially reduces runtime while matching and sometimes surpassing full-data baselines.",
+        "abstract_ko": "기계 언러닝(Machine Unlearning, MU)은 사전학습 모델에서 대상 데이터를 효율적으로 제거하면서도 전반적 성능을 유지함으로써 데이터 프라이버시 문제를 완화하기 위해 등장하였습니다. 기존 MU 방법은 처음부터 재학습하는 것보다 빠르지만, 여전히 대량의 데이터를 처리해야 합니다. 본 연구에서는 MU를 위한 데이터 축소를 다양한 언러닝 시나리오에서의 망각–유지 트레이드오프를 고려하는 이중 목적 coreset 선택 문제로 정식화합니다. 이에 경계 인식 샘플 선택을 통해 MU를 가속하는 plug-and-play 프레임워크 BoDA를 제안합니다. BoDA는 각 샘플에 모델의 결정 경계에 대한 기하학적 역할을 포착하는 경계 인식 거리를 부여합니다. 이 거리는 latent-space 적대적 섭동과 벡터 보간을 결합하여 원본 표현과 섭동된 표현 사이에서 예측이 뒤집히는 지점을 국소화함으로써 계산됩니다. 산출된 거리를 바탕으로 BoDA는 샘플을 Interior, Midrange, Extremity 영역으로 그룹화하고, 서로 다른 언러닝 시나리오에 적합한 기하학적 역할을 선택합니다. 데이터 수준 방법으로서 BoDA는 아키텍처나 목적함수 수정 없이 기존 MU 알고리즘과 통합됩니다. 광범위한 실험 결과, 제안 프레임워크는 전체 데이터 베이스라인과 동등하거나 때로 이를 상회하는 성능을 유지하면서 실행 시간을 크게 줄임을 보입니다."
+    },
+    {
         "title": "Decomposed Attention Frequency Debiased Transformer Model: Large Time-series Model for Satellite Orbit Prediction",
         "authors": [
             "Kanjun Lee",

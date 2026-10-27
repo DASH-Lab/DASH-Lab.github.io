@@ -23,7 +23,7 @@ const phdStudents = [
     { name: "Eunju Park", dept: "Computer Science & Engineering", interests: "Deepfakes", email: "cindi01@g.skku.edu", img: "img/member_images/EunjuPark.jpg" },
     { name: "Seunghoo Hong", dept: "Artificial Intelligence", interests: "Multi-modal, Deepfake detection, Representation learning", email: "hoo0681@g.skku.edu", img: "img/member_images/SeungHooHong.jpg" },
     { name: "Juhun Lee", dept: "Artificial Intelligence", interests: "Computer Vision", email: "josejhlee@g.skku.edu", img: "img/member_images/JuhunLee.jpg" },
-    { name: "Kangjun Lee", dept: "Computer Science & Engineering", interests: "Time-Series Anomaly Detection & Forecasting", email: "gkdl677@g.skku.edu", img: "img/member_images/KangjunLee.jpg" },
+    { name: "Kangjun Lee", dept: "Computer Science & Engineering", interests: "Time-Series Anomaly Detection & Forecasting", email: "gkdl677@g.skku.edu", img: "img/member_images/KangjunLee.jpg", link: "https://sites.google.com/view/kangjun-lee-ai" },
     { name: "Geonho Son", dept: "Computer Science & Engineering", interests: "Multi-modal & Super Resolution", email: "sohn1029@g.skku.edu", img: "img/member_images/Geonho_Son.jpg" },
     { name: "Sangyong Lee", dept: "Computer Science & Engineering", interests: "Differential privacy", email: "sang8961@g.skku.edu", img: "img/member_images/Sangyong.jpg" },
     { name: "Jiwon Kim", dept: "Computer Science & Engineering", interests: "Computer Vision & Multi-modal", email: "jiwon.merily.kim@gmail.com", img: "img/member_images/JiwonKim.png" },
